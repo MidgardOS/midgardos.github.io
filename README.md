@@ -1,2 +1,4 @@
-# brdocs
-A website documenting creating the build root for MidgardOS
+# MidgardOS
+
+A website documenting the creation of the MidgardOS distribution and its design.
+
