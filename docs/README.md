@@ -47,6 +47,6 @@ MidgardOS will have the following features at first release:
   - To simplify the orchestration of firewall rules, use UFW instead of firewalld or raw iptables/nftables
   - FluentD in the installation pre-configured to allow exporting systemd-journald logs
 
-## Developmenmt
+## Development
 
-[Building the Base OS](MidgardOS/README.md)
+[Building the Base OS](./MidgardOS/)
