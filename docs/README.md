@@ -2,14 +2,10 @@
 
 This is the website that documents the build and design of MidgardOS.
 
-<details><summary>Click to expand</summary>
-
-  ### Table of Contents
-  1. [Principles](#principles)
-  2. [Features](#features)
-  3. [Development](#development)
-</details>
-
+### Table of Contents
+1. [Principles](#principles)
+1. [Features](#features)
+1. [Development](#development)
 
 ## Principles
 
@@ -35,4 +31,22 @@ The Observability principle means that after installation, the default install w
 
 ## Features
 
+MidgardOS will have the following features at first release:
+
+- RPM-based
+- CinC built-in
+  - OS configuration tools will leverage CinC via overrides that the chef code will read to set OS settings
+- Adhere to the merged `/` -> `/usr` configurration in most Linux distributions available now
+- Be designed for modern server hardware
+  - This means that we will target UEFI bootloading only
+- Utilitize modern system components
+  - use all components that ship with systemd
+    - Instead of GRUB -> systemd-boot
+    - Instead of NetConf/Wicked/NetworkManager -> systemd-networkd
+    - etc.
+  - To simplify the orchestration of firewall rules, use UFW instead of firewalld or raw iptables/nftables
+  - FluentD in the installation pre-configured to allow exporting systemd-journald logs
+
 ## Developmenmt
+
+[Building the Base OS](MidgardOS/README.md)
