@@ -2,15 +2,14 @@
 
 This is the website that documents the build and design of MidgardOS.
 
-<details>
-  <summary>Click to expand</summary>
-<!-- empty line -->
-  ## Table of Contents
+<details><summary>Click to expand</summary>
+
+  ### Table of Contents
   1. [Principles](#principles)
-  1. [Features](#features)
-  1. [Development](#development)
+  2. [Features](#features)
+  3. [Development](#development)
 </details>
-<!-- empty line -->
+
 
 ## Principles
 
