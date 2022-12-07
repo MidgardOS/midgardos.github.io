@@ -2,7 +2,16 @@
 
 This is the website that documents the build and design of MidgardOS.
 
-## Features
+<details>
+  <summary>Table of Contents</summary>
+
+  1. [Principles](#Principles)
+  1. [Features](#Features)
+  1. [Development Documentation](#Development)
+
+</details>
+
+## Principles
 
 MidgardOS is a Linux-based server operating system that adheres to the following principles:
 
@@ -23,3 +32,7 @@ The Maintainability principle requires that the operating system will have autom
 ### Observability
 
 The Observability principle means that after installation, the default install will be able to be easly monitored, both for performance and operational health
+
+## Features
+
+## Developmenmt
