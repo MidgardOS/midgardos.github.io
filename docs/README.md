@@ -5,9 +5,9 @@ This is the website that documents the build and design of MidgardOS.
 <details>
   <summary>Table of Contents</summary>
 
-  1. [Principles](#Principles)
-  1. [Features](#Features)
-  1. [Development Documentation](#Development)
+  ## [Principles](#Principles)
+  ## [Features](#Features)
+  ## [Development Documentation](#Development)
 
 </details>
 
