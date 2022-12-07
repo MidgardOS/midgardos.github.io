@@ -8,8 +8,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 
 1. [Pre-requisites](./Prerequisites.md)
 1. [Host System Requirements](./HostRequirements.md)
-1. Structure
-1. Errata
+1. [Structure and Errata](./Structure.md)
 
 ### Preparing to Build the Core OS Build Root
 

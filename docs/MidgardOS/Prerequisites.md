@@ -8,6 +8,37 @@ The build process for creating a new MidgardOS core operating system build root 
 
 As such, it is recommended to only start building a MidgardOS build root if you are comfortable at a Linux Bash or Zsh shell and are willing to work through discovering and fixing issues as the build progresses.
 
+To avoid causing potential issues with your host computer, it is strongly recommended to build the OS inside a virtual machine, attaching extra disks, etc. as you go.
+
+The current environment that is tested with building a MidgardOS core operating system build root is built using a VirtualBox VM running openSUSE Leap 15.4 with the following virtual hardware configuration:
+
+- 4 cores
+- 4096 GiB RAM
+- Video
+  - 32MiB Video RAM
+  - 1 screen
+  - Controller: VMSVGA
+  - Disable 3D Acceleration
+- UEFI configuration
+- 2 VMDK thin-provisioned disks
+  - OS disk: 64GiB, two partitions
+    - Partition 1: 512MiB FAT32 (EFI partition): Mounted at `/boot/efi`
+    - Partition 2: Remaining disk, XFS (system root partition): Mounted at `/`
+  - MidgardOS target disk: 64GiB, two partitions
+    - Partition 1: 512MiB FAT32 (EFI partition): Mounted at `/MidgardOS/boot`
+    - Partition 2: Remaining disk, XFS (target system root partition): Mounted at `/MidgardOS`
+- Disable Audio Device
+- USB 3.0 xHCI device
+- Disable all Serial devices
+- 1 Ethernet device
+  - Bridged connection
+    - Type: Intel Pro 1000 MT Server
+    - Promiscuous Mode: Deny
+    - Connected: true
+- Disable Shared Folders
+
+After creating the virtual machine, install the OS in 'Server only' text mode and then continue through the steps.
+
 | Navigation |||
 | --- | --- | ---: |
 | [<<](./README.md) | [HOME](./README.md) | [>>](./HostRequirements.md) |
