@@ -37,7 +37,9 @@ The current environment that is tested with building a MidgardOS core operating 
     - Connected: true
 - Disable Shared Folders
 
-After creating the virtual machine, install the OS in 'Server only' text mode and then continue through the steps.
+After creating the virtual machine, install the OS in 'Server only' text mode. After boot, set up the following configuration elements:
+
+1. MidgardOS will use the unified CGroup v2 heirarchy, the host OS' system needs to support this inetead of the legacy hybrid hierarchy. To support this, add the `systemd.unified_cgroup_hierarchy=1` flag on the host's kernel command line
 
 | Navigation |||
 | --- | --- | ---: |

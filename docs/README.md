@@ -43,7 +43,10 @@ MidgardOS will have the following features at first release:
   - use all components that ship with systemd
     - Instead of GRUB -> systemd-boot
     - Instead of NetConf/Wicked/NetworkManager -> systemd-networkd
-    - etc.
+    - Instead of using the GLibC resolver stub -> systemd-resolved
+    - Instead of chrony for system time sync -> systemd-timesyncd
+    - Instead of using cron for system tasks, systemd timers will be used
+    - Use `systemd-coredump` for managing application coredumps
   - To simplify the orchestration of firewall rules, use UFW instead of firewalld or raw iptables/nftables
   - FluentD in the installation pre-configured to allow exporting systemd-journald logs
 
