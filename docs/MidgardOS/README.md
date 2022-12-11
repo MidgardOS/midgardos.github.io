@@ -12,13 +12,31 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 
 ### Preparing to Build the Core OS Build Root
 
-1. Overview
-1. Creating a New Partition
-1. Create the Required Mount Points and Symbolic Links
-1. Mounting the Newly Created Filesystem
-1. Creating a Build User
-1. Setting up Environment variables
-1. 
+1. [Overview](./PrepOverview.md)
+1. [Creating a New Partition](./CreatePartition.md)
+1. [Create the Required Mount Points and Symbolic Links](./CreateMountPoints.md)
+1. [Mounting the Newly Created Filesystem](./FormatAndMount.md)
+1. [Creating a Build User](./CreateBuildUser.md)
+1. [Setting up Environment variables](./SetEnvironmentVars.md)
+1. [Ignoring Software Test Suites](./IgnoringPreFinalSWTests.md)
+
+### Building the Cross-compiler Toolchain
+
+1. GNU File
+1. Linux Headers
+1. GNU M4
+1. GNU Ncurses
+1. PkgConf
+1. GMP
+1. MPFR
+1. MPC
+1. ISL
+1. Cross-compiled GNU Binutils - Pass 1
+1. Cross-compiled GNU GCC - Pass 1
+1. GNU GLibC 32-bit
+1. GNU GLibC 64-bit
+1. Libstdc++
+1. Cross-compiled GNU GCC - Dynamically Linked
 
 ## Acknowledgements
 
