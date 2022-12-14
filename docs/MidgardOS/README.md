@@ -13,9 +13,9 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 ### Preparing to Build the Core OS Build Root
 
 1. [Overview](./PrepOverview.md)
-1. [Creating a New Partition](./CreatePartition.md)
-1. [Create the Required Mount Points and Symbolic Links](./CreateMountPoints.md)
-1. [Mounting the Newly Created Filesystem](./FormatAndMount.md)
+1. [Creating the New Partitions](./CreatePartition.md)
+1. [Format the New Partitions, Create Mount Points, and Mount the New Filesystems](./FormatCreateMountPointsAndMount.md)
+1. [Create OS Directories and Symbolic Links](./DirectoriesAndSymlinks.md)
 1. [Creating a Build User](./CreateBuildUser.md)
 1. [Setting up Environment variables](./SetEnvironmentVars.md)
 1. [Ignoring Software Test Suites](./IgnoringPreFinalSWTests.md)
