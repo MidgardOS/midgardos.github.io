@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./PrepOverview.md) | [HOME](./README.md) | [>>](./CreateMountPoints.md) |
+| [<<](./PrepOverview.md) | [HOME](./README.md) | [>>](./FormatCreateMountPointsAndMount.md) |
 
 # Rationale
 
@@ -14,4 +14,4 @@ From here, create a 512 MiB EFI partition, and a 63.5 GiB Linux filesystem parti
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./PrepOverview.md) | [HOME](./README.md) | [>>](./CreateMountPoints.md) |
+| [<<](./PrepOverview.md) | [HOME](./README.md) | [>>](./FormatCreateMountPointsAndMount.md) |
