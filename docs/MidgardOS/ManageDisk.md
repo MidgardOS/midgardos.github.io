@@ -11,7 +11,7 @@ MidgardOS is designed to run on UEFI based hardware. This requires an EFI boot v
 To create the EFI boot filesystem on the 512MiB EFI partition that was created in the last step, run the following command:
 
 ```sh
-/sbin/mkfs.vfat -F 32 -n EFI --verbose /dev/sdb1
+/sbin/mkfs.vfat -F 32 -n EFI -v /dev/sdb1
 ```
 
 ## Format the MidgardOS Root Filesystem
@@ -48,7 +48,8 @@ Now, mount the EFI partition to the new directory:
 
 ```bash
 FAT_MOUNT_DIRECTIVES="fmask=0022,dmask=0022,codepage=437,iocharset=utf8,discard,showexec,sys_immutable,rodir,shortname=mixed"
-mount -t vfat \
+mount -v \
+      -t vfat \
       -o rw,$FAT_MOUNT_DIRECTIVES \
       -L EFI /MidgardOS/boot
 ```
