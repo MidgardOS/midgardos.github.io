@@ -36,6 +36,45 @@ unset CFLAGS CXXFLAGS PKG_CONFIG_PATH
 EOF
 ```
 
+## Build Environment Variables
+
+While building the cross compilation and basic tools, there are a few extra environment variables that will need set to ease running configuration and build commands. The first of these is the target build host triplet. This is used to tell the compiler to build the binaries for a specific architecture. As the target host and the initial build host have potentially the same value, which will block the compiler from building cross-compiled target tools, the target build triplet needs modifed by forcing it to be a "cross" target. To do so, set the `BRFS_HOST` environment variable:
+
+```bash
+export BRFS_HOST=$(echo ${MACHTYPE} | sed -e 's/-[^-]*/-cross/')
+```
+
+Next, the triplet for the target architecture needs set, much like for the target host:
+
+```bash
+export BRFS_TARGET="x86_64-unknown-linux-gnu"
+```
+
+Now, to support building the 32-bit libraries, set the same for the 32-bit architecture:
+
+```bash
+export BRFS_TARGET32="i686-pc-linux-gnu"
+```
+
+Finally, the environment variables for the target-specific linker flags needs set:
+
+```bash
+export BUILD32="-m32"
+export BUILD64="-m64"
+```
+
+To make these persist during the build of the cross-tools and basic tools trees, run the following command:
+
+```bash
+cat >> ~/.bashrc << EOF
+export BRFS_HOST="${BRFS_HOST}"
+export BRFS_TARGET="${BRFS_TARGET}"
+export BRFS_TARGET32="${BRFS_TARGET32}"
+export BUILD32="${BUILD32}"
+export BUILD64="${BUILD64}"
+EOF
+```
+
 Now that the `.bashrc` and `.bash_profile` have been created, source the `.bash_profile` to validate that the new environment is configured correctly:
 
 ```bash
