@@ -22,16 +22,17 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 
 ### Building the Cross-compiler Toolchain
 
-1. GNU File
-1. Linux Headers
-1. GNU M4
-1. GNU Ncurses
-1. PkgConf
-1. GMP
-1. MPFR
-1. MPC
-1. ISL
-1. Cross-compiled GNU Binutils - Pass 1
+1. [Overview](./CrossCompileOverview.md)
+1. [GNU File](./CrossCompileGNUFile.md)
+1. [Linux Headers](./CrossCompileLinuxHeaders.md)
+1. [GNU M4](./CrossCompileGNUM4.md)
+1. [GNU Ncurses](./CrossCompileGNUNCurses.md)
+1. [PkgConf](./CrossCompilePkgConf.md)
+1. [GMP](./CrossCompileGMP.md)
+1. [MPFR](./CrossCompileMPFR.md)
+1. [MPC](./CrossCompileMPC.md)
+1. [ISL](./CrossCompileISL.md)
+1. Cross-compiled GNU Binutils
 1. Cross-compiled GNU GCC - Pass 1
 1. GNU GLibC 32-bit
 1. GNU GLibC 64-bit
