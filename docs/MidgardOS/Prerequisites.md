@@ -13,7 +13,7 @@ To avoid causing potential issues with your host computer, it is strongly recomm
 The current environment that is tested with building a MidgardOS core operating system build root is built using a VirtualBox VM running openSUSE Leap 15.4 with the following virtual hardware configuration:
 
 - 4 cores
-- 4096 GiB RAM
+- 4096 MiB RAM
 - Video
   - 32MiB Video RAM
   - 1 screen
