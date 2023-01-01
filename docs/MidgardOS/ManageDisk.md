@@ -63,7 +63,7 @@ If you're more comfortable with using the host's `/etc/fstab`, run the following
 ```bash
 FAT_PARAMS="fmask=0022,dmask=0022,codepage=437,iocharset=utf8,discard,showexec,sys_immutable,rodir,shortname=mixed"
 EFI_MOUNT_PARAMS="rw,${FAT_PARAMS},x-systemd.requires-mount-for=/MidgardOS"
-XFS_MOUNT_PARAMS="rw,grpid,attr2,inode64,userquota,prjquota"
+XFS_MOUNT_PARAMS="rw,grpid,attr2,inode64,usrquota,prjquota"
 echo -e "LABEL=MidgardOS\t/MidgardOS\txfs\t${XFS_MOUNT_PARAMS}\t1\t2" >> /etc/fstab
 echo -e "LABEL=EFI\t/MidgardOS/boot\tvfat\t${EFI_MOUNT_PARAMS}\t1\t0" >> /etc/fstab
 ```
@@ -80,7 +80,7 @@ RequiresMountsFor=/
 What=/dev/sdb2
 Where=/MidgardOS
 Type=xfs
-Options=rw,grpid,attr2,inode64,userquota,prjquota
+Options=rw,grpid,attr2,inode64,usrquota,prjquota
 
 [Install]
 Alias=midgardos-rootfs
