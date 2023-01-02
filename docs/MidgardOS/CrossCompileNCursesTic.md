@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileGNUM4.md) | [HOME](./README.md) | [>>](./CrossCompilePkgConf.md) |
+| [<<](./CrossCompileGNUM4.md) | [HOME](./README.md) | [>>](./CrossCompileAutoconf.md) |
 
 # GNU NCurses TIC
 
@@ -42,4 +42,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileGNUM4.md) | [HOME](./README.md) | [>>](./CrossCompilePkgConf.md) |
+| [<<](./CrossCompileGNUM4.md) | [HOME](./README.md) | [>>](./CrossCompileAutoconf.md) |
