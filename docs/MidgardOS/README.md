@@ -23,7 +23,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 ### Building the Cross-compiler Toolchain
 
 1. [Overview](./CrossCompileOverview.md)
-1. [GNU File](./CrossCompileGNUFile.md)
+1. [File](./CrossCompileFile.md)
 1. [Linux Headers](./CrossCompileLinuxHeaders.md)
 1. [GNU M4](./CrossCompileGNUM4.md)
 1. [GNU Ncurses](./CrossCompileGNUNCurses.md)
