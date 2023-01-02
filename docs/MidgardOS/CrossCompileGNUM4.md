@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileLinuxHeaders.md) | [HOME](./README.md) | [>>](./CrossCompileGNUNCurses.md) |
+| [<<](./CrossCompileLinuxHeaders.md) | [HOME](./README.md) | [>>](./CrossCompileNCursesTic.md) |
 
 # GNU File
 
@@ -36,4 +36,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileLinuxHeaders.md) | [HOME](./README.md) | [>>](./CrossCompileGNUNCurses.md) |
+| [<<](./CrossCompileLinuxHeaders.md) | [HOME](./README.md) | [>>](./CrossCompileNCursesTic.md) |

@@ -27,7 +27,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [File](./CrossCompileFile.md)
 1. [Linux Headers](./CrossCompileLinuxHeaders.md)
 1. [GNU M4](./CrossCompileGNUM4.md)
-1. [GNU Ncurses](./CrossCompileGNUNCurses.md)
+1. [Ncurses Tic](./CrossCompileNCursesTic.md)
 1. [PkgConf](./CrossCompilePkgConf.md)
 1. [GMP](./CrossCompileGMP.md)
 1. [MPFR](./CrossCompileMPFR.md)
