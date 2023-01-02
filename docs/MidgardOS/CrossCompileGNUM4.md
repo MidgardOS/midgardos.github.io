@@ -2,7 +2,7 @@
 | --- | --- | ---: |
 | [<<](./CrossCompileLinuxHeaders.md) | [HOME](./README.md) | [>>](./CrossCompileNCursesTic.md) |
 
-# GNU File
+# GNU M4
 
 Name: GNU M4<br />
 Summary: A macro processing language often used in Makefiles<br />
