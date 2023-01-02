@@ -2,7 +2,7 @@
 | --- | --- | ---: |
 | [<<](./CrossCompileAutoconf.md) | [HOME](./README.md) | [>>](./CrossCompileGMP.md) |
 
-# GNU NCurses TIC
+# PkgConf
 
 Name: PkgConf<br />
 Summary: A software compilation and linker metadata tool and library<br />
