@@ -1,5 +1,5 @@
 | Navigation |||
-| --- | --- | --- |
+| --- | --- | ---: |
 | [<<](./CrossCompileLinuxHeaders.md) | [HOME](./README.md) | [>>](./CrossCompileGNUNCurses.md) |
 
 # GNU File
@@ -35,5 +35,5 @@ make install
 More details about this package is covered later in the core system build.
 
 | Navigation |||
-| --- | --- | --- |
+| --- | --- | ---: |
 | [<<](./CrossCompileLinuxHeaders.md) | [HOME](./README.md) | [>>](./CrossCompileGNUNCurses.md) |
