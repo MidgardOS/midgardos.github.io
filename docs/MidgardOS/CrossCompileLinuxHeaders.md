@@ -8,7 +8,7 @@ Name: linux-headers<br />
 Summary: System headers meant for interfacing with the Linux Kernel<br />
 License: GPL v2<br />
 Version: 6.1.2<br />
-URL: [https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.2.tar.xz](https://cdn.kernel.org/pub/linux/kernel/v6.x/)
+URL: [https://cdn.kernel.org/pub/linux/kernel/v6.x/](https://cdn.kernel.org/pub/linux/kernel/v6.x/)
 
 ## Configuration
 
