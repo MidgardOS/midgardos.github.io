@@ -2,7 +2,7 @@
 | --- | --- | ---: |
 | [<<](./CrossCompileGNUM4.md) | [HOME](./README.md) | [>>](./CrossCompilePkgConf.md) |
 
-# GNU NCurses
+# GNU NCurses TIC
 
 Name: NCurses - Tic<br />
 Summary: A terminal console control library - Terminal Interface Compiler<br />
