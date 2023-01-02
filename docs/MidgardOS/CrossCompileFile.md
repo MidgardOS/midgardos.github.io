@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileOverview.md) | [HOME](./README.md) | [>>](./CrossCompileLinuxHeaders.md) |
+| [<<](./CrossCompileZLib.md) | [HOME](./README.md) | [>>](./CrossCompileLinuxHeaders.md) |
 
 # GNU File
 
@@ -33,7 +33,6 @@ make install
 
 More details about this package is covered later in the core system build.
 
-
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileOverview.md) | [HOME](./README.md) | [>>](./CrossCompileLinuxHeaders.md) |
+| [<<](./CrossCompileZLib.md) | [HOME](./README.md) | [>>](./CrossCompileLinuxHeaders.md) |
