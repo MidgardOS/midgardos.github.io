@@ -8,7 +8,7 @@ Name: zlib<br />
 Summary: A fast compression library<br />
 License: Zlib<br />
 Version: 1.2.13<br />
-URL: http://www.zlib.net/ <br />
+URL: [http://www.zlib.net/](http://zlib.net/)<br />
 
 ## Configuration
 
