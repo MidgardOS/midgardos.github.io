@@ -7,7 +7,7 @@
 Name: GNU Autoconf<br />
 Summary: A tool for automatically configuring source code for build<br />
 License: GPL v3+<br />
-Version: <br />
+Version: 2.71<br />
 URL: [http://ftp.gnu.org/pub/gnu/autoconf](http://ftp.gnu.org/pub/gnu/autoconf)<br />
 
 ## Configuration
@@ -16,7 +16,6 @@ To configure GNU Autoconf for install into our cross-compilation root, run the f
 
 ```bash
 ./configure --prefix=/cross-tools
-
 ```
 
 ## Compilation and Installation
