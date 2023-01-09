@@ -16,7 +16,8 @@ To configure PkgConf for install into our cross-compilation root, run the follow
 
 ```bash
 autoreconf -fiv
-./configure --disable-static --prefix=/cross-tools
+./configure --disable-static --prefix=/cross-tools \
+            --with-pkg-config-dir=/tools/lib64/pkgconfig:/tools/share/pkgconfig
 ```
 
 ## Compilation and Installation
