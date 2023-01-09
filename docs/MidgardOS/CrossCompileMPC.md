@@ -2,33 +2,33 @@
 | --- | --- | ---: |
 | [<<](./CrossCompileGMP.md) | [HOME](./README.md) | [>>](./CrossCompileMPC.md) |
 
-# GNU Multi-Precision Floating-Point with Rounding Library
+# GNU Multi-Precision Calculation Library
 
-Name: MPFR<br />
-Summary: A C library for multi-precision floating-point calculations<br />
+Name: MPC<br />
+Summary: A C library for multi-precision calculations<br />
 License: LGPL v3+<br />
-Version: 4.2.0<br />
-URL: [https://www.mpfr.org/mpfr-4.2.0/](https://www.mpfr.org/mpfr-4.2.0/)<br />
+Version: 1.3.1<br />
+URL: [https://ftp.gnu.org/gnu/mpc](https://ftp.gnu.org/gnu/mpc)<br />
 
 ## Configuration
 
-To configure GNU MPFR for install into our cross-compilation root, run the following command:
+To configure GNU MPC for install into our cross-compilation root, run the following command:
 
 ```bash
 LDFLAGS="-Wl,-rpath,/cross-tools/lib" \
 ./configure --prefix=/cross-tools --disable-static --with-gmp=/cross-tools \
-            --enable-thread-safe
+            --with-mpfr=/cross-tools
 ```
 
 ## Compilation and Installation
 
-To compile GNU MPFR, run the following command:
+To compile GNU MPC, run the following command:
 
 ```bash
 make
 ```
 
-Finally, to install GNU MPFR into the cross-tools tree, run the following command:
+Finally, to install GNU MPC into the cross-tools tree, run the following command:
 
 ```bash
 make install
