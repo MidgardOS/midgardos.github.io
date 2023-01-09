@@ -20,8 +20,6 @@ LDFLAGS="-Wl,-rpath,/cross-tools/lib" \
             --enable-thread-safe
 ```
 
-The host flag is to ensure that the package will be built to run on x86_64 rev 2 or better systems. By default, GMP's configure script will probe the CPU and may build the library too optimized for later use.
-
 ## Compilation and Installation
 
 To compile GMP, run the following command:
