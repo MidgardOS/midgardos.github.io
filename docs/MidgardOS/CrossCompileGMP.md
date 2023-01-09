@@ -2,7 +2,7 @@
 | --- | --- | ---: |
 | [<<](./CrossCompilePkgConf.md) | [HOME](./README.md) | [>>](./CrossCompileMPFR.md) |
 
-# GNU Math Procision Library
+# GNU Math Precision Library
 
 Name: GMP<br />
 Summary: A library for working with large numbers<br />
