@@ -72,18 +72,6 @@ diff -Naur gcc-12.2.0.orig/gcc/config/bfin/linux.h gcc-12.2.0/gcc/config/bfin/li
     %{static}} -init __init -fini __fini"
 
  #undef TARGET_SUPPORTS_SYNC_CALLS
-diff -Naur gcc-12.2.0.orig/gcc/config/cris/linux.h gcc-12.2.0/gcc/config/cris/linux.h
---- gcc-12.2.0.orig/gcc/config/cris/linux.h	2017-01-01 12:07:43.000000000 +0000
-+++ gcc-12.2.0/gcc/config/cris/linux.h	2017-05-13 00:23:29.032857450 +0000
-@@ -102,7 +102,7 @@
- #undef CRIS_DEFAULT_CPU_VERSION
- #define CRIS_DEFAULT_CPU_VERSION CRIS_CPU_NG
-
--#define GLIBC_DYNAMIC_LINKER "/lib/ld.so.1"
-+#define GLIBC_DYNAMIC_LINKER "/tools/lib/ld.so.1"
-
- #undef CRIS_LINK_SUBTARGET_SPEC
- #define CRIS_LINK_SUBTARGET_SPEC \
 diff -Naur gcc-12.2.0.orig/gcc/config/freebsd-spec.h gcc-12.2.0/gcc/config/freebsd-spec.h
 --- gcc-12.2.0.orig/gcc/config/freebsd-spec.h	2017-01-01 12:07:43.000000000 +0000
 +++ gcc-12.2.0/gcc/config/freebsd-spec.h	2017-05-13 00:23:29.032857450 +0000
@@ -322,61 +310,6 @@ diff -Naur gcc-12.2.0.orig/gcc/config/pa/pa-linux.h gcc-12.2.0/gcc/config/pa/pa-
 
  #undef LINK_SPEC
  #define LINK_SPEC "\
-diff -Naur gcc-12.2.0.orig/gcc/config/rs6000/linux64.h gcc-12.2.0/gcc/config/rs6000/linux64.h
---- gcc-12.2.0.orig/gcc/config/rs6000/linux64.h	2017-02-07 11:29:06.000000000 +0000
-+++ gcc-12.2.0/gcc/config/rs6000/linux64.h	2017-05-13 00:30:10.838301362 +0000
-@@ -412,25 +412,25 @@
- #undef	LINK_OS_DEFAULT_SPEC
- #define LINK_OS_DEFAULT_SPEC "%(link_os_linux)"
-
--#define GLIBC_DYNAMIC_LINKER32 "%(dynamic_linker_prefix)/lib/ld.so.1"
-+#define GLIBC_DYNAMIC_LINKER32 "%(dynamic_linker_prefix)/tools/lib/ld.so.1"
-
- #ifdef LINUX64_DEFAULT_ABI_ELFv2
- #define GLIBC_DYNAMIC_LINKER64 \
--"%{mabi=elfv1:%(dynamic_linker_prefix)/lib64/ld64.so.1;" \
--":%(dynamic_linker_prefix)/lib64/ld64.so.2}"
-+"%{mabi=elfv1:%(dynamic_linker_prefix)/tools/lib64/ld64.so.1;" \
-+":%(dynamic_linker_prefix)/tools/lib64/ld64.so.2}"
- #else
- #define GLIBC_DYNAMIC_LINKER64 \
--"%{mabi=elfv2:%(dynamic_linker_prefix)/lib64/ld64.so.2;" \
--":%(dynamic_linker_prefix)/lib64/ld64.so.1}"
-+"%{mabi=elfv2:%(dynamic_linker_prefix)/tools/lib64/ld64.so.2;" \
-+":%(dynamic_linker_prefix)/tools/lib64/ld64.so.1}"
- #endif
-
- #define MUSL_DYNAMIC_LINKER32 \
--  "/lib/ld-musl-powerpc" MUSL_DYNAMIC_LINKER_E "%{msoft-float:-sf}.so.1"
-+  "/tools/lib/ld-musl-powerpc" MUSL_DYNAMIC_LINKER_E "%{msoft-float:-sf}.so.1"
- #define MUSL_DYNAMIC_LINKER64 \
--  "/lib/ld-musl-powerpc64" MUSL_DYNAMIC_LINKER_E "%{msoft-float:-sf}.so.1"
-+  "/tools/lib/ld-musl-powerpc64" MUSL_DYNAMIC_LINKER_E "%{msoft-float:-sf}.so.1"
-
--#define UCLIBC_DYNAMIC_LINKER32 "/lib/ld-uClibc.so.0"
--#define UCLIBC_DYNAMIC_LINKER64 "/lib/ld64-uClibc.so.0"
-+#define UCLIBC_DYNAMIC_LINKER32 "/tools/lib/ld-uClibc.so.0"
-+#define UCLIBC_DYNAMIC_LINKER64 "/tools/lib/ld64-uClibc.so.0"
- #if DEFAULT_LIBC == LIBC_UCLIBC
- #define CHOOSE_DYNAMIC_LINKER(G, U, M) \
-   "%{mglibc:" G ";:%{mmusl:" M ";:" U "}}"
-diff -Naur gcc-12.2.0.orig/gcc/config/rs6000/sysv4.h gcc-12.2.0/gcc/config/rs6000/sysv4.h
---- gcc-12.2.0.orig/gcc/config/rs6000/sysv4.h	2017-02-07 11:29:06.000000000 +0000
-+++ gcc-12.2.0/gcc/config/rs6000/sysv4.h	2017-05-13 00:30:47.270810369 +0000
-@@ -780,10 +780,10 @@
-
- #define MUSL_DYNAMIC_LINKER_E ENDIAN_SELECT("","le","")
-
--#define GLIBC_DYNAMIC_LINKER "/lib/ld.so.1"
--#define UCLIBC_DYNAMIC_LINKER "/lib/ld-uClibc.so.0"
-+#define GLIBC_DYNAMIC_LINKER "/tools/lib/ld.so.1"
-+#define UCLIBC_DYNAMIC_LINKER "/tools/lib/ld-uClibc.so.0"
- #define MUSL_DYNAMIC_LINKER \
--  "/lib/ld-musl-powerpc" MUSL_DYNAMIC_LINKER_E "%{msoft-float:-sf}.so.1"
-+  "/tools/lib/ld-musl-powerpc" MUSL_DYNAMIC_LINKER_E "%{msoft-float:-sf}.so.1"
- #if DEFAULT_LIBC == LIBC_UCLIBC
- #define CHOOSE_DYNAMIC_LINKER(G, U, M) \
-   "%{mglibc:" G ";:%{mmusl:" M ";:" U "}}"
 diff -Naur gcc-12.2.0.orig/gcc/config/s390/linux.h gcc-12.2.0/gcc/config/s390/linux.h
 --- gcc-12.2.0.orig/gcc/config/s390/linux.h	2017-02-06 10:25:05.000000000 +0000
 +++ gcc-12.2.0/gcc/config/s390/linux.h	2017-05-13 00:23:35.158937930 +0000
