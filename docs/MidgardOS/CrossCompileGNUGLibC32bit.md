@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileISL.md) | [HOME](./README.md) | [>>](./CrossCompileGNUGCCP1.md) |
+| [<<](./CrossCompileGNUGCCP1.md) | [HOME](./README.md) | [>>](./CrossCompileGNUGLibC64bit.md) |
 
 # GNU C Library - 32-bit
 
@@ -49,4 +49,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileISL.md) | [HOME](./README.md) | [>>](./CrossCompileGNUGCCP1.md) |
+| [<<](./CrossCompileGNUGCCP1.md) | [HOME](./README.md) | [>>](./CrossCompileGNUGLibC64bit.md) |
