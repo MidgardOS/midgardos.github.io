@@ -36,7 +36,7 @@ touch /tools/include/limits.h
 
 ## Configuration
 
-To configure GNU Binutils for install into our cross-compilation root, run the following command:
+To configure the GNU Compiler Collection for install into our cross-compilation root, run the following command:
 
 ```bash
 mkdir -p gcc-build
@@ -77,13 +77,13 @@ Stay in the build directory until this package is installed.
 
 ## Compilation and Installation
 
-To compile GNU Binutils, run the following command:
+To compile GNU Compiler Collection, run the following command:
 
 ```bash
 make all-gcc all-target-libgcc
 ```
 
-Finally, to install GNU Binutils into the cross-tools tree, run the following command:
+Finally, to install GNU Compiler Collection into the cross-tools tree, run the following command:
 
 ```bash
 make install-gcc install-target-libgcc
