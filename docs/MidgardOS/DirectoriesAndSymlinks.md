@@ -26,7 +26,7 @@ for DIR in "usr/local/bin" "usr/local/include" "usr/local/lib" \
 done
 
 for DIR in "var/adm" "var/cache" "var/crash" "var/games" "var/lib" \
-           "var/log" "var/opt" "var/spool" "yp"; do
+           "var/log" "var/opt" "var/spool" "var/yp"; do
     install -v -d -m 755 -o root -g root "/MidgardOS/$DIR"
 done
 
