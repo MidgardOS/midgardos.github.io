@@ -1,8 +1,8 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileGNUBinutils.md) | [HOME](./README.md) | [>>](./CrossCompileGNUGLibC32bit.md) |
+| [<<](./CrossCompileGNUGLibC64bit.md) | [HOME](./README.md) | [>>](./BasicToolsOverview.md) |
 
-# GNU Compiler Collection - Pass 1 - Static, No Threads
+# GNU Compiler Collection - Pass 2 - Dynamically Linked
 
 Name: gcc<br />
 Summary: A suite of compiler tools<br />
@@ -28,12 +28,6 @@ echo -en '\n#undef STANDARD_STARTFILE_PREFIX_1\n#define STANDARD_STARTFILE_PREFI
 echo -en '\n#undef STANDARD_STARTFILE_PREFIX_2\n#define STANDARD_STARTFILE_PREFIX_2 ""\n' >> gcc/config/linux.h
 ```
 
-Finally create a dummy `limits.h` to ensure the build scripts don't errantly use the one from the host:
-
-```bash
-touch /tools/include/limits.h
-```
-
 ## Configuration
 
 To configure the GNU Compiler Collection for install into our cross-compilation root, run the following command:
@@ -51,25 +45,12 @@ LDFLAGS="-Wl,-rpath,/cross-tools/lib" \
     --with-sysroot=${BRFS} \
     --with-local-prefix=/tools \
     --with-native-system-header-dir=/tools/include \
-    --disable-shared \
+    --disable-static \
     --with-mpfr=/cross-tools \
     --with-gmp=/cross-tools \
     --with-mpc=/cross-tools \
-    --without-headers \
-    --with-newlib \
-    --disable-decimal-float \
-    --disable-libgomp \
-    --disable-libssp \
-    --disable-libatomic \
-    --disable-libitm \
-    --disable-libsanitizer \
-    --disable-libquadmath \
-    --disable-libvtv \
-    --disable-libcilkrts \
-    --disable-libstdc++-v3 \
-    --disable-threads \
     --with-isl=/cross-tools \
-    --enable-languages=c \
+    --enable-languages=c,c++ \
     --with-glibc-version=2.36
 ```
 
@@ -80,17 +61,17 @@ Stay in the build directory until this package is installed.
 To compile GNU Compiler Collection, run the following command:
 
 ```bash
-make all-gcc all-target-libgcc
+make AS_FOR_TARGET="${BRFS_TARGET}-as" LD_FOR_TARGET="${BRFS_TARGET}-ld"
 ```
 
 Finally, to install GNU Compiler Collection into the cross-tools tree, run the following command:
 
 ```bash
-make install-gcc install-target-libgcc
+make install
 ```
 
 More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileGNUBinutils.md) | [HOME](./README.md) | [>>](./CrossCompileGNUGLibC32bit.md) |
+| [<<](./CrossCompileGNUGLibC64bit.md) | [HOME](./README.md) | [>>](./BasicToolsOverview.md) |

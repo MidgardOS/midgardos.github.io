@@ -38,8 +38,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Cross-compiled GNU GCC - Pass 1](./CrossCompileGNUGCCP1.md)
 1. [GNU GLibC 32-bit](./CrossCompileGNUGLibC32bit.md)
 1. [GNU GLibC 64-bit](./CrossCompileGNUGLibC64bit.md)
-1. Libstdc++
-1. Cross-compiled GNU GCC - Dynamically Linked
+1. [Cross-compiled GNU GCC - Pass 2](./CrossCompileGNUGCCP2.md)
 
 ## Acknowledgements
 
