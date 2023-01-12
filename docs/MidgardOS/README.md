@@ -40,6 +40,12 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [GNU GLibC 64-bit](./CrossCompileGNUGLibC64bit.md)
 1. [Cross-compiled GNU GCC - Pass 2](./CrossCompileGNUGCCP2.md)
 
+## Temporary Tools
+
+1. [Temporary Tools Overview](./TempToolsOverview.md)
+1. [Temporary Tools: GMP](./TempToolsGMP.md)
+
+
 ## Acknowledgements
 
 The MidgardOS development team would like to acknowledge the teams and projects that have helped shape this documentation:
