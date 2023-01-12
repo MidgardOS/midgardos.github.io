@@ -18,13 +18,13 @@ configure: WARNING: cannot check WCONTINUED if cross compiling -- defaulting to 
 During this section of the build, some extra environment variables will be required to ensure that the builds use the newly built compilers and linkers. To set them, add the following to the builder user's `.bashrc` and then log out of the user and log back in again:
 
 ```bash
-echo export CC=\""${CC}\"" >> ~/.bashrc
-echo export CXX=\""${CXX}\"" >> ~/.bashrc
-echo export AR=\""${AR}\"" >> ~/.bashrc
-echo export AS=\""${AS}\"" >> ~/.bashrc
-echo export RANLIB=\""${RANLIB}\"" >> ~/.bashrc
-echo export LD=\""${LD}\"" >> ~/.bashrc
-echo export STRIP=\""${STRIP}\"" >> ~/.bashrc
+echo export CC=\""\${BRFS_TARGET}-gcc \${BUILD64}"\" >> ~/.bashrc
+echo export CXX=\""\${BRFS_TARGET}-g++ \${BUILD64}"\" >> ~/.bashrc
+echo export AR=\""\${BRFS_TARGET}-ar"\" >> ~/.bashrc
+echo export AS=\""\${BRFS_TARGET}-as"\" >> ~/.bashrc
+echo export RANLIB=\""\${BRFS_TARGET}-ranlib"\" >> ~/.bashrc
+echo export LD=\""\${BRFS_TARGET}-ld"\" >> ~/.bashrc
+echo export STRIP=\""\${BRFS_TARGET}-strip"\" >> ~/.bashrc
 ```
 
 | Navigation |||
