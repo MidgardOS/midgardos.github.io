@@ -44,7 +44,11 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 
 1. [Temporary Tools Overview](./TempToolsOverview.md)
 1. [Temporary Tools: GMP](./TempToolsGMP.md)
-
+1. [Temporary Tools: MPFR](./TempToolsMPFR.md)
+1. [Temporary Tools: MPC](./TempToolsMPC.md)
+1. [Temporary Tools: ISL](./TempToolsISL.md)
+1. [Temporary Tools: ZLib](./TempToolsZLib.md)
+1. [Temporary Tools: GNU Binutils](./TempToolsGNUBinutils.md)
 
 ## Acknowledgements
 
