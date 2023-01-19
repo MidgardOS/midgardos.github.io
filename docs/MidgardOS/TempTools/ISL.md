@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./TempToolsMPC.md) | [HOME](./README.md) | [>>](./TempToolsZLib.md) |
+| [<<](./MPC.md) | [HOME](../README.md) | [>>](./ZLib.md) |
 
 # Integer Set Library
 
@@ -37,4 +37,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./TempToolsMPC.md) | [HOME](./README.md) | [>>](./TempToolsZLib.md) |
+| [<<](./MPC.md) | [HOME](../README.md) | [>>](./ZLib.md) |

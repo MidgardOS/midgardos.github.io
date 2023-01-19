@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileLinuxHeaders.md) | [HOME](./README.md) | [>>](./CrossCompileNCursesTic.md) |
+| [<<](./LinuxHeaders.md) | [HOME](../README.md) | [>>](./NCursesTic.md) |
 
 # GNU M4
 
@@ -36,4 +36,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileLinuxHeaders.md) | [HOME](./README.md) | [>>](./CrossCompileNCursesTic.md) |
+| [<<](./LinuxHeaders.md) | [HOME](../README.md) | [>>](./NCursesTic.md) |

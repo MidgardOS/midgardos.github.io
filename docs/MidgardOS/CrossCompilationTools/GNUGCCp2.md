@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileGNUGLibC64bit.md) | [HOME](./README.md) | [>>](./TempToolsOverview.md) |
+| [<<](./GNUGLibC64bit.md) | [HOME](../README.md) | [>>](../TempTools/Overview.md) |
 
 # GNU Compiler Collection - Pass 2 - Dynamically Linked
 
@@ -74,4 +74,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileGNUGLibC64bit.md) | [HOME](./README.md) | [>>](./TempToolsOverview.md) |
+| [<<](./GNUGLibC64bit.md) | [HOME](../README.md) | [>>](../TempTools/Overview.md) |

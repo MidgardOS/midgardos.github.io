@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileMPC.md) | [HOME](./README.md) | [>>](./CrossCompileGNUBinutils.md) |
+| [<<](./MPC.md) | [HOME](../README.md) | [>>](./GNUBinutils.md) |
 
 # Integer Set Library
 
@@ -37,4 +37,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileMPC.md) | [HOME](./README.md) | [>>](./CrossCompileGNUBinutils.md) |
+| [<<](./MPC.md) | [HOME](../README.md) | [>>](./GNUBinutils.md) |

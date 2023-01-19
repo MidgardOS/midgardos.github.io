@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./TempToolsMPFR.md) | [HOME](./README.md) | [>>](./TempToolsISL.md) |
+| [<<](./MPFR.md) | [HOME](../README.md) | [>>](./ISL.md) |
 
 # GNU Multi-Precision Calculation Library
 
@@ -36,4 +36,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./TempToolsMPFR.md) | [HOME](./README.md) | [>>](./TempToolsISL.md) |
+| [<<](./MPFR.md) | [HOME](../README.md) | [>>](./ISL.md) |

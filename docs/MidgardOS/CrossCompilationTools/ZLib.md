@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./TempToolsISL.md) | [HOME](./README.md) | [>>](./TempToolsGNUBinutils.md) |
+| [<<](./Overview.md) | [HOME](../README.md) | [>>](./File.md) |
 
 # Z Lib
 
@@ -15,7 +15,7 @@ URL: [http://www.zlib.net/](http://zlib.net/)<br />
 To configure ZLib for installation into the cross-tools tree, run the following command:
 
 ```bash
-./configure --prefix=/tools --libdir=/tools/lib64 --shared --static
+./configure --shared --prefix=/cross-tools
 ```
 
 ## Compilation and Installation
@@ -36,4 +36,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./TempToolsISL.md) | [HOME](./README.md) | [>>](./TempToolsGNUBinutils.md) |
+| [<<](./Overview.md) | [HOME](../README.md) | [>>](./File.md) |

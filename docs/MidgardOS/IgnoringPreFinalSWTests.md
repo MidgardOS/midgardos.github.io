@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./SetEnvironmentVars.md) | [HOME](./README.md) | [>>](./CrossCompileOverview.md) |
+| [<<](./SetEnvironmentVars.md) | [HOME](./README.md) | [>>](./CrossCompilationTools/Overview.md) |
 
 # Ignoring Software Tests During the Cross-Complation Phase
 
@@ -12,4 +12,4 @@ builds are run.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./SetEnvironmentVars.md) | [HOME](./README.md) | [>>](./CrossCompileOverview.md) |
+| [<<](./SetEnvironmentVars.md) | [HOME](./README.md) | [>>](./CrossCompilationTools/Overview.md) |

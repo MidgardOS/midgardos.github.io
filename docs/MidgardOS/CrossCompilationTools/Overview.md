@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./IgnoringPreFinalSWTests.md) | [HOME](./README.md) | [>>](./CrossCompileZLib.md) |
+| [<<](../IgnoringPreFinalSWTests.md) | [HOME](../README.md) | [>>](./ZLib.md) |
 
 # Building the Cross-Compilation Toolchain
 
@@ -20,4 +20,4 @@ otherwise to avoid misconfiguration or errors during the build later when rebuil
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./IgnoringPreFinalSWTests.md) | [HOME](./README.md) | [>>](./CrossCompileZLib.md) |
+| [<<](../IgnoringPreFinalSWTests.md) | [HOME](../README.md) | [>>](./ZLib.md) |

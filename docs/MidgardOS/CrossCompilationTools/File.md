@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileZLib.md) | [HOME](./README.md) | [>>](./CrossCompileLinuxHeaders.md) |
+| [<<](./ZLib.md) | [HOME](../README.md) | [>>](./LinuxHeaders.md) |
 
 # GNU File
 
@@ -36,4 +36,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileZLib.md) | [HOME](./README.md) | [>>](./CrossCompileLinuxHeaders.md) |
+| [<<](./ZLib.md) | [HOME](../README.md) | [>>](./LinuxHeaders.md) |

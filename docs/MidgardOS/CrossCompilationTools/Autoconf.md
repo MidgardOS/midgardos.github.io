@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileNCursesTic.md) | [HOME](./README.md) | [>>](./CrossCompilePkgConf.md) |
+| [<<](./NCursesTic.md) | [HOME](../README.md) | [>>](./PkgConf.md) |
 
 # GNU Autoconf
 
@@ -36,4 +36,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileAutoconf.md) | [HOME](./README.md) | [>>](./CrossCompileGMP.md) |
+| [<<](./NCursesTic.md) | [HOME](../README.md) | [>>](./PkgConf.md) |

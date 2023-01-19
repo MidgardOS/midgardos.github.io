@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileGNUGCCP2.md) | [HOME](./README.md) | [>>](./TempToolsGMP.md) |
+| [<<](../CrossCompilationTools/GNUGCCp2.md) | [HOME](../README.md) | [>>](./GMP.md) |
 
 # Temporary Tools Overview And More Environment Variables
 
@@ -29,4 +29,4 @@ echo export STRIP=\""\${BRFS_TARGET}-strip"\" >> ~/.bashrc
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileGNUGCCP2.md) | [HOME](./README.md) | [>>](./TempToolsGMP.md) |
+| [<<](../CrossCompilationTools/GNUGCCp2.md) | [HOME](../README.md) | [>>](./GMP.md) |

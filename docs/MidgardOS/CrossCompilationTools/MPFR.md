@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileGMP.md) | [HOME](./README.md) | [>>](./CrossCompileMPC.md) |
+| [<<](./GMP.md) | [HOME](../README.md) | [>>](./MPC.md) |
 
 # GNU Multi-Precision Floating-Point with Rounding Library
 
@@ -38,4 +38,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileGMP.md) | [HOME](./README.md) | [>>](./CrossCompileMPC.md) |
+| [<<](./GMP.md) | [HOME](../README.md) | [>>](./MPC.md) |

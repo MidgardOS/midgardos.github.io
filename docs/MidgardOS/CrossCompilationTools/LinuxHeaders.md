@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileFile.md) | [HOME](./README.md) | [>>](./CrossCompileGNUM4.md) |
+| [<<](./File.md) | [HOME](../README.md) | [>>](./GNUM4.md) |
 
 # Linux System Headers
 
@@ -29,4 +29,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileFile.md) | [HOME](./README.md) | [>>](./CrossCompileGNUM4.md) |
+| [<<](./File.md) | [HOME](../README.md) | [>>](./GNUM4.md) |

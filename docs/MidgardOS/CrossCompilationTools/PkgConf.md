@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileAutoconf.md) | [HOME](./README.md) | [>>](./CrossCompileGMP.md) |
+| [<<](./Autoconf.md) | [HOME](../README.md) | [>>](./GMP.md) |
 
 # PkgConf
 
@@ -38,4 +38,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileAutoconf.md) | [HOME](./README.md) | [>>](./CrossCompileGMP.md) |
+| [<<](./Autoconf.md) | [HOME](../README.md) | [>>](./GMP.md) |

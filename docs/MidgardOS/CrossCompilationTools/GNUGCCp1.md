@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileGNUBinutils.md) | [HOME](./README.md) | [>>](./CrossCompileGNUGLibC32bit.md) |
+| [<<](./GNUBinutils.md) | [HOME](../README.md) | [>>](./GNUGLibC32bit.md) |
 
 # GNU Compiler Collection - Pass 1 - Static, No Threads
 
@@ -93,4 +93,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileGNUBinutils.md) | [HOME](./README.md) | [>>](./CrossCompileGNUGLibC32bit.md) |
+| [<<](./GNUBinutils.md) | [HOME](../README.md) | [>>](./GNUGLibC32bit.md) |

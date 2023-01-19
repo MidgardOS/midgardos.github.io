@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./TempToolsZLib.md) | [HOME](./README.md) | [>>](./TempToolsGNUGCC.md) |
+| [<<](./ISL.md) | [HOME](../README.md) | [>>](./GNUGCCp1.md) |
 
 # GNU Binutils
 
@@ -17,10 +17,13 @@ To configure GNU Binutils for install into our cross-compilation root, run the f
 ```bash
 mkdir -p build
 cd build
-../configure --prefix=/tools --libdir=/tools/lib64 --with-lib-path=/tools/lib64:/tools/lib \
-    --build=${BRFS_HOST} --host=${BRFS_TARGET} --target=${BRFS_TARGET} --disable-nls \
-    --enable-shared --enable-64-bit-bfd --enable-gold=yes --enable-plugins --with-system-zlib \
-    --enable-threads
+AR=ar AS=as \
+../configure \
+    --prefix=/cross-tools --host=${BRFS_HOST} \
+    --target=${BRFS_TARGET} --with-sysroot=${BRFS} \
+    --with-lib-path=/tools/lib:/tools/lib64 --disable-nls --disable-static \
+    --enable-64-bit-bfd --enable-gold=yes --enable-plugins --enable-threads \
+    --disable-werror
 ```
 
 Stay in the build directory until this package is installed.
@@ -43,4 +46,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./TempToolsZLib.md) | [HOME](./README.md) | [>>](./TempToolsGNUGCC.md) |
+| [<<](./ISL.md) | [HOME](../README.md) | [>>](./GNUGCCp1.md) |

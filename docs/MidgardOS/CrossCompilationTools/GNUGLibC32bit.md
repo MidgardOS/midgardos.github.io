@@ -1,11 +1,11 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileGNUGLibC32bit.md) | [HOME](./README.md) | [>>](./CrossCompileGNUGCCP2.md) |
+| [<<](./GNUGCCp1.md) | [HOME](../README.md) | [>>](./GNUGLibC64bit.md) |
 
-# GNU C Library - 64-bit
+# GNU C Library - 32-bit
 
-Name: glibc-64bit<br />
-Summary: The GNU C language runtime library - 64-bit<br />
+Name: glibc-32bit<br />
+Summary: The GNU C language runtime library - 32-bit<br />
 License: GPL v2.0+/LGPL 2.1+<br />
 Version: 2.36<br />
 URL: [https://ftp.gnu.org/gnu/glibc](https://ftp.gnu.org/gnu/glibc)<br />
@@ -17,19 +17,16 @@ To configure GNU C Library 32-bit build for install into our cross-compilation r
 ```bash
 mkdir -v glibc-build
 cd glibc-build
-echo "libc_cv_slibdir=/tools/lib64" >> config.cache
-BUILD_CC="gcc" CC="${BRFS_TARGET}-gcc ${BUILD64}" \
+BUILD_CC="gcc" CC="${BRFS_TARGET}-gcc ${BUILD32}" \
 AR="${BRFS_TARGET}-ar" RANLIB="${BRFS_TARGET}-ranlib" \
 ../configure \
     --prefix=/tools \
-    --host=${BRFS_TARGET} \
+    --host=${BRFS_TARGET32} \
     --build=${BRFS_HOST} \
-    --libdir=/tools/lib64 \
     --enable-kernel=4.1.2 \
     --with-binutils=/cross-tools/bin \
     --with-headers=/tools/include \
-    --enable-obsolete-rpc \
-    --cache-file=config.cache
+    --enable-obsolete-rpc
 ```
 
 Stay in the build directory until this package is installed.
@@ -52,4 +49,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CrossCompileGNUGLibC32bit.md) | [HOME](./README.md) | [>>](./CrossCompileGNUGCCP2.md) |
+| [<<](./GNUGCCp1.md) | [HOME](../README.md) | [>>](./GNUGLibC64bit.md) |
