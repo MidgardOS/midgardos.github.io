@@ -15,15 +15,11 @@ URL: [https://ftp.gnu.org/gnu/binutils](https://ftp.gnu.org/gnu/binutils)<br />
 To configure GNU Binutils for install into our cross-compilation root, run the following command:
 
 ```bash
-mkdir -p build
+mkdir -pv build
 cd build
-AR=ar AS=as \
 ../configure \
-    --prefix=/cross-tools --host=${BRFS_HOST} \
-    --target=${BRFS_TARGET} --with-sysroot=${BRFS} \
-    --with-lib-path=/tools/lib:/tools/lib64 --disable-nls --disable-static \
-    --enable-64-bit-bfd --enable-gold=yes --enable-plugins --enable-threads \
-    --disable-werror
+    --prefix=/cross-tools --target=${BRFS_TARGET} --with-sysroot=${BRFS} \
+    --disable-nls --enable-gprofng=no --disable-werror --enable-multilib
 ```
 
 Stay in the build directory until this package is installed.
