@@ -15,7 +15,7 @@ URL: [ftp://ftp.astrom.com/pub/file/](ftp://ftp.astron.com/pub/file/)<br />
 To configure File for install into our cross-compilation root, run the following command:
 
 ```bash
-./configure --prefix=/cross-tools
+./configure --prefix=/cross-tools --enable-shared --disable-silent-rules
 ```
 
 ## Compilation and Installation

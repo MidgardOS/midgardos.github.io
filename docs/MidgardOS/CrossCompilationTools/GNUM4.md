@@ -15,7 +15,7 @@ URL: [http://ftp.gnu.org/gnu/m4/](http://ftp.gnu.org/gnu/m4/)<br />
 To configure GNU M4 for install into our cross-compilation root, run the following command:
 
 ```bash
-./configure --prefix=/cross-tools
+./configure --prefix=/cross-tools --disable-silent-rules
 ```
 
 ## Compilation and Installation
