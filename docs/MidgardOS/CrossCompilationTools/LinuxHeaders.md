@@ -21,7 +21,7 @@ with it's syscall API. To install them, run the following commands:
 
 ```bash
 make mrproper
-make ARCH=x86_64 headers_check
+make ARCH=x86_64 headers
 make ARCH=x86_64 INSTALL_HDR_PATH=/tools headers_install
 ```
 
