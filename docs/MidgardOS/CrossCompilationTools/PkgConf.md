@@ -32,6 +32,7 @@ Finally, to install PkgConf into the cross-tools tree, run the following command
 
 ```bash
 make install
+mkdir -pv /tools/lib64/pkgconfig && mkdir -pv /tools/share/pkgconfig
 ```
 
 More details about this package is covered later in the core system build.
