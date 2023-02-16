@@ -15,7 +15,7 @@ URL: [https://libisl.sourceforge.io](https://libisl.sourceforge.io)<br />
 To configure ISL for install into our cross-compilation root, run the following command:
 
 ```bash
-LDFLAGS="-Wl,-rpath,/cross-tools/lib" \
+LDFLAGS="-Wl,-rpath,/cross-tools/lib -L${BRFS}/cross-tools/lib64" \
 ./configure --prefix=/cross-tools --disable-static --libdir=/cross-tools/lib64 \
             --with-gmp-prefix=/cross-tools
 ```

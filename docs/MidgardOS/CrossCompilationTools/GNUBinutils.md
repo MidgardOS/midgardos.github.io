@@ -18,8 +18,9 @@ To configure GNU Binutils for install into our cross-compilation root, run the f
 mkdir -pv build
 cd build
 ../configure \
-    --prefix=/cross-tools --target=${BRFS_TARGET} --with-sysroot=${BRFS} \
-    --disable-nls --enable-gprofng=no --disable-werror --enable-multilib
+    --prefix=/cross-tools --libdir=/cross-tools/lib64 --target=${BRFS_TARGET} \
+    --with-sysroot=${BRFS} --disable-nls --enable-gprofng=no --disable-werror \
+    --enable-multilib
 ```
 
 Stay in the build directory until this package is installed.

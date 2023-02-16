@@ -15,7 +15,7 @@ URL: [https://ftp.gnu.org/gnu/mpc](https://ftp.gnu.org/gnu/mpc)<br />
 To configure GNU MPC for install into our cross-compilation root, run the following command:
 
 ```bash
-LDFLAGS="-Wl,-rpath,/cross-tools/lib" \
+LDFLAGS="-Wl,-rpath,/cross-tools/lib64 -L${BRFS}/cross-tools/lib64" \
 ./configure --prefix=/cross-tools --libdir=/cross-tools/lib64 --disable-static \
             --with-gmp=/cross-tools --with-mpfr=/cross-tools
 ```

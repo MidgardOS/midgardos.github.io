@@ -18,7 +18,7 @@ To configure GNU MPFR for install into our cross-compilation root, run the follo
 sed -e 's/+01,234,567/+1,234,567 /' \
     -e 's/13.10Pd/13Pd/'            \
     -i tests/tsprintf.c
-LDFLAGS="-Wl,-rpath,/cross-tools/lib" \
+LDFLAGS="-Wl,-rpath,/cross-tools/lib64 -L${BRFS}/cross-tools/lib64" \
 ./configure --prefix=/cross-tools --libdir=/cross-tools/lib64 --disable-static \
             --with-gmp=/cross-tools --enable-thread-safe
 ```
