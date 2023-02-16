@@ -19,8 +19,8 @@ sed -e 's/+01,234,567/+1,234,567 /' \
     -e 's/13.10Pd/13Pd/'            \
     -i tests/tsprintf.c
 LDFLAGS="-Wl,-rpath,/cross-tools/lib" \
-./configure --prefix=/cross-tools --disable-static --with-gmp=/cross-tools \
-            --enable-thread-safe
+./configure --prefix=/cross-tools --libdir=/cross-tools/lib64 --disable-static \
+            --with-gmp=/cross-tools --enable-thread-safe
 ```
 
 ## Compilation and Installation

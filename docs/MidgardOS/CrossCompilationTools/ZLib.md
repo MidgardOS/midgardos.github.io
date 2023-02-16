@@ -15,7 +15,7 @@ URL: [http://www.zlib.net/](http://zlib.net/)<br />
 To configure ZLib for installation into the cross-tools tree, run the following command:
 
 ```bash
-./configure --shared --prefix=/cross-tools
+./configure --shared --prefix=/cross-tools --libdir=/cross-tools/lib64
 ```
 
 ## Compilation and Installation

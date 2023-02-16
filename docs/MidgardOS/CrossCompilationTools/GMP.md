@@ -19,7 +19,7 @@ The copying of certain components in the source tree is to remove undesired opti
 ```bash
 cp configfsf.guess config.guess
 cp configfsf.sub config.sub
-./configure --prefix=/cross-tools --disable-static --enable-cxx
+./configure --prefix=/cross-tools --libdir=/cross-tools/lib64 --disable-static --enable-cxx
 ```
 
 ## Compilation and Installation

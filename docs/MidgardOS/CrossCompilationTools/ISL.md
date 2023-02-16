@@ -16,7 +16,8 @@ To configure ISL for install into our cross-compilation root, run the following 
 
 ```bash
 LDFLAGS="-Wl,-rpath,/cross-tools/lib" \
-./configure --prefix=/cross-tools --disable-static --with-gmp-prefix=/cross-tools
+./configure --prefix=/cross-tools --disable-static --libdir=/cross-tools/lib64 \
+            --with-gmp-prefix=/cross-tools
 ```
 
 ## Compilation and Installation

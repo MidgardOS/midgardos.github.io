@@ -16,8 +16,8 @@ To configure GNU MPC for install into our cross-compilation root, run the follow
 
 ```bash
 LDFLAGS="-Wl,-rpath,/cross-tools/lib" \
-./configure --prefix=/cross-tools --disable-static --with-gmp=/cross-tools \
-            --with-mpfr=/cross-tools
+./configure --prefix=/cross-tools --libdir=/cross-tools/lib64 --disable-static \
+            --with-gmp=/cross-tools --with-mpfr=/cross-tools
 ```
 
 ## Compilation and Installation
