@@ -76,7 +76,7 @@ the stack.
 ```bash
 cd ..
 cat gcc/limitx.h gcc/glimits.h gcc/limity.h > \
-  `dirname $($BRFS_TGT-gcc -print-libgcc-file-name)`/install-tools/include/limits.h
+  `dirname $(${BRFS_TARGET}-gcc -print-libgcc-file-name)`/install-tools/include/limits.h
 ```
 
 More details about this package is covered later in the core system build.
