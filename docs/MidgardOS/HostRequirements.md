@@ -128,6 +128,8 @@ bash version-check.sh 2>errors.log &&
 [ -s errors.log ] && echo -e "\nThe following packages could not be found:\n$(cat errors.log)"
 ```
 
+If using Fedora Linux as the build host operating system, it is safe to ignore the error that YACC is not bison.
+
 Note that MidgardOS package builds require a system that is running x86-64 v2 or higher based hardware. To validate that your system is capable of this level of hardware support, run the following script on your host:
 
 ```awk
