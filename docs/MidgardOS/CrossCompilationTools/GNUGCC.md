@@ -7,13 +7,23 @@
 Name: gcc<br />
 Summary: A suite of compiler tools<br />
 License: GPL v3.0+<br />
-Version: 12.2.0<br />
+Version: 15.2.0<br />
 URL: [https://ftp.gnu.org/gnu/gcc](https://ftp.gnu.org/gnu/gcc)<br />
 
 ## Pre-Configuration
 
 Unlike earlier cross-compilation tools, GCC requires some extra steps to allow the binaries generated
-to utilize the earlier packages, such as binutils, etc.
+to utilize the earlier packages, such as binutils, etc. Much of the change requires MPC, MPFR, and GMP sources
+installed into the source tree to build correctly. To do so, run the following commands:
+
+```bash
+tar xvf ../mpfr-4.2.2.tar.xz
+mv -v mpfr-4.2.2 mpfr
+tar xvf ../gmp-6.3.0.tar.xz
+mv -v gmp-6.3.0 gmp
+tar xvf ../mpc-1.3.1.tar.gz
+mv -v mpc-1.3.1 mpc
+```
 
 ## Configuration
 
@@ -22,33 +32,27 @@ To configure the GNU Compiler Collection for install into our cross-compilation 
 ```bash
 mkdir -p gcc-build
 cd gcc-build
-LDFLAGS="-Wl,-rpath,/cross-tools/lib64 -L/cross-tools/lib64" \
-mlist=m64,m32,mx32 \
+mlist=m64,m32 AR=/cross-tools/bin/ar AS=/cross-tools/bin/as LD=/cross-tools/bin/ld \
+NM=/cross-tools/bin/nm RANLIB=/cross-tools/bin/ranlib OBJCOPY=/cross-tools/bin/objcopy \
+OBJDUMP=/cross-tools/bin/objdump STRIP=/cross-tools/bin/strip READELF=/cross-tools/bin/readelf \
 ../configure                  \
     --target=$BRFS_TARGET                          \
     --prefix=$BRFS/tools                           \
-    --with-glibc-version=2.37                      \
+    --with-glibc-version=2.41                      \
     --with-sysroot=$BRFS                           \
     --with-newlib                                  \
     --without-headers                              \
     --enable-default-pie                           \
     --enable-default-ssp                           \
-    --enable-initfini-array                        \
     --disable-nls                                  \
     --disable-shared                               \
     --enable-multilib --with-multilib-list=$mlist  \
-    --disable-decimal-float                        \
     --disable-threads                              \
     --disable-libatomic                            \
     --disable-libgomp                              \
     --disable-libquadmath                          \
     --disable-libssp                               \
     --disable-libvtv                               \
-    --disable-libstdcxx                            \
-    --with-mpfr=/cross-tools                       \
-    --with-gmp=/cross-tools                        \
-    --with-mpc=/cross-tools                        \
-    --with-isl=/cross-tools                        \
     --enable-languages=c,c++
 ```
 

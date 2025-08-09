@@ -53,8 +53,6 @@ install -v -d -m 755 -o root -g root /MidgardOS/sources
 ## link will be added in the next step
 install -v -d -m 755 -o root -g root /MidgardOS/tools
 ln -fsv /MidgardOS/tools /
-install -v -d -m 755 -o root -g root /MidgardOS/cross-tools
-ln -fsv /MidgardOS/cross-tools /
 ```
 
 | Navigation |||
