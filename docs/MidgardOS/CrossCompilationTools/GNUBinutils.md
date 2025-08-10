@@ -42,4 +42,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./LinuxHeaders.md) | [HOME](../README.md) | [>>](./GNUBinutils.md) |
+| [<<](./LinuxHeaders.md) | [HOME](../README.md) | [>>](./GNUGCC.md) |
