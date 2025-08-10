@@ -148,6 +148,8 @@ found ld-linux-x86-64.so.2 at /MidgardOS/usr/lib64/ld-linux-x86-64.so.2
 
 If any of the above validation steps fail to return similar output, the build root is unusable and needs rebuilt after validating that all steps have been followed exactly as explained in this guide. It is imperative that all of the validation steps work as expected before going any farther.
 
+If everything works as expected, delete the current build directory, but do NOT remove the unpacked sources, as they will be used in the next step.
+
 More details about this package is covered later in the core system build.
 
 | Navigation |||
