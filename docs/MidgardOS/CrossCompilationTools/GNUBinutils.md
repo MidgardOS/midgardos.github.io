@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Overview.md) | [HOME](../README.md) | [>>](./GNUGCC.md) |
+| [<<](./LinuxHeaders.md) | [HOME](../README.md) | [>>](./GNUGCC.md) |
 
 # GNU Binutils
 
@@ -42,4 +42,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ISL.md) | [HOME](../README.md) | [>>](./GNUGCC.md) |
+| [<<](./LinuxHeaders.md) | [HOME](../README.md) | [>>](./GNUBinutils.md) |
