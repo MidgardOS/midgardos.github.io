@@ -27,13 +27,17 @@ To configure GNU C Library 32-bit build for install into our cross-compilation r
 patch -Np1 -i ../glibc-2.42-fhs-1.patch
 mkdir -v build && cd build
 echo "rootsbindir=/usr/sbin" > configparms
-BUILD_CC="gcc" CC="${BRFS_TARGET}-gcc ${BUILD64}" \
-AR="${BRFS_TARGET}-ar" RANLIB="${BRFS_TARGET}-ranlib" \
 ../configure \
     --prefix=/usr                      \
     --host=${BRFS_TARGET}              \
     --build=${BRFS_HOST}               \
-    --libexecdir=/usr/libexec          \
+    --libdir=/usr/lib64                \
+    --libexecdir=/usr/lib64            \
+    --enable-bind-now                  \
+    --enable-multi-arch                \
+    --enable-cet                       \
+    --enable-stackguard-randomization  \
+    --enable-tunables                  \
     --with-bugurl=https://github.com/MidgardOS/MidgardOS/Issues \
     libc_cv_slibdir=/usr/lib64         \
     --enable-kernel=5.4
@@ -49,11 +53,21 @@ To compile GNU C Library 32-bit build, run the following command:
 make
 ```
 
-Finally, to install the GNU C Library 32-bit build into the cross-tools tree, run the following command:
+Next, to install the GNU C Library 32-bit build into the cross-tools tree, run the following command:
 
 ```bash
 make DESTDIR=${BRFS} install
 sed '/RTLDLIST=/s@/usr@@g' -i $BRFS/usr/bin/ldd
+```
+
+Finally, to use the recently installed C runtime startup files in a compile, we need to modify the compiler's default specifications to use the new start up files. To do this, run the following commands:
+
+```bash
+gcc -dumpspecs | \
+perl -p -e 's@/tools/lib/ld@/lib/ld@g;' \
+     -e 's@/tools/lib64/ld@/lib64/ld@g;' \
+     -e 's@\*startfile_prefix_spec:\n@$_/usr/lib64/ @g;' > \
+     $(dirname $(gcc --print-libgcc-file-name))/specs
 ```
 
 ## Validating the Installation so Far
@@ -77,9 +91,9 @@ grep -E -o "$LFS/lib.*/S?crt[1in].*succeeded" dummy.log
 
 This should output something like the following:
 ```
-/lib/Scrt1.o succeeded
-/lib/crti.o succeeded
-/lib/crtn.o succeeded
+/lib64/Scrt1.o succeeded
+/lib64/crti.o succeeded
+/lib64/crtn.o succeeded
 ```
 
 Now verify that the compiler is using the headers in the build root:
