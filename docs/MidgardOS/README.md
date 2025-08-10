@@ -23,32 +23,15 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 ### Building the Cross-compiler Toolchain
 
 1. [Overview](./CrossCompilationTools/Overview.md)
-1. [Z Lib](./CrossCompilationTools/ZLib.md)
-1. [File](./CrossCompilationTools/File.md)
 1. [Linux Headers](./CrossCompilationTools/LinuxHeaders.md)
-1. [GNU M4](./CrossCompilationTools/GNUM4.md)
-1. [Ncurses Tic](./CrossCompilationTools/NCursesTic.md)
-1. [GNU Autoconf](./CrossCompilationTools/Autoconf.md)
-1. [PkgConf](./CrossCompilationTools/PkgConf.md)
-1. [GMP](./CrossCompilationTools/GMP.md)
-1. [MPFR](./CrossCompilationTools/MPFR.md)
-1. [MPC](./CrossCompilationTools/MPC.md)
-1. [ISL](./CrossCompilationTools/ISL.md)
 1. [Cross-compiled GNU Binutils](./CrossCompilationTools/GNUBinutils.md)
-1. [Cross-compiled GNU GCC - Pass 1](./CrossCompilationTools/GNUGCCp1.md)
-1. [GNU GLibC 32-bit](./CrossCompilationTools/GNUGLibC32bit.md)
+1. [Cross-compiled GNU GCC](./CrossCompilationTools/GNUGCC.md)
+1. [Linux Headers System Install](./CrossCompilationTools/LinuxHeadersSystemInstall.md)
 1. [GNU GLibC 64-bit](./CrossCompilationTools/GNUGLibC64bit.md)
-1. [Cross-compiled GNU GCC - Pass 2](./CrossCompilationTools/GNUGCCp2.md)
+1. [GNU GLibC 32-bit](./CrossCompilationTools/GNUGLibC32bit.md)
+1. [Cross-compiled LibStdC++ From GNU GCC](./CrossCompilationTools/LibStdC++.md)
 
 ## Temporary Tools
-
-1. [Temporary Tools Overview](./TempTools/Overview.md)
-1. [Temporary Tools: GMP](./TempTools/GMP.md)
-1. [Temporary Tools: MPFR](./TempTools/MPFR.md)
-1. [Temporary Tools: MPC](./TempTools/MPC.md)
-1. [Temporary Tools: ISL](./TempTools/ISL.md)
-1. [Temporary Tools: ZLib](./TempTools/ZLib.md)
-1. [Temporary Tools: GNU Binutils](./TempTools/GNUBinutils.md)
 
 ## Acknowledgements
 
