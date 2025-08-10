@@ -22,7 +22,7 @@ with it's syscall API. To install them, run the following commands:
 ```bash
 make mrproper
 make ARCH=x86_64 headers
-su -c "make ARCH=x86_64 INSTALL_HDR_PATH=${BRFS}/usr headers_install"
+make ARCH=x86_64 INSTALL_HDR_PATH=${BRFS}/usr headers_install
 ```
 
 More details about this package is covered later in the core system build.
