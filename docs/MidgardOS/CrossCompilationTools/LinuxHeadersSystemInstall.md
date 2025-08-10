@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Overview.md) | [HOME](../README.md) | [>>](./GNUBinutils.md) |
+| [<<](./GNUGCC.md) | [HOME](../README.md) | [>>](./GNUGLibC64bit.md) |
 
 # Linux System Headers
 
@@ -29,4 +29,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Overview.md) | [HOME](../README.md) | [>>](./GNUBinutils.md) |
+| [<<](./GNUGCC.md) | [HOME](../README.md) | [>>](./GNUGLibC64bit.md) |

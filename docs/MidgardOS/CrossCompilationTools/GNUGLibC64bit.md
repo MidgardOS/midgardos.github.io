@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGLibC32bit.md) | [HOME](../README.md) | [>>](./GNUGCCp2.md) |
+| [<<](./LinuxHeadersSystemInstall.md) | [HOME](../README.md) | [>>](./GNUGLibC32bit.md) |
 
 # GNU C Library - 64-bit
 
@@ -98,7 +98,7 @@ This should output something like the following:
 
 Now verify that the compiler is using the headers in the build root:
 ```bash
-grep -B3 "^ $LFS/usr/include" dummy.log
+grep -B3 "^ $BRFS/usr/include" dummy.log
 ```
 
 This should output something like the following:
@@ -152,4 +152,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGLibC32bit.md) | [HOME](../README.md) | [>>](./GNUGCCp2.md) |
+| [<<](./LinuxHeadersSystemInstall.md) | [HOME](../README.md) | [>>](./GNUGLibC32bit.md) |
