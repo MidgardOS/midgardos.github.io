@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Overview.md) | [HOME](../README.md) | [>>](./GNUGCCp1.md) |
+| [<<](./Overview.md) | [HOME](../README.md) | [>>](./GNUGCC.md) |
 
 # GNU Binutils
 
@@ -15,8 +15,7 @@ URL: [https://ftp.gnu.org/gnu/binutils](https://ftp.gnu.org/gnu/binutils)<br />
 To configure GNU Binutils for install into our cross-compilation root, run the following command:
 
 ```bash
-mkdir -pv build
-cd build
+mkdir -pv build && cd build
 ../configure \
 --prefix=/tools --libdir=/tools/lib64 --target=${BRFS_TARGET} \
 --with-sysroot=${BRFS} --disable-nls --enable-gprofng=no --disable-werror \
@@ -43,4 +42,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ISL.md) | [HOME](../README.md) | [>>](./GNUGCCp1.md) |
+| [<<](./ISL.md) | [HOME](../README.md) | [>>](./GNUGCC.md) |

@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUBinutils.md) | [HOME](../README.md) | [>>](./GNUGLibC32bit.md) |
+| [<<](./GNUBinutils.md) | [HOME](../README.md) | [>>](./LinuxHeaders.md) |
 
 # GNU Compiler Collection - Pass 1 - Static, No Threads
 
@@ -25,34 +25,41 @@ tar xvf ../mpc-1.3.1.tar.gz
 mv -v mpc-1.3.1 mpc
 ```
 
+Next, we need to apply a small fix to allow older 32bit pre-compiled Linux binaries and Windows PE 32bit binaries to run correctly on MidgardOS. To do so, run the following command:
+
+```bash
+sed '/STACK_REALIGN_DEFAULT/s/0/(!TARGET_64BIT \&\& TARGET_SSE)/' \
+      -i gcc/config/i386/i386.h
+```
+
 ## Configuration
 
 To configure the GNU Compiler Collection for install into our cross-compilation root, run the following command:
 
 ```bash
-mkdir -p gcc-build
-cd gcc-build
-mlist=m64,m32 AR=/cross-tools/bin/ar AS=/cross-tools/bin/as LD=/cross-tools/bin/ld \
-NM=/cross-tools/bin/nm RANLIB=/cross-tools/bin/ranlib OBJCOPY=/cross-tools/bin/objcopy \
-OBJDUMP=/cross-tools/bin/objdump STRIP=/cross-tools/bin/strip READELF=/cross-tools/bin/readelf \
+mkdir -v build && cd build
+mlist=m64,m32 \
 ../configure                  \
     --target=$BRFS_TARGET                          \
     --prefix=$BRFS/tools                           \
-    --with-glibc-version=2.41                      \
+    --with-glibc-version=2.42                      \
     --with-sysroot=$BRFS                           \
     --with-newlib                                  \
     --without-headers                              \
     --enable-default-pie                           \
     --enable-default-ssp                           \
+    --enable-initfini-array                        \
     --disable-nls                                  \
     --disable-shared                               \
     --enable-multilib --with-multilib-list=$mlist  \
+    --disable-decimal-float                        \
     --disable-threads                              \
     --disable-libatomic                            \
     --disable-libgomp                              \
     --disable-libquadmath                          \
     --disable-libssp                               \
     --disable-libvtv                               \
+    --disable-libstdcxx                            \
     --enable-languages=c,c++
 ```
 
@@ -81,10 +88,17 @@ the stack.
 cd ..
 cat gcc/limitx.h gcc/glimits.h gcc/limity.h > \
   `dirname $(${BRFS_TARGET}-gcc -print-libgcc-file-name)`/install-tools/include/limits.h
+cd /tools/bin
+for command in "addr2lin" "ar" "as" 'c++' 'c++filt' "cpp" "elfedit" 'g++' "gcc" "gcc-15.2.0" "gconv" \
+               "gconv-dump" "gconv-tool" "gprof" "ld" "ld.bfd" "lto-dump" "nm" "objcopy" "objdump" "ranlib" \
+               "readelf" "size" "strings" "strip"; do
+    ln -s x86_64-unknown-linux-gnu-$command $command
+done
+cd -
 ```
 
 More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUBinutils.md) | [HOME](../README.md) | [>>](./GNUGLibC32bit.md) |
+| [<<](./GNUBinutils.md) | [HOME](../README.md) | [>>](./LinuxHeaders.md) |
