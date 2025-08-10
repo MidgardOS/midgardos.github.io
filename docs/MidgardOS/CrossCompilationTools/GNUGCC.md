@@ -92,7 +92,7 @@ cd /tools/bin
 for command in "addr2lin" "ar" "as" 'c++' 'c++filt' "cpp" "elfedit" 'g++' "gcc" "gcc-15.2.0" "gconv" \
                "gconv-dump" "gconv-tool" "gprof" "ld" "ld.bfd" "lto-dump" "nm" "objcopy" "objdump" "ranlib" \
                "readelf" "size" "strings" "strip"; do
-    ln -s x86_64-unknown-linux-gnu-$command $command
+    ln -sv x86_64-unknown-linux-gnu-$command $command
 done
 cd -
 ```
