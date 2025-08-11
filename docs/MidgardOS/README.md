@@ -26,7 +26,6 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Linux Headers](./CrossCompilationTools/LinuxHeaders.md)
 1. [Cross-compiled GNU Binutils](./CrossCompilationTools/GNUBinutils.md)
 1. [Cross-compiled GNU GCC](./CrossCompilationTools/GNUGCC.md)
-1. [Linux Headers System Install](./CrossCompilationTools/LinuxHeadersSystemInstall.md)
 1. [GNU GLibC 64-bit](./CrossCompilationTools/GNUGLibC64bit.md)
 1. [GNU GLibC 32-bit](./CrossCompilationTools/GNUGLibC32bit.md)
 1. [Cross-compiled LibStdC++ From GNU GCC](./CrossCompilationTools/LibStdC++.md)
