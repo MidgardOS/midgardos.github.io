@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUBinutils.md) | [HOME](../README.md) | [>>](./GNUGLibC64bit.md) |
+| [<<](./GNUGLibC32bit.md) | [HOME](../README.md) | [>>](../TempTools/Overview.md) |
 
 # GNU Compiler Collection - LibStdC++
 
@@ -52,4 +52,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUBinutils.md) | [HOME](../README.md) | [>>](./GNUGLibC64bit.md) |
+| [<<](./GNUGLibC32bit.md) | [HOME](../README.md) | [>>](../TempTools/Overview.md) |
