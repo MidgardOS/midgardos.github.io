@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUBinutils.md) | [HOME](../README.md) | [>>](./LinuxHeadersSystemInstall.md) |
+| [<<](./GNUBinutils.md) | [HOME](../README.md) | [>>](./GNUGLibC64bit.md) |
 
 # GNU Compiler Collection - Pass 1 - Static, No Threads
 
@@ -38,8 +38,7 @@ To configure the GNU Compiler Collection for install into our cross-compilation 
 
 ```bash
 mkdir -v build && cd build
-mlist=m64,m32 \
-../configure                  \
+../configure                                       \
     --target=$BRFS_TARGET                          \
     --prefix=$BRFS/tools                           \
     --with-glibc-version=2.42                      \
@@ -49,9 +48,14 @@ mlist=m64,m32 \
     --enable-default-pie                           \
     --enable-default-ssp                           \
     --enable-initfini-array                        \
+    --with-bugurl="https://github.com/MidgardOS/MidgardOS/issues" \
+	--with-pkgversion="MidgardOS"                  \
     --disable-nls                                  \
     --disable-shared                               \
-    --enable-multilib --with-multilib-list=$mlist  \
+    --enable-multilib                              \
+    --with-arch-32=x86-64-v2                       \
+    --with-arch=x86-64-v2                          \
+    --with-tune=generic                            \
     --disable-decimal-float                        \
     --disable-threads                              \
     --disable-libatomic                            \
@@ -101,4 +105,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUBinutils.md) | [HOME](../README.md) | [>>](./LinuxHeadersSystemInstall.md) |
+| [<<](./GNUBinutils.md) | [HOME](../README.md) | [>>](./GNUGLibC64bit.md) |
