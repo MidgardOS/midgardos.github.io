@@ -21,8 +21,9 @@ with it's syscall API. To install them, run the following commands:
 
 ```bash
 make mrproper
-make ARCH=x86_64 headers
-make ARCH=x86_64 INSTALL_HDR_PATH=/tools headers_install
+make ARCH=$(arch) headers
+make ARCH=$(arch) INSTALL_HDR_PATH=/tools headers_install
+make ARCH=$(arch) INSTALL_HDR_PATH=${BRFS}/usr headers_install
 ```
 
 More details about this package is covered later in the core system build.
