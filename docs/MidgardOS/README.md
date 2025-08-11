@@ -32,6 +32,8 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 
 ## Temporary Tools
 
+1. [Overview](./TempTools/Overview.md)
+
 ## Acknowledgements
 
 The MidgardOS development team would like to acknowledge the teams and projects that have helped shape this documentation:

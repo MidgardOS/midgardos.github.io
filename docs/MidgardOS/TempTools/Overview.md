@@ -2,30 +2,20 @@
 | --- | --- | ---: |
 | [<<](../CrossCompilationTools/GNUGCCp2.md) | [HOME](../README.md) | [>>](./GMP.md) |
 
-# Temporary Tools Overview And More Environment Variables
+# Cross Compiling Temporary Tools Overview
 
-Now that the core cross-compilation tools are installed, we can build the remaining temporary tools to allow us to isolate the new build root from the host operating system. The tools in this section are built against the tools in the `/cross-tools` tree, and will be installed in the `/tools` tree.
+Now that the core cross-compilatioon tools are installed, we can build the remaining temporary tools to allow us to isolate the new build root from the host operating system. The tools in this section are built against the tools in the `/tools` tree, and will be installed in the final destination MidgardOS tree.
 
-During this section of the build, you may see the following warning messages and can be safely ignored:
+These tools will be used later when we `chroot` into the build environment, but still rely on the host operating system during this phase.
+
+During this section of builds, you may see the following warning messages and can be safely ignored:
 
 ```
 configure: WARNING: result yes guessed because of cross compilation
 configure: WARNING: cannot check WCONTINUED if cross compiling -- defaulting to no
 ```
 
-## Extra Environment Variables
-
-During this section of the build, some extra environment variables will be required to ensure that the builds use the newly built compilers and linkers. To set them, add the following to the builder user's `.bashrc` and then log out of the user and log back in again:
-
-```bash
-echo export CC=\""\${BRFS_TARGET}-gcc \${BUILD64}"\" >> ~/.bashrc
-echo export CXX=\""\${BRFS_TARGET}-g++ \${BUILD64}"\" >> ~/.bashrc
-echo export AR=\""\${BRFS_TARGET}-ar"\" >> ~/.bashrc
-echo export AS=\""\${BRFS_TARGET}-as"\" >> ~/.bashrc
-echo export RANLIB=\""\${BRFS_TARGET}-ranlib"\" >> ~/.bashrc
-echo export LD=\""\${BRFS_TARGET}-ld"\" >> ~/.bashrc
-echo export STRIP=\""\${BRFS_TARGET}-strip"\" >> ~/.bashrc
-```
+Please remember that these builds must be done under the `builder` user, and should use the environment variables that were setup earlier in this guide. Doing any of the builds in this section as the `root` user will cause the host operating system to become unusable.
 
 | Navigation |||
 | --- | --- | ---: |
