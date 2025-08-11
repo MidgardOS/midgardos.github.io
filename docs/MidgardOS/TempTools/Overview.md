@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](../CrossCompilationTools/GNUGCCp2.md) | [HOME](../README.md) | [>>](./GMP.md) |
+| [<<](../CrossCompilationTools/LibStdC++.md) | [HOME](../README.md) | [>>](./M4.md) |
 
 # Cross Compiling Temporary Tools Overview
 
@@ -19,4 +19,4 @@ Please remember that these builds must be done under the `builder` user, and sho
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](../CrossCompilationTools/GNUGCCp2.md) | [HOME](../README.md) | [>>](./GMP.md) |
+| [<<](../CrossCompilationTools/LibStdC++.md) | [HOME](../README.md) | [>>](./M4.md) |
