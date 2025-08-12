@@ -10,17 +10,17 @@ As such, it is recommended to only start building a MidgardOS build root if you 
 
 To avoid causing potential issues with your host computer, it is strongly recommended to build the OS inside a virtual machine, attaching extra disks, etc. as you go.
 
-The current environment that is tested with building a MidgardOS core operating system build root is built using a VirtualBox VM running openSUSE Leap 15.4 with the following virtual hardware configuration:
+The current environment that is tested with building a MidgardOS core operating system build root is built using a VirtualBox VM running openSUSE Leap 15.6 or Fedora Linux 42 with the following virtual hardware configuration:
 
 - 4 cores
-- 4096 MiB RAM
+- 8192 MiB RAM
 - Video
-  - 32MiB Video RAM
+  - 64MiB Video RAM
   - 1 screen
   - Controller: VMSVGA
   - Disable 3D Acceleration
-- UEFI configuration
-- 2 VMDK thin-provisioned disks
+- UEFI configuration, without Secure Boot
+- 2 VMDK thin-provisioned disks on an NVMe controller
   - OS disk: 64GiB, two partitions
     - Partition 1: 512MiB FAT32 (EFI partition): Mounted at `/boot/efi`
     - Partition 2: Remaining disk, XFS (system root partition): Mounted at `/`
@@ -39,7 +39,7 @@ The current environment that is tested with building a MidgardOS core operating 
 
 After creating the virtual machine, install the OS in 'Server only' text mode. After boot, set up the following configuration elements:
 
-1. MidgardOS will use the unified CGroup v2 heirarchy, the host OS' system needs to support this inetead of the legacy hybrid hierarchy. To support this, add the `systemd.unified_cgroup_hierarchy=1` flag on the host's kernel command line
+1. MidgardOS will use the unified CGroup v2 heirarchy, the host OS' system needs to support this inetead of the legacy hybrid hierarchy. To support this, add the `systemd.unified_cgroup_hierarchy=1` flag on the host's kernel command line if required.
 
 | Navigation |||
 | --- | --- | ---: |

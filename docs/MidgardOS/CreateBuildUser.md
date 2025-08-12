@@ -21,7 +21,7 @@ To allow the `builder` user to have full rights to the `sources`, `tools`, and `
 ```bash
 setfacl -m u:builder:rwx /MidgardOS/sources
 setfacl -m u:builder:rwx /MidgardOS/tools
-setfacl -m u:builder:rwx /MidgardOS/{etc,usr,usr/{bin,include,include/scsi,lib,lib64,sbin,share},var/lib}
+setfacl -m u:builder:rwx /MidgardOS/{etc,usr,usr/{bin,include,lib,lib64,sbin,share},var/lib}
 ```
 
 ## Add Local `sources` Symbolic Link in the `builder` User's Home Directory

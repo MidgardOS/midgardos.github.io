@@ -11,7 +11,7 @@ MidgardOS is designed to run on UEFI based hardware. This requires an EFI boot v
 To create the EFI boot filesystem on the 512MiB EFI partition that was created in the last step, run the following command:
 
 ```sh
-/sbin/mkfs.vfat -F 32 -n EFI -v /dev/sdb1
+/sbin/mkfs.vfat -F 32 -n EFI -v /dev/nvme0n1p1
 ```
 
 ## Format the MidgardOS Root Filesystem
@@ -19,7 +19,7 @@ To create the EFI boot filesystem on the 512MiB EFI partition that was created i
 MidgardOS by default uses the SGI XFS filesystem for the root disk format. This filesystem has excellent performance for small and medium sized files, and has reasonably good journalling performance and capabilities to protect against data loss under powerloss occurances. To format the new root partition, run the following command in the virtual machine as a privileged user:
 
 ```bash
-/sbin/mkfs.xfs -m bigtime=1,crc=1,finobt=1,inobtcount=1 -i align=1 -L MidgardOS /dev/sdb2
+/sbin/mkfs.xfs -m bigtime=1,crc=1,finobt=1,inobtcount=1 -L MidgardOS /dev/nvme0n1p2
 ```
 
 ## Create the Mount Points for the New Filesystems
@@ -77,33 +77,33 @@ Description=MidgardOS root filesystem volume
 RequiresMountsFor=/
 
 [Mount]
-What=/dev/sdb2
+What=LABEL=MidgardOS
 Where=/MidgardOS
 Type=xfs
 Options=rw,grpid,attr2,inode64,usrquota,prjquota
 
 [Install]
-Alias=midgardos-rootfs
+WantedBy=local-fs.target
 EOF
 
-cat << EOF > /etc/systemd/system/MidgardOS.EFI.mount
+cat << EOF > /etc/systemd/system/MidgardOS-boot.mount
 [Unit]
 Description=MidgardOS EFI filesystem volume
 RequiresMountsFor=/MidgardOS
 
 [Mount]
-What=/dev/sdb1
+What=LABEL=EFI
 Where=/MidgardOS/boot
 Type=vfat
 Options=rw,fmask=0022,dmask=0022,codepage=437,iocharset=utf8,discard,showexec,sys_immutable,rodir,shortname=mixed
 
 [Install]
-Alias=midgardos-efi
+WantedBy=local-fs.target
 EOF
 
 systemctl daemon-reload
-systemctl enable midgardos-rootfs
-systemctl enable midgardos-efi
+systemctl enable MidgardOS.mount
+systemctl enable MidgardOS-boot.mount
 ```
 
 | Navigation |||

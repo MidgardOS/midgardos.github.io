@@ -2,7 +2,7 @@
 | --- | --- | ---: |
 | [<<](./Prerequisites.md) | [HOME](./README.md) | [>>](./Structure.md) |
 
-# Host System Requirements
+# Host System Software Requirements
 
 To build a MidgardOS build root, you must already have a relatively recent Linux operating system installed on your target build computer. Your host system should have the following software with the minimum versions indicated. Also note that many distributions will place software headers into separate packages, often in the form of “[package-name]-devel” or “[package-name]-dev”. Be sure to install those if your distribution provides them.
 
