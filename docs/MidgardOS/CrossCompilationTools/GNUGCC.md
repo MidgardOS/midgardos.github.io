@@ -91,7 +91,7 @@ the stack.
 ```bash
 cd ..
 cat gcc/limitx.h gcc/glimits.h gcc/limity.h > \
-  `dirname $(${BRFS_TARGET}-gcc -print-libgcc-file-name)`/install-tools/include/limits.h
+  `dirname $(${BRFS_TARGET}-gcc -print-libgcc-file-name)`/include/limits.h
 cd /tools/bin
 for command in "addr2lin" "ar" "as" 'c++' 'c++filt' "cpp" "elfedit" 'g++' "gcc" "gcc-15.2.0" "gcc-ar" "gcc-nm" "gcc-ranlib" \
                "gconv" "gconv-dump" "gconv-tool" "gprof" "ld" "ld.bfd" "lto-dump" "nm" "objcopy" "objdump" "ranlib" \
