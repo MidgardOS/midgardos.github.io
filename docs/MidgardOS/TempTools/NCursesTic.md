@@ -37,6 +37,12 @@ Finally, to install NCurses `tic` into the temporary tools tree, run the followi
 install -v -m755 progs/tic /tools/bin
 ```
 
+To work around an issue with finding the (potentially) newer version of GLibC, set the ELF RPATH for the `tic` binary:
+
+```bash
+patchelf --add-rpath ${BRFS}/lib64 ${BRFS}/bin/tic
+```
+
 More details about this package is covered later in the core system build.
 
 | Navigation |||

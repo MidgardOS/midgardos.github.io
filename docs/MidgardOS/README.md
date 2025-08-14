@@ -35,6 +35,8 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Overview](./TempTools/Overview.md)
 1. [M4](./TempTools/M4.md)
 1. [NCurses TIC](./TempTools/NCursesTic.md)
+1. [NCurses 64-bit](./TempTools/NCurses64bit.md)
+1. [NCurses 32-bit](./TempTools/NCurses32bit.md)
 
 ## Acknowledgements
 
