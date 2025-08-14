@@ -33,7 +33,8 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 ## Temporary Tools
 
 1. [Overview](./TempTools/Overview.md)
-1. [M4](./TempTools/M4.md) 
+1. [M4](./TempTools/M4.md)
+1. [NCurses TIC](./TempTools/NCursesTic.md)
 
 ## Acknowledgements
 
