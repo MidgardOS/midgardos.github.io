@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./$PREVIOUS_PAGE.md) | [HOME](../README.md) | [>>](./$NEXT_PAGE.md) |
+| [<<](./GNUBash.md) | [HOME](../README.md) | [>>](./GNUDiffutils.md) |
 
 # GNU Coreutils
 
@@ -48,4 +48,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./$PREVIOUS_PAGE.md) | [HOME](../README.md) | [>>](./$NEXT_PAGE.md) |
+| [<<](./GNUBash.md) | [HOME](../README.md) | [>>](./GNUDiffutils.md) |
