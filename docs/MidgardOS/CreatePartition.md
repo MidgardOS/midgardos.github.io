@@ -2,7 +2,9 @@
 | --- | --- | ---: |
 | [<<](./PrepOverview.md) | [HOME](./README.md) | [>>](./ManageDisk.md) |
 
-# Rationale
+# Section 1 - Preparation
+
+## Rationale
 
 While an isolated directory that is chrooted into can be used for systems that only do builds, to allow better testing and self-test validation of MidgardOS, we opt for using a normal partition to enable booting into the operating system later.
 

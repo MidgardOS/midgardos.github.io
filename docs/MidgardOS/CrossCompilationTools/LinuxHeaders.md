@@ -2,7 +2,9 @@
 | --- | --- | ---: |
 | [<<](./Overview.md) | [HOME](../README.md) | [>>](./GNUBinutils.md) |
 
-# Linux System Headers
+# Section 2 - Cross-Compilation Toolchain
+
+## Linux System Headers
 
 Name: linux-headers<br />
 Summary: System headers meant for interfacing with the Linux Kernel<br />

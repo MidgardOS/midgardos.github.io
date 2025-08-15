@@ -2,7 +2,9 @@
 | --- | --- | ---: |
 | [<<](./CreateBuildUser.md) | [HOME](./README.md) | [>>](./IgnoringPreFinalSWTests.md) |
 
-# Setting Environment Variables and Workspace
+# Section 1 - Preparation
+
+## Setting Environment Variables and Workspace
 
 To allow builds to use the tools that are built using the steps in this guide and to ensure that errant host behaviours are mitigated as best as possible, there are a few things that need configured for the `builder` user. First, after logging in as root to the build VM, change to the `builder` user account, like so:
 

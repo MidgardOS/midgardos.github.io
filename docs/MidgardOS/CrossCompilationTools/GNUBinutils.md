@@ -2,7 +2,9 @@
 | --- | --- | ---: |
 | [<<](./LinuxHeaders.md) | [HOME](../README.md) | [>>](./GNUGCC.md) |
 
-# GNU Binutils
+# Section 2 - Cross-Compilation Toolchain
+
+## GNU Binutils
 
 Name: binutils<br />
 Summary: A suite of tools for working with executable files<br />

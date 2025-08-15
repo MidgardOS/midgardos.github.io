@@ -2,7 +2,9 @@
 | --- | --- | ---: |
 | [<<](./GNUBinutils.md) | [HOME](../README.md) | [>>](./GNUGLibC64bit.md) |
 
-# GNU Compiler Collection - Pass 1 - Static, No Threads
+# Section 2 - Cross-Compilation Toolchain
+
+## GNU Compiler Collection - Pass 1 - Static, No Threads
 
 Name: gcc<br />
 Summary: A suite of compiler tools<br />

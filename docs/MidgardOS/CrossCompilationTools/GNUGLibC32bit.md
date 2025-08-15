@@ -2,7 +2,9 @@
 | --- | --- | ---: |
 | [<<](./GNUGLibC64bit.md) | [HOME](../README.md) | [>>](./LibStdC++.md) |
 
-# GNU C Library - 32-bit
+# Section 2 - Cross-Compilation Toolchain
+
+## GNU C Library - 32-bit
 
 Name: glibc-32bit<br />
 Summary: The GNU C language runtime library - 32-bit<br />

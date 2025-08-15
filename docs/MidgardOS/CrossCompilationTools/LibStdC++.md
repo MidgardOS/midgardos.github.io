@@ -2,7 +2,9 @@
 | --- | --- | ---: |
 | [<<](./GNUGLibC32bit.md) | [HOME](../README.md) | [>>](../TempTools/Overview.md) |
 
-# GNU Compiler Collection - LibStdC++
+# Section 2 - Cross-Compilation Toolchain
+
+## GNU Compiler Collection - LibStdC++
 
 Name: libstdc++<br />
 Summary: The C++ language runtime libraries<br />

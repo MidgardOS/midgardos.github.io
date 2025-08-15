@@ -2,6 +2,8 @@
 | --- | --- | ---: |
 | [<<](../IgnoringPreFinalSWTests.md) | [HOME](../README.md) | [>>](./LinuxHeaders.md) |
 
+# Section 2 - Cross-Compilation Toolchain
+
 # Building the Cross-Compilation Toolchain
 
 This section of the how-to walks through the process of building the cross-compilation toolchain that will be used to

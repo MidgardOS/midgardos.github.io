@@ -2,7 +2,9 @@
 | --- | --- | ---: |
 | [<<](./FormatAndMount.md) | [HOME](./README.md) | [>>](./SetEnvironmentVars.md) |
 
-# Creating the Build User
+# Section 1 - Preparation
+
+## Creating the Build User
 
 During the creation of the build environment, a non-privileged user other than root should be used for most tasks. When something calls for elevated privileges, the `sudo` command will be used to elevate rights to the superuser account. To simplify and standardize the build process for MidgardOS, run the following command to create the non-privileged `builder` user:
 
