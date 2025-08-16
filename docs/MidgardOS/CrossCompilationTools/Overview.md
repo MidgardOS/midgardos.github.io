@@ -4,7 +4,7 @@
 | --- | --- | ---: |
 | [<<](../IgnoringPreFinalSWTests.md) Ignoring Some Warnings | [HOME](../README.md) | Linux Kernel C Headers [>>](./LinuxHeaders.md) |
 
-# Building the Cross-Compilation Toolchain
+## Building the Cross-Compilation Toolchain
 
 This section of the how-to walks through the process of building the cross-compilation toolchain that will be used to
 build the core operating system tools.
