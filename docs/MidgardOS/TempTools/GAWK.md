@@ -18,8 +18,10 @@ To configure GNU Awk for install into the build root, run the following command:
 
 ```bash
 sed -i 's/extras//' Makefile.in
-./configure --prefix=/usr       \
-            --host=$BRFS_TARGET \
+./configure --prefix=/usr           \
+            --libdir=/usr/lib64     \
+            --libexecdir=/usr/lib64 \
+            --host=$BRFS_TARGET     \
             --build=$BRFS_HOST
 ```
 
