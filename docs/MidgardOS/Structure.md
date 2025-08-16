@@ -14,11 +14,15 @@ This section covers the prepartion of the disks, user creation, and configuratio
 
 This section covers building the cross-compiler toolchain to avoid having the new build root depend on any of the libraries or tools from the host system.
 
-## Section 3 - Building the Basic System Tools
+## Section 3 - Building Temporary Tools
 
-This section covers creating the native tools for allowing the core MidgardOS system to be built.
+This section covers building essential temporary tools to further isolate the new build root from the host's operating system.
 
-## Section 4 - Building the core MidgardOS System
+## Section 4 - Building the Basic System Tools
+
+This section covers building the native tools for allowing the core MidgardOS system to be built.
+
+## Section 5 - Building the core MidgardOS System
 
 This section covers building the actual core MidgardOS system inside it's isolated enviornment on the host computer including configuring the system to boot, installing the system's kernel and bootloader.
 
