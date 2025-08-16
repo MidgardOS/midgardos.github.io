@@ -56,6 +56,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [GNU Make](./TempTools/GNUMake.md)
 1. [GNU Patch](./TempTools/GNUPatch.md)
 1. [GNU Sed](./TempTools/GNUSed.md)
+1. [GNU Tar](./TempTools/GNUTar.md)
 
 | Navigation |||
 | --- | --- | ---: |
