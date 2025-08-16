@@ -50,6 +50,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [GNU Diffutils](./TempTools/GNUDiffutils.md)
 1. [File](./TempTools/File.md)
 1. [GNU Findutils](./TempTools/GNUFindutils.md)
+1. [GAWK](./TempTools/GAWK.md)
 
 | Navigation |||
 | --- | --- | ---: |
