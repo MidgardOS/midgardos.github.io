@@ -8,7 +8,7 @@
 
 Name: GNU Findutils<br />
 Summary: CLI tools for searching for files based on various criteria<br />
-License: $PKG_LICENSE<br />
+License: GPL v3 or later<br />
 Version: 4.10.0<br />
 URL: [https://ftp.gnu.org/gnu/findutils/findutils-4.10.0.tar.xz](https://ftp.gnu.org/gnu/findutils/findutils-4.10.0.tar.xz)<br />
 
