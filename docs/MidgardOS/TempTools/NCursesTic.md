@@ -1,8 +1,10 @@
+# Section 3 - Temporary Tools
+
 | Navigation |||
 | --- | --- | ---: |
 | [<<](./M4.md) | [HOME](../README.md) | [>>](./NCurses64bit.md) |
 
-# NCurses TIC
+## NCurses TIC
 
 Name: NCurses - Tic<br />
 Summary: A terminal console control library - Terminal Interface Compiler<br />

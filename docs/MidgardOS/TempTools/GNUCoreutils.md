@@ -1,8 +1,10 @@
+# Section 3 - Temporary Tools
+
 | Navigation |||
 | --- | --- | ---: |
 | [<<](./GNUBash.md) | [HOME](../README.md) | [>>](./GNUDiffutils.md) |
 
-# GNU Coreutils
+## GNU Coreutils
 
 Name: GNU Coreutils<br />
 Summary: Basic file, shell, and text utilities needed for working with any Linux system<br />

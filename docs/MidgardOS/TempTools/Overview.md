@@ -1,8 +1,10 @@
+# Section 3 - Temporary Tools
+
 | Navigation |||
 | --- | --- | ---: |
 | [<<](../CrossCompilationTools/LibStdC++.md) | [HOME](../README.md) | [>>](./M4.md) |
 
-# Cross Compiling Temporary Tools Overview
+## Cross Compiling Temporary Tools Overview
 
 Now that the core cross-compilatioon tools are installed, we can build the remaining temporary tools to allow us to isolate the new build root from the host operating system. The tools in this section are built against the tools in the `/tools` tree, and will be installed in the final destination MidgardOS tree.
 

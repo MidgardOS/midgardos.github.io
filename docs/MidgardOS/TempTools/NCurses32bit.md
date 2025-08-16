@@ -1,8 +1,10 @@
+# Section 3 - Temporary Tools
+
 | Navigation |||
 | --- | --- | ---: |
 | [<<](./NCurses64bit.md) | [HOME](../README.md) | [>>](./GNUBash.md) |
 
-# NCurses 32-bit
+## NCurses 32-bit
 
 Name: NCurses 32-bit<br />
 Summary: The Ncurses package contains libraries for terminal-independent handling of character screens - 32-bit build<br />
