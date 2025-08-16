@@ -41,7 +41,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 ## Temporary Tools
 
 1. [Overview](./TempTools/Overview.md)
-1. [M4](./TempTools/M4.md)
+1. [M4](./TempTools/GNUM4.md)
 1. [NCurses TIC](./TempTools/NCursesTic.md)
 1. [NCurses 64-bit](./TempTools/NCurses64bit.md)
 1. [NCurses 32-bit](./TempTools/NCurses32bit.md)
@@ -49,6 +49,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [GNU Coreutils](./TempTools/GNUCoreutils.md)
 1. [GNU Diffutils](./TempTools/GNUDiffutils.md)
 1. [File](./TempTools/File.md)
+1. [GNU Findutils](./TempTools/GNUFindutils.md)
 
 | Navigation |||
 | --- | --- | ---: |

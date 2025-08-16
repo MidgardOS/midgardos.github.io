@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUCoreutils.md) | [HOME](../README.md) | [>>](./File.md) |
+| [<<](./GNUCoreutils.md) GNU Coreutils | [HOME](../README.md) | File [>>](./File.md) |
 
 ## GNU Diffutils
 
@@ -41,4 +41,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUCoreutils.md) | [HOME](../README.md) | [>>](./File.md) |
+| [<<](./GNUCoreutils.md) GNU Coreutils | [HOME](../README.md) | File [>>](./File.md) |

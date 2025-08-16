@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./NCursesTic.md) | [HOME](../README.md) | [>>](./NCurses32bit.md) |
+| [<<](./NCursesTic.md) NCurses TIC | [HOME](../README.md) | NCurses 32-bit [>>](./NCurses32bit.md) |
 
 ## NCurses 64-bit
 
@@ -51,4 +51,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./NCursesTic.md) | [HOME](../README.md) | [>>](./NCurses32bit.md) |
+| [<<](./NCursesTic.md) NCurses TIC | [HOME](../README.md) | NCurses 32-bit [>>](./NCurses32bit.md) |

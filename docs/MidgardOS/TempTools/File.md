@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUDiffutils.md) | [HOME](../README.md) | [>>](./GNUFindutils.md) |
+| [<<](./GNUDiffutils.md) GNU Diffutils | [HOME](../README.md) | GNU Findutils [>>](./GNUFindutils.md) |
 
 ## File
 
@@ -56,4 +56,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUDiffutils.md) | [HOME](../README.md) | [>>](./GNUFindutils.md) |
+| [<<](./GNUDiffutils.md) GNU Diffutils | [HOME](../README.md) | GNU Findutils [>>](./GNUFindutils.md) |

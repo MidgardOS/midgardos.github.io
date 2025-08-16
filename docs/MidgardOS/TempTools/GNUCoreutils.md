@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUBash.md) | [HOME](../README.md) | [>>](./GNUDiffutils.md) |
+| [<<](./GNUBash.md) GNU Bash | [HOME](../README.md) | GNU Diffutils [>>](./GNUDiffutils.md) |
 
 ## GNU Coreutils
 
@@ -50,4 +50,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUBash.md) | [HOME](../README.md) | [>>](./GNUDiffutils.md) |
+| [<<](./GNUBash.md) GNU Bash | [HOME](../README.md) | GNU Diffutils [>>](./GNUDiffutils.md) |

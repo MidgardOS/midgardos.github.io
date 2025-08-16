@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./NCurses32bit.md) | [HOME](../README.md) | [>>](./GNUCoreutils.md) |
+| [<<](./NCurses32bit.md) NCurses 32-bit | [HOME](../README.md) | GNU Coreutils [>>](./GNUCoreutils.md) |
 
 ## GNU Bash
 
@@ -47,4 +47,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./NCurses32bit.md) | [HOME](../README.md) | [>>](./GNUCoreutils.md) |
+| [<<](./NCurses32bit.md) NCurses 32-bit | [HOME](../README.md) | GNU Coreutils [>>](./GNUCoreutils.md) |

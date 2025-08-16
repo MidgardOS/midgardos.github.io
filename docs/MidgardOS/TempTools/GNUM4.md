@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Overview.md) | [HOME](../README.md) | [>>](./NCursesTic.md) |
+| [<<](./Overview.md) Temporary Tools Overview | [HOME](../README.md) | NCurses TIC [>>](./NCursesTic.md) |
 
 ## GNU M4 Macro Processor
 
@@ -46,4 +46,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Overview.md) | [HOME](../README.md) | [>>](./NCursesTic.md) |
+| [<<](./Overview.md) Temporary Tools Overview | [HOME](../README.md) | NCurses TIC [>>](./NCursesTic.md) |
