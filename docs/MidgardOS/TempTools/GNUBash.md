@@ -17,9 +17,11 @@ URL: [https://ftp.gnu.org/gnu/bash/bash-5.3.tar.gz](https://ftp.gnu.org/gnu/bash
 To configure GNU Bash for install into our cross-compilation root, run the following command:
 
 ```bash
-./configure --prefix=/usr         \
-            --build=${BRFS_HOST}  \
-            --host=$BRFS_TARGET   \
+./configure --prefix=/usr           \
+            --libdir=/usr/lib64     \
+            --libexecdir=/usr/lib64 \
+            --build=${BRFS_HOST}    \
+            --host=$BRFS_TARGET     \
             --without-bash-malloc
 ```
 
