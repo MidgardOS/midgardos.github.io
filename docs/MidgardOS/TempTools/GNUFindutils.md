@@ -17,9 +17,11 @@ URL: [https://ftp.gnu.org/gnu/findutils/findutils-4.10.0.tar.xz](https://ftp.gnu
 To configure GNU Findutils for install into the build root, run the following command:
 
 ```bash
-./configure --prefix=/usr                   \
-            --localstatedir=/var/lib/locate \
-            --host=$BRFS_TARGET             \
+./configure --prefix=/usr                     \
+            --libdir=/usr/lib64               \
+            --libexecdir=/usr/lib64/findutils \
+            --localstatedir=/var/lib/locate   \
+            --host=$BRFS_TARGET               \
             --build=$BRFS_HOST
 ```
 
