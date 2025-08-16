@@ -18,6 +18,8 @@ To configure GNU Coreutils for install into the build root, run the following co
 
 ```bash
 ./configure --prefix=/usr                     \
+            --libdir=/usr/lib64               \
+            --libexecdir=/usr/lib64           \
             --host=$BRFS_TARGET               \
             --build=$BRFS_HOST                \
             --enable-no-install-program=kill,uptime,hostname
