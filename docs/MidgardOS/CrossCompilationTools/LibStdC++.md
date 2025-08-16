@@ -1,8 +1,8 @@
+# Section 2 - Cross-Compilation Toolchain
+
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGLibC32bit.md) | [HOME](../README.md) | [>>](../TempTools/Overview.md) |
-
-# Section 2 - Cross-Compilation Toolchain
+| [<<](./GNUGLibC32bit.md) GNU GLibC - 32-bit | [HOME](../README.md) | Temporary Tools Overview [>>](../TempTools/Overview.md) |
 
 ## GNU Compiler Collection - LibStdC++
 
@@ -54,4 +54,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGLibC32bit.md) | [HOME](../README.md) | [>>](../TempTools/Overview.md) |
+| [<<](./GNUGLibC32bit.md) GNU GLibC - 32-bit | [HOME](../README.md) | Temporary Tools Overview [>>](../TempTools/Overview.md) |

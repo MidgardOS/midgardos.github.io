@@ -1,8 +1,8 @@
+# Section 2 - Cross-Compilation Toolchain
+
 | Navigation |||
 | --- | --- | ---: |
-| [<<](../IgnoringPreFinalSWTests.md) | [HOME](../README.md) | [>>](./LinuxHeaders.md) |
-
-# Section 2 - Cross-Compilation Toolchain
+| [<<](../IgnoringPreFinalSWTests.md) Ignoring Some Warnings | [HOME](../README.md) | Linux Kernel C Headers [>>](./LinuxHeaders.md) |
 
 # Building the Cross-Compilation Toolchain
 
@@ -11,7 +11,7 @@ build the core operating system tools.
 
 ## Common Notes
 
-Many packages built will require some patching, however, this will not compare to when the core components are built as
+While some packages built will require some patching, this will not compare to when the core components are built as
 RPM packages.
 
 When building packages, the archive of the source code for the package should be unpacked and entered when issuing the
@@ -22,4 +22,4 @@ otherwise to avoid misconfiguration or errors during the build later when rebuil
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](../IgnoringPreFinalSWTests.md) | [HOME](../README.md) | [>>](./LinuxHeaders.md) |
+| [<<](../IgnoringPreFinalSWTests.md) Ignoring Some Warnings | [HOME](../README.md) | Linux Kernel C Headers [>>](./LinuxHeaders.md) |

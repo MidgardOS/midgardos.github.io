@@ -1,8 +1,8 @@
+# Section 2 - Cross-Compilation Toolchain
+
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./LinuxHeaders.md) | [HOME](../README.md) | [>>](./GNUGCC.md) |
-
-# Section 2 - Cross-Compilation Toolchain
+| [<<](./LinuxHeaders.md) Linux Kernel C Headers | [HOME](../README.md) | GNU Compiler Collection [>>](./GNUGCC.md) |
 
 ## GNU Binutils
 
@@ -44,4 +44,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./LinuxHeaders.md) | [HOME](../README.md) | [>>](./GNUGCC.md) |
+| [<<](./LinuxHeaders.md) Linux Kernel C Headers | [HOME](../README.md) | GNU Compiler Collection [>>](./GNUGCC.md) |

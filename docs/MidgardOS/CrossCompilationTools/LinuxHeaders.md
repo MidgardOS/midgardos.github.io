@@ -1,8 +1,8 @@
+# Section 2 - Cross-Compilation Toolchain
+
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Overview.md) | [HOME](../README.md) | [>>](./GNUBinutils.md) |
-
-# Section 2 - Cross-Compilation Toolchain
+| [<<](./Overview.md) Cross-Compilation Tools Overview | [HOME](../README.md) | GNU Binutils [>>](./GNUBinutils.md) |
 
 ## Linux System Headers
 
@@ -32,4 +32,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Overview.md) | [HOME](../README.md) | [>>](./GNUBinutils.md) |
+| [<<](./Overview.md) Cross-Compilation Tools Overview | [HOME](../README.md) | GNU Binutils [>>](./GNUBinutils.md) |

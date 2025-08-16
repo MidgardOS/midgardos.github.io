@@ -1,8 +1,8 @@
+# Section 2 - Cross-Compilation Toolchain
+
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGLibC64bit.md) | [HOME](../README.md) | [>>](./LibStdC++.md) |
-
-# Section 2 - Cross-Compilation Toolchain
+| [<<](./GNUGLibC64bit.md) GNU GLibC - 64-bit | [HOME](../README.md) | GNU C++ Runtime [>>](./LibStdC++.md) |
 
 ## GNU C Library - 32-bit
 
@@ -77,4 +77,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGLibC64bit.md) | [HOME](../README.md) | [>>](./LibStdC++.md) |
+| [<<](./GNUGLibC64bit.md) GNU GLibC - 64-bit | [HOME](../README.md) | GNU C++ Runtime [>>](./LibStdC++.md) |
