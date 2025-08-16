@@ -4,7 +4,7 @@
 | --- | --- | ---: |
 | [<<](./$PREVIOUS_PAGE.md) | [HOME](../README.md) | [>>](./$NEXT_PAGE.md) |
 
-## PKG_FULL_NAME
+## $PKG_FULL_NAME
 
 Name: $PKG_FULL_NAME<br />
 Summary: $PKG_SUMMARY<br />
@@ -14,7 +14,7 @@ URL: [$PKG_URL]($PKG_URL)<br />
 
 ## Configuration
 
-To configure $PKG_FULL_NAME for install into our cross-compilation root, run the following command:
+To configure $PKG_FULL_NAME for install into the build root, run the following command:
 
 ```bash
 ```
@@ -26,7 +26,7 @@ To compile $PKG_FULL_NAME, run the following command:
 ```bash
 ```
 
-Finally, to install $PKG_FULL_NAME into the cross-tools tree, run the following command:
+Finally, to install $PKG_FULL_NAME into the build tree, run the following command:
 
 ```bash
 ```
