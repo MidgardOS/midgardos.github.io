@@ -1,8 +1,10 @@
+# Section X - $SECTION_TITLE
+
 | Navigation |||
 | --- | --- | ---: |
 | [<<](./$PREVIOUS_PAGE.md) | [HOME](../README.md) | [>>](./$NEXT_PAGE.md) |
 
-# PKG_FULL_NAME
+## PKG_FULL_NAME
 
 Name: $PKG_FULL_NAME<br />
 Summary: $PKG_SUMMARY<br />
