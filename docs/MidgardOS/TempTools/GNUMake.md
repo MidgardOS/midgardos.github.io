@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGzip.md) | [HOME](../README.md) | [>>](./GNUPatch.md) |
+| [<<](./GNUGzip.md) GNU Gzip | [HOME](../README.md) | GNU Patch [>>](./GNUPatch.md) |
 
 ## GNU Make
 
@@ -40,4 +40,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGzip.md) | [HOME](../README.md) | [>>](./GNUPatch.md) |
+| [<<](./GNUGzip.md) GNU Gzip | [HOME](../README.md) | GNU Patch [>>](./GNUPatch.md) |
