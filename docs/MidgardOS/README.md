@@ -1,5 +1,9 @@
 # MidgardOS - Core OS Build Documentation
 
+| Navigation |||
+| --- | --- | ---: |
+| | [HOME](./README.md) | Prerequisites [>>](./Prerequisites.md) |
+
 Right now, MidgardOS is manually built. Eventually, automation will be put in place to create container images that will be used to drive builds of RPMs for the OS. For now, this documentation, heavily inspired by the Cross-LFS and LFS project, will have to suffice.
 
 ## Acknowledgements
@@ -48,4 +52,4 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 
 | Navigation |||
 | --- | --- | ---: |
-| | [HOME](./README.md) | [>>](./Prerequisites.md) |
+| | [HOME](./README.md) | Prerequisites [>>](./Prerequisites.md) |

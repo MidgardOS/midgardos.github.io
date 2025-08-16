@@ -1,8 +1,8 @@
+# Section 1 - Preparation
+
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ManageDisk.md) | [HOME](./README.md) | [>>](./CreateBuildUser.md) |
-
-# Section 1 - Directories and Symbolic Links
+| [<<](./ManageDisk.md) Disk Filesystems | [HOME](./README.md) | Creating the Build User [>>](./CreateBuildUser.md) |
 
 ## Creating Directories and Symbolic Links
 
@@ -59,4 +59,4 @@ ln -fsv /MidgardOS/tools /
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ManageDisk.md) | [HOME](./README.md) | [>>](./CreateBuildUser.md) |
+| [<<](./ManageDisk.md) Disk Filesystems | [HOME](./README.md) | Creating the Build User [>>](./CreateBuildUser.md) |

@@ -1,8 +1,8 @@
+# Section 1 - Preparation
+
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Structure.md) | [HOME](./README.md) | [>>](./CreatePartition.md) |
-
-# Section 1 - Preparation
+| [<<](./Structure.md) Guide Structure | [HOME](./README.md) | Partition Creation [>>](./CreatePartition.md) |
 
 ## Overview
 
@@ -10,4 +10,4 @@ This section of the site covers the preperation of the host computer. This inclu
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Structure.md) | [HOME](./README.md) | [>>](./CreatePartition.md) |
+| [<<](./Structure.md) Guide Structure | [HOME](./README.md) | Partition Creation [>>](./CreatePartition.md) |

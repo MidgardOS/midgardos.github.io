@@ -1,8 +1,8 @@
+# Section 1 - Preparation
+
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CreatePartition.md) | [HOME](./README.md) | [>>](./DirectoriesAndSymlinks.md) |
-
-# Section 1 - Preparation
+| [<<](./CreatePartition.md) Partition Creation | [HOME](./README.md) | Directories and Symlinks [>>](./DirectoriesAndSymlinks.md) |
 
 MidgardOS is a traditional Linux distribution, however it follows some modern aspects that collapse many directories in the `/` level of the filesystem tree into `/usr`. This step will add the mount point directories on the host system, Additionally, we'll format the new partitions we created in the last step with the requisite filesystems and add them to the host system's `/etc/fstab` file for mount at boot of the virtual machine.
 
@@ -110,4 +110,4 @@ systemctl enable MidgardOS-boot.mount
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CreatePartition.md) | [HOME](./README.md) | [>>](./DirectoriesAndSymlinks.md) |
+| [<<](./CreatePartition.md) Partition Creation | [HOME](./README.md) | Directories and Symlinks [>>](./DirectoriesAndSymlinks.md) |

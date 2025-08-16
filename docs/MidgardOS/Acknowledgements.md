@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./README.md) | | |
+| [<<](./README.md) Table of Contents | | |
 
 # Acknowledgements
 
@@ -41,4 +41,4 @@ The MidgardOS development team would like to acknowledge the teams and projects 
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./README.md) | | |
+| [<<](./README.md) Table of Contents | | |

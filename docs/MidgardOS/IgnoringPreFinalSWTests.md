@@ -1,8 +1,8 @@
+# Section 1 - Preparation
+
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./SetEnvironmentVars.md) | [HOME](./README.md) | [>>](./CrossCompilationTools/Overview.md) |
-
-# Section 1 - Preparation
+| [<<](./SetEnvironmentVars.md) Set Environment Variables | [HOME](./README.md) | Cross-Compilation Tools Overview [>>](./CrossCompilationTools/Overview.md) |
 
 # Ignoring Software Tests During the Cross-Complation Phase
 
@@ -14,4 +14,4 @@ builds are run.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./SetEnvironmentVars.md) | [HOME](./README.md) | [>>](./CrossCompilationTools/Overview.md) |
+| [<<](./SetEnvironmentVars.md) Set Environment Variables | [HOME](./README.md) | Cross-Compilation Tools Overview [>>](./CrossCompilationTools/Overview.md) |

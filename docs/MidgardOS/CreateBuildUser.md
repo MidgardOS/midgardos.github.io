@@ -1,8 +1,8 @@
+# Section 1 - Preparation
+
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./FormatAndMount.md) | [HOME](./README.md) | [>>](./SetEnvironmentVars.md) |
-
-# Section 1 - Preparation
+| [<<](./DirectoriesAndSymlinks.md) Directories and Symlinks | [HOME](./README.md) | Set Environment Variables [>>](./SetEnvironmentVars.md) |
 
 ## Creating the Build User
 
@@ -36,4 +36,4 @@ ln -sv /MidgardOS/sources ~builder/sources
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./FormatAndMount.md) | [HOME](./README.md) | [>>](./SetEnvironmentVars.md) |
+| [<<](./DirectoriesAndSymlinks.md) Directories and Symlinks | [HOME](./README.md) | Set Environment Variables [>>](./SetEnvironmentVars.md) |

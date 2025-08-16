@@ -34,8 +34,6 @@ The Observability principle means that after installation, the default install w
 MidgardOS will have the following features at first release:
 
 - RPM-based
-- CinC built-in
-  - OS configuration tools will leverage CinC via overrides that the chef code will read to set OS settings
 - Adhere to the merged `/` -> `/usr` configurration in most Linux distributions available now
 - Be designed for modern server hardware
   - This means that we will target UEFI bootloading only
@@ -52,4 +50,4 @@ MidgardOS will have the following features at first release:
 
 ## Development
 
-[Building the Base OS](./MidgardOS/)
+- [Building the Base OS](./MidgardOS/)

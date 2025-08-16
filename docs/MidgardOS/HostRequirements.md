@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Prerequisites.md) | [HOME](./README.md) | [>>](./Structure.md) |
+| [<<](./Prerequisites.md) Prerequisites | [HOME](./README.md) | Guide Structure [>>](./Structure.md) |
 
 # Host System Software Requirements
 
@@ -154,4 +154,4 @@ CPU supports x86-64-v2
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Prerequisites.md) | [HOME](./README.md) | [>>](./Structure.md) |
+| [<<](./Prerequisites.md) Prerequisites | [HOME](./README.md) | Guide Structure [>>](./Structure.md) |

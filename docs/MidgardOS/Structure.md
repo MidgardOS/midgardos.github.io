@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./HostRequirements.md) | [HOME](./README.md) | [>>](./PrepOverview.md) |
+| [<<](./HostRequirements.md) Host Requirements | [HOME](./README.md) | Preparation Overview [>>](./PrepOverview.md) |
 
 # Structure
 
@@ -26,4 +26,4 @@ If any issues come up, please post an issue in our GitHub repository for this do
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./HostRequirements.md) | [HOME](./README.md) | [>>](./PrepOverview.md) |
+| [<<](./HostRequirements.md) Host Requirements | [HOME](./README.md) | Preparation Overview [>>](./PrepOverview.md) |

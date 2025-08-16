@@ -1,8 +1,8 @@
+# Section 1 - Preparation
+
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CreateBuildUser.md) | [HOME](./README.md) | [>>](./IgnoringPreFinalSWTests.md) |
-
-# Section 1 - Preparation
+| [<<](./CreateBuildUser.md) Create the Build User | [HOME](./README.md) | Ignoring Some Warnings [>>](./IgnoringPreFinalSWTests.md) |
 
 ## Setting Environment Variables and Workspace
 
@@ -85,4 +85,4 @@ source ~/.bash_profile
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CreateBuildUser.md) | [HOME](./README.md) | [>>](./IgnoringPreFinalSWTests.md) |
+| [<<](./CreateBuildUser.md) Create the Build User | [HOME](./README.md) | Ignoring Some Warnings [>>](./IgnoringPreFinalSWTests.md) |

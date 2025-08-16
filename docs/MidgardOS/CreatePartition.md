@@ -1,8 +1,8 @@
+# Section 1 - Preparation
+
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./PrepOverview.md) | [HOME](./README.md) | [>>](./ManageDisk.md) |
-
-# Section 1 - Preparation
+| [<<](./PrepOverview.md) Preparation Overview | [HOME](./README.md) | Disk Filesystems [>>](./ManageDisk.md) |
 
 ## Rationale
 
@@ -16,4 +16,4 @@ From here, create a 512 MiB EFI partition, and a 63.5 GiB Linux filesystem parti
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./PrepOverview.md) | [HOME](./README.md) | [>>](./ManageDisk.md) |
+| [<<](./PrepOverview.md) Preparation Overview | [HOME](./README.md) | Disk Filesystems [>>](./ManageDisk.md) |

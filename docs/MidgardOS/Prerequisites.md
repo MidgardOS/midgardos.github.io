@@ -1,6 +1,6 @@
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./README.md) | [HOME](./README.md) | [>>](./HostRequirements.md) |
+| [<<](./README.md) Table of Contents | [HOME](./README.md) | Host Requirements [>>](./HostRequirements.md) |
 
 # Pre-requisites for Building the MidgardOS Core Build Root
 
@@ -43,4 +43,4 @@ After creating the virtual machine, install the OS in 'Server only' text mode. A
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./README.md) | [HOME](./README.md) | [>>](./HostRequirements.md) |
+| [<<](./README.md) Table of Contents | [HOME](./README.md) | Host Requirements [>>](./HostRequirements.md) |
