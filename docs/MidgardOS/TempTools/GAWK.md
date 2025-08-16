@@ -8,7 +8,7 @@
 
 Name: GNU Awk<br />
 Summary: GNU Awk is a CLI tool for processing text data<br />
-License: $PKG_LICENSE<br />
+License: GPL v3 or later<br />
 Version: 5.3.2<br />
 URL: [https://ftp.gnu.org/gnu/gawk/gawk-5.3.2.tar.xz](https://ftp.gnu.org/gnu/gawk/gawk-5.3.2.tar.xz)<br />
 
