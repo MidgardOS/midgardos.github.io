@@ -34,6 +34,7 @@ Finally, to install GNU Tar into the build tree, run the following command:
 
 ```bash
 make DESTDIR=$BRFS install
+mv -v $BRFS/usr/libexec/rmt $BRFS/usr/bin/
 ```
 
 More details about this package is covered later in the core system build.
