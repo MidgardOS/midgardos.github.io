@@ -19,7 +19,8 @@ Unfortunately, File requires being built twice to ensure the "magic" signatures 
 ```bash
 mkdir build
 pushd build
-    ../configure --disable-bzlib      \
+    ../configure --libdir=/usr/lib64  \
+                 --disable-bzlib      \
                  --disable-libseccomp \
                  --disable-xzlib      \
                  --disable-zlib
@@ -34,6 +35,7 @@ To configure File for install into the build root, run the following command:
 ```bash
 ./configure             \
     --prefix=/usr       \
+    --libdir=/usr/lib64 \
     --host=$BRFS_TARGET \
     --build=$BRFS_HOST
 ```
