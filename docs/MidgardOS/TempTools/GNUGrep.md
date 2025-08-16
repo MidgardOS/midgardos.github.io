@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GAWK.md) | [HOME](../README.md) | [>>](./GNUGzip.md) |
+| [<<](./GAWK.md) GNU Awk | [HOME](../README.md) | GNU Gzip [>>](./GNUGzip.md) |
 
 ## GNU Grep
 
@@ -40,4 +40,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GAWK.md) | [HOME](../README.md) | [>>](./GNUGzip.md) |
+| [<<](./GAWK.md) GNU Awk | [HOME](../README.md) | GNU Gzip [>>](./GNUGzip.md) |

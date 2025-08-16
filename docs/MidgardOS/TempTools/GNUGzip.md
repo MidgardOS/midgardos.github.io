@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGrep.md) | [HOME](../README.md) | [>>](./GNUMake.md) |
+| [<<](./GNUGrep.md) GNU Grep | [HOME](../README.md) | GNU Make [>>](./GNUMake.md) |
 
 ## GNU Gzip
 
@@ -38,4 +38,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGrep.md) | [HOME](../README.md) | [>>](./GNUMake.md) |
+| [<<](./GNUGrep.md) GNU Grep | [HOME](../README.md) | GNU Make [>>](./GNUMake.md) |
