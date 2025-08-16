@@ -8,7 +8,7 @@
 
 Name: GNU Patch<br />
 Summary: A tool for making and applying differential patch files<br />
-License: $PKG_LICENSE<br />
+License: GPL v3 or later<br />
 Version: 2.8<br />
 URL: [https://ftp.gnu.org/gnu/patch/patch-2.8.tar.xz](https://ftp.gnu.org/gnu/patch/patch-2.8.tar.xz)<br />
 
