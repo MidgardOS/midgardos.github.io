@@ -64,6 +64,8 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 ## Entering the Chroot
 
 1. [Rationale](./ChrootTempTools/ChrootBuildingTempTools.md)
+1. [Change Ownerships of Files and Directories](./ChrootTempTools/ChangeOwnerships.md)
+1. [Mounting Virtual Kernel Filesystems](./ChrootTempTools/MountingVirtualKernelFilesystems.md)
 
 | Navigation |||
 | --- | --- | ---: |

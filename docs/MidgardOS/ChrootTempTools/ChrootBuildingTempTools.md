@@ -1,8 +1,8 @@
-# Section 3 - Temporary Tools
+# Section 4 - Entering the Chroot and More Temporary Tools
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGCC.md) GNU Compiler Collection - pass 2 | [HOME](../README.md) | Changing Ownership [>>](./ChangingOwnership.md) |
+| [<<](./GNUGCC.md) GNU Compiler Collection - pass 2 | [HOME](../README.md) | Changing Ownership [>>](./ChangingOwnerships.md) |
 
 ## Rational
 
@@ -14,4 +14,4 @@ All commands from here on out will be run as the `root` user, so caution should 
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGCC.md) GNU Compiler Collection - pass 2 | [HOME](../README.md) | Changing Ownership [>>](./ChangingOwnership.md) |
+| [<<](./GNUGCC.md) GNU Compiler Collection - pass 2 | [HOME](../README.md) | Changing Ownership [>>](./ChangingOwnerships.md) |
