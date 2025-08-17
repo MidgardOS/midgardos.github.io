@@ -61,7 +61,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [GNU Binutils - pass 2](./TempTools/GNUBinutils.md)
 1. [GNU GCC - pass 2](./TempTools/GNUGCC.md)
 
-## Entering the Chroot
+## Entering the Chroot and More Temporary Tools
 
 1. [Rationale](./ChrootTempTools/ChrootBuildingTempTools.md)
 1. [Change Ownerships of Files and Directories](./ChrootTempTools/ChangeOwnerships.md)

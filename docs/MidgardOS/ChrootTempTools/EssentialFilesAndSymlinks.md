@@ -23,6 +23,7 @@ install -d -v -m755 -o 0 -g 0 /var/lib/{color,misc,locate}
 ## Essential Files and Symbolic Links
 
 For the build root to work optimally, there are a few files that should be created now. Historically, Linux used a file in `/etc` for keeping tabs on mounted volumes. This is now handled by the kernel directly and is exported to user-space using `/proc/mounts`. To meet the needs of some older utilities that still reference `/etc/mtab`, create a symlink for it now:
+
 ```bash
 ln -sv /proc/self/mounts /etc/mtab
 ```
@@ -41,6 +42,7 @@ EOF
 ```
 
 When MidgardOS is normally installed via RPMs, the system users and groups are delivered via RPM packages that populate `/etc/passwd` and `/etc/group`. As those are not available at this time, these will be populated via the following commands:
+
 ```bash
 cat > /etc/passwd << "EOF"
 root:x:0:0:root:/root:/bin/bash
@@ -92,8 +94,8 @@ systemd-timesync:x:78:
 systemd-coredump:x:79:
 uuidd:x:80:
 systemd-oom:x:81:
-wheel:x:97:
-users:x:999:
+wheel:x:20:
+users:x:100:
 nogroup:x:65534:
 EOF
 ```
