@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUBinutils.md) GNU Binutils | [HOME](../README.md) | Entering the Build Root[>>](../ChrootTempTools/ChrootBuildingTempTools.md) |
+| [<<](./GNUBinutils.md) GNU Binutils | [HOME](../README.md) | Entering the Build Root [>>](../ChrootTempTools/ChrootBuildingTempTools.md) |
 
 ## GNU Compiler Collection - Pass 2
 
