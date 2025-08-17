@@ -41,7 +41,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 ## Temporary Tools
 
 1. [Overview](./TempTools/Overview.md)
-1. [M4](./TempTools/GNUM4.md)
+1. [GNU M4](./TempTools/GNUM4.md)
 1. [NCurses TIC](./TempTools/NCursesTic.md)
 1. [NCurses 64-bit](./TempTools/NCurses64bit.md)
 1. [NCurses 32-bit](./TempTools/NCurses32bit.md)
@@ -60,6 +60,10 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Xz](./TempTools/Xz.md)
 1. [GNU Binutils - pass 2](./TempTools/GNUBinutils.md)
 1. [GNU GCC - pass 2](./TempTools/GNUGCC.md)
+
+## Entering the Chroot
+
+1. [Rationale](./ChrootTempTools/ChrootBuildingTempTools.md)
 
 | Navigation |||
 | --- | --- | ---: |

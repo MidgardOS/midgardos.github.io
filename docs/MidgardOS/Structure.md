@@ -18,11 +18,15 @@ This section covers building the cross-compiler toolchain to avoid having the ne
 
 This section covers building essential temporary tools to further isolate the new build root from the host's operating system.
 
-## Section 4 - Building the Basic System Tools
+## Section 4 - Entering the Chroot and Building More Temporary Tools
+
+This section covers entering the build root via an isolated chroot, and finishing build of some additional temporary tools.
+
+## Section 5 - Building the Basic System Tools
 
 This section covers building the native tools for allowing the core MidgardOS system to be built.
 
-## Section 5 - Building the core MidgardOS System
+## Section 6 - Building the core MidgardOS System
 
 This section covers building the actual core MidgardOS system inside it's isolated enviornment on the host computer including configuring the system to boot, installing the system's kernel and bootloader.
 
