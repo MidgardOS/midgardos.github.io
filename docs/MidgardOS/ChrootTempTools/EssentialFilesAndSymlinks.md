@@ -17,7 +17,7 @@ install -d -v -m755 -o 0 -g 0 /usr/local/share/{color,dict,dot,info,locale,man,m
 install -d -v -m755 -o 0 -g 0 /usr/local/share/man/man{1..8}
 install -d -v -m755 -o 0 -g 0 /usr/share/{color,dict,dot,info,locale,man,misc,terminfo,zoneinfo}
 install -d -v -m755 -o 0 -g 0 /usr/share/man/man{1..8}
-install -d -v -m755 -o 0 -g 0 /var/lib/{color,misc,locate}
+install -d -v -m755 -o 0 -g 0 /var/lib/{color,hwclock,misc,locate}
 ```
 
 ## Essential Files and Symbolic Links
@@ -103,11 +103,13 @@ EOF
 Note that the `root` account password will be set later.
 
 To remove the "I have no name!" prompt, reload the shell by running the following command:
+
 ```bash
 exec /usr/bin/bash --login
 ```
 
 Finally, to ensure that `login`, `agetty`, and `init` commands can properly use certain log files, they need initialized, and their proper permissions set:
+
 ```bash
 touch /var/log/{btmp,lastlog,faillog,wtmp}
 chgrp -v utmp /var/log/lastlog
