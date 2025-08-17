@@ -9,4 +9,3 @@ setfacl -m u:builder:rwx /MidgardOS/tools
 setfacl -m u:builder:rwx /MidgardOS/{etc,usr,usr/{bin,include,lib,lib64,sbin,share},var/lib}
 
 ln -sv /MidgardOS/sources ~builder/sources
-

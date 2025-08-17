@@ -44,4 +44,3 @@ install -v -d -m 755 -o root -g root /MidgardOS/sources
 ## link will be added in the next step
 install -v -d -m 755 -o root -g root /MidgardOS/tools
 ln -fsv /MidgardOS/tools /
-
