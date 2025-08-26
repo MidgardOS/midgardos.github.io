@@ -10,7 +10,7 @@ Name: gcc<br />
 Summary: A suite of compiler tools<br />
 License: GPL v3.0+<br />
 Version: 15.2.0<br />
-URL: [https://ftp.gnu.org/gnu/gcc](https://ftp.gnu.org/gnu/gcc)<br />
+URL: [https://ftp.gnu.org/gnu/gcc/gcc-15.2.0.tar.xz](https://ftp.gnu.org/gnu/gcc/gcc-15.2.0.tar.xz)<br />
 
 ## Pre-Configuration
 
@@ -19,6 +19,8 @@ to utilize the earlier packages, such as binutils, etc. Much of the change requi
 installed into the source tree to build correctly. To do so, run the following commands:
 
 ```bash
+tar xvf ../isl-0.27.tar.xz
+mv -v isl-0.27 isl
 tar xvf ../mpfr-4.2.2.tar.xz
 mv -v mpfr-4.2.2 mpfr
 tar xvf ../gmp-6.3.0.tar.xz
@@ -94,13 +96,6 @@ the stack.
 cd ..
 cat gcc/limitx.h gcc/glimits.h gcc/limity.h > \
   `dirname $(${BRFS_TARGET}-gcc -print-libgcc-file-name)`/include/limits.h
-cd /tools/bin
-for command in "addr2lin" "ar" "as" 'c++' 'c++filt' "cpp" "elfedit" 'g++' "gcc" "gcc-15.2.0" "gcc-ar" "gcc-nm" "gcc-ranlib" \
-               "gconv" "gconv-dump" "gconv-tool" "gprof" "ld" "ld.bfd" "lto-dump" "nm" "objcopy" "objdump" "ranlib" \
-               "readelf" "size" "strings" "strip"; do
-    ln -sv x86_64-unknown-linux-gnu-$command $command
-done
-cd -
 ```
 
 More details about this package is covered later in the core system build.
