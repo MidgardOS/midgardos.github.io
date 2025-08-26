@@ -83,6 +83,7 @@ What=LABEL=MidgardOS
 Where=/MidgardOS
 Type=xfs
 Options=rw,grpid,attr2,inode64,usrquota,prjquota
+TimeoutSec=30
 
 [Install]
 WantedBy=local-fs.target
@@ -98,6 +99,7 @@ What=LABEL=EFI
 Where=/MidgardOS/boot
 Type=vfat
 Options=rw,fmask=0022,dmask=0022,codepage=437,iocharset=utf8,discard,showexec,sys_immutable,rodir,shortname=mixed
+TimeoutSec=30
 
 [Install]
 WantedBy=local-fs.target
