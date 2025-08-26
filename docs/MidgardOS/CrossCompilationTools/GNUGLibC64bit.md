@@ -9,8 +9,8 @@
 Name: glibc-64bit<br />
 Summary: The GNU C language runtime library - 64-bit<br />
 License: GPL v2.0+/LGPL 2.1+<br />
-Version: 2.36<br />
-URL: [https://ftp.gnu.org/gnu/glibc](https://ftp.gnu.org/gnu/glibc)<br />
+Version: 2.42<br />
+URL: [https://ftp.gnu.org/gnu/glibc/glibc-2.42.tar.xz](https://ftp.gnu.org/gnu/glibc/glibc-2.42.tar.xz)<br />
 
 ## Configuration
 
@@ -69,14 +69,14 @@ These two commands should return the following output:
 
 Next, make sure that the correct start files are being used:
 ```bash
-grep -E -o "$LFS/lib.*/S?crt[1in].*succeeded" dummy.log
+grep -E -o "$BRFS/lib.*/S?crt[1in].*succeeded" dummy.log
 ```
 
 This should output something like the following:
 ```
-/lib/../lib64/Scrt1.o succeeded
-/lib/../lib64/crti.o succeeded
-/lib/../lib64/crtn.o succeeded
+/MidgardOS/lib/../lib64/Scrt1.o succeeded
+/MidgardOS/lib/../lib64/crti.o succeeded
+/MidgardOS/lib/../lib64/crtn.o succeeded
 ```
 
 Now verify that the compiler is using the headers in the build root:
