@@ -10,7 +10,7 @@ Name: libstdc++<br />
 Summary: The C++ language runtime libraries<br />
 License: GPL v3.0+<br />
 Version: 15.2.0<br />
-URL: [https://ftp.gnu.org/gnu/gcc](https://ftp.gnu.org/gnu/gcc)<br />
+URL: [https://ftp.gnu.org/gnu/gcc/gcc-15.2.0.tar.xz](https://ftp.gnu.org/gnu/gcc/gcc-15.2.0.tar.xz)<br />
 
 ## Configuration
 
@@ -48,6 +48,7 @@ Finally, remove the libtool archive files from the build root for libstdc++ and 
 
 ```bash
 rm -v $BRFS/usr/lib/lib{stdc++{,exp,fs},supc++}.la
+rm -v $BRFS/usr/lib64/lib{stdc++{,exp,fs},supc++}.la
 ```
 
 More details about this package is covered later in the core system build.
