@@ -10,7 +10,7 @@ Name: binutils<br />
 Summary: A suite of tools for working with executable files<br />
 License: LGPL v3.0+<br />
 Version: 2.45<br />
-URL: [https://ftp.gnu.org/gnu/binutils](https://ftp.gnu.org/gnu/binutils)<br />
+URL: [https://ftp.gnu.org/gnu/binutils/binutils-2.45.tar.xz](https://ftp.gnu.org/gnu/binutils/binutils-2.45.tar.xz)<br />
 
 ## Configuration
 
@@ -19,9 +19,9 @@ To configure GNU Binutils for install into our cross-compilation root, run the f
 ```bash
 mkdir -pv build && cd build
 ../configure \
---prefix=/tools --libdir=/tools/lib64 --target=${BRFS_TARGET} \
---with-sysroot=${BRFS} --disable-nls --enable-gprofng=no --disable-werror \
---enable-new-dtags --enable-default-hash-style=gnu
+    --prefix=/tools --libdir=/tools/lib64 --target=${BRFS_TARGET} \
+    --with-sysroot=${BRFS} --disable-nls --enable-gprofng=no --disable-werror \
+    --enable-new-dtags --enable-default-hash-style=gnu
 ```
 
 Stay in the build directory until this package is installed.
