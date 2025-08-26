@@ -10,7 +10,7 @@ Name: m4<br />
 Summary: A small macro processor runtime often used in Makefiles<br />
 License: GPL v3<br />
 Version: 1.4.20<br />
-URL: [https://ftp.gnu.org/gnu/m4](https://ftp.gnu.org/gnu/m4)<br />
+URL: [https://ftp.gnu.org/gnu/m4/m4-1.4.20.tar.xz](https://ftp.gnu.org/gnu/m4/m4-1.4.20.tar.xz)<br />
 
 ## Configuration
 
