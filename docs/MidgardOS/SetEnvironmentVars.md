@@ -49,13 +49,13 @@ export BRFS_HOST=$(echo ${MACHTYPE} | sed -e 's/-[^-]*/-cross/')
 Next, the triplet for the target architecture needs set, much like for the target host:
 
 ```bash
-export BRFS_TARGET="x86_64-unknown-linux-gnu"
+export BRFS_TARGET="x86_64-midgardos-linux-gnu"
 ```
 
 Now, to support building the 32-bit libraries, set the same for the 32-bit architecture:
 
 ```bash
-export BRFS_TARGET32="i686-pc-linux-gnu"
+export BRFS_TARGET32="i686-midgardos-linux-gnu"
 ```
 
 Finally, the environment variables for the target-specific linker flags needs set:
