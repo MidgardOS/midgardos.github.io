@@ -17,7 +17,10 @@ URL: [https://ftp.gnu.org/gnu/gzip/gzip-1.14.tar.xz](https://ftp.gnu.org/gnu/gzi
 To configure GNU Gzip for install into the build root, run the following command:
 
 ```bash
-./configure --prefix=/usr --host=$BRFS_TARGET
+./configure --prefix=/usr           \
+            --libdir=/usr/lib64     \
+            --libexecdir=/usr/lib64 \
+            --host=$BRFS_TARGET
 ```
 
 ## Compilation and Installation
