@@ -17,8 +17,10 @@ URL: [https://ftp.gnu.org/gnu/tar/tar-1.35.tar.xz](https://ftp.gnu.org/gnu/tar/t
 To configure GNU Tar for install into the build root, run the following command:
 
 ```bash
-./configure --prefix=/usr       \
-            --host=$BRFS_TARGET \
+./configure --prefix=/usr           \
+            --libdir=/usr/lib64     \
+            --libexecdir=/usr/lib64 \
+            --host=$BRFS_TARGET     \
             --build=$BRFS_HOST
 ```
 
@@ -30,11 +32,11 @@ To compile GNU Tar, run the following command:
 make
 ```
 
-Finally, to install GNU Tar into the build tree, run the following command:
+Finally, to install GNU Tar into the build tree, run the following commands:
 
 ```bash
 make DESTDIR=$BRFS install
-mv -v $BRFS/usr/libexec/rmt $BRFS/usr/bin/
+mv -v $BRFS/usr/lib64/rmt $BRFS/usr/bin/
 ```
 
 More details about this package is covered later in the core system build.
