@@ -17,8 +17,10 @@ URL: [https://ftp.gnu.org/gnu/patch/patch-2.8.tar.xz](https://ftp.gnu.org/gnu/pa
 To configure GNU Patch for install into the build root, run the following command:
 
 ```bash
-./configure --prefix=/usr      \
-            --host=$BRFS_TARET \
+./configure --prefix=/usr           \
+            --libdir=/usr/lib64     \
+            --libexecdir=/usr/lib64 \
+            --host=$BRFS_TARET      \
             --build=$BRFS_HOST
 ```
 
