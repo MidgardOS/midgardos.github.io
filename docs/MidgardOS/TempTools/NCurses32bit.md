@@ -22,6 +22,7 @@ CC="$BRFS_TARGET-gcc -m32" CXX="$BRFS_TARGET-g++ -m32" \
             --host=$BRFS_TARGET32                      \
             --build=$(./config.guess)                  \
             --libdir=/usr/lib                          \
+            --libexecdir=/usr/lib                      \
             --mandir=/usr/share/man                    \
             --with-shared                              \
             --without-normal                           \
