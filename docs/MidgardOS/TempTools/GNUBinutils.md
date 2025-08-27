@@ -10,7 +10,7 @@ Name: binutils<br />
 Summary: A suite of tools for working with executable files<br />
 License: LGPL v3.0+<br />
 Version: 2.45<br />
-URL: [https://ftp.gnu.org/gnu/binutils](https://ftp.gnu.org/gnu/binutils)<br />
+URL: [https://ftp.gnu.org/gnu/binutils/binutils-2.45.tar.xz](https://ftp.gnu.org/gnu/binutils/binutils-2.45.tar.xz)<br />
 
 ## Configuration
 
