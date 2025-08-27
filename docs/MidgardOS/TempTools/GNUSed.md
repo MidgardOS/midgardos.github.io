@@ -17,8 +17,10 @@ URL: [https://ftp.gnu.org/gnu/sed/sed-4.9.tar.xz](https://ftp.gnu.org/gnu/sed/se
 To configure GNU Sed for install into the build root, run the following command:
 
 ```bash
-./configure --prefix=/usr       \
-            --host=$BRFS_TARGET \
+./configure --prefix=/usr           \
+            --libdir=/usr/lib64     \
+            --libexecdir=/usr/lib64 \
+            --host=$BRFS_TARGET     \
             --build=$BRFS_HOST
 ```
 
