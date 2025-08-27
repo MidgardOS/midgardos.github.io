@@ -20,6 +20,8 @@ To configure NCurses 64-bit for install into our build root, run the following c
 ./configure --prefix=/usr                \
             --host=$BRFS_TARGET          \
             --build=$BRFS_HOST           \
+            --libdir=/usr/lib64          \
+            --libexecdir=/usr/lib64      \
             --mandir=/usr/share/man      \
             --with-manpage-format=normal \
             --with-shared                \
@@ -43,7 +45,7 @@ Finally, to install NCurses 64-bit into the build root tree, run the following c
 
 ```bash
 make DESTDIR=${BRFS} TIC_PATH=${BRFS}/tools/bin/tic install
-ln -sv libncursesw.so $BRFS/usr/lib/libncurses.so
+ln -sv libncursesw.so $BRFS/usr/lib64/libncurses.so
 sed -e 's/^#if.*XOPEN.*$/#if 1/' -i $BRFS/usr/include/curses.h
 ```
 
