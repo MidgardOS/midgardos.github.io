@@ -9,16 +9,18 @@
 Name: GNU Grep<br />
 Summary: CLI tool for searching through text files<br />
 License: GPL v3 or later<br />
-Version: 3.9<br />
-URL: [https://ftp.gnu.org/gnu/grep/grep-3.9.tar.xz](https://ftp.gnu.org/gnu/grep/grep-3.9.tar.xz)<br />
+Version: 3.12<br />
+URL: [https://ftp.gnu.org/gnu/grep/grep-3.12.tar.xz](https://ftp.gnu.org/gnu/grep/grep-3.12.tar.xz)<br />
 
 ## Configuration
 
 To configure GNU Grep for install into the build root, run the following command:
 
 ```bash
-./configure --prefix=/usr       \
-            --host=$BRFS_TARGET \
+./configure --prefix=/usr           \
+            --libdir=/usr/lib64     \
+            --libexecdir=/usr/lib64 \
+            --host=$BRFS_TARGET     \
             --build=$BRFS_HOST
 ```
 
