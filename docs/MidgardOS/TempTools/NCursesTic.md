@@ -9,8 +9,8 @@
 Name: NCurses - Tic<br />
 Summary: A terminal console control library - Terminal Interface Compiler<br />
 License: MIT<br />
-Version: 6.5-20250802<br />
-URL: [http://www.invisible-island.net/ncurses/](http://www.invisible-island.net/ncurses)<br />
+Version: 6.5-20250823<br />
+URL: [https://invisible-mirror.net/archives/ncurses/current/ncurses-6.5-20250823.tgz](https://invisible-mirror.net/archives/ncurses/current/ncurses-6.5-20250823.tgz)<br />
 
 ## Notes
 
@@ -37,12 +37,6 @@ Finally, to install NCurses `tic` into the temporary tools tree, run the followi
 
 ```bash
 install -v -m755 progs/tic /tools/bin
-```
-
-To work around an issue with finding the (potentially) newer version of GLibC, set the ELF RPATH for the `tic` binary:
-
-```bash
-patchelf --add-rpath ${BRFS}/lib64 ${BRFS}/bin/tic
 ```
 
 More details about this package is covered later in the core system build.
