@@ -9,8 +9,8 @@
 Name: NCurses 32-bit<br />
 Summary: The Ncurses package contains libraries for terminal-independent handling of character screens - 32-bit build<br />
 License: MIT<br />
-Version: 6.5-20250802<br />
-URL: [https://invisible-mirror.net/archives/ncurses/current/ncurses-6.5-20250802.tgz](https://invisible-mirror.net/archives/ncurses/current/ncurses-6.5-20250802.tgz)<br />
+Version: 6.5-20250823<br />
+URL: [https://invisible-mirror.net/archives/ncurses/current/ncurses-6.5-20250823.tgz](https://invisible-mirror.net/archives/ncurses/current/ncurses-6.5-20250823.tgz)<br />
 
 ## Configuration
 
