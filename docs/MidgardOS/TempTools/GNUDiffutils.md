@@ -9,8 +9,8 @@
 Name: GNU Difftils<br />
 Summary: Tools for displaying differences between files and directories<br />
 License: GPL v3 or later<br />
-Version: 3.9<br />
-URL: [https://ftp.gnu.org/gnu/diffutils/diffutils-3.9.tar.xz](https://ftp.gnu.org/gnu/diffutils/diffutils-3.9.tar.xz)<br />
+Version: 3.12<br />
+URL: [https://ftp.gnu.org/gnu/diffutils/diffutils-3.12.tar.xz](https://ftp.gnu.org/gnu/diffutils/diffutils-3.12.tar.xz)<br />
 
 ## Configuration
 
@@ -18,6 +18,8 @@ To configure GNU Diffutils for install into the build root, run the following co
 
 ```bash
 ./configure --prefix=/usr                 \
+            --libdir=/usr/lib64           \
+            --libexecdir=/usr/lib64       \
             --host=$BRFS_TARGET           \
             gl_cv_func_strcasecmp_works=y \
             --build=$BRFS_HOST
