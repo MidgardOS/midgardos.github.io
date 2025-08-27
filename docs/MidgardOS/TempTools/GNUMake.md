@@ -9,16 +9,18 @@
 Name: GNU Make<br />
 Summary: A powerful orchestration tool for building software and running tasks<br />
 License: GPL v3 or later<br />
-Version: 4.4<br />
-URL: [https://ftp.gnu.org/gnu/make/make-4.4.tar.gz](https://ftp.gnu.org/gnu/make/make-4.4.tar.gz)<br />
+Version: 4.4.1<br />
+URL: [https://ftp.gnu.org/gnu/make/make-4.4.1.tar.gz](https://ftp.gnu.org/gnu/make/make-4.4.1.tar.gz)<br />
 
 ## Configuration
 
 To configure GNU Make for install into the build root, run the following command:
 
 ```bash
-./configure --prefix=/usr       \
-            --host=$BRFS_TARGET \
+./configure --prefix=/usr           \
+            --libdir=/usr/lib64     \
+            --libexecdir=/usr/lib64 \
+            --host=$BRFS_TARGET     \
             --build=$BRFS_HOST
 ```
 
