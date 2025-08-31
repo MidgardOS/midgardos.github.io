@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./EssentialFilesAndSymlinks.md) Rationale | [HOME](../README.md) | Mounting Virtual Kernel Filesystems [>>](./GNUGettext.md) |
+| [<<](./EssentialFilesAndSymlinks.md) Rationale | [HOME](../README.md) | Mounting Virtual Kernel Filesystems [>>](./Hostname.md) |
 
 ## Validating the C and C++ Compilers
 
@@ -48,5 +48,5 @@ If the exit codes for both tests come back as `0`, the compilers are working as 
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./EssentialFilesAndSymlinks.md) Rationale | [HOME](../README.md) | Mounting Virtual Kernel Filesystems [>>](./GNUGettext.md) |
+| [<<](./EssentialFilesAndSymlinks.md) Rationale | [HOME](../README.md) | Mounting Virtual Kernel Filesystems [>>](./Hostname.md) |
 
