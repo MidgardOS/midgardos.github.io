@@ -12,8 +12,8 @@ License: GPL v2.0+/LGPL 2.1+<br />
 Version: 2.42<br />
 URL: [https://ftp.gnu.org/gnu/glibc/glibc-2.42.tar.xz](https://ftp.gnu.org/gnu/glibc/glibc-2.42.tar.xz)<br />
 
-Average Build Time: 12 SBU
-Used Install Space: 3.3 GiB
+Average Build Time: 6 SBU
+Used Install Space: 2.2 GiB
 
 ## Configuration
 
