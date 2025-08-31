@@ -21,16 +21,16 @@ done
 Now that the mountpoints have been created, run the following commands to mount the Virtual Kernel Filesystems into the build root tree paths:
 
 ```bash
-BRFS=/Midgard
-mount -vt devtmpfs devtmpfs $BRFS/dev
-mount -vt devpts devpts -o gid=5,mode=620 $BRFS/dev/pts
-mount -vt proc proc $BRFS/proc
-mount -vt sysfs sysfs $BRFS/sys
-mount -vt tmpfs tmpfs $BRFS/run
+BRFS=/MidgardOS
+mount -v -t devtmpfs devtmpfs $BRFS/dev/
+mount -v -t devpts devpts -o gid=5,mode=620 $BRFS/dev/pts/
+mount -v -t proc proc $BRFS/proc/
+mount -v -t sysfs sysfs $BRFS/sys/
+mount -v -t tmpfs tmpfs $BRFS/run/
 if [ -h $BRFS/dev/shm ]; then
   install -v -d -m 1777 ${BRFS}$(realpath /dev/shm)
 else
-  mount -vt tmpfs -o mode=1777,nosuid,nodev,inode64 tmpfs $BRFS/dev/shm
+  mount -v -t tmpfs -o mode=1777,nosuid,nodev,inode64 tmpfs $BRFS/dev/shm/
 fi
 ```
 

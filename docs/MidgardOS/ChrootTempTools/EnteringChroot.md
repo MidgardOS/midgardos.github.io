@@ -6,9 +6,11 @@
 
 ## Entering the Chroot
 
-When entering the chroot environment, it is essential that all required virtual filesystems are mounted before entry, and that the entry script is run as the `root` user:
+When entering the chroot environment, it is essential that all required virtual filesystems are mounted before entry, and that the entry script is run as the `root` user. To do so, create a shell script with the following contents:
 
 ```bash
+#!/bin/bash
+
 if [ "$(id -u)" -ne 0 ]; then
     echo "This script must be run as root. Exiting"
     exit 1

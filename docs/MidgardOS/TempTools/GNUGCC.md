@@ -46,11 +46,9 @@ To configure the GNU Compiler Collection for install into our cross-compilation 
 
 ```bash
 mkdir -v build && cd build
-mlist=m32,m64                                      \
 ../configure                                       \
-    --build=$BRFS_HOST                             \
+    --build=$BRFS_TARGET                           \
     --host=$BRFS_TARGET                            \
-    --target=$BRFS_TARGET                          \
     --prefix=/usr                                  \
     --libdir=/usr/lib64                            \
     --libexecdir=/usr/lib64                        \
@@ -58,12 +56,10 @@ mlist=m32,m64                                      \
     --enable-default-pie                           \
     --enable-default-ssp                           \
     --with-glibc-version=2.42                      \
-    --with-sysroot=$BRFS                           \
     --disable-nls                                  \
     --with-bugurl="https://github.com/MidgardOS/MidgardOS/issues" \
-	--with-pkgversion="MidgardOS"                  \
+    --with-pkgversion="MidgardOS"                  \
     --enable-multilib                              \
-    --with-multilib-list=$mlist                    \
     --with-arch-32=x86-64-v2                       \
     --with-arch=x86-64-v2                          \
     --with-tune=generic                            \

@@ -11,6 +11,7 @@ At this point, many of the files and directories under the build root are owned 
 To correct this, run the following commands to remove any POSIX ACLs on directories, and set the group and user ownerships to the `root` user and group:
 
 ```bash
+BRFS=/MidgardOS
 pushd $BRFS
 sudo setfacl -bPR ./
 sudo chown --from builder -hRv root:root ./
