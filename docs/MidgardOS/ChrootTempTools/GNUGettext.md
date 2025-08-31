@@ -8,7 +8,7 @@
 
 Name: GNU Gettext<br />
 Summary: Utilities for supporting i18n and l10n for applications<br />
-License: $PKG_LICENSE<br />
+License: GPL v3 or later<br />
 Version: 0.26<br />
 URL: [https://ftp.gnu.org/gnu/gettext/gettext-0.26.tar.xz](https://ftp.gnu.org/gnu/gettext/gettext-0.26.tar.xz)<br />
 
