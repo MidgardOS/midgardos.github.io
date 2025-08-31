@@ -41,11 +41,14 @@ CC="gcc -m32" \
 To compile Util-Linux 32-bit, run the following command:
 
 ```bash
+make
 ```
 
 Finally, to install Util-Linux 32-bit into the build tree, run the following command:
 
 ```bash
+make DESTDIR=$(pwd)/DESTDIR install
+cp -Rv DESTDIR/usr/lib/* /usr/lib/
 ```
 
 More details about this package is covered later in the core system build.
