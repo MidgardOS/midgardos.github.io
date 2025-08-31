@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Python313.md) Python 3.13 | [HOME](../README.md) | Util-Linux [>>](./UtilLinux.md) |
+| [<<](./Python313.md) Python 3.13 | [HOME](../README.md) | Util-Linux 64-bit [>>](./UtilLinux64bit.md) |
 
 ## GNU Texinfo
 
@@ -40,4 +40,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./$PREVIOUS_PAGE.md) | [HOME](../README.md) | [>>](./$NEXT_PAGE.md) |
+| [<<](./Python313.md) Python 3.13 | [HOME](../README.md) | Util-Linux 64-bit [>>](./UtilLinux64bit.md) |
