@@ -73,6 +73,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [GNU Gettext](./ChrootTempTools/GNUGettext.md)
 1. [GNU Bison](./ChrootTempTools/GNUBison.md)
 1. [Perl](./ChrootTempTools/Perl.md)
+1. [Python 3.13](./ChrootTempTools/Python313.md)
 
 | Navigation |||
 | --- | --- | ---: |
