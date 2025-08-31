@@ -22,6 +22,7 @@ mkdir -pv /var/lib/hwclock
             --libdir=/usr/lib64     \
             --libexecdir=/usr/lib64 \
             --runstatedir=/run      \
+            --sysconfdir=/etc       \
             --disable-chfn-chsh     \
             --disable-login         \
             --disable-nologin       \
