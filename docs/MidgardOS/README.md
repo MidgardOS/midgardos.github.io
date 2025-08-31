@@ -79,6 +79,10 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Util-Linux 32-bit](./ChrootTempTools/UtilLinux32bit.md)
 1. [Clean-up and Archival](./ChrootTempTools/CleanupAndArchival.md)
 
+## Building the Basic System Tools
+
+1. [Overview](./BasicSystem/Overview.md)
+
 | Navigation |||
 | --- | --- | ---: |
 | | [HOME](./README.md) | Prerequisites [>>](./Prerequisites.md) |
