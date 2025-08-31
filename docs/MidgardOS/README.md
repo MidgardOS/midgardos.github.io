@@ -69,6 +69,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Entering the Chroot](./ChrootTempTools/EnteringChroot.md)
 1. [Creating Essential Files and Symbolic Links](./ChrootTempTools/EssentialFilesAndSymlinks.md)
 1. [Validating the C and C++ Compilers](./ChrootTempTools/ValidatingCompilers.md)
+1. [Debian Hostname Utility](./ChrootTempTools/Hostname.md)
 
 | Navigation |||
 | --- | --- | ---: |
