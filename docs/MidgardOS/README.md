@@ -77,6 +77,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [GNU Texinfo](./ChrootTempTools/GNUTexinfo.md)
 1. [Util-Linux 64-bit](./ChrootTempTools/UtilLinux64bit.md)
 1. [Util-Linux 32-bit](./ChrootTempTools/UtilLinux32bit.md)
+1. [Clean-up and Archival](./ChrootTempTools/CleanupAndArchival.md)
 
 | Navigation |||
 | --- | --- | ---: |
