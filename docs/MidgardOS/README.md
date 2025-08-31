@@ -84,6 +84,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Overview](./BasicSystem/Overview.md)
 1. [Man Pages](./BasicSystem/ManPages.md)
 1. [IANA Etc Files](./BasicSystem/IanaEtcFiles.md)
+1. [GNU GLibC 64-bit](./BasicSystem/GLibC64bit.md)
 
 | Navigation |||
 | --- | --- | ---: |
