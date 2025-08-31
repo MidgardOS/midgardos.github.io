@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ManPages.md) Man Pages | [HOME](../README.md) | GLibC [>>](./GLibC.md) |
+| [<<](./ManPages.md) Man Pages | [HOME](../README.md) | GLibC 64-bit [>>](./GLibC64bit.md) |
 
 ## IANA Etc Files
 
@@ -11,6 +11,9 @@ Summary: The `services` and `protocols` text databases<br />
 License: MIT<br />
 Version: 20250826<br />
 URL: [https://github.com/Mic92/iana-etc/releases/download/20250826/iana-etc-20250826.tar.gz](https://github.com/Mic92/iana-etc/releases/download/20250826/iana-etc-20250826.tar.gz)<br />
+
+Average Build Time: less than 0.1 SBU
+Used Install Space: 4.8 MiB
 
 ## Installation
 
@@ -30,4 +33,4 @@ cp services protocols /etc/
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ManPages.md) Man Pages | [HOME](../README.md) | GLibC [>>](./GLibC.md) |
+| [<<](./ManPages.md) Man Pages | [HOME](../README.md) | GLibC 64-bit [>>](./GLibC64bit.md) |
