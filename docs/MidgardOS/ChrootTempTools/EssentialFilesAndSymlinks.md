@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./EnteringChroot.md) Entering the Chroot | [HOME](../README.md) | GNU Gettext [>>](./ValidatingCompilers.md) |
+| [<<](./EnteringChroot.md) Entering the Chroot | [HOME](../README.md) | Validating the C and C++ Compilers [>>](./ValidatingCompilers.md) |
 
 ## Extra Directories
 
@@ -119,4 +119,4 @@ chmod -v 600  /var/log/btmp
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./EnteringChroot.md) Entering the Chroot | [HOME](../README.md) | GNU Gettext [>>](./ValidatingCompilers.md) |
+| [<<](./EnteringChroot.md) Entering the Chroot | [HOME](../README.md) | Validating the C and C++ Compilers [>>](./ValidatingCompilers.md) |
