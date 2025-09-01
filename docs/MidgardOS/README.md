@@ -88,6 +88,8 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [GNU GLibC 32-bit](./BasicSystem/GLibC32bit.md)
 1. [ZLib 64-bit](./BasicSystem/ZLib64bit.md)
 1. [ZLib 32-bit](./BasicSystem/ZLib32bit.md)
+1. [BZip2 64-bit](./BasicSystem/BZip264bit.md)
+1. [BZip2 32-bit](./BasicSystem/BZip232bit.md)
 
 | Navigation |||
 | --- | --- | ---: |
