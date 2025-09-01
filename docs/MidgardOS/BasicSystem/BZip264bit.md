@@ -12,8 +12,8 @@ License: BSD-3-Clause<br />
 Version: 1.0.8<br />
 URL: [https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz](https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz)<br />
 
-Average Build Time: less than 0.1 SBU
-Used Install Space: 7.3 MiB
+Average Build Time: less than 0.1 SBU<br />
+Used Install Space: 7.3 MiB<br />
 
 ## Preparation
 
@@ -63,7 +63,7 @@ rm -fv /usr/lib64/libbz2.a
 
 **NOTE: Do not delete the unpacked sources**
 
-# Contents
+## Contents
 
 | Contents | |
 | --- | --- |

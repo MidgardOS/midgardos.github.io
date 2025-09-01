@@ -12,8 +12,8 @@ License: GPL v3 or later<br />
 Version: 2.42<br />
 URL: [https://ftp.gnu.org/gnu/glibc/glibc-2.42.tar.xz](https://ftp.gnu.org/gnu/glibc/glibc-2.42.tar.xz)<br />
 
-Average Build Time: 6 SBU
-Used Install Space: 1.2 GiB
+Average Build Time: 6 SBU<br />
+Used Install Space: 1.2 GiB<br />
 
 ## Configuration
 
@@ -67,7 +67,7 @@ If everything worked correctly, the output from the above commands should look l
       [Requesting program interpreter: /lib/ld-linux.so.2]
 ```
 
-# Contents
+## Contents
 
 See the previous 64-bit build of GLibC to read about which libraries have been installed.
 

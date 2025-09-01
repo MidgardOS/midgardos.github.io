@@ -27,7 +27,7 @@ The Maintainability principle requires that the operating system will have autom
 
 ### Observability
 
-The Observability principle means that after installation, the default install will be able to be easly monitored, both for performance and operational health
+The Observability principle means that after installation, the default install will be able to be easly monitored, both for performance and operational health.
 
 ## Features
 

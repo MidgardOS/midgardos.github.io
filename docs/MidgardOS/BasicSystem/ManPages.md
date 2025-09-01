@@ -12,8 +12,8 @@ License: BSD-2-Clause/GPLv1-through-v3/MIT/Custom<br />
 Version: 6.15<br />
 URL: [https://www.kernel.org/pub/linux/docs/man-pages/man-pages-6.15.tar.xz](https://www.kernel.org/pub/linux/docs/man-pages/man-pages-6.15.tar.xz)<br />
 
-Average Build Time: 0.1 SBU
-Used Install Space: 52 MiB
+Average Build Time: 0.1 SBU<br />
+Used Install Space: 52 MiB<br />
 
 ## Preparation
 

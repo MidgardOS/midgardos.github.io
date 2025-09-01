@@ -12,8 +12,8 @@ License: Multiple FOSS licenses (0BSD/GPLv2+/GPLv3+)<br />
 Version: 5.8.1<br />
 URL: [https://github.com/tukaani-project/xz/releases/download/v5.8.1/xz-5.8.1.tar.xz](https://github.com/tukaani-project/xz/releases/download/v5.8.1/xz-5.8.1.tar.xz)<br />
 
-Average Build Time: 0.1 SBU
-Used Install Space: 24 MiB
+Average Build Time: 0.1 SBU<br />
+Used Install Space: 24 MiB<br />
 
 ## Configuration
 

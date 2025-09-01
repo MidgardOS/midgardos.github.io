@@ -14,7 +14,7 @@ In this part of the guide, each section about a particular package will contain 
 
 ## Static Libraries
 
-Unless noted, most packages will be installe without static libraries during this phase to avoid extra work later.
+Unless noted, most packages will be installed without static libraries during this phase to avoid extra work later.
 
 | Navigation |||
 | --- | --- | ---: |

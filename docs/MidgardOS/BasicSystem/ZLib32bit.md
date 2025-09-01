@@ -12,8 +12,8 @@ License: Zlib<br />
 Version: 1.3.1<br />
 URL: [https://www.zlib.net/zlib-1.3.1.tar.xz](https://www.zlib.net/zlib-1.3.1.tar.xz)<br />
 
-Average Build Time: 0.1 SBU
-Used Install Space: 6.4 MiB
+Average Build Time: 0.1 SBU<br />
+Used Install Space: 6.4 MiB<br />
 
 ## Configuration
 

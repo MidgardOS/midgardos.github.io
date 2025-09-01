@@ -12,8 +12,8 @@ License: MIT<br />
 Version: 20250826<br />
 URL: [https://github.com/Mic92/iana-etc/releases/download/20250826/iana-etc-20250826.tar.gz](https://github.com/Mic92/iana-etc/releases/download/20250826/iana-etc-20250826.tar.gz)<br />
 
-Average Build Time: less than 0.1 SBU
-Used Install Space: 4.8 MiB
+Average Build Time: less than 0.1 SBU<br />
+Used Install Space: 4.8 MiB<br />
 
 ## Installation
 
@@ -23,7 +23,7 @@ To install IANA Etc Files into place, run the following command:
 cp services protocols /etc/
 ```
 
-# Contents
+## Contents
 
 | Installed Files | Description |
 | --- | --- |
