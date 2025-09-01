@@ -92,6 +92,8 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [BZip2 32-bit](./BasicSystem/BZip232bit.md)
 1. [XZ 64-bit](./BasicSystem/XZ64bit.md)
 1. [XZ 32-bit](./BasicSystem/XZ32bit.md)
+1. [Lz4 64-bit](./BasicSystem/Lz464bit.md)
+1. [Lz4 32-bit](./BasicSystem/Lz432bit.md)
 
 | Navigation |||
 | --- | --- | ---: |
