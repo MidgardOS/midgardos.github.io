@@ -34,17 +34,23 @@ The Observability principle means that after installation, the default install w
 MidgardOS will have the following features at first release:
 
 - RPM-based
+- Multi-library x86_64/i686 architecture
 - Adhere to the merged `/` -> `/usr` configurration in most Linux distributions available now
 - Be designed for modern server hardware
   - This means that we will target UEFI bootloading only
+- Adhere to the FHS and LSB standards
+- Ship with SSSd for LDAP/AD and other authentication features
+- Purpose-created package repositories for specific server roles
+- SystemConfigD, a new API driven extensible daemon for managing Linux hosts
 - Utilitize modern system components
-  - use all components that ship with systemd
+  - use most components that ship with systemd
     - Instead of GRUB -> systemd-boot
-    - Instead of NetConf/Wicked/NetworkManager -> systemd-networkd
+    - Instead of NetConf/Wicked/NetworkManager -> systemd-networkd and iwd for wireless
     - Instead of using the GLibC resolver stub -> systemd-resolved
     - Instead of chrony for system time sync -> systemd-timesyncd
     - Instead of using cron for system tasks, systemd timers will be used
     - Use `systemd-coredump` for managing application coredumps
+    - Use `systemd-oomd` to manage the Kernel's oom killer
   - To simplify the orchestration of firewall rules, use UFW instead of firewalld or raw iptables/nftables
   - FluentD in the installation pre-configured to allow exporting systemd-journald logs
 
