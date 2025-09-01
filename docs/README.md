@@ -23,7 +23,7 @@ This does not mean that the OS will allow multiple development versions to be in
 
 ### Maintainability
 
-The Maintainability principle requires that the operating system will have automation tooling built in to allow operations and DevOps engineers to manage and maintain installs of the operating system at scale. By default, MidgardOS ships with CinC (CinC is not Chef) baked into the system, and the operating system's own configuration tools will set settings that the locally installed CinC service will apply and enforce.
+The Maintainability principle requires that the operating system will have automation tooling built in to allow operations and DevOps engineers to manage and maintain installs of the operating system at scale.
 
 ### Observability
 
