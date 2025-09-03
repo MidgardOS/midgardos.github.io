@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ZStd64bit.md) ZStd 64-bit | [HOME](../README.md) | File 64-bit [>>](./File64bit.md) |
+| [<<](./ZStd64bit.md) ZStd 64-bit | [HOME](../README.md) | GNU libunistring 64-bit [>>](./libunistring64bit.md) |
 
 ## ZStd 32-bit
 
@@ -41,4 +41,4 @@ See the contents section of the 64-bit build of ZStd for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ZStd64bit.md) ZStd 64-bit | [HOME](../README.md) | File 64-bit [>>](./File64bit.md) |
+| [<<](./ZStd64bit.md) ZStd 64-bit | [HOME](../README.md) | GNU libunistring 64-bit [>>](./libunistring64bit.md) |

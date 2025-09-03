@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ZStd32bit.md) ZStd 32-bit | [HOME](../README.md) | libunistring 32-bit [>>](./libunistring32bit.md) |
+| [<<](./ZStd32bit.md) ZStd 32-bit | [HOME](../README.md) | GNU libunistring 32-bit [>>](./libunistring32bit.md) |
 
 ## libunistring 64-bit
 
@@ -60,4 +60,4 @@ rm -fv /usr/lib64/libunistring.la
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ZStd32bit.md) ZStd 32-bit | [HOME](../README.md) | libunistring 32-bit [>>](./libunistring32bit.md) |
+| [<<](./ZStd32bit.md) ZStd 32-bit | [HOME](../README.md) | GNU libunistring 32-bit [>>](./libunistring32bit.md) |
