@@ -96,8 +96,8 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Lz4 32-bit](./BasicSystem/Lz432bit.md)
 1. [ZStd 64-bit](./BasicSystem/ZStd64bit.md)
 1. [ZStd 32-bit](./BasicSystem/ZStd32bit.md)
-1. [libunistring 64-bit](./BasicSystem/libunistring64bit.md)
-1. [libunistring 32-bit](./BasicSystem/libunistring32bit.md)
+1. [GNU libunistring 64-bit](./BasicSystem/libunistring64bit.md)
+1. [GNU libunistring 32-bit](./BasicSystem/libunistring32bit.md)
 1. [File 64-bit](./BasicSystem/File64bit.md)
 1. [File 32-bit](./BasicSystem/File32bit.md)
 
