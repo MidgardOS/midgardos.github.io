@@ -10,7 +10,7 @@ Name: File<br />
 Summary: A tool to determine the type of a file from heuristics<br />
 License: BSD 2-Clause<br />
 Version: 5.46<br />
-URL: [http://ftp.astrom.com/pub/file/](ftp://ftp.astron.com/pub/file/)<br />
+URL: [http://ftp.astrom.com/pub/file/file-5.46.tar.xz](ftp://ftp.astron.com/pub/file/file-5.46.tar.xz)<br />
 
 ## Pre-Build
 
