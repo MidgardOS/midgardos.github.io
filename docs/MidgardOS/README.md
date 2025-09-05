@@ -100,6 +100,8 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [GNU libunistring 32-bit](./BasicSystem/libunistring32bit.md)
 1. [File 64-bit](./BasicSystem/File64bit.md)
 1. [File 32-bit](./BasicSystem/File32bit.md)
+1. [GNU Readline 64-bit](./BasicSystem/GNUReadline64bit.md)
+1. [GNU Readline 32-bit](./BasicSystem/GNUReadline32bit.md)
 
 | Navigation |||
 | --- | --- | ---: |
