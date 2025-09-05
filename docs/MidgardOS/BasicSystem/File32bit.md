@@ -46,7 +46,7 @@ rm -fv /usr/lib/libmagic.la
 
 ## Contents
 
-See the contents section of the 64-bit build of libunistring for details.
+See the contents section of the 64-bit build of File for details.
 
 | Navigation |||
 | --- | --- | ---: |
