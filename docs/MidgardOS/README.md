@@ -105,6 +105,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [PCRE2 64-bit](./BasicSystem/PCRE264bit.md)
 1. [PCRE2 32-bit](./BasicSystem/PCRE232bit.md)
 1. [GNU M4](./BasicSystem/GNUM4.md)
+1. [GNU Bc](./BasicSystem/GNUBc.md)
 
 | Navigation |||
 | --- | --- | ---: |
