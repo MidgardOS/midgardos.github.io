@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUM4.md.md) GNU M4 | [HOME](../README.md) | Flex [>>](./Flex.md) |
+| [<<](./GNUM4.md.md) GNU M4 | [HOME](../README.md) | Flex 64-bit [>>](./Flex64bit.md) |
 
 ## GNU Bc
 
@@ -47,7 +47,6 @@ make install
 | --- | --- |
 | Installed Programs | bc and dc |
 
-
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUM4.md.md) GNU M4 | [HOME](../README.md) | Flex [>>](./Flex.md) |
+| [<<](./GNUM4.md.md) GNU M4 | [HOME](../README.md) | Flex 64-bit [>>](./Flex64bit.md) |
