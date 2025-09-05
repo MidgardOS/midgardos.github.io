@@ -102,6 +102,8 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [File 32-bit](./BasicSystem/File32bit.md)
 1. [GNU Readline 64-bit](./BasicSystem/GNUReadline64bit.md)
 1. [GNU Readline 32-bit](./BasicSystem/GNUReadline32bit.md)
+1. [PCRE2 64-bit](./BasicSystem/PCRE264bit.md)
+1. [PCRE2 32-bit](./BasicSystem/PCRE232bit.md)
 
 | Navigation |||
 | --- | --- | ---: |
