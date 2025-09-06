@@ -110,6 +110,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Flex 32-bit](./BasicSystem/Flex32bit.md)
 1. [TCL](./BasicSystem/TCL.md)
 1. [Expect](./BasicSystem/Expect.md)
+1. [DejaGNU](./BasicSystem/DejaGNU.md)
 
 | Navigation |||
 | --- | --- | ---: |
