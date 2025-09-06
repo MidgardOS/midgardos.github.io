@@ -10,3 +10,18 @@
 section {
     max-width: 1050px;
 }
+
+#scrollToTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed position */
+  bottom: 20px; /* Distance from bottom */
+  right: 30px; /* Distance from right */
+  z-index: 99; /* Higher z-index to be on top of other content */
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
