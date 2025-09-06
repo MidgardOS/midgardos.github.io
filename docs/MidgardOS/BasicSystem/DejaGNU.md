@@ -39,7 +39,7 @@ make check
 Finally, to install DejaGNU into the build tree, run the following command:
 
 ```bash
-make DESTDIR=$PWD/DESTDIR install
+make install
 install -v -dm755  /usr/share/doc/dejagnu-1.6.3
 install -v -m644   doc/dejagnu.{html,txt} /usr/share/doc/dejagnu-1.6.3
 ```
@@ -48,8 +48,7 @@ install -v -m644   doc/dejagnu.{html,txt} /usr/share/doc/dejagnu-1.6.3
 
 | Contents | |
 | --- | --- |
-| Installed Programs |  |
-| Installed Libraries |  |
+| Installed Programs | dejagnu and runtest |
 
 | Navigation |||
 | --- | --- | ---: |
