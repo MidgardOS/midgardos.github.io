@@ -113,6 +113,8 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [DejaGNU](./BasicSystem/DejaGNU.md)
 1. [PkgConf](./BasicSystem/PkgConf.md)
 1. [GNU Binutils](./BasicSystem/GNUBinutils.md)
+1. [GNU GMP 64-bit](./BasicSystem/GNUGMP64bit.md)
+1. [GNU GMP 32-bit](./BasicSystem/GNUGMP32bit.md)
 
 | Navigation |||
 | --- | --- | ---: |
