@@ -59,6 +59,7 @@ Finally, to install GMP 32-bit into the cross-tools tree, run the following comm
 make DESTDIR=$PWD/DESTDIR install
 cp -Rv DESTDIR/usr/lib/* /usr/lib
 cp -Rv DESTDIR/usr/include/m32/* /usr/include/m32/
+rm -fv /usr/lib/lib{gmp,gmpxx}.la
 ```
 
 ## Contents
