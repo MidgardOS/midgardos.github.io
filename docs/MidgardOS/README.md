@@ -112,6 +112,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Expect](./BasicSystem/Expect.md)
 1. [DejaGNU](./BasicSystem/DejaGNU.md)
 1. [PkgConf](./BasicSystem/PkgConf.md)
+1. [GNU Binutils](./BasicSystem/GNUBinutils.md)
 
 | Navigation |||
 | --- | --- | ---: |
