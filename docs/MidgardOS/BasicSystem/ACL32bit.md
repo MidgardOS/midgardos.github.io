@@ -47,7 +47,7 @@ cp -Rv DESTDIR/usr/lib/* /usr/lib
 
 ## Contents
 
-See the contents section of the 64-bit build of Attr for details.
+See the contents section of the 64-bit build of ACL for details.
 
 | Navigation |||
 | --- | --- | ---: |
