@@ -121,6 +121,8 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [GNU MPC 32-bit](./BasicSystem/GNUMPC32bit.md)
 1. [ISL 64-bit](./BasicSystem/ISL64bit.md)
 1. [ISL 32-bit](./BasicSystem/ISL32bit.md)
+1. [GNU LibIDN2 64-bit](./BasicSystem/libidn2-64bit.md)
+1. [GNU LibIDN2 32-bit](./BasicSystem/libidn2-32bit.md)
 
 | Navigation |||
 | --- | --- | ---: |
