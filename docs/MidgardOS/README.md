@@ -123,6 +123,8 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [ISL 32-bit](./BasicSystem/ISL32bit.md)
 1. [GNU LibIDN2 64-bit](./BasicSystem/libidn2-64bit.md)
 1. [GNU LibIDN2 32-bit](./BasicSystem/libidn2-32bit.md)
+1. [Attr 64-bit](./BasicSystem/Attr64bit.md)
+1. [Attr 32-bit](./BasicSystem/Attr32bit.md)
 
 | Navigation |||
 | --- | --- | ---: |
