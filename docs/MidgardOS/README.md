@@ -115,6 +115,8 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [GNU Binutils](./BasicSystem/GNUBinutils.md)
 1. [GNU GMP 64-bit](./BasicSystem/GNUGMP64bit.md)
 1. [GNU GMP 32-bit](./BasicSystem/GNUGMP32bit.md)
+1. [GNU MPFR 64-bit](./BasicSystem/GNUMPFR64bit.md)
+1. [GNU MPFR 32-bit](./BasicSystem/GNUMPFR32bit.md)
 
 | Navigation |||
 | --- | --- | ---: |
