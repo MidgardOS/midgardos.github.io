@@ -129,6 +129,8 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [ACL 32-bit](./BasicSystem/ACL32bit.md)
 1. [libcap2 64-bit](./BasicSystem/libcap64bit.md)
 1. [libcap2 32-bit](./BasicSystem/libcap32bit.md)
+1. [libxcrypt 64-bit](./BasicSystem/libxcrypt64bit.md)
+1. [libxcrypt 32-bit](./BasicSystem/libxcrypt32bit.md)
 
 | Navigation |||
 | --- | --- | ---: |
