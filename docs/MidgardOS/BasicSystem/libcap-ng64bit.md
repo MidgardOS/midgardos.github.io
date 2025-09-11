@@ -13,7 +13,7 @@ Version: 0.8.5<br />
 URL: [https://people.redhat.com/sgrubb/libcap-ng/libcap-ng-0.8.5.tar.gz](https://people.redhat.com/sgrubb/libcap-ng/libcap-ng-0.8.5.tar.gz)<br />
 
 Average Build Time: less than 0.1 SBU<br />
-Used Install Space:  MiB<br />
+Used Install Space: 384 KiB<br />
 
 ## Configuration
 
