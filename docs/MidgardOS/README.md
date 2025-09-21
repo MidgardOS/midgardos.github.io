@@ -133,6 +133,8 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [libxcrypt 32-bit](./BasicSystem/libxcrypt32bit.md)
 1. [libcap-ng 64-bit](./BasicSystem/libcap-ng64bit.md)
 1. [libcap-ng 32-bit](./BasicSystem/libcap-ng32bit.md)
+1. [libtirpc 64-bit](./BasicSystem/libtirpc64bit.md)
+1. [libtirpc 32-bit](./BasicSystem/libtirpc32bit.md)
 
 | Navigation |||
 | --- | --- | ---: |
