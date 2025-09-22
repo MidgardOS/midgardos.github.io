@@ -137,6 +137,8 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [libtirpc 32-bit](./BasicSystem/libtirpc32bit.md)
 1. [libnsl2 64-bit](./BasicSystem/libnsl264bit.md)
 1. [libnsl2 32-bit](./BasicSystem/libnsl232bit.md)
+1. [tcp_wrappers 64-bit](./BasicSystem/tcp_wrappers64bit.md)
+1. [tcp_wrappers 32-bit](./BasicSystem/tcp_wrappers32bit.md)
 
 | Navigation |||
 | --- | --- | ---: |
