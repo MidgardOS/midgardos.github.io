@@ -140,6 +140,8 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [tcp_wrappers 64-bit](./BasicSystem/tcp_wrappers64bit.md)
 1. [tcp_wrappers 32-bit](./BasicSystem/tcp_wrappers32bit.md)
 1. [GNU Autoconf](./BasicSystem/Autoconf.md)
+1. [GNU Libtool 64-bit](./BasicSystem/GNULibtool64bit.md)
+1. [GNU Libtool 32-bit](./BasicSystem/GNULibtool32bit.md)
 
 | Navigation |||
 | --- | --- | ---: |
