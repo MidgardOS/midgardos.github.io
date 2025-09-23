@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./tcp_wrappers64bit.md) tcp_wrappers 64-bit | [HOME](../README.md) | audit 64-bit [>>](./audit64bit.md) |
+| [<<](./tcp_wrappers64bit.md) TCP Wrappers 64-bit | [HOME](../README.md) | GNU Autoconf [>>](./Autoconf.md) |
 
 ## tcp_wrappers 32-bit
 
@@ -44,4 +44,4 @@ See the contents section of the 64-bit build of tcp_wrappers for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./tcp_wrappers64bit.md) tcp_wrappers 64-bit | [HOME](../README.md) | audit 64-bit [>>](./audit64bit.md) |
+| [<<](./tcp_wrappers64bit.md) TCP Wrappers 64-bit | [HOME](../README.md) | GNU Autoconf [>>](./Autoconf.md) |
