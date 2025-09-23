@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./tcp_wrappers32bit.md) TCP Wrappers 32-bit | [HOME](../README.md) | Audit 64-bit [>>](./audit64bit.md) |
+| [<<](./tcp_wrappers32bit.md) TCP Wrappers 32-bit | [HOME](../README.md) | GNU Libtool 64-bit [>>](./GNULibtool64bit.md) |
 
 # GNU Autoconf
 
@@ -40,7 +40,7 @@ Next, run the test suite:
 make check
 ```
 
-Finally, to install GNU Autoconf into the cross-tools tree, run the following command:
+Finally, to install GNU Autoconf into the tree, run the following command:
 
 ```bash
 make install
@@ -55,4 +55,4 @@ make install
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./tcp_wrappers32bit.md) TCP Wrappers 32-bit | [HOME](../README.md) | Audit 64-bit [>>](./audit64bit.md) |
+| [<<](./tcp_wrappers32bit.md) TCP Wrappers 32-bit | [HOME](../README.md) | GNU Libtool 64-bit [>>](./GNULibtool64bit.md) |
