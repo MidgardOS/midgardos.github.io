@@ -13,7 +13,7 @@ Version: 2.72<br />
 URL: [http://ftp.gnu.org/pub/gnu/autoconf/autoconf-2.72.tar.xz](http://ftp.gnu.org/pub/gnu/autoconf/autoconf-2.72.tar.xz)<br />
 
 Average Build Time: less than 0.1 SBU<br />
-Used Install Space: <br />
+Used Install Space: 3.5 MiB<br />
 
 ## Configuration
 
