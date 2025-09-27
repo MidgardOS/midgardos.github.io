@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Automake.md) GNU Autoconf | [HOME](../README.md) | Linux Audit Framework 32-bit [>>](./audit32bit.md) |
+| [<<](./Automake.md) GNU Automake | [HOME](../README.md) | Linux Audit Framework 32-bit [>>](./audit32bit.md) |
 
 ## Linux Audit Framework 64-bit
 
@@ -80,4 +80,4 @@ unset LDFLAGS
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libnsl232bit.md) libnsl2 32-bit | [HOME](../README.md) | tcp_wrappers 32-bit [>>](./tcp_wrappers32bit.md) |
+| [<<](./Automake.md) GNU Automake | [HOME](../README.md) | Linux Audit Framework 32-bit [>>](./audit32bit.md) |

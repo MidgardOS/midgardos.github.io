@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./audit64bit.md) audit 64-bit | [HOME](../README.md) | PAM 64-bit [>>](./pam64bit.md) |
+| [<<](./audit64bit.md) Linux Audit Framework 64-bit | [HOME](../README.md) | rpcsvc-proto [>>](./rpcsvc-proto.md) |
 
 ## Linux Audit Framework 32-bit
 
@@ -63,4 +63,4 @@ See the contents section of the 64-bit build of the Linux Audit Framework for de
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./tcp_wrappers64bit.md) tcp_wrappers 64-bit | [HOME](../README.md) | audit 64-bit [>>](./audit64bit.md) |
+| [<<](./audit64bit.md) Linux Audit Framework 64-bit | [HOME](../README.md) | rpcsvc-proto [>>](./rpcsvc-proto.md) |
