@@ -145,6 +145,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [GNU Automake](./BasicSystem/Automake.md)
 1. [Linux Audit Framework 64-bit](./BasicSystem/audit64bit.md)
 1. [Linux Audit Framework 32-bit](./BasicSystem/audit32bit.md)
+1. [RPCSVC Proto](./BasicSystem/rpcsvc-proto.md)
 
 | Navigation |||
 | --- | --- | ---: |
