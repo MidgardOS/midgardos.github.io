@@ -143,6 +143,8 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [GNU Libtool 64-bit](./BasicSystem/GNULibtool64bit.md)
 1. [GNU Libtool 32-bit](./BasicSystem/GNULibtool32bit.md)
 1. [GNU Automake](./BasicSystem/Automake.md)
+1. [Linux Audit Framework 64-bit](./BasicSystem/audit64bit.md)
+1. [Linux Audit Framework 32-bit](./BasicSystem/audit32bit.md)
 
 | Navigation |||
 | --- | --- | ---: |
