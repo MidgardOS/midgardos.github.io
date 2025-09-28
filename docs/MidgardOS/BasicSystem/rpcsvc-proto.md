@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./audit32bit.md) Linux Audit Framework 32-bit | [HOME](../README.md) | Linux Pluggable Authentication Modules 64-bit [>>](./linux-pam64bit.md) |
+| [<<](./audit32bit.md) Linux Audit Framework 32-bit | [HOME](../README.md) | Shadow Utils 64-bit [>>](./shadow64bit.md) |
 
 ## rpcsvc-proto
 
@@ -52,4 +52,4 @@ make install
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./audit32bit.md) Linux Audit Framework 32-bit | [HOME](../README.md) | Linux Pluggable Authentication Modules 64-bit [>>](./linux-pam64bit.md) |
+| [<<](./audit32bit.md) Linux Audit Framework 32-bit | [HOME](../README.md) | Shadow Utils 64-bit [>>](./shadow64bit.md) |
