@@ -146,6 +146,8 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Linux Audit Framework 64-bit](./BasicSystem/audit64bit.md)
 1. [Linux Audit Framework 32-bit](./BasicSystem/audit32bit.md)
 1. [RPCSVC Proto](./BasicSystem/rpcsvc-proto.md)
+1. [Shadow 64-bit - pass 1: Without PAM](./BasicSystem/shadow64bit.md)
+1. [Shadow 32-bit - pass 1: Without PAM](./BasicSystem/shadow32bit.md)
 
 | Navigation |||
 | --- | --- | ---: |
