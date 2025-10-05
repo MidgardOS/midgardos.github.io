@@ -21,11 +21,11 @@ To configure GNU Readline 32-bit for install into the build root, run the follow
 
 ```bash
 make distclean
-CC="gcc -m32" ./configure           \
-    --host=i686-midgardos-linux-gnu \
-    --prefix=/usr                   \
-    --libdir=/usr/lib               \
-    --disable-static                \
+CC="gcc -m32" ./configure    \
+    --host=i686-pc-linux-gnu \
+    --prefix=/usr            \
+    --libdir=/usr/lib        \
+    --disable-static         \
     --with-curses
 ```
 

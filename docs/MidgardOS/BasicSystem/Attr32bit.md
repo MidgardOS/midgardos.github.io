@@ -22,11 +22,11 @@ To configure Attr 32-bit for install into the build root, run the following comm
 ```bash
 make distclean
 CC="gcc -m32" \
-./configure --host=i686-midgardos-linux-gnu \
-            --prefix=/usr                   \
-            --libdir=/usr/lib               \
-            --libexecdir=/usr/lib           \
-            --sysconfdir=/etc               \
+./configure --host=i686-pc-linux-gnu \
+            --prefix=/usr            \
+            --libdir=/usr/lib        \
+            --libexecdir=/usr/lib    \
+            --sysconfdir=/etc        \
             --disable-static
 ```
 

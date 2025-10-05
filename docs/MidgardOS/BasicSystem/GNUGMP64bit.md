@@ -21,8 +21,7 @@ To configure GMP 64-bit for install into our cross-compilation root, run the fol
 
 ```bash
 sed -i '/long long t1;/,+1s/()/(...)/' configure
-./configure --host=x86_64-midgardos-linux-gnu   \
-            --prefix=/usr                       \
+./configure --prefix=/usr                       \
             --libdir=/usr/lib64                 \
             --libexecdir=/usr/lib64             \
             --enable-cxx                        \

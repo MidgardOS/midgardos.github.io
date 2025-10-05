@@ -20,10 +20,9 @@ Used Install Space: 384 KiB<br />
 To configure libxcrypt 64-bit for install into the build root, run the following command:
 
 ```bash
-./configure --host=x86_64-midgardos-linux-gnu   \
-            --prefix=/usr                       \
-            --libdir=/usr/lib64                 \
-            --libexecdir=/usr/lib64             \
+./configure --prefix=/usr           \
+            --libdir=/usr/lib64     \
+            --libexecdir=/usr/lib64 \
             --disable-static
 ```
 

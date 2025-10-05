@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libcap-ng64bit.md) libcap-ng 64-bit | [HOME](../README.md) | libeconf 64-bit [>>](./libeconf64bit.md) |
+| [<<](./libcap-ng64bit.md) libcap-ng 64-bit | [HOME](../README.md) | libtirpc 64-bit [>>](./libtirpc64bit.md) |
 
 ## libcap-ng 32-bit
 
@@ -21,11 +21,11 @@ To configure libcap-ng 32-bit for install into the build root, run the following
 
 ```bash
 make distclean
-CC="gcc -m32 -march=i686" \
-./configure --host=i686-midgardos-linux-gnu \
-            --prefix=/usr                   \
-            --libdir=/usr/lib               \
-            --libexecdir=/usr/lib           \
+CC="gcc -m32" \
+./configure --host=i686-pc-linux-gnu \
+            --prefix=/usr            \
+            --libdir=/usr/lib        \
+            --libexecdir=/usr/lib    \
             --disable-static
 ```
 
@@ -51,4 +51,4 @@ See the contents section of the 64-bit build of libcap-ng for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libcap-ng64bit.md) libcap-ng 64-bit | [HOME](../README.md) | libeconf 64-bit [>>](./libeconf64bit.md) |
+| [<<](./libcap-ng64bit.md) libcap-ng 64-bit | [HOME](../README.md) | libtirpc 64-bit [>>](./libtirpc64bit.md) |

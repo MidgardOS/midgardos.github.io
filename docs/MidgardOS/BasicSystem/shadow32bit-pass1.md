@@ -21,9 +21,9 @@ To configure Shadow Utils 32-bit for install into the build root, run the follow
 
 ```bash
 make distclean
-export CFLAGS="-O2 -g -fmessage-length=0 -D_FORTIFY_SOURCE=2 -fstack-protector -funwind-tables -fasynchronous-unwind-tables -fpie"
+export CFLAGS="-O2 -m32 -g -fmessage-length=0 -D_FORTIFY_SOURCE=2 -fstack-protector -funwind-tables -fasynchronous-unwind-tables -fpie"
 export LDFLAGS="-pie"
-./configure --host=i686-midgardos-linux-gnu \
+./configure --host=i686-pc-linux-gnu \
             --sysconfdir=/etc               \
             --libdir=/usr/lib               \
             --with-{b,yes}crypt             \

@@ -22,14 +22,14 @@ To configure the libtirpc 32-bit package for compilation, run the following comm
 ```bash
 make distclean
 CC="gcc -m32" \
-./configure --host=i686-midgardos-linux-gnu \
-            --prefix=/usr                   \
-            --libdir=/usr/lib               \
-            --libexecdir=/usr/lib           \
-            --sysconfdir=/etc               \
-            --enable-rpcdb                  \
-            --enable-authdes                \
-            --disable-static                \
+./configure --host=i686-pc-linux-gnu \
+            --prefix=/usr            \
+            --libdir=/usr/lib        \
+            --libexecdir=/usr/lib    \
+            --sysconfdir=/etc        \
+            --enable-rpcdb           \
+            --enable-authdes         \
+            --disable-static         \
             --disable-gssapi
 ```
 

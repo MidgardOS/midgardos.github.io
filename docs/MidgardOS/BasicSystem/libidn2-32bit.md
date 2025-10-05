@@ -22,10 +22,10 @@ To configure GNU LibIDN2 64-bit for install into the build root, run the followi
 ```bash
 make distclean
 CC="gcc -m32" \
-./configure --host=i686-midgardos-linux-gnu \
-            --prefix=/usr                   \
-            --libdir=/usr/lib               \
-            --libexecdir=/usr/lib           \
+./configure --host=i686-pc-linux-gnu \
+            --prefix=/usr            \
+            --libdir=/usr/lib        \
+            --libexecdir=/usr/lib    \
             --disable-static
 ```
 

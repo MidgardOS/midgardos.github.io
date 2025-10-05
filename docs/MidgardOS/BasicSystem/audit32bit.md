@@ -24,17 +24,17 @@ make distclean
 export CFLAGS="-O2 -g -m32 -march=i686 -fmessage-length=0 -D_FORTIFY_SOURCE=2 -fstack-protector -funwind-tables -fasynchronous-unwind-tables -fno-strict-aliasing"
 export CXXFLAGS="$CFLAGS"
 export LDFLAGS="-Wl,-z,relro,-z,now"
-./configure --host=i686-midgardos-linux-gnu \
-            --prefix=/usr                   \
-            --libdir=/usr/lib               \
-            --libexecdir=/usr/lib           \
-            --sysconfdir=/etc               \
-            --enable-gssapi-krb5=no         \
-            --with-libwrap                  \
-            --with-libcap-ng=yes            \
-            --with-golang=no                \
-            --with-python=no                \
-            --with-python3=no               \
+./configure --host=i686-pc-linux-gnu \
+            --prefix=/usr            \
+            --libdir=/usr/lib        \
+            --libexecdir=/usr/lib    \
+            --sysconfdir=/etc        \
+            --enable-gssapi-krb5=no  \
+            --with-libwrap           \
+            --with-libcap-ng=yes     \
+            --with-golang=no         \
+            --with-python=no         \
+            --with-python3=no        \
             --disable-zos-remote
 ```
 

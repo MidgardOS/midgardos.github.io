@@ -22,7 +22,7 @@ To configure PCRE2 32-bit for install into the build root, run the following com
 ```bash
 make distclean
 CC="gcc -m32" ./configure \
-            --host=i686-midgardos-linux-gnu     \
+            --host=i686-pc-linux-gnu            \
             --prefix=/usr                       \
             --libdir=/usr/lib                   \
             --libexecdir=/usr/lib               \
@@ -59,4 +59,4 @@ See the contents section of the 64-bit build of PCRE2 for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./$PREVIOUS_PAGE.md) | [HOME](../README.md) | [>>](./$NEXT_PAGE.md) |
+| [<<](./PCRE264bit.md) PCRE2 64-bit | [HOME](../README.md) | GNU M4 [>>](./GNUM4.md) |

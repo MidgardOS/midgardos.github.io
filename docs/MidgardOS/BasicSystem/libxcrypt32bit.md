@@ -22,13 +22,13 @@ To configure libxcrypt 32-bit for install into the build root, run the following
 ```bash
 make distclean
 CC="gcc -m32" \
-./configure --host=i686-midgardos-linux-gnu \
-            --prefix=/usr                   \
-            --libdir=/usr/lib               \
-            --libexecdir=/usr/lib           \
-            --enable-hashes=all             \
-            --enable-obsolete-api=suse      \
-            --disable-static                \
+./configure --host=i686-pc-linux-gnu    \
+            --prefix=/usr               \
+            --libdir=/usr/lib           \
+            --libexecdir=/usr/lib       \
+            --enable-hashes=all         \
+            --enable-obsolete-api=suse  \
+            --disable-static            \
             --disable-failure-tokens
 ```
 

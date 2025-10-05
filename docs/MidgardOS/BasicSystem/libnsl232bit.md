@@ -17,16 +17,16 @@ Used Install Space: 168 KiB<br />
 
 ## Configuration
 
-To configure the libnsl2 32-bit package for compilation, run the following command:
+To configure the libnsl2 32-bit package for compilation, run the following commands:
 
 ```bash
 make distclean
 CC="gcc -m32" \
-./configure --host=i686-midgardos-linux-gnu \
-            --prefix=/usr                   \
-            --libdir=/usr/lib               \
-            --libexecdir=/usr/lib           \
-            --sysconfdir=/etc               \
+./configure --host=i686-pc-linux-gnu \
+            --prefix=/usr            \
+            --libdir=/usr/lib        \
+            --libexecdir=/usr/lib    \
+            --sysconfdir=/etc        \
             --disable-static
 ```
 

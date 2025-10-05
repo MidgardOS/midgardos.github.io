@@ -28,7 +28,7 @@ CFLAGS="-m32 -O2 -pedantic -fomit-frame-pointer -mtune=generic -march=i686" \
 CXXFLAGS="$CFLAGS" \
 PKG_CONFIG_PATH="/usr/lib/pkgconfig" \
 ./configure                          \
-    --host=i686-midgardos-linux-gnu  \
+    --host=i686-pc-linux-gnu         \
     --prefix=/usr                    \
     --libdir=/usr/lib                \
     --libexecdir=/usr/lib            \

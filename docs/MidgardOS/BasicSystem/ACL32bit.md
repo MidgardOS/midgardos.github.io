@@ -26,7 +26,7 @@ CC="gcc -m32" ./configure \
     --disable-static      \
     --libdir=/usr/lib     \
     --libexecdir=/usr/lib \
-    --host=i686-midgardos-linux-gnu
+    --host=i686-pc-linux-gnu
 ```
 
 ## Compilation and Installation

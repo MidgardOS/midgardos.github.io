@@ -22,7 +22,7 @@ To configure XZ 32-bit for install into the build root, run the following comman
 ```bash
 make distclean
 CC="gcc -m32" ./configure \
-    --host=i686-midgardos-linux-gnu \
+    --host=i686-pc-linux-gnu \
     --prefix=/usr                   \
     --libdir=/usr/lib               \
     --libexecdir=/usr/lib           \

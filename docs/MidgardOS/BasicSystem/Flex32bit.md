@@ -20,12 +20,12 @@ Used Install Space: 33 MiB<br />
 To configure Flex 32-bit for install into the build root, run the following command:
 
 ```bash
-CC="gcc -m32" ./configure                      \
-            --host=i686-midgardos-linux-gnu    \
-            --prefix=/usr                      \
-            --libdir=/usr/lib                  \
-            --libexecdir=/usr/lib              \
-            --docdir=/usr/share/doc/flex-2.6.4 \
+CC="gcc -m32" ./configure                       \
+            --host=i686-pc-linux-gnu            \
+            --prefix=/usr                       \
+            --libdir=/usr/lib                   \
+            --libexecdir=/usr/lib               \
+            --docdir=/usr/share/doc/flex-2.6.4  \
             --disable-static
 ```
 

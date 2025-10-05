@@ -22,7 +22,7 @@ To configure GNU MPFR 32-bit for install into our cross-compilation root, run th
 ```bash
 make distclean
 CC="gcc -m32" \
-./configure --host=i686-midgardos-linux-gnu     \
+./configure --host=i686-pc-linux-gnu            \
             --prefix=/usr                       \
             --libdir=/usr/lib                   \
             --libexecdir=/usr/lib               \
