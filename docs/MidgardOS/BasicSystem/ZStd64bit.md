@@ -37,7 +37,7 @@ Finally, to install ZStd 64-bit into the build tree, run the following command:
 
 ```bash
 make prefix=/usr libdir=/usr/lib64 install
-rm -v /usr/lib/libzstd.a
+rm -v /usr/lib64/libzstd.a
 ```
 
 **NOTE: Do not delete the unpacked sources**
