@@ -33,6 +33,7 @@ Finally, to install ZStd 32-bit into the build tree, run the following command:
 ```bash
 make prefix=/usr DESTDIR=$PWD/DESTDIR install
 cp -Rv DESTDIR/usr/lib/* /usr/lib/
+rm -fv /usr/lib/libzstd.a
 ```
 
 ## Contents
