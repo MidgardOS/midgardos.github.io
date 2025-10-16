@@ -46,7 +46,7 @@ Finally, to install ZLib 32-bit, run the following command:
 ```bash
 make DESTDIR=$PWD/DESTDIR install
 cp -Rv DESTDIR/usr/lib/* /usr/lib/
-rm -fv /usr/lib64/libz.a
+rm -fv /usr/lib/libz.a
 ```
 
 ## Contents
