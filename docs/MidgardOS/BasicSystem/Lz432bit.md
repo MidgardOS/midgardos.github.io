@@ -31,7 +31,7 @@ CC="gcc -m32" make -j1 BUILD_STATIC=no
 Finally, to install Lz4 32-bit into the build tree, run the following command:
 
 ```bash
-make -j1 BUILD_STATIC=no PREFIX=/usr LIBDIR=/usr/lib DESTDIR=$(pwd)/m32 install &&
+make -j1 BUILD_STATIC=no PREFIX=/usr LIBDIR=/usr/lib DESTDIR=$(pwd)/m32 install && \
 cp -a m32/usr/lib/* /usr/lib/
 ```
 
