@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./File64bit.md) File 64-bit | [HOME](../README.md) | Readline 64-bit [>>](./Readline64bit.md) |
+| [<<](./File64bit.md) File 64-bit | [HOME](../README.md) | Readline 64-bit [>>](./GNUReadline64bit.md) |
 
 ## File 32-bit
 
@@ -50,4 +50,4 @@ See the contents section of the 64-bit build of File for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./File64bit.md) File 64-bit | [HOME](../README.md) | Readline 64-bit [>>](./Readline64bit.md) |
+| [<<](./File64bit.md) File 64-bit | [HOME](../README.md) | Readline 64-bit [>>](./GNUReadline64bit.md) |
