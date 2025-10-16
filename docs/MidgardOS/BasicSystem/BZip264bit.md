@@ -56,6 +56,7 @@ Finally, to install BZip2 64-bit into the build tree, run the following commands
 make PREFIX=/usr install
 cp -av libbz2.so.* /usr/lib64
 ln -sv libbz2.so.1.0.8 /usr/lib64/libbz2.so
+for i in /usr/bin/{bzcat,bunzip2}; do
   ln -sfv bzip2 $i
 done
 rm -fv /usr/lib64/libbz2.a
