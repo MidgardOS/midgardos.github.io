@@ -10,7 +10,7 @@ Name: GNU Bc<br />
 Summary: An arbitrary precision processing language<br />
 License: GPL v3 or later<br />
 Version: 1.08.2<br />
-URL: [https://ftp.gnu.org/gnu/bc/bc-1.08.2.tar.lz](https://ftp.gnu.org/gnu/bc/bc-1.08.2.tar.lz)<br />
+URL: [https://ftp.gnu.org/gnu/bc/bc-1.08.2.tar.gz](https://ftp.gnu.org/gnu/bc/bc-1.08.2.tar.gz)<br />
 
 Average Build Time: less than 0.1 SBU<br />
 Used Install Space: 7.8 MiB<br />
