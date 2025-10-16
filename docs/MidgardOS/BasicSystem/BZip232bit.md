@@ -40,7 +40,6 @@ install -Dm755 libbz2.so.1.0.8 /usr/lib/libbz2.so.1.0.8
 ln -sf libbz2.so.1.0.8 /usr/lib/libbz2.so
 ln -sf libbz2.so.1.0.8 /usr/lib/libbz2.so.1
 ln -sf libbz2.so.1.0.8 /usr/lib/libbz2.so.1.0
-install -Dm644 libbz2.a /usr/lib/libbz2.a
 ```
 
 ## Contents
