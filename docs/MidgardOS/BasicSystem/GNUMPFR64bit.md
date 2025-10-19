@@ -17,7 +17,7 @@ Used Install Space: 43 MiB<br />
 
 ## Configuration
 
-To configure GNU MPFR 64-bit for install into our cross-compilation root, run the following command:
+To configure GNU MPFR 64-bit for install into the build root, run the following command:
 
 ```bash
 ./configure --prefix=/usr           \
@@ -31,7 +31,7 @@ To configure GNU MPFR 64-bit for install into our cross-compilation root, run th
 
 ## Compilation and Installation
 
-To compile GNU MPFR 64-bit, run the following command:
+To compile GNU MPFR 64-bit, run the following commands:
 
 ```bash
 make
@@ -44,7 +44,7 @@ Next, run the test suite:
 make check
 ```
 
-Finally, to install GNU MPFR 64-bit into the cross-tools tree, run the following command:
+Finally, to install GNU MPFR 64-bit into the build tree, run the following commands:
 
 ```bash
 make install
