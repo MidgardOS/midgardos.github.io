@@ -17,7 +17,7 @@ Used Install Space: 832 MiB<br />
 
 ## Configuration
 
-To configure GNU Binutils for install into our cross-compilation root, run the following command:
+To configure GNU Binutils for install into the build root, run the following commands:
 
 ```bash
 mkdir -pv build && cd build
@@ -52,7 +52,7 @@ make -k check
 grep '^FAIL:' $(find -name '*.log')
 ```
 
-Finally, to install GNU Binutils into the cross-tools tree, run the following command:
+Finally, to install GNU Binutils into the build tree, run the following commands:
 
 ```bash
 make tooldir=/usr install
