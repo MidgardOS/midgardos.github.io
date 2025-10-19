@@ -10,7 +10,8 @@ Name: TCL<br />
 Summary: The Tool Command Language interpreter<br />
 License: TCL License<br />
 Version: 8.6.17<br />
-URL: [https://downloads.sourceforge.net/tcl/tcl8.6.17-html.tar.gz](https://downloads.sourceforge.net/tcl/tcl8.6.17-html.tar.gz)<br />
+URL: [https://downloads.sourceforge.net/tcl/tcl8.6.17-src.tar.gz](https://downloads.sourceforge.net/tcl/tcl8.6.17-src.tar.gz)<br />
+Documentation URL: [https://downloads.sourceforge.net/tcl/tcl8.6.17-html.tar.gz](https://downloads.sourceforge.net/tcl/tcl8.6.17-html.tar.gz)<br />
 
 Average Build Time: 3.0 SBU<br />
 Used Install Space: 91 MiB<br />
@@ -67,6 +68,8 @@ Next, run the test suite:
 ```bash
 make test
 ```
+
+Currently, there are three tests that fail. This is reasonable
 
 Finally, to install TCL into the build tree, run the following commands:
 
