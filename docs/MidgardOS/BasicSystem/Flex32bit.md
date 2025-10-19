@@ -20,6 +20,7 @@ Used Install Space: 33 MiB<br />
 To configure Flex 32-bit for install into the build root, run the following command:
 
 ```bash
+make distclean
 CC="gcc -m32" ./configure                       \
             --host=i686-pc-linux-gnu            \
             --prefix=/usr                       \
@@ -41,7 +42,7 @@ Finally, to install Flex 32-bit into the build tree, run the following command:
 
 ```bash
 make DESTDIR=$PWD/DESTDIR install
-cp DESTDIR/usr/lib/* /usr/lib
+cp -Rv DESTDIR/usr/lib/* /usr/lib/
 rm -fv /usr/lib/libfl.la
 ```
 
