@@ -17,7 +17,7 @@ Used Install Space: 43 MiB<br />
 
 ## Configuration
 
-To configure GNU MPFR 32-bit for install into our cross-compilation root, run the following commands:
+To configure GNU MPFR 32-bit for install into the build root, run the following commands:
 
 ```bash
 make distclean
@@ -42,7 +42,7 @@ To compile GNU MPFR 32-bit, run the following command:
 make
 ```
 
-Finally, to install GNU MPFR 32-bit into the cross-tools tree, run the following commands:
+Finally, to install GNU MPFR 32-bit into the build tree, run the following commands:
 
 ```bash
 make DESTDIR=$PWD/DESTDIR install
