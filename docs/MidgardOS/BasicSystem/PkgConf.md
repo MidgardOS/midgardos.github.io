@@ -19,7 +19,7 @@ Used Install Space: 5.0 MiB<br />
 
 ## Configuration
 
-To configure PkgConf for install into our cross-compilation root, run the following command:
+To configure PkgConf for install into our build root, run the following command:
 
 ```bash
 ./configure --prefix=/usr                         \
@@ -38,7 +38,9 @@ To compile PkgConf, run the following command:
 make
 ```
 
-Finally, to install PkgConf into the cross-tools tree, run the following command:
+This package requires a tool that is not in the distribution as yet for running its tests.
+
+Finally, to install PkgConf into the build tree, run the following commands:
 
 ```bash
 make install
