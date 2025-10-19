@@ -17,7 +17,7 @@ Used Install Space: 54 MiB<br />
 
 ## Configuration
 
-To configure GMP 32-bit for install into our cross-compilation root, run the following commands:
+To configure GMP 32-bit for install into the build root, run the following commands:
 
 ```bash
 make distclean
@@ -53,7 +53,7 @@ make check 2>&1 | tee gmp-check-log
 awk '/# PASS:/{total+=$3} ; END{print total}' gmp-check-log
 ```
 
-Finally, to install GMP 32-bit into the cross-tools tree, run the following command:
+Finally, to install GMP 32-bit into the build tree, run the following commands:
 
 ```bash
 make DESTDIR=$PWD/DESTDIR install
