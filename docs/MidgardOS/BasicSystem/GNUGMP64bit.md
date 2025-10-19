@@ -17,7 +17,7 @@ Used Install Space: 54 MiB<br />
 
 ## Configuration
 
-To configure GMP 64-bit for install into our cross-compilation root, run the following command:
+To configure GMP 64-bit for install into the build root, run the following commands:
 
 ```bash
 sed -i '/long long t1;/,+1s/()/(...)/' configure
@@ -31,7 +31,7 @@ sed -i '/long long t1;/,+1s/()/(...)/' configure
 
 ## Compilation and Installation
 
-To compile GMP 64-bit, run the following command:
+To compile GMP 64-bit, run the following commands:
 
 ```bash
 make
@@ -45,7 +45,7 @@ make check 2>&1 | tee gmp-check-log
 awk '/# PASS:/{total+=$3} ; END{print total}' gmp-check-log
 ```
 
-Finally, to install GMP 64-bit into the cross-tools tree, run the following command:
+Finally, to install GMP 64-bit into the build tree, run the following commands:
 
 ```bash
 make install
