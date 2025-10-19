@@ -28,6 +28,8 @@ makeinfo --html --no-split -o doc/dejagnu.html ../doc/dejagnu.texi
 makeinfo --plaintext       -o doc/dejagnu.txt  ../doc/dejagnu.texi
 ```
 
+A warning will be emitted during the makeinfo call for generating the HTML documentation. This is expected.
+
 ## Compilation and Installation
 
 The DejaGNU package does not have a traditional build step, however, there is a test suite that should be run:
