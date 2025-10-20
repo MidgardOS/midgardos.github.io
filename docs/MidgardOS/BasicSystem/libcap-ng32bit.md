@@ -17,7 +17,7 @@ Used Install Space: 348 KiB<br />
 
 ## Configuration
 
-To configure libcap-ng 32-bit for install into the build root, run the following command:
+To configure libcap-ng 32-bit for install into the build root, run the following commands:
 
 ```bash
 make distclean
