@@ -39,10 +39,10 @@ make
 Next, run the test suite:
 
 ```bash
-make check ||:
+make check
 ```
 
-The `root/getattr.test` seems to fail for some reason. For now, ignore this error.
+The `root/getattr.test` seems to fail if the host OS uses SELinux. For now, ignore this error, since it will be resolved later when SELinux functionality is added to the system.
 
 Finally, to install Attr 64-bit into the build tree, run the following command:
 
