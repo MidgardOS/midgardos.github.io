@@ -17,7 +17,7 @@ Used Install Space: 6.5 MiB<br />
 
 ## Configuration
 
-To configure ACL 32-bit for install into the build root, run the following command:
+To configure ACL 32-bit for install into the build root, run the following commands:
 
 ```bash
 make distclean
