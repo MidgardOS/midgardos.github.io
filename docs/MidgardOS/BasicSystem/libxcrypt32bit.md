@@ -44,9 +44,9 @@ make
 Finally, to install libxcrypt 32-bit into the build tree, run the following commands:
 
 ```bash
-cp -av .libs/libcrypt.so* /usr/lib/ &&
-make install-pkgconfigDATA &&
-ln -svf libxcrypt.pc /usr/lib/pkgconfig/libcrypt.pc
+make DESTDIR=$PWD/DESTDIR install
+rm -fv DESTDIR/usr/lib/libcrypt.la
+cp -Rv DESTDIR/usr/lib/* /usr/lib/
 ```
 
 ## Contents
