@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ACL64bit.md) ACL 64-bit | [HOME](../README.md) | libcap 64-bit [>>](./libcap64bit.md) |
+| [<<](./ACL64bit.md) ACL 64-bit | [HOME](../README.md) | libcap2 64-bit [>>](./libcap64bit.md) |
 
 ## ACL 32-bit
 
@@ -51,4 +51,4 @@ See the contents section of the 64-bit build of ACL for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ACL64bit.md) ACL 64-bit | [HOME](../README.md) | libcap 64-bit [>>](./libcap64bit.md) |
+| [<<](./ACL64bit.md) ACL 64-bit | [HOME](../README.md) | libcap2 64-bit [>>](./libcap64bit.md) |
