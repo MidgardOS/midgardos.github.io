@@ -17,7 +17,7 @@ Used Install Space: 22 MiB<br />
 
 ## Configuration
 
-To configure GNU MPC 64-bit for install into our cross-compilation root, run the following command:
+To configure GNU MPC 64-bit for install into the build root, run the following command:
 
 ```bash
 ./configure --prefix=/usr           \
@@ -29,7 +29,7 @@ To configure GNU MPC 64-bit for install into our cross-compilation root, run the
 
 ## Compilation and Installation
 
-To compile GNU MPC 64-bit, run the following command:
+To compile GNU MPC 64-bit, run the following commands:
 
 ```bash
 make
@@ -42,7 +42,7 @@ Next, run the test suite:
 make check
 ```
 
-Finally, to install GNU MPC 64-bit into the cross-tools tree, run the following command:
+Finally, to install GNU MPC 64-bit into the build tree, run the following commands:
 
 ```bash
 make install
