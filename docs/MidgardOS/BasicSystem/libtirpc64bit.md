@@ -32,7 +32,7 @@ To configure the libtirpc 64-bit package for compilation, run the following comm
 
 ## Compilation and Installation
 
-To compile libtirpc 64-bit, run the following commands:
+To compile libtirpc 64-bit, run the following command:
 
 ```bash
 make
@@ -41,7 +41,7 @@ make
 Next, run the test suite:
 
 ```bash
-make test
+make check
 ```
 
 Finally, to install libtirpc 64-bit into the build tree, run the following commands:
