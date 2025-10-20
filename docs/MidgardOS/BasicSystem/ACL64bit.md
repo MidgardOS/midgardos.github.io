@@ -39,10 +39,10 @@ make
 Next, run the test suite:
 
 ```bash
-make check ||:
+make check
 ```
 
-Several tests seem to not work well inside the chroot. For now, ignore.
+Several tests fail due to missing SELinux support if the host OS is SELinux aware, and other issues due to being run inside a chroot environment. For now, ignore.
 
 Finally, to install ACL 64-bit into the build tree, run the following commands:
 
