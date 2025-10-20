@@ -40,6 +40,8 @@ Next, run the test suite:
 make check
 ```
 
+The single test that fails is due to locale not being setup correctly for this test. It is safe to ignore.
+
 Finally, to install GNU LibIDN2 64-bit into the build tree, run the following command:
 
 ```bash
