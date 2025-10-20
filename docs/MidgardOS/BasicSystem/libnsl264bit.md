@@ -29,7 +29,7 @@ To configure the libnsl2 64-bit package for compilation, run the following comma
 
 ## Compilation and Installation
 
-To compile libnsl2 64-bit, run the following commands:
+To compile libnsl2 64-bit, run the following command:
 
 ```bash
 make
