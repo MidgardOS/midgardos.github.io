@@ -17,7 +17,7 @@ Used Install Space: 20 MiB<br />
 
 ## Configuration
 
-To configure ISL 32-bit for install into our cross-compilation root, run the following command:
+To configure ISL 32-bit for install into the build root, run the following commands:
 
 ```bash
 make distclean
@@ -32,13 +32,13 @@ CC="gcc -m32" CXX="g++ -m32" \
 
 ## Compilation and Installation
 
-To compile ISL 32-bit, run the following commands:
+To compile ISL 32-bit, run the following command:
 
 ```bash
 make
 ```
 
-Finally, to install ISL 32-bit into the cross-tools tree, run the following commands:
+Finally, to install ISL 32-bit into the build tree, run the following commands:
 
 ```bash
 make DESTDIR=$PWD/DESTDIR install
