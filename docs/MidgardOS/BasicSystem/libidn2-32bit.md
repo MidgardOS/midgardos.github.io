@@ -17,7 +17,7 @@ Used Install Space: 21 MiB<br />
 
 ## Configuration
 
-To configure GNU LibIDN2 64-bit for install into the build root, run the following command:
+To configure GNU LibIDN2 64-bit for install into the build root, run the following commands:
 
 ```bash
 make distclean
@@ -37,7 +37,7 @@ To compile GNU LibIDN2 64-bit, run the following command:
 make
 ```
 
-Finally, to install GNU LibIDN2 64-bit into the build tree, run the following command:
+Finally, to install GNU LibIDN2 64-bit into the build tree, run the following commands:
 
 ```bash
 make DESTDIR=$PWD/DESTDIR install
