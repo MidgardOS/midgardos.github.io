@@ -34,7 +34,7 @@ Next, run the test suite:
 make test
 ```
 
-Finally, to install libcap2 64-bit into the build tree, run the following commands:
+Finally, to install libcap2 64-bit into the build tree, run the following command:
 
 ```bash
 make prefix=/usr lib=lib64 install
