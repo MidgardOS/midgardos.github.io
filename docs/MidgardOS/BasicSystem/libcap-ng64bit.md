@@ -28,7 +28,7 @@ To configure libxcrypt 64-bit for install into the build root, run the following
 
 ## Compilation and Installation
 
-To compile libxcrypt 64-bit, run the following commands:
+To compile libxcrypt 64-bit, run the following command:
 
 ```bash
 make
