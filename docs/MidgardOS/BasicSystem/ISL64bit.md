@@ -17,7 +17,7 @@ Used Install Space: 20 MiB<br />
 
 ## Configuration
 
-To configure ISL 64-bit for install into our cross-compilation root, run the following command:
+To configure ISL 64-bit for install into the build root, run the following command:
 
 ```bash
 ./configure --prefix=/usr           \
@@ -39,12 +39,12 @@ make html
 Next, run the test suite:
 
 ```bash
-make check ||:
+make check
 ```
 
 The Python test is failing due to the test being based on python2.x syntax and is safe to ignore.
 
-Finally, to install ISL 64-bit into the cross-tools tree, run the following commands:
+Finally, to install ISL 64-bit into the build tree, run the following commands:
 
 ```bash
 make install
