@@ -17,7 +17,7 @@ Used Install Space: 22 MiB<br />
 
 ## Configuration
 
-To configure GNU MPC 32-bit for install into our cross-compilation root, run the following command:
+To configure GNU MPC 32-bit for install into the build root, run the following commands:
 
 ```bash
 make distclean
@@ -38,7 +38,7 @@ To compile GNU MPC 32-bit, run the following command:
 make
 ```
 
-Finally, to install GNU MPC 32-bit into the cross-tools tree, run the following command:
+Finally, to install GNU MPC 32-bit into the build tree, run the following commands:
 
 ```bash
 make DESTDIR=$PWD/DESTDIR install
