@@ -17,7 +17,7 @@ Used Install Space: 1.2 MiB<br />
 
 ## Configuration
 
-To configure the libtirpc 32-bit package for compilation, run the following command:
+To configure the libtirpc 32-bit package for compilation, run the following commands:
 
 ```bash
 make distclean
