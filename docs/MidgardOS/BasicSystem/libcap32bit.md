@@ -21,7 +21,7 @@ The package does not have a traditional configuration script.
 
 ## Compilation and Installation
 
-To compile libcap2 32-bit, run the following command:
+To compile libcap2 32-bit, run the following commands:
 
 ```bash
 make distclean
