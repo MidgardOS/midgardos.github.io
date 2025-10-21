@@ -25,10 +25,11 @@ To compile tcp_wrappers 32-bit, run the following commands:
 
 ```bash
 make clean
+rm -fv libwrap.so libwrap.so.0
 CC="gcc -m32 -march=i686" make REAL_DAEMON_DIR=/usr/sbin MAJOR=0 MINOR=7 REL=6 linux
 ```
 
-Finally, to install tcp_wrappers 32-bit into the build tree, run the following command:
+Finally, to install tcp_wrappers 32-bit into the build tree, run the following commands:
 
 ```bash
 BUILD_ROOT=DESTDIR
