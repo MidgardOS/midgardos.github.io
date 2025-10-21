@@ -1,0 +1,49 @@
+Only in tcp_wrappers-7.6-build.f42.1/tcp_wrappers_7.6-ipv6.4: cflags
+diff -ur --exclude '*.o' tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/hosts_access.c tcp_wrappers-7.6-build.f42.1/tcp_wrappers_7.6-ipv6.4/hosts_access.c
+--- tcp_wrappers_7.6-ipv6.4/hosts_access.c	2025-01-24 05:51:11.196331042 +0100
++++ tcp_wrappers_7.6-ipv6.4/hosts_access.c	2025-01-24 06:04:55.926532925 +0100
+@@ -311,7 +311,7 @@
+ 	     * and match against that.
+ 	     */
+ 	    if (host->sin == NULL) {
+-		if (host->addr == NULL ||
++		if (strlen(host->addr) == 0 || // fix: -Waddress
+ 		    inet_pton(AF_INET6, host->addr, &hostin6) != 1) {
+ 		    return (NO);
+ 		}
+@@ -322,7 +322,7 @@
+ 		hip = &host->sin->sg_sin6.sin6_addr;
+ 	    }
+ 
+-	    if (cbr = strchr(tok, ']'))
++	    if ((cbr = strchr(tok, ']'))) // fix: -Wparentheses
+ 		*cbr = '\0';
+ 
+ 	    if (cbr == NULL) {
+Only in tcp_wrappers-7.6-build.f42.1/tcp_wrappers_7.6-ipv6.4: libwrap.a
+Only in tcp_wrappers-7.6-build.f42.1/tcp_wrappers_7.6-ipv6.4: libwrap.so
+Only in tcp_wrappers-7.6-build.f42.1/tcp_wrappers_7.6-ipv6.4: libwrap.so.
+Only in tcp_wrappers-7.6-build.f42.1/tcp_wrappers_7.6-ipv6.4: libwrap.so...
+diff -ur --exclude '*.o' tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/options.c tcp_wrappers-7.6-build.f42.1/tcp_wrappers_7.6-ipv6.4/options.c
+--- tcp_wrappers_7.6-ipv6.4/options.c	2025-01-24 05:51:11.198724069 +0100
++++ tcp_wrappers_7.6-ipv6.4/options.c	2025-01-24 05:56:38.274414303 +0100
+@@ -579,6 +579,7 @@
+ 	    return (t->value);
+     tcpd_jump("bad syslog facility or severity: \"%s\"", name);
+     /* NOTREACHED */
++    return -1; // satisfy -Wreturn-type
+ }
+ 
+ /* severity_option - change logging severity for this event (Dave Mitchell) */
+diff -ur --exclude '*.o' tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/tcpd.c tcp_wrappers-7.6-build.f42.1/tcp_wrappers_7.6-ipv6.4/tcpd.c
+--- tcp_wrappers_7.6-ipv6.4/tcpd.c	2025-01-24 05:51:11.203474597 +0100
++++ tcp_wrappers_7.6-ipv6.4/tcpd.c	2025-01-24 06:01:23.235360032 +0100
+@@ -63,7 +63,7 @@
+      */
+ 
+     if (argv[0][0] == '/') {
+-	strncpy(path, argv[0], sizeof(path));
++	snprintf(path, sizeof(path), "%s", argv[0]); // fix: -Wstringop-truncation
+ 	argv[0] = strrchr(argv[0], '/') + 1;
+     } else {
+ 	snprintf(path, sizeof(path), "%s/%s", REAL_DAEMON_DIR, argv[0]);

@@ -1,0 +1,1405 @@
+diff --exclude '*.o' -u ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/clean_exit.c ./clean_exit.c
+--- ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/clean_exit.c	2025-01-23 07:43:13.032014983 +0100
++++ ./clean_exit.c	2025-01-24 05:04:24.259585844 +0100
+@@ -13,16 +13,14 @@
+ #endif
+ 
+ #include <stdio.h>
++#include <stdlib.h>
+ #include <unistd.h>
+ 
+-extern void exit();
+-
+ #include "tcpd.h"
+ 
+ /* clean_exit - clean up and exit */
+ 
+-void    clean_exit(request)
+-struct request_info *request;
++void    clean_exit(struct request_info *request)
+ {
+ 
+     /*
+diff --exclude '*.o' -u ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/diag.c ./diag.c
+--- ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/diag.c	1994-12-28 17:42:20.000000000 +0100
++++ ./diag.c	2025-01-24 05:29:31.310261734 +0100
+@@ -29,11 +29,7 @@
+ 
+ /* tcpd_diag - centralize error reporter */
+ 
+-static void tcpd_diag(severity, tag, format, ap)
+-int     severity;
+-char   *tag;
+-char   *format;
+-va_list ap;
++static void tcpd_diag(int severity, char *tag, char *format, va_list ap)
+ {
+     char    fmt[BUFSIZ];
+ 
+diff --exclude '*.o' -u ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/eval.c ./eval.c
+--- ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/eval.c	2025-01-23 07:43:12.910081894 +0100
++++ ./eval.c	2025-01-24 05:23:08.050564179 +0100
+@@ -42,8 +42,7 @@
+ 
+ /* eval_user - look up user name */
+ 
+-char   *eval_user(request)
+-struct request_info *request;
++char   *eval_user(struct request_info *request)
+ {
+     if (request->user[0] == 0) {
+ 	strcpy(request->user, unknown);
+@@ -55,8 +54,7 @@
+ 
+ /* eval_hostaddr - look up printable address */
+ 
+-char   *eval_hostaddr(host)
+-struct host_info *host;
++char   *eval_hostaddr(struct host_info *host)
+ {
+     if (host->addr[0] == 0) {
+ 	strcpy(host->addr, unknown);
+@@ -68,8 +66,7 @@
+ 
+ /* eval_hostname - look up host name */
+ 
+-char   *eval_hostname(host)
+-struct host_info *host;
++char   *eval_hostname(struct host_info *host)
+ {
+     if (host->name[0] == 0) {
+ 	strcpy(host->name, unknown);
+@@ -81,8 +78,7 @@
+ 
+ /* eval_hostinfo - return string with host name (preferred) or address */
+ 
+-char   *eval_hostinfo(host)
+-struct host_info *host;
++char   *eval_hostinfo(struct host_info *host)
+ {
+     char   *hostname;
+ 
+@@ -100,8 +96,7 @@
+ 
+ /* eval_client - return string with as much about the client as we know */
+ 
+-char   *eval_client(request)
+-struct request_info *request;
++char   *eval_client(struct request_info *request)
+ {
+     static char both[2 * STRING_LENGTH];
+     char   *hostinfo = eval_hostinfo(request->client);
+@@ -120,8 +115,7 @@
+ 
+ /* eval_server - return string with as much about the server as we know */
+ 
+-char   *eval_server(request)
+-struct request_info *request;
++char   *eval_server(struct request_info *request)
+ {
+     static char both[2 * STRING_LENGTH];
+     char   *host = eval_hostinfo(request->server);
+diff --exclude '*.o' -u ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/fakelog.c ./fakelog.c
+--- ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/fakelog.c	2025-01-23 07:43:13.032319923 +0100
++++ ./fakelog.c	2025-01-24 05:27:05.554821492 +0100
+@@ -18,10 +18,7 @@
+ /* ARGSUSED */
+ 
+ void
+-openlog(name, logopt, facility)
+-char   *name;
+-int     logopt;
+-int     facility;
++openlog(char *name, int logopt, int facility)
+ {
+     /* void */
+ }
+@@ -29,10 +26,7 @@
+ /* vsyslog - format one record */
+ 
+ void
+-vsyslog(severity, fmt, ap)
+-int     severity;
+-char   *fmt;
+-va_list ap;
++vsyslog(int severity, char *fmt, va_list ap)
+ {
+     char    buf[BUFSIZ];
+ 
+diff --exclude '*.o' -u ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/fix_options.c ./fix_options.c
+--- ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/fix_options.c	2025-01-23 07:43:13.032599292 +0100
++++ ./fix_options.c	2025-01-24 05:30:09.963835282 +0100
+@@ -33,8 +33,7 @@
+ /* fix_options - get rid of IP-level socket options */
+ 
+ void
+-fix_options(request)
+-struct request_info *request;
++fix_options(struct request_info *request)
+ {
+ #ifdef IP_OPTIONS
+     unsigned char optbuf[BUFFER_SIZE / 3], *cp;
+diff --exclude '*.o' -u ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/hosts_access.c ./hosts_access.c
+--- ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/hosts_access.c	2025-01-23 07:43:13.046855331 +0100
++++ ./hosts_access.c	2025-01-24 05:37:55.197843667 +0100
+@@ -37,7 +37,6 @@
+ #include <rpcsvc/ypclnt.h>
+ #include <netdb.h>
+ 
+-extern char *fgets();
+ extern int errno;
+ 
+ #ifndef	INADDR_NONE
+@@ -84,15 +83,15 @@
+ 
+ /* Forward declarations. */
+ 
+-static int table_match();
+-static int list_match();
+-static int server_match();
+-static int client_match();
+-static int host_match();
+-static int string_match();
+-static int masked_match();
++static int table_match(char *table, struct request_info *request);
++static int list_match(char *list, struct request_info *request, int (*match_fn)(char *tok, struct request_info *request));
++static int server_match(char *tok, struct request_info *request);
++static int client_match(char *tok, struct request_info *request);
++static int host_match(char *tok, struct host_info *host);
++static int string_match(char *tok, char *string);
++static int masked_match(char *net_tok, char *mask_tok, char *string);
+ #ifdef HAVE_IPV6
+-static void ipv6_mask();
++static void ipv6_mask(struct in6_addr *in6p, int maskbits);
+ #endif
+ 
+ /* Size of logical line buffer. */
+@@ -101,8 +100,7 @@
+ 
+ /* hosts_access - host access control facility */
+ 
+-int     hosts_access(request)
+-struct request_info *request;
++int     hosts_access(struct request_info *request)
+ {
+     int     verdict;
+     /*
+@@ -134,9 +132,7 @@
+ 
+ /* table_match - match table entries with (daemon, client) pair */
+ 
+-static int table_match(table, request)
+-char   *table;
+-struct request_info *request;
++static int table_match(char *table, struct request_info *request)
+ {
+     FILE   *fp;
+     char    sv_list[BUFLEN];		/* becomes list of daemons */
+@@ -200,10 +196,7 @@
+ 
+ /* list_match - match a request against a list of patterns with exceptions */
+ 
+-static int list_match(list, request, match_fn)
+-char   *list;
+-struct request_info *request;
+-int   (*match_fn) ();
++static int list_match(char *list, struct request_info *request, int (*match_fn)(char *tok, struct request_info *request))
+ {
+     char   *tok;
+ 
+@@ -228,9 +221,7 @@
+ 
+ /* server_match - match server information */
+ 
+-static int server_match(tok, request)
+-char   *tok;
+-struct request_info *request;
++static int server_match(char *tok, struct request_info *request)
+ {
+     char   *host;
+ 
+@@ -244,9 +235,7 @@
+ 
+ /* client_match - match client information */
+ 
+-static int client_match(tok, request)
+-char   *tok;
+-struct request_info *request;
++static int client_match(char *tok, struct request_info *request)
+ {
+     char   *host;
+ 
+@@ -260,9 +249,7 @@
+ 
+ /* hostfile_match - look up host patterns from file */
+ 
+-static int hostfile_match(path, host)
+-char   *path;
+-struct hosts_info *host;
++static int hostfile_match(char *path, struct host_info *host)
+ {
+     char    tok[BUFSIZ];
+     int     match = NO;
+@@ -280,9 +267,7 @@
+ 
+ /* host_match - match host name and/or address against pattern */
+ 
+-static int host_match(tok, host)
+-char   *tok;
+-struct host_info *host;
++static int host_match(char *tok, struct host_info *host)
+ {
+     char   *mask;
+ 
+@@ -389,9 +374,7 @@
+ 
+ /* string_match - match string against pattern */
+ 
+-static int string_match(tok, string)
+-char   *tok;
+-char   *string;
++static int string_match(char *tok, char *string)
+ {
+     int     n;
+ 
+@@ -419,10 +402,7 @@
+ 
+ /* masked_match - match address against netnumber/netmask */
+ 
+-static int masked_match(net_tok, mask_tok, string)
+-char   *net_tok;
+-char   *mask_tok;
+-char   *string;
++static int masked_match(char *net_tok, char *mask_tok, char *string)
+ {
+     unsigned long net;
+     unsigned long mask;
+@@ -523,9 +503,7 @@
+  * This function can be made generic by specifying an address length as
+  * extra parameter. (So Wietse can implement 1.2.3.4/16)
+  */
+-static void ipv6_mask(in6p, maskbits)
+-struct in6_addr *in6p;
+-int maskbits;
++static void ipv6_mask(struct in6_addr *in6p, int maskbits)
+ {
+     unsigned char *p = (unsigned char*) in6p;
+ 
+diff --exclude '*.o' -u ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/hosts_ctl.c ./hosts_ctl.c
+--- ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/hosts_ctl.c	2025-01-23 07:43:12.969433568 +0100
++++ ./hosts_ctl.c	2025-01-24 05:30:30.078384901 +0100
+@@ -21,11 +21,7 @@
+ 
+ /* hosts_ctl - limited interface to the hosts_access() routine */
+ 
+-int     hosts_ctl(daemon, name, addr, user)
+-char   *daemon;
+-char   *name;
+-char   *addr;
+-char   *user;
++int     hosts_ctl(char *daemon, char *name, char *addr, char *user)
+ {
+     struct request_info request;
+ 
+diff --exclude '*.o' -u ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/inetcf.c ./inetcf.c
+--- ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/inetcf.c	2025-01-23 07:43:13.058489888 +0100
++++ ./inetcf.c	2025-01-24 05:18:20.965618897 +0100
+@@ -12,12 +12,12 @@
+ #include <sys/types.h>
+ #include <sys/stat.h>
+ #include <stdio.h>
++#include <stdlib.h>
+ #include <errno.h>
+ #include <string.h>
+ #include <stdlib.h>
+ 
+ extern int errno;
+-extern void exit();
+ 
+ #include "tcpd.h"
+ #include "inetcf.h"
+@@ -40,8 +40,8 @@
+     0,
+ };
+ 
+-static void inet_chk();
+-static char *base_name();
++static void inet_chk(char *protocol, char *path, char *arg0, char *arg1);
++static char *base_name(char *path);
+ 
+ int     check_path(char *, struct stat *);
+ 
+@@ -60,8 +60,7 @@
+ 
+ /* inet_conf - read in and examine inetd.conf (or tlid.conf) entries */
+ 
+-char   *inet_cfg(conf)
+-char   *conf;
++char   *inet_cfg(char *conf)
+ {
+     char    buf[BUFSIZ];
+     FILE   *fp = NULL;
+@@ -72,7 +71,7 @@
+     char   *arg0;
+     char   *arg1;
+     struct tcpd_context saved_context;
+-    char   *percent_m();
++    char   *percent_m(char *obuf, char *ibuf);
+     int     i;
+     struct stat st;
+ 
+@@ -165,11 +164,7 @@
+ 
+ /* inet_chk - examine one inetd.conf (tlid.conf?) entry */
+ 
+-static void inet_chk(protocol, path, arg0, arg1)
+-char   *protocol;
+-char   *path;
+-char   *arg0;
+-char   *arg1;
++static void inet_chk(char *protocol, char *path, char *arg0, char *arg1)
+ {
+     char    daemon[BUFSIZ];
+     struct stat st;
+@@ -276,9 +271,7 @@
+ 
+ /* inet_set - remember service status */
+ 
+-void    inet_set(name, type)
+-char   *name;
+-int     type;
++void    inet_set(char *name, int type)
+ {
+     struct inet_ent *ip =
+     (struct inet_ent *) malloc(sizeof(struct inet_ent) + strlen(name));
+@@ -295,8 +288,7 @@
+ 
+ /* inet_get - look up service status */
+ 
+-int     inet_get(name)
+-char   *name;
++int     inet_get(char *name)
+ {
+     struct inet_ent *ip;
+ 
+@@ -312,8 +304,7 @@
+ 
+ /* base_name - compute last pathname component */
+ 
+-static char *base_name(path)
+-char   *path;
++static char *base_name(char *path)
+ {
+     char   *cp;
+ 
+diff --exclude '*.o' -u ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/inetcf.h ./inetcf.h
+--- ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/inetcf.h	1994-12-28 17:42:30.000000000 +0100
++++ ./inetcf.h	2025-01-24 05:15:40.232164902 +0100
+@@ -4,9 +4,9 @@
+   * Author: Wietse Venema, Eindhoven University of Technology, The Netherlands.
+   */
+ 
+-extern char *inet_cfg();		/* read inetd.conf file */
+-extern void inet_set();			/* remember internet service */
+-extern int inet_get();			/* look up internet service */
++extern char *inet_cfg(char *conf);		/* read inetd.conf file */
++extern void inet_set(char *name, int type);			/* remember internet service */
++extern int inet_get(char *name);			/* look up internet service */
+ 
+ #define WR_UNKNOWN	(-1)		/* service unknown */
+ #define WR_NOT		1		/* may not be wrapped */
+Only in .: libwrap.a
+Only in .: libwrap.so
+Only in .: libwrap.so.
+Only in .: libwrap.so...
+diff --exclude '*.o' -u ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/misc.c ./misc.c
+--- ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/misc.c	2025-01-23 07:43:12.998623662 +0100
++++ ./misc.c	2025-01-24 05:28:42.989704017 +0100
+@@ -20,18 +20,13 @@
+ 
+ #include "tcpd.h"
+ 
+-extern char *fgets();
+-
+ #ifndef	INADDR_NONE
+ #define	INADDR_NONE	(-1)		/* XXX should be 0xffffffff */
+ #endif
+ 
+ /* xgets - fgets() with backslash-newline stripping */
+ 
+-char   *xgets(ptr, len, fp)
+-char   *ptr;
+-int     len;
+-FILE   *fp;
++char   *xgets(char *ptr, int len, FILE *fp)
+ {
+     int     got;
+     char   *start = ptr;
+@@ -67,9 +62,7 @@
+ 
+ /* split_at - break string at delimiter or return NULL */
+ 
+-char   *split_at(string, delimiter)
+-char   *string;
+-int     delimiter;
++char   *split_at(char *string, int delimiter)
+ {
+     char   *cp;
+ 
+@@ -102,8 +95,7 @@
+ 
+ /* dot_quad_addr - convert dotted quad to internal form */
+ 
+-unsigned long dot_quad_addr(str)
+-char   *str;
++unsigned long dot_quad_addr(char *str)
+ {
+     int     in_run = 0;
+     int     runs = 0;
+@@ -125,11 +117,7 @@
+ 
+ /* numeric_addr - convert textual IP address to binary form */
+ 
+-int numeric_addr(str, addr, af, len)
+-char *str;
+-union gen_addr *addr;
+-int *af;
+-int *len;
++int numeric_addr(char *str, union gen_addr *addr, int *af, int *len)
+ {
+     union gen_addr t;
+ 
+@@ -158,9 +146,7 @@
+ 
+ /* tcpd_gethostbyname - an IP family neutral gethostbyname */
+ 
+-struct hostent *tcpd_gethostbyname(host, af)
+-char *host;
+-int af;
++struct hostent *tcpd_gethostbyname(char *host, int af)
+ {
+ #ifdef HAVE_IPV6
+     struct hostent *hp;
+@@ -199,8 +185,7 @@
+  *
+  * We also allow a '/prefix' specifier.
+  */
+-char *skip_ipv6_addrs(str)
+-char *str;
++char *skip_ipv6_addrs(char *str)
+ {
+     char *obr, *cbr, *colon;
+     char *p = str;
+@@ -230,8 +215,7 @@
+ 
+ /* prefix_to_netmask - convert prefix (0-32) to netmask */
+ 
+-unsigned long prefix_to_netmask(str)
+-char   *str;
++unsigned long prefix_to_netmask(char *str)
+ {
+     unsigned long prefix;
+     char *endptr;
+diff --exclude '*.o' -u ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/mystdarg.h ./mystdarg.h
+--- ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/mystdarg.h	1994-12-28 17:42:33.000000000 +0100
++++ ./mystdarg.h	2025-01-24 05:08:56.507694501 +0100
+@@ -16,4 +16,4 @@
+ #define VAEND(ap)              va_end(ap);}
+ #endif
+ 
+-extern char *percent_m();
++extern char *percent_m(char *obuf, char *ibuf);
+diff --exclude '*.o' -u ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/options.c ./options.c
+--- ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/options.c	2025-01-23 07:43:13.049377315 +0100
++++ ./options.c	2025-01-24 05:38:06.952468727 +0100
+@@ -69,32 +69,32 @@
+ static char whitespace_eq[] = "= \t\r\n";
+ #define whitespace (whitespace_eq + 1)
+ 
+-static char *get_field();		/* chew :-delimited field off string */
+-static char *chop_string();		/* strip leading and trailing blanks */
++static char *get_field(char *string);		/* chew :-delimited field off string */
++static char *chop_string(register char *string);		/* strip leading and trailing blanks */
+ 
+ /* List of functions that implement the options. Add yours here. */
+ 
+-static void user_option();		/* execute "user name.group" option */
+-static void group_option();		/* execute "group name" option */
+-static void umask_option();		/* execute "umask mask" option */
+-static void linger_option();		/* execute "linger time" option */
+-static void keepalive_option();		/* execute "keepalive" option */
+-static void aclexec_option();		/* execute "aclexec command" option */
+-static void spawn_option();		/* execute "spawn command" option */
+-static void twist_option();		/* execute "twist command" option */
+-static void rfc931_option();		/* execute "rfc931" option */
+-static void setenv_option();		/* execute "setenv name value" */
+-static void nice_option();		/* execute "nice" option */
+-static void severity_option();		/* execute "severity value" */
+-static void allow_option();		/* execute "allow" option */
+-static void deny_option();		/* execute "deny" option */
+-static void banners_option();		/* execute "banners path" option */
++static void user_option(char *value, struct request_info *request);		/* execute "user name.group" option */
++static void group_option(char *value, struct request_info *request);		/* execute "group name" option */
++static void umask_option(char *value, struct request_info *request);		/* execute "umask mask" option */
++static void linger_option(char *value, struct request_info *request);		/* execute "linger time" option */
++static void keepalive_option(char *value, struct request_info *request);		/* execute "keepalive" option */
++static void aclexec_option(char *value, struct request_info *request);		/* execute "aclexec command" option */
++static void spawn_option(char *value, struct request_info *request);		/* execute "spawn command" option */
++static void twist_option(char *value, struct request_info *request);		/* execute "twist command" option */
++static void rfc931_option(char *value, struct request_info *request);		/* execute "rfc931" option */
++static void setenv_option(char *value, struct request_info *request);		/* execute "setenv name value" */
++static void nice_option(char *value, struct request_info *request);		/* execute "nice" option */
++static void severity_option(char *value, struct request_info *request);		/* execute "severity value" */
++static void allow_option(char *value, struct request_info *request);		/* execute "allow" option */
++static void deny_option(char *value, struct request_info *request);		/* execute "deny" option */
++static void banners_option(char *value, struct request_info *request);		/* execute "banners path" option */
+ 
+ /* Structure of the options table. */
+ 
+ struct option {
+     char   *name;			/* keyword name, case is ignored */
+-    void  (*func) ();			/* function that does the real work */
++    void  (*func) (char *, struct request_info *);			/* function that does the real work */
+     int     flags;			/* see below... */
+ };
+ 
+@@ -134,9 +134,7 @@
+ 
+ /* process_options - process access control options */
+ 
+-void    process_options(options, request)
+-char   *options;
+-struct request_info *request;
++void    process_options(char *options, struct request_info *request)
+ {
+     char   *key;
+     char   *value;
+@@ -200,9 +198,7 @@
+ 
+ /* ARGSUSED */
+ 
+-static void allow_option(value, request)
+-char   *value;
+-struct request_info *request;
++static void allow_option(char *value, struct request_info *request)
+ {
+     longjmp(tcpd_buf, AC_PERMIT);
+ }
+@@ -211,18 +207,14 @@
+ 
+ /* ARGSUSED */
+ 
+-static void deny_option(value, request)
+-char   *value;
+-struct request_info *request;
++static void deny_option(char *value, struct request_info *request)
+ {
+     longjmp(tcpd_buf, AC_DENY);
+ }
+ 
+ /* banners_option - expand %<char>, terminate each line with CRLF */
+ 
+-static void banners_option(value, request)
+-char   *value;
+-struct request_info *request;
++static void banners_option(char *value, struct request_info *request)
+ {
+     char    path[MAXPATHNAMELEN];
+     char    ibuf[BUFSIZ];
+@@ -252,12 +244,10 @@
+ 
+ /* ARGSUSED */
+ 
+-static void group_option(value, request)
+-char   *value;
+-struct request_info *request;
++static void group_option(char *value, struct request_info *request)
+ {
+     struct group *grp;
+-    struct group *getgrnam();
++    struct group *getgrnam(const char *__name);
+ 
+     if ((grp = getgrnam(value)) == 0)
+ 	tcpd_jump("unknown group: \"%s\"", value);
+@@ -275,12 +265,10 @@
+ 
+ /* ARGSUSED */
+ 
+-static void user_option(value, request)
+-char   *value;
+-struct request_info *request;
++static void user_option(char *value, struct request_info *request)
+ {
+     struct passwd *pwd;
+-    struct passwd *getpwnam();
++    struct passwd *getpwnam(const char *__name);
+     char   *group;
+     int    defaultgroup = 0;
+ 
+@@ -308,9 +296,7 @@
+ 
+ /* ARGSUSED */
+ 
+-static void umask_option(value, request)
+-char   *value;
+-struct request_info *request;
++static void umask_option(char *value, struct request_info *request)
+ {
+     unsigned mask;
+     char    junk;
+@@ -324,9 +310,7 @@
+ 
+ /* ARGSUSED */
+ 
+-static void spawn_option(value, request)
+-char   *value;
+-struct request_info *request;
++static void spawn_option(char *value, struct request_info *request)
+ {
+     if (dry_run == 0)
+ 	shell_cmd(value);
+@@ -337,9 +321,7 @@
+ 
+ /* ARGSUSED */
+ 
+-static void aclexec_option(value, request)
+-char   *value;
+-struct request_info *request;
++static void aclexec_option(char *value, struct request_info *request)
+ {
+     int status, child_pid, wait_pid;
+     extern int aclexec_matched;
+@@ -384,9 +366,7 @@
+ 
+ /* ARGSUSED */
+ 
+-static void linger_option(value, request)
+-char   *value;
+-struct request_info *request;
++static void linger_option(char *value, struct request_info *request)
+ {
+     struct linger linger;
+     char    junk;
+@@ -406,9 +386,7 @@
+ 
+ /* ARGSUSED */
+ 
+-static void keepalive_option(value, request)
+-char   *value;
+-struct request_info *request;
++static void keepalive_option(char *value, struct request_info *request)
+ {
+     static int on = 1;
+ 
+@@ -421,9 +399,7 @@
+ 
+ /* ARGSUSED */
+ 
+-static void nice_option(value, request)
+-char   *value;
+-struct request_info *request;
++static void nice_option(char *value, struct request_info *request)
+ {
+     int     niceval = 10;
+     char    junk;
+@@ -436,9 +412,7 @@
+ 
+ /* twist_option - replace process by shell command */
+ 
+-static void twist_option(value, request)
+-char   *value;
+-struct request_info *request;
++static void twist_option(char *value, struct request_info *request)
+ {
+     char   *error;
+ 
+@@ -474,9 +448,7 @@
+ 
+ /* rfc931_option - look up remote user name */
+ 
+-static void rfc931_option(value, request)
+-char   *value;
+-struct request_info *request;
++static void rfc931_option(char *value, struct request_info *request)
+ {
+     int     timeout;
+     char    junk;
+@@ -493,9 +465,7 @@
+ 
+ /* ARGSUSED */
+ 
+-static void setenv_option(value, request)
+-char   *value;
+-struct request_info *request;
++static void setenv_option(char *value, struct request_info *request)
+ {
+     char   *var_value;
+ 
+@@ -600,9 +570,7 @@
+ 
+ /* severity_map - lookup facility or severity value */
+ 
+-static int severity_map(table, name)
+-struct syslog_names *table;
+-char   *name;
++static int severity_map(struct syslog_names *table, char *name)
+ {
+     struct syslog_names *t;
+ 
+@@ -617,9 +585,7 @@
+ 
+ /* ARGSUSED */
+ 
+-static void severity_option(value, request)
+-char   *value;
+-struct request_info *request;
++static void severity_option(char *value, struct request_info *request)
+ {
+     char   *level = split_at(value, '.');
+ 
+@@ -630,8 +596,7 @@
+ 
+ /* get_field - return pointer to next field in string */
+ 
+-static char *get_field(string)
+-char   *string;
++static char *get_field(char *string)
+ {
+     static char *last = "";
+     char   *src;
+@@ -673,8 +638,7 @@
+ 
+ /* chop_string - strip leading and trailing blanks from string */
+ 
+-static char *chop_string(string)
+-register char *string;
++static char *chop_string(register char *string)
+ {
+     char   *start = 0;
+     char   *end;
+diff --exclude '*.o' -u ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/percent_m.c ./percent_m.c
+--- ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/percent_m.c	2025-01-23 07:43:13.033377287 +0100
++++ ./percent_m.c	2025-01-24 05:16:57.822162539 +0100
+@@ -22,9 +22,7 @@
+ 
+ #include "mystdarg.h"
+ 
+-char   *percent_m(obuf, ibuf)
+-char   *obuf;
+-char   *ibuf;
++char   *percent_m(char *obuf, char *ibuf)
+ {
+     char   *bp = obuf;
+     char   *cp = ibuf;
+diff --exclude '*.o' -u ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/percent_x.c ./percent_x.c
+--- ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/percent_x.c	2025-01-23 07:43:13.033720418 +0100
++++ ./percent_x.c	2025-01-24 05:04:03.089721919 +0100
+@@ -17,23 +17,18 @@
+ /* System libraries. */
+ 
+ #include <stdio.h>
++#include <stdlib.h>
+ #include <syslog.h>
+ #include <string.h>
+ #include <unistd.h>
+ 
+-extern void exit();
+-
+ /* Local stuff. */
+ 
+ #include "tcpd.h"
+ 
+ /* percent_x - do %<char> expansion, abort if result buffer is too small */
+ 
+-char   *percent_x(result, result_len, string, request)
+-char   *result;
+-int     result_len;
+-char   *string;
+-struct request_info *request;
++char   *percent_x(char *result, int result_len, char *string, struct request_info *request)
+ {
+     char   *bp = result;
+     char   *end = result + result_len - 1;	/* end of result buffer */
+diff --exclude '*.o' -u ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/refuse.c ./refuse.c
+--- ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/refuse.c	2025-01-23 07:43:12.933405043 +0100
++++ ./refuse.c	2025-01-24 05:03:06.960876259 +0100
+@@ -22,8 +22,7 @@
+ 
+ /* refuse - refuse request */
+ 
+-void    refuse(request)
+-struct request_info *request;
++void    refuse(struct request_info *request)
+ {
+ #ifdef HAVE_IPV6
+     syslog(deny_severity, "refused connect from %s (%s)",
+diff --exclude '*.o' -u ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/rfc931.c ./rfc931.c
+--- ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/rfc931.c	2025-01-23 07:43:13.033887719 +0100
++++ ./rfc931.c	2025-01-24 05:31:21.230218106 +0100
+@@ -38,10 +38,7 @@
+ 
+ /* fsocket - open stdio stream on top of socket */
+ 
+-static FILE *fsocket(domain, type, protocol)
+-int     domain;
+-int     type;
+-int     protocol;
++static FILE *fsocket(int domain, int type, int protocol)
+ {
+     int     s;
+     FILE   *fp;
+@@ -60,18 +57,14 @@
+ 
+ /* timeout - handle timeouts */
+ 
+-static void timeout(sig)
+-int     sig;
++static void timeout(int sig)
+ {
+     siglongjmp(timebuf, sig);
+ }
+ 
+ /* rfc931 - return remote user name, given socket structures */
+ 
+-void    rfc931(rmt_sin, our_sin, dest)
+-struct sockaddr_gen *rmt_sin;
+-struct sockaddr_gen *our_sin;
+-char   *dest;
++void    rfc931(struct sockaddr_gen *rmt_sin, struct sockaddr_gen *our_sin, char *dest)
+ {
+     unsigned rmt_port;
+     unsigned our_port;
+Only in .: safe_finger
+diff --exclude '*.o' -u ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/safe_finger.c ./safe_finger.c
+--- ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/safe_finger.c	2025-01-23 07:43:13.034053092 +0100
++++ ./safe_finger.c	2025-01-24 05:19:09.522315935 +0100
+@@ -32,8 +32,6 @@
+ #include <pwd.h>
+ #include <grp.h>
+ 
+-extern void exit();
+-
+ /* Local stuff */
+ 
+ char    path[] = "PATH=/bin:/usr/bin:/usr/ucb:/usr/bsd:/etc:/usr/etc:/usr/sbin";
+@@ -49,17 +47,14 @@
+ 
+ int     finger_pid;
+ 
+-void    cleanup(sig)
+-int     sig;
++void    cleanup(int sig)
+ {
+     kill(finger_pid, SIGKILL);
+     exit(0);
+ }
+ 
+ int
+-main(argc, argv)
+-int     argc;
+-char  **argv;
++main(int argc, char **argv)
+ {
+     int     c;
+     int     line_length = 0;
+@@ -149,8 +144,7 @@
+ 
+ /* perror_exit - report system error text and terminate */
+ 
+-void    perror_exit(text)
+-char   *text;
++void    perror_exit(char *text)
+ {
+     perror(text);
+     exit(1);
+@@ -158,8 +152,7 @@
+ 
+ /* pipe_stdin - pipe stdin through program (from my ANSI to OLD C converter) */
+ 
+-int     pipe_stdin(argv)
+-char  **argv;
++int     pipe_stdin(char **argv)
+ {
+     int     pipefds[2];
+     int     pid;
+diff --exclude '*.o' -u ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/scaffold.c ./scaffold.c
+--- ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/scaffold.c	2025-01-23 07:43:13.034218852 +0100
++++ ./scaffold.c	2025-01-24 05:13:13.570468564 +0100
+@@ -43,8 +43,7 @@
+ 
+ /* dup_hostent - create hostent in one memory block */
+ 
+-static struct hostent *dup_hostent(hp)
+-struct hostent *hp;
++static struct hostent *dup_hostent(struct hostent *hp)
+ {
+     struct hostent_block {
+ 	struct hostent host;
+@@ -79,8 +78,7 @@
+ 
+ /* find_inet_addr - find all addresses for this host, result to free() */
+ 
+-struct hostent *find_inet_addr(host)
+-char   *host;
++struct hostent *find_inet_addr(char *host)
+ {
+     union gen_addr addr;
+     struct hostent *hp;
+@@ -123,8 +121,7 @@
+ 
+ /* check_dns - give each address thorough workout, return address count */
+ 
+-int     check_dns(host)
+-char   *host;
++int     check_dns(char *host)
+ {
+     struct request_info request;
+     struct sockaddr_gen sin;
+@@ -161,8 +158,7 @@
+ 
+ /* ARGSUSED */
+ 
+-void    shell_cmd(command)
+-char   *command;
++void    shell_cmd(char *command)
+ {
+     if (hosts_access_verbose)
+ 	printf("command: %s", command);
+@@ -172,8 +168,7 @@
+ 
+ /* ARGSUSED */
+ 
+-void    clean_exit(request)
+-struct request_info *request;
++void    clean_exit(struct request_info *request)
+ {
+     exit(0);
+ }
+@@ -182,19 +177,14 @@
+ 
+ /* ARGSUSED */
+ 
+-void    rfc931(rmt_sin, our_sin, dest)
+-struct sockaddr_gen *rmt_sin;
+-struct sockaddr_gen *our_sin;
+-char   *dest;
++void    rfc931(struct sockaddr_gen *rmt_sin, struct sockaddr_gen *our_sin, char *dest)
+ {
+     strcpy(dest, unknown);
+ }
+ 
+ /* check_path - examine accessibility */
+ 
+-int     check_path(path, st)
+-char   *path;
+-struct stat *st;
++int     check_path(char *path, struct stat *st)
+ {
+     struct stat stbuf;
+     char    buf[BUFSIZ];
+diff --exclude '*.o' -u ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/scaffold.h ./scaffold.h
+--- ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/scaffold.h	1994-12-31 18:19:20.000000000 +0100
++++ ./scaffold.h	2025-01-24 05:13:18.616007475 +0100
+@@ -4,6 +4,6 @@
+   * Author: Wietse Venema, Eindhoven University of Technology, The Netherlands.
+   */
+ 
+-extern struct hostent *find_inet_addr();
+-extern int check_dns();
+-extern int check_path();
++extern struct hostent *find_inet_addr(char *host);
++extern int check_dns(char *host);
++extern int check_path(char *path, struct stat *st);
+diff --exclude '*.o' -u ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/shell_cmd.c ./shell_cmd.c
+--- ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/shell_cmd.c	2025-01-23 07:43:12.975922271 +0100
++++ ./shell_cmd.c	2025-01-24 05:34:35.824040169 +0100
+@@ -18,6 +18,7 @@
+ #include <sys/param.h>
+ #include <signal.h>
+ #include <stdio.h>
++#include <stdlib.h>
+ #include <syslog.h>
+ #include <string.h>
+ #include <errno.h>
+@@ -26,15 +27,13 @@
+ #include <sys/stat.h>
+ #include <fcntl.h>
+ 
+-extern void exit();
+-
+ /* Local stuff. */
+ 
+ #include "tcpd.h"
+ 
+ /* Forward declarations. */
+ 
+-static void do_child();
++static void do_child(char *command);
+ 
+ /*
+  * The sigchld handler. If there is a SIGCHLD caused by a child other than
+@@ -50,8 +49,7 @@
+ 
+ /* shell_cmd - execute shell command */
+ 
+-void    shell_cmd(command)
+-char   *command;
++void    shell_cmd(char *command)
+ {
+     int     child_pid;
+ 
+@@ -107,8 +105,7 @@
+ 
+ /* do_child - exec command with { stdin, stdout, stderr } to /dev/null */
+ 
+-static void do_child(command)
+-char   *command;
++static void do_child(char *command)
+ {
+     char   *error;
+     int     tmp_fd;
+diff --exclude '*.o' -u ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/socket.c ./socket.c
+--- ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/socket.c	2025-01-23 07:43:13.034519109 +0100
++++ ./socket.c	2025-01-24 05:07:43.328263379 +0100
+@@ -31,15 +31,13 @@
+ #include <syslog.h>
+ #include <string.h>
+ 
+-extern char *inet_ntoa();
+-
+ /* Local stuff. */
+ 
+ #include "tcpd.h"
+ 
+ /* Forward declarations. */
+ 
+-static void sock_sink();
++static void sock_sink(int fd);
+ 
+ #ifdef APPEND_DOT
+ 
+@@ -49,9 +47,7 @@
+   * that lack DNS-style trailing dot magic, such as local files or NIS maps.
+   */
+ 
+-static struct hostent *tcpd_gethostbyname_dot(name, af)
+-char   *name;
+-int af;
++static struct hostent *tcpd_gethostbyname_dot(char *name, int af)
+ {
+     char    dot_name[MAXHOSTNAMELEN + 1];
+ 
+@@ -80,8 +76,7 @@
+ 
+ /* sock_host - look up endpoint addresses and install conversion methods */
+ 
+-void    sock_host(request)
+-struct request_info *request;
++void    sock_host(struct request_info *request)
+ {
+     static struct sockaddr_gen client;
+     static struct sockaddr_gen server;
+@@ -133,8 +128,7 @@
+ 
+ /* sock_hostnofd - look up endpoint addresses and install conversion methods */
+ 
+-void    sock_hostnofd(request)
+-struct request_info *request;
++void    sock_hostnofd(struct request_info *request)
+ {
+     static struct sockaddr_storage client;
+     struct addrinfo hints, *res;
+@@ -178,8 +172,7 @@
+ 
+ /* sock_hostaddr - map endpoint address to printable form */
+ 
+-void    sock_hostaddr(host)
+-struct host_info *host;
++void    sock_hostaddr(struct host_info *host)
+ {
+     struct sockaddr_gen *sin = host->sin;
+ 
+@@ -194,8 +187,7 @@
+ 
+ /* sock_hostname - map endpoint address to host name */
+ 
+-void    sock_hostname(host)
+-struct host_info *host;
++void    sock_hostname(struct host_info *host)
+ {
+     struct sockaddr_gen *sin = host->sin;
+     struct hostent *hp;
+@@ -289,8 +281,7 @@
+ 
+ /* sock_sink - absorb unreceived IP datagram */
+ 
+-static void sock_sink(fd)
+-int     fd;
++static void sock_sink(int fd)
+ {
+     char    buf[BUFSIZ];
+     struct sockaddr_in sin;
+@@ -308,8 +299,7 @@
+  * If we receive a V4 connection on a V6 socket, we pretend we really
+  * got a V4 connection.
+  */
+-void sockgen_simplify(sg)
+-sockaddr_gen *sg;
++void sockgen_simplify(sockaddr_gen *sg)
+ {
+ #ifdef HAVE_IPV6
+     if (sg->sg_family == AF_INET6 &&
+Only in .: tcpd
+diff --exclude '*.o' -u ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/tcpd.c ./tcpd.c
+--- ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/tcpd.c	2025-01-23 07:43:13.034905646 +0100
++++ ./tcpd.c	2025-01-24 05:37:02.719915049 +0100
+@@ -22,6 +22,7 @@
+ #include <sys/socket.h>
+ #include <netinet/in.h>
+ #include <stdio.h>
++#include <stdlib.h>
+ #include <syslog.h>
+ #include <string.h>
+ #include <unistd.h>
+@@ -45,9 +46,7 @@
+ int     deny_severity = LOG_WARNING;	/* ditto */
+ 
+ int
+-main(argc, argv)
+-int     argc;
+-char  **argv;
++main(int argc, char **argv)
+ {
+     struct request_info request;
+     char    path[MAXPATHNAMELEN];
+Only in .: tcpdchk
+diff --exclude '*.o' -u ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/tcpdchk.c ./tcpdchk.c
+--- ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/tcpdchk.c	2025-01-23 07:43:13.051298644 +0100
++++ ./tcpdchk.c	2025-01-24 05:22:34.643617070 +0100
+@@ -34,7 +34,6 @@
+ #include <stdlib.h>
+ 
+ extern int errno;
+-extern void exit();
+ extern int optind;
+ extern char *optarg;
+ 
+@@ -65,14 +64,14 @@
+   * Local stuff.
+   */
+ static void usage();
+-static void parse_table();
+-static void print_list();
+-static void check_daemon_list();
+-static void check_client_list();
+-static void check_daemon();
+-static void check_user();
+-static int check_host();
+-static int reserved_name();
++static void parse_table(char *table, struct request_info *request);
++static void print_list(char *title, char *list);
++static void check_daemon_list(char *list);
++static void check_client_list(char *list);
++static void check_daemon(char *pat);
++static void check_user(char *pat);
++static int check_host(char *pat);
++static int reserved_name(char *pat);
+ 
+ #define PERMIT	1
+ #define DENY	0
+@@ -85,9 +84,7 @@
+ static int allow_check;
+ static char *inetcf;
+ 
+-int     main(argc, argv)
+-int     argc;
+-char  **argv;
++int     main(int argc, char **argv)
+ {
+     struct request_info request;
+     struct stat st;
+@@ -188,9 +185,7 @@
+ 
+ /* parse_table - like table_match(), but examines _all_ entries */
+ 
+-static void parse_table(table, request)
+-char   *table;
+-struct request_info *request;
++static void parse_table(char *table, struct request_info *request)
+ {
+     FILE   *fp;
+     int     real_verdict;
+@@ -266,9 +261,7 @@
+ 
+ /* print_list - pretty-print a list */
+ 
+-static void print_list(title, list)
+-char   *title;
+-char   *list;
++static void print_list(char *title, char *list)
+ {
+     char    buf[BUFLEN];
+     char   *cp;
+@@ -288,8 +281,7 @@
+ 
+ /* check_daemon_list - criticize daemon list */
+ 
+-static void check_daemon_list(list)
+-char   *list;
++static void check_daemon_list(char *list)
+ {
+     char    buf[BUFLEN];
+     char   *cp;
+@@ -316,8 +308,7 @@
+ 
+ /* check_client_list - criticize client list */
+ 
+-static void check_client_list(list)
+-char   *list;
++static void check_client_list(char *list)
+ {
+     char    buf[BUFLEN];
+     char   *cp;
+@@ -345,8 +336,7 @@
+ 
+ /* check_daemon - criticize daemon pattern */
+ 
+-static void check_daemon(pat)
+-char   *pat;
++static void check_daemon(char *pat)
+ {
+     if (pat[0] == '@') {
+ 	tcpd_warn("%s: daemon name begins with \"@\"", pat);
+@@ -377,8 +367,7 @@
+ 
+ /* check_user - criticize user pattern */
+ 
+-static void check_user(pat)
+-char   *pat;
++static void check_user(char *pat)
+ {
+     if (pat[0] == '@') {			/* @netgroup */
+ 	tcpd_warn("%s: user name begins with \"@\"", pat);
+@@ -399,8 +388,7 @@
+ 
+ /* check_host - criticize host pattern */
+ 
+-static int check_host(pat)
+-char   *pat;
++static int check_host(char *pat)
+ {
+     char   *mask;
+     int     addr_count = 1;
+@@ -478,8 +466,7 @@
+ 
+ /* reserved_name - determine if name is reserved */
+ 
+-static int reserved_name(pat)
+-char   *pat;
++static int reserved_name(char *pat)
+ {
+     return (STR_EQ(pat, unknown)
+ 	    || STR_EQ(pat, "KNOWN")
+diff --exclude '*.o' -u ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/tcpd.h ./tcpd.h
+--- ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/tcpd.h	2025-01-23 07:43:12.995598986 +0100
++++ ./tcpd.h	2025-01-24 05:16:13.018765967 +0100
+@@ -48,7 +48,7 @@
+ #endif
+ } gen_addr;
+ 
+-extern void sockgen_simplify();
++extern void sockgen_simplify(sockaddr_gen *sg);
+ 
+ #define sg_sa		sg_addr._sg_sa
+ #define sg_sin		sg_addr._sg_sin
+Only in .: tcpdmatch
+diff --exclude '*.o' -u ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/tcpdmatch.c ./tcpdmatch.c
+--- ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/tcpdmatch.c	2025-01-23 07:43:13.035059425 +0100
++++ ./tcpdmatch.c	2025-01-24 05:10:43.865959955 +0100
+@@ -32,7 +32,6 @@
+ #include <string.h>
+ #include <unistd.h>
+ 
+-extern void exit();
+ extern int optind;
+ extern char *optarg;
+ 
+@@ -50,14 +49,12 @@
+ #include "inetcf.h"
+ #include "scaffold.h"
+ 
+-static void usage();
+-static void tcpdmatch();
++static void usage(char *myname);
++static void tcpdmatch(struct request_info *request);
+ 
+ /* The main program */
+ 
+-int     main(argc, argv)
+-int     argc;
+-char  **argv;
++int     main(int argc, char **argv)
+ {
+     struct hostent *hp;
+     char   *myname = argv[0];
+@@ -236,8 +233,7 @@
+ 
+ /* Explain how to use this program */
+ 
+-static void usage(myname)
+-char   *myname;
++static void usage(char *myname)
+ {
+     fprintf(stderr, "usage: %s [-d] daemon[@host] [user@]host\n",
+ 	    myname);
+@@ -247,10 +243,7 @@
+ 
+ /* Print interesting expansions */
+ 
+-static void expand(text, pattern, request)
+-char   *text;
+-char   *pattern;
+-struct request_info *request;
++static void expand(char *text, char *pattern, struct request_info *request)
+ {
+     char    buf[BUFSIZ];
+ 
+@@ -260,8 +253,7 @@
+ 
+ /* Try out a (server,client) pair */
+ 
+-static void tcpdmatch(request)
+-struct request_info *request;
++static void tcpdmatch(struct request_info *request)
+ {
+     int     verdict;
+ 
+Only in .: try-from
+diff --exclude '*.o' -u ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/try-from.c ./try-from.c
+--- ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/try-from.c	2025-01-23 07:43:13.035213246 +0100
++++ ./try-from.c	2025-01-24 05:26:29.132023294 +0100
+@@ -38,9 +38,7 @@
+ int     deny_severity = LOG_WARNING;	/* ditto */
+ 
+ int
+-main(argc, argv)
+-int     argc;
+-char  **argv;
++main(int argc, char **argv)
+ {
+     struct request_info request;
+     char    buf[BUFSIZ];
+diff --exclude '*.o' -u ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/update.c ./update.c
+--- ../../tcp_wrappers-7.6-build/tcp_wrappers_7.6-ipv6.4/update.c	2025-01-23 07:43:13.035497185 +0100
++++ ./update.c	2025-01-24 05:29:54.710209556 +0100
+@@ -31,9 +31,7 @@
+ 
+ /* request_fill - request update engine */
+ 
+-static struct request_info *request_fill(request, ap)
+-struct request_info *request;
+-va_list ap;
++static struct request_info *request_fill(struct request_info *request, va_list ap)
+ {
+     int     key;
+     char   *ptr;
