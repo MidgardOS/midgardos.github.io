@@ -1,0 +1,11 @@
+--- Makefile  2025-10-20 20:19:56.649310643 -0400
++++ Makefile  2025-10-20 20:18:01.170568927 -0400
+@@ -740,7 +740,7 @@
+        -$(RANLIB) $(LIB)
+ 
+ $(SHLIB): $(LIB_OBJ)
+-       gcc -shared -fPIC -Wl,-soname -Wl,$(SHLIB).$(MAJOR) \
++       $(CC) -shared -fPIC -Wl,-soname -Wl,$(SHLIB).$(MAJOR) \
+                -o $(SHLIB).$(MAJOR).$(MINOR).$(REL) $^ $(LDFLAGS) $(LIBS)
+        ln -s $(SHLIB).$(MAJOR).$(MINOR).$(REL) $(SHLIB).$(MAJOR)
+        ln -s $(SHLIB).$(MAJOR).$(MINOR).$(REL) $(SHLIB)

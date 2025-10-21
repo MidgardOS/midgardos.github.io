@@ -56,6 +56,7 @@ patch -p1 <../patches/tcp_wrappers/tcp_wrappers-7.6-aclexec.patch
 patch -p1 <../patches/tcp_wrappers/tcp_wrappers-inetcf-c99.patch
 patch -p1 <../patches/tcp_wrappers/tcp_wrappers-7.6-gcc15-errors.patch
 patch -p1 <../patches/tcp_wrappers/tcp_wrappers-7.6-gcc15-warnings.patch
+patch -p1 <../patches/tcp_wrappers/tcp_wrappers-7.6-Makefile.patch
 ```
 
 ## Configuration
