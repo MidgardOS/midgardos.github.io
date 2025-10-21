@@ -17,42 +17,45 @@ Used Install Space: 312 KiB<br />
 
 ## Patching
 
-The TCP Wrappers sources need a number of patches to work correctly on modern systems. Please run the following commands to patch the sources. Note that the patches should be downloaded to their own `tcpd_patches` directory under the `/MidgardOS/sources` directory.
+The TCP Wrappers sources need a number of patches to work correctly on modern systems. Please run the following commands to patch the sources.
+
+These patches were borrowed from the Fedora Linux project.
+
+**Note: the patches should be downloaded to their own `patches/tcp_wrappers` directory under the `/MidgardOS/sources` directory.**
 
 ```bash
 cd /sources/code-tcp_wrappers_7.6-ipv6.4
-patch -p1 <../tcpd_patches/tcpw7.2-config.patch
-patch -p1 <../tcpd_patches/tcpw7.2-setenv.patch
-patch -p1 <../tcpd_patches/tcpw7.6-netgroup.patch
-patch -p1 <../tcpd_patches/tcp_wrappers-7.6-bug11881.patch
-patch -p1 <../tcpd_patches/tcp_wrappers-7.6-bug17795.patch
-patch -p1 <../tcpd_patches/tcp_wrappers-7.6-bug17847.patch
-patch -p1 <../tcpd_patches/tcp_wrappers-7.6-fixgethostbyname.patch
-patch -p1 <../tcpd_patches/tcp_wrappers-7.6-docu.patch
-patch -p1 <../tcpd_patches/tcp_wrappers-7.6-man.patch
-patch -p1 <../tcpd_patches/tcp_wrappers.usagi-ipv6.patch
-patch -p1 <../tcpd_patches/tcp_wrappers-7.6-shared.patch
-patch -p1 <../tcpd_patches/tcp_wrappers-7.6-sig.patch
-patch -p1 <../tcpd_patches/tcp_wrappers-7.6-ldflags.patch
-patch -p1 <../tcpd_patches/tcp_wrappers-7.6-fix_sig-bug141110.patch
-patch -p1 <../tcpd_patches/tcp_wrappers-7.6-162412.patch
-patch -p1 <../tcpd_patches/tcp_wrappers-7.6-220015.patch
-patch -p1 <../tcpd_patches/tcp_wrappers-7.6-siglongjmp.patch
-patch -p1 <../tcpd_patches/tcp_wrappers-7.6-sigchld.patch
-patch -p1 <../tcpd_patches/tcp_wrappers-7.6-196326.patch
-patch -p1 <../tcpd_patches/tcp_wrappers_7.6-249430.patch
-patch -p1 <../tcpd_patches/tcp_wrappers-7.6-inetdconf.patch
-patch -p1 <../tcpd_patches/tcp_wrappers-7.6-bug698464.patch
-patch -p1 <../tcpd_patches/tcp_wrappers-7.6-xgets.patch
-patch -p1 <../tcpd_patches/tcp_wrappers-7.6-initgroups.patch
-patch -p1 <../tcpd_patches/tcp_wrappers-7.6-warnings.patch
-patch -p1 <../tcpd_patches/tcp_wrappers-7.6-uchart_fix.patch
-patch -p1 <../tcpd_patches/tcp_wrappers-7.6-altformat.patch
-patch -p1 <../tcpd_patches/tcp_wrappers-7.6-aclexec.patch
-patch -p1 <../tcpd_patches/tcp_wrappers-inetcf-c99.patch
-patch -p1 <../tcpd_patches/tcp_wrappers-7.6-gcc15-errors.patch
-patch -p1 <../tcpd_patches/tcp_wrappers-7.6-gcc15-warnings.patch
-patch -p1 <../tcp_wrappers_patches/tcp_wrappers-7.6-makefile-fix.patch
+patch -p1 <../patches/tcp_wrappers/tcpw7.2-config.patch
+patch -p1 <../patches/tcp_wrappers/tcpw7.2-setenv.patch
+patch -p1 <../patches/tcp_wrappers/tcpw7.6-netgroup.patch
+patch -p1 <../patches/tcp_wrappers/tcp_wrappers-7.6-bug11881.patch
+patch -p1 <../patches/tcp_wrappers/tcp_wrappers-7.6-bug17795.patch
+patch -p1 <../patches/tcp_wrappers/tcp_wrappers-7.6-bug17847.patch
+patch -p1 <../patches/tcp_wrappers/tcp_wrappers-7.6-fixgethostbyname.patch
+patch -p1 <../patches/tcp_wrappers/tcp_wrappers-7.6-docu.patch
+patch -p1 <../patches/tcp_wrappers/tcp_wrappers-7.6-man.patch
+patch -p1 <../patches/tcp_wrappers/tcp_wrappers.usagi-ipv6.patch
+patch -p1 <../patches/tcp_wrappers/tcp_wrappers-7.6-shared.patch
+patch -p1 <../patches/tcp_wrappers/tcp_wrappers-7.6-sig.patch
+patch -p1 <../patches/tcp_wrappers/tcp_wrappers-7.6-ldflags.patch
+patch -p1 <../patches/tcp_wrappers/tcp_wrappers-7.6-fix_sig-bug141110.patch
+patch -p1 <../patches/tcp_wrappers/tcp_wrappers-7.6-162412.patch
+patch -p1 <../patches/tcp_wrappers/tcp_wrappers-7.6-220015.patch
+patch -p1 <../patches/tcp_wrappers/tcp_wrappers-7.6-siglongjmp.patch
+patch -p1 <../patches/tcp_wrappers/tcp_wrappers-7.6-sigchld.patch
+patch -p1 <../patches/tcp_wrappers/tcp_wrappers-7.6-196326.patch
+patch -p1 <../patches/tcp_wrappers/tcp_wrappers_7.6-249430.patch
+patch -p1 <../patches/tcp_wrappers/tcp_wrappers-7.6-inetdconf.patch
+patch -p1 <../patches/tcp_wrappers/tcp_wrappers-7.6-bug698464.patch
+patch -p1 <../patches/tcp_wrappers/tcp_wrappers-7.6-xgets.patch
+patch -p1 <../patches/tcp_wrappers/tcp_wrappers-7.6-initgroups.patch
+patch -p1 <../patches/tcp_wrappers/tcp_wrappers-7.6-warnings.patch
+patch -p1 <../patches/tcp_wrappers/tcp_wrappers-7.6-uchart_fix.patch
+patch -p1 <../patches/tcp_wrappers/tcp_wrappers-7.6-altformat.patch
+patch -p1 <../patches/tcp_wrappers/tcp_wrappers-7.6-aclexec.patch
+patch -p1 <../patches/tcp_wrappers/tcp_wrappers-inetcf-c99.patch
+patch -p1 <../patches/tcp_wrappers/tcp_wrappers-7.6-gcc15-errors.patch
+patch -p1 <../patches/tcp_wrappers/tcp_wrappers-7.6-gcc15-warnings.patch
 ```
 
 ## Configuration
