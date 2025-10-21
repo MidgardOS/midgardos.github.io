@@ -43,7 +43,7 @@ make check
 
 Note that there are three known test failures for tests 72, 119, and 172.
 
-Finally, to install GNU Libtool 64-bit into the tree, run the following command:
+Finally, to install GNU Libtool 64-bit into the tree, run the following commands:
 
 ```bash
 make install
