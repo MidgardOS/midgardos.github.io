@@ -70,7 +70,7 @@ To compile TCP Wrappers 64-bit, run the following command:
 make REAL_DAEMON_DIR=/usr/sbin MAJOR=0 MINOR=7 REL=6 linux
 ```
 
-Finally, to install TCP Wrappers 64-bit into the build tree, run the following command:
+Finally, to install TCP Wrappers 64-bit into the build tree, run the following commands:
 
 ```bash
 BUILD_ROOT=DESTDIR
