@@ -31,7 +31,6 @@ export LDFLAGS="-pie"
             --with-acl                      \
             --with-attr                     \
             --without-btrfs                 \
-            --without-nscd                  \
             --with-audit                    \
             --without-sssd                  \
             --with-group-name-max-length=32
