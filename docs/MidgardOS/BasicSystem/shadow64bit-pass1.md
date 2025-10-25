@@ -103,4 +103,4 @@ unset LDFLAGS
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./rpcsvc-proto.md) RPCSVC Proto | [HOME](../README.md) | Shadow Utils 32-bit [>>](./shadow32bit.md) |
+| [<<](./rpcsvc-proto.md) RPCSVC Proto | [HOME](../README.md) | Shadow Utils 32-bit [>>](./shadow32bit-pass1.md) |
