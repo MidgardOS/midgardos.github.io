@@ -29,15 +29,15 @@ find man -name Makefile.in -exec sed -i 's/passwd\.5 / /'   {} \;
 To use a more secure hashing format than the old crypt algorithm that limits passwords to eight characters along with cleaning up the PATH variable since `/bin` and `/sbin` are symlinks into `/usr`, run the following `sed` command:
 
 ```bash
-sed -e 's:#ENCRYPT_METHOD DES:ENCRYPT_METHOD YESCRYPT:'     \
-    -e 's:/var/mail:/var/spool/mail:'                       \
-    -e '/PATH=/{s@/sbin:@@;s@/bin:@@}'                      \
-    -e 's:MOTD_FILE	/etc/motd:#MOTD_FILE	/etc/motd:'     \
-    -e 's:PASS_MIN_LEN	5:PASS_MIN_LEN	8:'                 \
+sed -e 's:#ENCRYPT_METHOD DES:ENCRYPT_METHOD YESCRYPT:'                 \
+    -e 's:/var/mail:/var/spool/mail:'                                   \
+    -e '/PATH=/{s@/sbin:@@;s@/bin:@@}'                                  \
+    -e 's:MOTD_FILE	/etc/motd:#MOTD_FILE	/etc/motd:'             \
+    -e 's:PASS_MIN_LEN	5:PASS_MIN_LEN	8:'                             \
     -e 's:SYS_UID_MIN		  101:SYS_UID_MIN		  100:' \
     -e 's:SYS_GID_MIN		  101:SYS_GID_MIN		  100:' \
-    -e 's:LOGIN_RETRIES		5:LOGIN_RETRIES		3:'         \
-    -e 's:PASS_CHANGE_TRIES	5:PASS_CHANGE_TRIES	3:'         \
+    -e 's:LOGIN_RETRIES		5:LOGIN_RETRIES		3:'             \
+    -e 's:PASS_CHANGE_TRIES	5:PASS_CHANGE_TRIES	3:'             \
     -i etc/login.defs
 ```
 
