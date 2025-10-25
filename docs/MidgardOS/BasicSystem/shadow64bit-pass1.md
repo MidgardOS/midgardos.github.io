@@ -80,7 +80,7 @@ rm -fv DESTDIR/usr/share/man/man8/nologin.8
 rm -fv DESTDIR/usr/lib64/libsubid.a
 rm -fv DESTDIR/usr/lib64/libsubid.la
 cp -Rv DESTDIR/usr/* /usr/
-cp -Rv DESTDIR/etc/* /etc/
+cp -Rv etc/login.defs /etc/
 unset CFLAGS
 unset LDFLAGS
 ```
@@ -93,7 +93,7 @@ unset LDFLAGS
 | --- | --- |
 | Installed Programs | chage, chfn, chgpasswd, chpasswd, chsh, expiry, faillog, getsubids, gpasswd, groupadd, groupdel, groupmems, groupmod, grpck, grpconv, logoutd, newgidmap, newgrp, newuidmap, newusers, passwd, pwck, pwconv, pwunconv, sg, useradd, userdel, usermod, vigr, vipw |
 | Installed Libraries | libsubid.so |
-| Installed Files | /etc/limits, /etc/login.access, /etc/login.defs |
+| Installed Files | /etc/login.defs |
 
 | Navigation |||
 | --- | --- | ---: |
