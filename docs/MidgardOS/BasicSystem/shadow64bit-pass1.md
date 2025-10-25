@@ -17,7 +17,7 @@ Used Install Space: 12 MiB<br />
 
 ## Configuration
 
-First, disable the `groups`, `login`, `su` programs and man pages that are already from Coreutils, Util-Linux, or from the Man-Pages package.
+First, disable the `groups` and `login` programs and the man pages that are already from Coreutils, Util-Linux, or from the Man-Pages package.
 
 ```bash
 sed -i 's/groups$(EXEEXT) //' src/Makefile.in
@@ -48,11 +48,12 @@ export LDFLAGS="-pie"
             --with-acl                      \
             --with-attr                     \
             --without-btrfs                 \
-            --without-nscd                  \
             --with-audit                    \
             --without-sssd                  \
             --with-group-name-max-length=32
 ```
+
+Note, we're disabling System Security Services daemon support for now. This will be added back in a later build.
 
 ## Compilation and Installation
 
@@ -61,6 +62,8 @@ To compile Shadow Utils 64-bit, run the following command:
 ```bash
 make
 ```
+
+Unfortunately, the test suite must not be run under the root account, and since `su` and `login` are not installed, it is not possible to run the tests until Util-Linux and PAM are installed.
 
 Finally, to install Shadow Utils 64-bit into the build tree, run the following commands:
 
