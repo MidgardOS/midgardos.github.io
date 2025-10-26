@@ -52,4 +52,4 @@ make install
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./$PREVIOUS_PAGE.md) $PREVIOUS_PKG_FULL_NAME | [HOME](../README.md) | $NEXT_PKG_FULL_NAME [>>](./$NEXT_PAGE.md) |
+| [<<](./GNUBison.md) GNU Bison | [HOME](../README.md) | GNU Bash [>>](./GNUBash.md) |
