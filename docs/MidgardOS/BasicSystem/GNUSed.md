@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ncurses32bit.md) NCurses 32-bit | [HOME](../README.md) | GNU Sed [>>](./GNU Sed.md) |
+| [<<](./ncurses32bit.md) NCurses 32-bit | [HOME](../README.md) | PSMisc [>>](./psmisc.md) |
 
 ## GNU Sed
 
@@ -54,4 +54,4 @@ install -m644 doc/sed.html /usr/share/doc/sed-4.9
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ncurses32bit.md) NCurses 32-bit | [HOME](../README.md) | GNU Sed [>>](./GNU Sed.md) |
+| [<<](./ncurses32bit.md) NCurses 32-bit | [HOME](../README.md) | PSMisc [>>](./psmisc.md) |
