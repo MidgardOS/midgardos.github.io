@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./shadow32bit-pass1.md) Shadow Utils 32-bit | [HOME](../README.md) | NCurses 64-bit [>>](./NCurses64bit.md) |
+| [<<](./shadow32bit-pass1.md) Shadow Utils 32-bit | [HOME](../README.md) | NCurses 64-bit [>>](./ncurses64bit.md) |
 
 ## GNU Compiler Collection
 
@@ -181,4 +181,4 @@ mv -v /usr/lib/*gdb.py /usr/share/gdb/auto-load/usr/lib
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./shadow32bit-pass1.md) Shadow Utils 32-bit | [HOME](../README.md) | NCurses 64-bit [>>](./NCurses64bit.md) |
+| [<<](./shadow32bit-pass1.md) Shadow Utils 32-bit | [HOME](../README.md) | NCurses 64-bit [>>](./ncurses64bit.md) |
