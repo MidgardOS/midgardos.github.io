@@ -38,7 +38,7 @@ To compile GNU Gettext 32-bit, run the following command:
 make
 ```
 
-Finally, to install GNU Gettext 32-bit into the build tree, run the following command:
+Finally, to install GNU Gettext 32-bit into the build tree, run the following commands:
 
 ```bash
 make DESTDIR=$PWD/DESTDIR install
