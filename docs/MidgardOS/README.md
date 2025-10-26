@@ -153,6 +153,8 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [NCurses 32-bit](./BasicSystem/ncurses32bit.md)
 1. [GNU Sed](./BasicSystem/GNUSed.md)
 1. [PSMisc](./BasicSystem/psmisc.md)
+1. [GNU Gettext 64-bit](./BasicSystem/GNUGettext64bit.md)
+1. [GNU Gettext 32-bit](./BasicSystem/GNUGettext32bit.md)
 
 | Navigation |||
 | --- | --- | ---: |
