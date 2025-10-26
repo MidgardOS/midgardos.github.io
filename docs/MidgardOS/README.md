@@ -156,6 +156,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [GNU Gettext 64-bit](./BasicSystem/GNUGettext64bit.md)
 1. [GNU Gettext 32-bit](./BasicSystem/GNUGettext32bit.md)
 1. [GNU Bison](./BasicSystem/GNUBison.md)
+1. [GNU Grep](./BasicSystem/GNUGrep.md)
 
 | Navigation |||
 | --- | --- | ---: |
