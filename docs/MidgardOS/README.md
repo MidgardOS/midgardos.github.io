@@ -38,7 +38,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [GNU GLibC 32-bit](./CrossCompilationTools/GNUGLibC32bit.md)
 1. [Cross-compiled LibStdC++ From GNU GCC](./CrossCompilationTools/LibStdC++.md)
 
-## Temporary Tools
+### Temporary Tools
 
 1. [Overview](./TempTools/Overview.md)
 1. [GNU M4](./TempTools/GNUM4.md)
@@ -61,7 +61,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [GNU Binutils - pass 2](./TempTools/GNUBinutils.md)
 1. [GNU GCC - pass 2](./TempTools/GNUGCC.md)
 
-## Entering the Chroot and More Temporary Tools
+### Entering the Chroot and More Temporary Tools
 
 1. [Rationale](./ChrootTempTools/ChrootBuildingTempTools.md)
 1. [Change Ownerships of Files and Directories](./ChrootTempTools/ChangeOwnerships.md)
@@ -79,7 +79,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Util-Linux 32-bit](./ChrootTempTools/UtilLinux32bit.md)
 1. [Clean-up and Archival](./ChrootTempTools/CleanupAndArchival.md)
 
-## Building the Basic System Tools
+### Building the Basic System Tools
 
 1. [Overview](./BasicSystem/Overview.md)
 1. [Man Pages](./BasicSystem/ManPages.md)
@@ -155,6 +155,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [PSMisc](./BasicSystem/psmisc.md)
 1. [GNU Gettext 64-bit](./BasicSystem/GNUGettext64bit.md)
 1. [GNU Gettext 32-bit](./BasicSystem/GNUGettext32bit.md)
+1. [GNU Bison](./BasicSystem/GNUBison.md)
 
 | Navigation |||
 | --- | --- | ---: |

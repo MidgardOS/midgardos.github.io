@@ -1,8 +1,8 @@
-# Section 4 - Entering the Chroot and More Temporary Tools
+# Section 5 - Building the Basic System Tools
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGettext.md) GNU Gettext | [HOME](../README.md) | Perl [>>](./Perl.md) |
+| [<<](./GNUGettext32bit.md) GNU Gettext 32-bit | [HOME](../README.md) | GNU Grep [>>](./GNUGrep.md) |
 
 ## GNU Bison
 
@@ -11,6 +11,9 @@ Summary: The GNU Parser Generator<br />
 License: GPL v3<br />
 Version: 3.8.2<br />
 URL: [https://ftp.gnu.org/gnu/bison/bison-3.8.2.tar.xz](https://ftp.gnu.org/gnu/bison/bison-3.8.2.tar.xz)<br />
+
+Average Build Time: 2.1 SBU<br />
+Used Install Space: 63 MiB<br />
 
 ## Configuration
 
@@ -31,14 +34,25 @@ To compile GNU Bison, run the following command:
 make
 ```
 
+Next, run the test suite:
+
+```bash
+make check
+```
+
 Finally, to install GNU Bison into the build tree, run the following command:
 
 ```bash
 make install
 ```
 
-More details about this package is covered later in the core system build.
+## Contents
+
+| Contents | |
+| --- | --- |
+| Installed Programs | bison, yacc |
+| Installed Libraries | liby.a |
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGettext.md) GNU Gettext | [HOME](../README.md) | Perl [>>](./Perl.md) |
+| [<<](./GNUGettext32bit.md) GNU Gettext 32-bit | [HOME](../README.md) | GNU Grep [>>](./GNUGrep.md) |
