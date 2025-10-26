@@ -41,7 +41,7 @@ Next, run the test suite:
 make check
 ```
 
-Finally, to install GNU Gettext 64-bit into the build tree, run the following command:
+Finally, to install GNU Gettext 64-bit into the build tree, run the following commands:
 
 ```bash
 make install
