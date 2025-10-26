@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUSed.md) GNU Sed | [HOME](../README.md) | GNU Gettext [>>](./GNUGettext.md) |
+| [<<](./GNUSed.md) GNU Sed | [HOME](../README.md) | GNU Gettext 64-bit [>>](./GNUGettext64bit.md) |
 
 ## PSMisc
 
@@ -51,4 +51,4 @@ make install
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUSed.md) GNU Sed | [HOME](../README.md) | GNU Gettext [>>](./GNUGettext.md) |
+| [<<](./GNUSed.md) GNU Sed | [HOME](../README.md) | GNU Gettext 64-bit [>>](./GNUGettext64bit.md) |
