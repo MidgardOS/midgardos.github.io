@@ -1,0 +1,15 @@
+NAME="MidgardOS"
+VERSION="2025.10 Server"
+RELEASE_TYPE=development
+ID=midgardos
+VERSION_ID=2025.10
+VERSION_CODENAME="Cauldron"
+PLATFORM_ID="platform:m2025.10"
+PRETTY_NAME="MidgardOS 2025.10 Server"
+ANSI_COLOR="0;38;2;60;110;180"
+LOGO=
+CPE_NAME="cpe:/o:midgardosproject:midgardos:2026"
+HOME_URL="https://midgardos.github.io/"
+DOCUMENTATION_URL=""
+SUPPORT_URL=""
+BUG_REPORT_URL=""
