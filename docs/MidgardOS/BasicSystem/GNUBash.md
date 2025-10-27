@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGrep.md) GNU Grep | [HOME](../README.md) | GNU GDBM [>>](./GNUGDBM.md) |
+| [<<](./GNUGrep.md) GNU Grep | [HOME](../README.md) | GNU GDBM 64-bit [>>](./GNUGDBM64bit.md) |
 
 ## GNU Bash
 
@@ -143,4 +143,4 @@ cp -Rv DESTDIR/usr/* /usr/
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGrep.md) GNU Grep | [HOME](../README.md) | GNU GDBM [>>](./GNUGDBM.md) |
+| [<<](./GNUGrep.md) GNU Grep | [HOME](../README.md) | GNU GDBM 64-bit [>>](./GNUGDBM64bit.md) |
