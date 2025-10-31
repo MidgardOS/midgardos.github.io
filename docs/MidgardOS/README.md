@@ -160,6 +160,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [GNU Bash](./BasicSystem/GNUBash.md)
 1. [GNU GDBM 64-bit](./BasicSystem/GNUGDBM64bit.md)
 1. [GNU GDBM 32-bit](./BasicSystem/GNUGDBM32bit.md)
+1. [GNU GPerf](./BasicSystem/GNUGPerf.md)
 
 | Navigation |||
 | --- | --- | ---: |
