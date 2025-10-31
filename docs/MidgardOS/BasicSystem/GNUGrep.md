@@ -42,6 +42,12 @@ Finally, to install GNU Grep into the build tree, run the following command:
 
 ```bash
 make install
+install -v -d -m755 -o root -g root /etc/profile.d
+install -v -d -m755 -o root -g root /usr/lib/grep
+for F in "color-grep.sh" "color-ls.sh" "color-xzgrep.sh" "color-zgrep.sh"; do
+    install -v -m755 -o root -g root ../system_files/etc/profile.d/$F /etc/profile.d/
+done
+install -v -m755 -o root -g root ../system_files/usr/lib/grep/grepconfig.sh /usr/lib/grep/
 ```
 
 ## Contents
