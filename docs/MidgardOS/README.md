@@ -164,7 +164,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Expat 64-bit](./BasicSystem/expat64bit.md)
 1. [Expat 32-bit](./BasicSystem/expat32bit.md)
 1. [Net Tools](./BasicSystem/nettools.md)
-1. [Traceroute]()
+1. [Traceroute](./BasicSystem/traceroute.md)
 1. [IP Utils]()
 1. [Hostname]()
 1. [NetKit]()
