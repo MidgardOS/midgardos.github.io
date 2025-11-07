@@ -69,7 +69,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Entering the Chroot](./ChrootTempTools/EnteringChroot.md)
 1. [Creating Essential Files and Symbolic Links](./ChrootTempTools/EssentialFilesAndSymlinks.md)
 1. [Validating the C and C++ Compilers](./ChrootTempTools/ValidatingCompilers.md)
-1. [Debian Hostname Utility](./ChrootTempTools/Hostname.md)
+1. [Hostname](./ChrootTempTools/Hostname.md)
 1. [GNU Gettext](./ChrootTempTools/GNUGettext.md)
 1. [GNU Bison](./ChrootTempTools/GNUBison.md)
 1. [Perl](./ChrootTempTools/Perl.md)
@@ -161,6 +161,12 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [GNU GDBM 64-bit](./BasicSystem/GNUGDBM64bit.md)
 1. [GNU GDBM 32-bit](./BasicSystem/GNUGDBM32bit.md)
 1. [GNU GPerf](./BasicSystem/GNUGPerf.md)
+1. [Expat 64-bit](./BasicSystem/expat64bit.md)
+1. [Expat 32-bit](./BasicSystem/expat32bit.md)
+1. [Net Utils]()
+1. [Traceroute]()
+1. [IP Utils]()
+1. [Hostname]()
 
 | Navigation |||
 | --- | --- | ---: |
