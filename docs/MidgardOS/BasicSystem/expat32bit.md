@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./expat64bit.md) Expat 64-bit | [HOME](../README.md) | Net Utils [>>](./netutils.md) |
+| [<<](./expat64bit.md) Expat 64-bit | [HOME](../README.md) | Net Tools [>>](./nettools.md) |
 
 ## Expat 32-bit
 
@@ -50,4 +50,4 @@ See the contents section of the 64-bit build of Expat for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./expat64bit.md) Expat 64-bit | [HOME](../README.md) | Net Utils [>>](./netutils.md) |
+| [<<](./expat64bit.md) Expat 64-bit | [HOME](../README.md) | Net Tools [>>](./nettools.md) |
