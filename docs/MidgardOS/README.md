@@ -167,6 +167,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Traceroute](./BasicSystem/traceroute.md)
 1. [Hostname](./BasicSystem/hostname.md)
 1. [GNU InetUtils](./BasicSystem/GNUInetUtils.md)
+1. [GNU Less](./BasicSystem/GNULess.md)
 
 | Navigation |||
 | --- | --- | ---: |
