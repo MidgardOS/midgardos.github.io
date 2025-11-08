@@ -173,6 +173,8 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [IntlTool](./BasicSystem/intltool.md)
 1. [OpenSSL v3 64-bit](./BasicSystem/OpenSSLv3_64bit.md)
 1. [OpenSSL v3 32-bit](./BasicSystem/OpenSSLv3_32bit.md)
+1. [ElfUtils 64-bit](./BasicSystem/ElfUtils64bit.md)
+1. [ElfUtils 32-bit](./BasicSystem/ElfUtils32bit.md)
 
 | Navigation |||
 | --- | --- | ---: |
