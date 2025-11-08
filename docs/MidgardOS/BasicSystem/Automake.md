@@ -9,8 +9,8 @@
 Name: GNU Automake<br />
 Summary: A tool for automatically generating GNU-style Makefile.in files<br />
 License: GPL v3+<br />
-Version: 1.18<br />
-URL: [https://ftp.gnu.org/pub/gnu/automake/automake-1.18.tar.xz](https://ftp.gnu.org/pub/gnu/automake/automake-1.18.tar.xz)<br />
+Version: 1.18.1<br />
+URL: [https://ftp.gnu.org/pub/gnu/automake/automake-1.18.1.tar.xz](https://ftp.gnu.org/pub/gnu/automake/automake-1.18.1.tar.xz)<br />
 
 Average Build Time: less than 0.1 SBU<br />
 Used Install Space: 2.5 MiB<br />
@@ -39,6 +39,8 @@ Next, run the test suite:
 ```bash
 make check
 ```
+
+There are 29 tests that will fail with this release.
 
 Finally, to install GNU Automake into the cross-tools tree, run the following command:
 
