@@ -168,6 +168,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Hostname](./BasicSystem/hostname.md)
 1. [GNU InetUtils](./BasicSystem/GNUInetUtils.md)
 1. [GNU Less](./BasicSystem/GNULess.md)
+1. [Perl](./BasicSystem/perl.md)
 
 | Navigation |||
 | --- | --- | ---: |
