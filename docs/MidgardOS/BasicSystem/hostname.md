@@ -1,8 +1,8 @@
-# Section X - $SECTION_TITLE
+# Section 5 - Building the Basic System Tools
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./traceroute.md) Traceroute | [HOME](../README.md) | NetKit [>>](./NetKit.md) |
+| [<<](./traceroute.md) Traceroute | [HOME](../README.md) | GNU InetUtils [>>](./GNUInetUtils.md) |
 
 ## Hostname
 
@@ -41,4 +41,4 @@ make install
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ValidatingCompilers.md) Validating the C and C++ Compilers | [HOME](../README.md) | GNU Gettext [>>](./GNUGettext.md) |
+| [<<](./traceroute.md) Traceroute | [HOME](../README.md) | GNU InetUtils [>>](./GNUInetUtils.md) |
