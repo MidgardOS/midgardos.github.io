@@ -170,6 +170,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [GNU Less](./BasicSystem/GNULess.md)
 1. [Perl](./BasicSystem/perl.md)
 1. [Perl module XML::Parser](./BasicSystem/perl-xml-parser.md)
+1. [IntlTool](./BasicSystem/intltool.md)
 
 | Navigation |||
 | --- | --- | ---: |
