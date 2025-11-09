@@ -182,6 +182,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [SQLite3 32-bit](./BasicSystem/SQLite3_32bit.md)
 1. [Python 3.13](./BasicSystem/python313.md)
 1. [Python module Flit-Core](./BasicSystem/python313-flit-core.md)
+1. [Python module Packaging](./BasicSystem/python313-packaging.md)
 
 | Navigation |||
 | --- | --- | ---: |
