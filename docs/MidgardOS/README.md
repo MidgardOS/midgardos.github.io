@@ -184,6 +184,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Python module Flit-Core](./BasicSystem/python313-flit-core.md)
 1. [Python module Packaging](./BasicSystem/python313-packaging.md)
 1. [Python module Wheel](./BasicSystem/python313-wheel.md)
+1. [Python module Setuptools](./BasicSystem/python313-setuptools.md)
 
 | Navigation |||
 | --- | --- | ---: |
