@@ -8,7 +8,7 @@
 
 Name: Ninja<br />
 Summary: A small build system focused on speed<br />
-License: $PKG_LICENSE<br />
+License: Apache v2<br />
 Version: 1.13.1<br />
 URL: [https://github.com/ninja-build/ninja/archive/refs/tags/v1.13.1.tar.gz](https://github.com/ninja-build/ninja/archive/refs/tags/v1.13.1.tar.gz)<br />
 
