@@ -175,6 +175,8 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [OpenSSL v3 32-bit](./BasicSystem/OpenSSLv3_32bit.md)
 1. [ElfUtils 64-bit](./BasicSystem/ElfUtils64bit.md)
 1. [ElfUtils 32-bit](./BasicSystem/ElfUtils32bit.md)
+1. [LibFFI 64-bit](./BasicSystem/libffi64bit.md)
+1. [LibFFI 32-bit](./BasicSystem/libffi32bit.md)
 
 | Navigation |||
 | --- | --- | ---: |
