@@ -177,6 +177,9 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [ElfUtils 32-bit](./BasicSystem/ElfUtils32bit.md)
 1. [LibFFI 64-bit](./BasicSystem/libffi64bit.md)
 1. [LibFFI 32-bit](./BasicSystem/libffi32bit.md)
+1. [7zip CLI](./BasicSystem/7zip.md)
+1. [SQLite3 64-bit](./BasicSystem/SQLite3_64bit.md)
+1. [SQLite3 32-bit](./BasicSystem/SQLite3_32bit.md)
 
 | Navigation |||
 | --- | --- | ---: |
