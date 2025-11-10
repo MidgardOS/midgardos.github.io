@@ -187,6 +187,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Python module Setuptools](./BasicSystem/python313-setuptools.md)
 1. [Ninja](./BasicSystem/ninja.md)
 1. [Meson](./BasicSystem/meson.md)
+1. [IP Utils](./BasicSystem/iputils.md)
 
 | Navigation |||
 | --- | --- | ---: |
