@@ -61,4 +61,4 @@ mv -v /usr/share/iputils /usr/share/doc/
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./meson.md) Meson | [HOME](../README.md) | LibSELinux 64-bit [>>](./libselinux_64bit.md) |
+| [<<](./meson.md) Meson | [HOME](../README.md) | LibSEPol 64-bit [>>](./libsepol_64bit.md) |
