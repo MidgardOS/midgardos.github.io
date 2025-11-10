@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./meson.md) Meson | [HOME](../README.md) | LibSELinux 64-bit [>>](./libselinux_64bit.md) |
+| [<<](./meson.md) Meson | [HOME](../README.md) | LibSEPol 64-bit [>>](./libsepol_64bit.md) |
 
 ## IP Utils
 
