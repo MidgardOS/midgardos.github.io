@@ -33,6 +33,8 @@ Finally, to install LibSELinux 64-bit into the build tree, run the following com
 
 ```bash
 PREFIX=/usr LIBDIR=/usr/lib64 SHLIBDIR=/usr/lib64 make install
+install -v -d -m 755 -o root -g root /etc/selinux
+install -v -m 644 -o root -g root ../system_files/etc/selinux/config /etc/selinux/
 install -v -m 755 -o root -g root ../system_files/usr/sbin/selinux-ready /usr/sbin/
 ```
 
