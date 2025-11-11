@@ -192,6 +192,8 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [CUnit 32-bit](./BasicSystem/libcunit_32bit.md)
 1. [LibSEPol 64-bit](./BasicSystem/libsepol_64bit.md)
 1. [LibSEPol 32-bit](./BasicSystem/libsepol_32bit.md)
+1. [LibSELinux 64-bit](./BasicSystem/libselinux_64bit.md)
+1. [LibSELinux 32-bit](./BasicSystem/libselinux_32bit.md)
 
 | Navigation |||
 | --- | --- | ---: |
