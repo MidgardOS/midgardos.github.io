@@ -196,6 +196,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [LibSELinux 32-bit](./BasicSystem/libselinux_32bit.md)
 1. [LibSEManage 64-bit](./BasicSystem/libsemanage_64bit.md)
 1. [LibSEManage 32-bit](./BasicSystem/libsemanage_32bit.md)
+1. [CheckPolicy](./BasicSystem/CheckPolicy.md)
 
 | Navigation |||
 | --- | --- | ---: |
