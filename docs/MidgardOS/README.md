@@ -190,6 +190,8 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [IP Utils](./BasicSystem/iputils.md)
 1. [CUnit 64-bit](./BasicSystem/libcunit_64bit.md)
 1. [CUnit 32-bit](./BasicSystem/libcunit_32bit.md)
+1. [LibSEPol 64-bit](./BasicSystem/libsepol_64bit.md)
+1. [LibSEPol 32-bit](./BasicSystem/libsepol_32bit.md)
 
 | Navigation |||
 | --- | --- | ---: |
