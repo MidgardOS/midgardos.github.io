@@ -188,6 +188,8 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Ninja](./BasicSystem/ninja.md)
 1. [Meson](./BasicSystem/meson.md)
 1. [IP Utils](./BasicSystem/iputils.md)
+1. [CUnit 64-bit](./BasicSystem/libcunit_64bit.md)
+1. [CUnit 32-bit](./BasicSystem/libcunit_32bit.md)
 
 | Navigation |||
 | --- | --- | ---: |
