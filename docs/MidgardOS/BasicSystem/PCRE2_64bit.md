@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUReadline32bit.md) GNU Readline 32-bit | [HOME](../README.md) | PCRE2 32-bit [>>](./PCRE232bit.md) |
+| [<<](./GNUReadline_32bit.md) GNU Readline 32-bit | [HOME](../README.md) | PCRE2 32-bit [>>](./PCRE2_32bit.md) |
 
 ## PCRE2 64-bit
 
@@ -64,4 +64,4 @@ rm -fv /usr/lib64/libpcre2-*.la
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUReadline32bit.md) GNU Readline 32-bit | [HOME](../README.md) | PCRE2 32-bit [>>](./PCRE232bit.md) |
+| [<<](./GNUReadline_32bit.md) GNU Readline 32-bit | [HOME](../README.md) | PCRE2 32-bit [>>](./PCRE2_32bit.md) |

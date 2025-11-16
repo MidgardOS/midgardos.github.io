@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libunistring32bit.md) GNU libunistring 32-bit | [HOME](../README.md) | GNU Readline 32-bit [>>](./GNUReadline32bit.md) |
+| [<<](./File_32bit.md) File 32-bit | [HOME](../README.md) | GNU Readline 32-bit [>>](./GNUReadline_32bit.md) |
 
 ## GNU Readline 64-bit
 
@@ -65,4 +65,4 @@ install -v -m644 doc/*.{ps,pdf,html,dvi} /usr/share/doc/readline-8.3
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libunistring32bit.md) GNU libunistring 32-bit | [HOME](../README.md) | GNU Readline 32-bit [>>](./GNUReadline32bit.md) |
+| [<<](./File_32bit.md) File 32-bit | [HOME](../README.md) | GNU Readline 32-bit [>>](./GNUReadline_32bit.md) |

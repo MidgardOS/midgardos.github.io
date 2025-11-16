@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./PCRE264bit.md) PCRE2 64-bit | [HOME](../README.md) | GNU M4 [>>](./GNUM4.md) |
+| [<<](./PCRE2_64bit.md) PCRE2 64-bit | [HOME](../README.md) | GNU M4 [>>](./GNUM4.md) |
 
 ## PCRE2 32-bit
 
@@ -59,4 +59,4 @@ See the contents section of the 64-bit build of PCRE2 for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./PCRE264bit.md) PCRE2 64-bit | [HOME](../README.md) | GNU M4 [>>](./GNUM4.md) |
+| [<<](./PCRE2_64bit.md) PCRE2 64-bit | [HOME](../README.md) | GNU M4 [>>](./GNUM4.md) |

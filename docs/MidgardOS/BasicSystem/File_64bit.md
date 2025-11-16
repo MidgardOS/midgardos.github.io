@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libunistring32bit.md) libunistring 32-bit | [HOME](../README.md) | File 32-bit [>>](./File32bit.md) |
+| [<<](./GNULibUniString_32bit.md) libunistring 32-bit | [HOME](../README.md) | File 32-bit [>>](./File_32bit.md) |
 
 ## File 64-bit
 
@@ -57,4 +57,4 @@ rm -fv /usr/lib64/libmagic.la
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libunistring32bit.md) libunistring 32-bit | [HOME](../README.md) | File 32-bit [>>](./File32bit.md) |
+| [<<](./GNULibUniString_32bit.md) libunistring 32-bit | [HOME](../README.md) | File 32-bit [>>](./File_32bit.md) |

@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUReadline64bit.md) GNU Readline 64-bit | [HOME](../README.md) | PCRE2 64-bit [>>](./PCRE264bit) |
+| [<<](./GNUReadline_64bit.md) GNU Readline 64-bit | [HOME](../README.md) | PCRE2 64-bit [>>](./PCRE2_64bit) |
 
 ## GNU Readline 32-bit
 
@@ -50,4 +50,4 @@ See the contents section of the 64-bit build of GNU Readline for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUReadline64bit.md) GNU Readline 64-bit | [HOME](../README.md) | PCRE2 64-bit [>>](./PCRE264bit) |
+| [<<](./GNUReadline_64bit.md) GNU Readline 64-bit | [HOME](../README.md) | PCRE2 64-bit [>>](./PCRE2_64bit) |

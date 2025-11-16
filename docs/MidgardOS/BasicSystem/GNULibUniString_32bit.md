@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libunistring64bit.md) libunistring 64-bit | [HOME](../README.md) | File 64-bit [>>](./File64bit.md) |
+| [<<](./GNULibUniString_64bit.md) libunistring 64-bit | [HOME](../README.md) | File 64-bit [>>](./File_64bit.md) |
 
 ## libunistring 32-bit
 
@@ -51,4 +51,4 @@ See the contents section of the 64-bit build of libunistring for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libunistring64bit.md) libunistring 64-bit | [HOME](../README.md) | File 64-bit [>>](./File64bit.md) |
+| [<<](./GNULibUniString_64bit.md) libunistring 64-bit | [HOME](../README.md) | File 64-bit [>>](./File_64bit.md) |
