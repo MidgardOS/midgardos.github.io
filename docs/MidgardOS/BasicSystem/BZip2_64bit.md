@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ZLib32bit.md) ZLib 32-bit | [HOME](../README.md) | BZip2 32-bit [>>](./BZip232bit.md) |
+| [<<](./ZLib_32bit.md) ZLib 32-bit | [HOME](../README.md) | BZip2 32-bit [>>](./BZip_232bit.md) |
 
 ## BZip2 64-bit
 
@@ -74,4 +74,4 @@ rm -fv /usr/lib64/libbz2.a
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ZLib32bit.md) ZLib 32-bit | [HOME](../README.md) | BZip2 32-bit [>>](./BZip232bit.md) |
+| [<<](./ZLib_32bit.md) ZLib 32-bit | [HOME](../README.md) | BZip2 32-bit [>>](./BZip_232bit.md) |

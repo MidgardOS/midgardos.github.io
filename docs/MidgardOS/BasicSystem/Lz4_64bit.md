@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./XZ32bit.md) XZ 32-bit | [HOME](../README.md) | Lz4 32-bit [>>](./Lz432bit.md) |
+| [<<](./XZ_32bit.md) XZ 32-bit | [HOME](../README.md) | Lz4 32-bit [>>](./Lz4_32bit.md) |
 
 ## Lz4 64-bit
 
@@ -50,4 +50,4 @@ make BUILD_STATIC=no PREFIX=/usr LIBDIR=/usr/lib64 install
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./XZ32bit.md) XZ 32-bit | [HOME](../README.md) | Lz4 32-bit [>>](./Lz432bit.md) |
+| [<<](./XZ_32bit.md) XZ 32-bit | [HOME](../README.md) | Lz4 32-bit [>>](./Lz4_32bit.md) |

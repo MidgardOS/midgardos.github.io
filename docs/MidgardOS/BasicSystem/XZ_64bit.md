@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./BZip232bit.md) BZip2 32-bit | [HOME](../README.md) | XZ 32-bit [>>](./XZ32bit.md) |
+| [<<](./BZip2_32bit.md) BZip2 32-bit | [HOME](../README.md) | XZ 32-bit [>>](./XZ_32bit.md) |
 
 ## XZ 64-bit
 
@@ -59,4 +59,4 @@ make install
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./BZip232bit.md) BZip2 32-bit | [HOME](../README.md) | XZ 32-bit [>>](./XZ32bit.md) |
+| [<<](./BZip2_32bit.md) BZip2 32-bit | [HOME](../README.md) | XZ 32-bit [>>](./XZ_32bit.md) |

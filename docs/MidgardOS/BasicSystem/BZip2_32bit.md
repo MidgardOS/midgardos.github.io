@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./BZip264bit.md) BZip2 64-bit | [HOME](../README.md) | XZ 64-bit [>>](./XZ64bit.md) |
+| [<<](./BZip2_64bit.md) BZip2 64-bit | [HOME](../README.md) | XZ 64-bit [>>](./XZ_64bit.md) |
 
 ## BZip2 32-bit
 
@@ -48,4 +48,4 @@ See the contents section of the 64-bit build of BZip2 for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./BZip264bit.md) BZip2 64-bit | [HOME](../README.md) | XZ 64-bit [>>](./XZ64bit.md) |
+| [<<](./BZip2_64bit.md) BZip2 64-bit | [HOME](../README.md) | XZ 64-bit [>>](./XZ_64bit.md) |

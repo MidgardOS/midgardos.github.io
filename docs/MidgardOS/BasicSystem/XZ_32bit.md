@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./XZ64bit.md) XZ 64-bit | [HOME](../README.md) | Lz4 64-bit [>>](./Lz464bit.md) |
+| [<<](./XZ_64bit.md) XZ 64-bit | [HOME](../README.md) | Lz4 64-bit [>>](./Lz4_64bit.md) |
 
 ## XZ 32-bit
 
@@ -51,4 +51,4 @@ See the contents section of the 64-bit build of XZ for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./XZ64bit.md) XZ 64-bit | [HOME](../README.md) | Lz4 64-bit [>>](./Lz464bit.md) |
+| [<<](./XZ_64bit.md) XZ 64-bit | [HOME](../README.md) | Lz4 64-bit [>>](./Lz4_64bit.md) |

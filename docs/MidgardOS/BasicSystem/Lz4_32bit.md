@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Lz464bit.md) Lz4 64-bit | [HOME](../README.md) | ZStd 64-bit [>>](./ZStd64bit.md) |
+| [<<](./Lz4_64bit.md) Lz4 64-bit | [HOME](../README.md) | ZStd 64-bit [>>](./ZStd_64bit.md) |
 
 ## Lz4 32-bit
 
@@ -42,4 +42,4 @@ See the contents section of the 64-bit build of Lz4 for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Lz464bit.md) Lz4 64-bit | [HOME](../README.md) | ZStd 64-bit [>>](./ZStd64bit.md) |
+| [<<](./Lz4_64bit.md) Lz4 64-bit | [HOME](../README.md) | ZStd 64-bit [>>](./ZStd_64bit.md) |

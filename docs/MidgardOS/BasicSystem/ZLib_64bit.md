@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GLibC32bit.md) GNU GLibC 32-bit | [HOME](../README.md) | ZLib 32-bit [>>](./ZLib32bit.md) |
+| [<<](./GNUGLibC_32bit.md) GNU GLibC 32-bit | [HOME](../README.md) | ZLib 32-bit [>>](./ZLib_32bit.md) |
 
 # ZLib 64-bit
 
@@ -56,4 +56,4 @@ rm -fv /usr/lib64/libz.a
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GLibC32bit.md) GNU GLibC 32-bit | [HOME](../README.md) | ZLib 32-bit [>>](./ZLib32bit.md) |
+| [<<](./GNUGLibC_32bit.md) GNU GLibC 32-bit | [HOME](../README.md) | ZLib 32-bit [>>](./ZLib_32bit.md) |

@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ZLib64bit.md) ZLib 64-bit | [HOME](../README.md) | BZip2 64-bit [>>](./BZip264bit.md) |
+| [<<](./ZLib_64bit.md) ZLib 64-bit | [HOME](../README.md) | BZip2 64-bit [>>](./BZip2_64bit.md) |
 
 # ZLib 32-bit
 
@@ -55,4 +55,4 @@ See the information for the 64-bit version for details about what is installed.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ZLib64bit.md) ZLib 64-bit | [HOME](../README.md) | BZip2 64-bit [>>](./BZip264bit.md) |
+| [<<](./ZLib_64bit.md) ZLib 64-bit | [HOME](../README.md) | BZip2 64-bit [>>](./BZip2_64bit.md) |

@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Lz432bit.md) Lz4 32-bit | [HOME](../README.md) | ZStd 32-bit [>>](./ZStd32bit.md) |
+| [<<](./Lz4_32bit.md) Lz4 32-bit | [HOME](../README.md) | ZStd 32-bit [>>](./ZStd_32bit.md) |
 
 ## ZStd 64-bit
 
@@ -51,4 +51,4 @@ rm -v /usr/lib64/libzstd.a
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Lz432bit.md) Lz4 32-bit | [HOME](../README.md) | ZStd 32-bit [>>](./ZStd32bit.md) |
+| [<<](./Lz4_32bit.md) Lz4 32-bit | [HOME](../README.md) | ZStd 32-bit [>>](./ZStd_32bit.md) |
