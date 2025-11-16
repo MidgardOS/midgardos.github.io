@@ -2,11 +2,11 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./python313-wheel.md) Python module Wheel | [HOME](../README.md) | Ninja [>>](./Ninja.md) |
+| [<<](./Python313-Wheel.md) Python module Wheel | [HOME](../README.md) | Ninja [>>](./Ninja.md) |
 
-## python313-Setuptools
+## Python313-Setuptools
 
-Name: python313-Setuptools<br />
+Name: Python313-Setuptools<br />
 Summary: A tool for downloading, building, installing, upgrading, and uninstalling Python packages<br />
 License: MIT<br />
 Version: 80.9.0<br />
@@ -16,7 +16,7 @@ Used Install Space: 25 MiB<br />
 
 ## Compilation and Installation
 
-To install python313-Setuptools into the build tree, run the following command:
+To install Python313-Setuptools into the build tree, run the following command:
 
 ```bash
 python3 -m pip install setuptools==80.9.0
@@ -30,4 +30,4 @@ python3 -m pip install setuptools==80.9.0
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./python313-wheel.md) Python module Wheel | [HOME](../README.md) | Ninja [>>](./Ninja.md) |
+| [<<](./Python313-Wheel.md) Python module Wheel | [HOME](../README.md) | Ninja [>>](./Ninja.md) |

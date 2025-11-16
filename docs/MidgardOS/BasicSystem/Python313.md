@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./SQLite3_32bit.md) SQLite3 32-bit | [HOME](../README.md) | Python module Flit-Core [>>](./python313-flit-core.md) |
+| [<<](./SQLite3_32bit.md) SQLite3 32-bit | [HOME](../README.md) | Python module Flit-Core [>>](./Python313-Flit-Core.md) |
 
 ## Python 3.13
 
@@ -81,4 +81,4 @@ EOF
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./SQLite3_32bit.md) SQLite3 32-bit | [HOME](../README.md) | Python module Flit-Core [>>](./python313-flit-core.md) |
+| [<<](./SQLite3_32bit.md) SQLite3 32-bit | [HOME](../README.md) | Python module Flit-Core [>>](./Python313-Flit-Core.md) |

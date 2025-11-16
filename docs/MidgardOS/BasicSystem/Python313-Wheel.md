@@ -2,11 +2,11 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./python313-packaging.md) Python module Packaging | [HOME](../README.md) | Python module Setuptools [>>](./python313-setuptools.md) |
+| [<<](./Python313-Packaging.md) Python module Packaging | [HOME](../README.md) | Python module Setuptools [>>](./Python313-Setuptools.md) |
 
-## python313-Wheel
+## Python313-Wheel
 
-Name: python313-Wheel<br />
+Name: Python313-Wheel<br />
 Summary: An implementation of the Python standard wheel package format<br />
 License: MIT<br />
 Version: 0.45.1<br />
@@ -16,7 +16,7 @@ Used Install Space: 608 KiB<br />
 
 ## Compilation and Installation
 
-To install python313-Wheel into the build tree, run the following command:
+To install Python313-Wheel into the build tree, run the following command:
 
 ```bash
 python3 -m pip install wheel==0.45.1
@@ -31,4 +31,4 @@ python3 -m pip install wheel==0.45.1
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./python313-packaging.md) Python module Packaging | [HOME](../README.md) | Python module Setuptools [>>](./python313-setuptools.md) |
+| [<<](./Python313-Packaging.md) Python module Packaging | [HOME](../README.md) | Python module Setuptools [>>](./Python313-Setuptools.md) |

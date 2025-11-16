@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libffi32bit.md) LibFFI 32-bit | [HOME](../README.md) | SQLite3 64-bit [>>](./SQLite3_64bit.md) |
+| [<<](./LibFFI_32bit.md) LibFFI 32-bit | [HOME](../README.md) | SQLite3 64-bit [>>](./SQLite3_64bit.md) |
 
 ## 7zip
 
@@ -57,4 +57,4 @@ popd
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libffi32bit.md) LibFFI 32-bit | [HOME](../README.md) | SQLite3 64-bit [>>](./SQLite3_64bit.md) |
+| [<<](./LibFFI_32bit.md) LibFFI 32-bit | [HOME](../README.md) | SQLite3 64-bit [>>](./SQLite3_64bit.md) |

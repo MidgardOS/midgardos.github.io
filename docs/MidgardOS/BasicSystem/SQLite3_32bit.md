@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./SQLite3_64bit.md) SQLite3 64-bit | [HOME](../README.md) | Python 3.13 [>>](./python313.md) |
+| [<<](./SQLite3_64bit.md) SQLite3 64-bit | [HOME](../README.md) | Python 3.13 [>>](./Python313.md) |
 
 ## SQLite3 32-bit
 
@@ -76,4 +76,4 @@ See the contents section of the 64-bit build of SQLite3 for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./SQLite3_64bit.md) SQLite3 64-bit | [HOME](../README.md) | Python 3.13 [>>](./python313.md) |
+| [<<](./SQLite3_64bit.md) SQLite3 64-bit | [HOME](../README.md) | Python 3.13 [>>](./Python313.md) |
