@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libsemanage_32bit.md) LibSEManage 32-bit | [HOME](../README.md) | SECILC [>>](./secilc.md) |
+| [<<](./LibSEManage_32bit.md) LibSEManage 32-bit | [HOME](../README.md) | GNU LibGPG-Error 64-bit [>>](./GNULibGPG-Error_64bit.md) |
 
 ## CheckPolicy
 
@@ -47,4 +47,4 @@ PREFIX=/usr LIBDIR=/usr/lib64 SHLIBDIR=/usr/lib64 make install
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libsemanage_32bit.md) LibSEManage 32-bit | [HOME](../README.md) | SECILC [>>](./secilc.md) |
+| [<<](./LibSEManage_32bit.md) LibSEManage 32-bit | [HOME](../README.md) | GNU LibGPG-Error 64-bit [>>](./GNULibGPG-Error_64bit.md) |

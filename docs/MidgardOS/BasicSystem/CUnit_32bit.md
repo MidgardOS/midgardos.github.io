@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./cunit_64bit.md) CUnit 64-bit | [HOME](../README.md) | LibSEPol 64-bit [>>](./libsepol_64bit.md) |
+| [<<](./CUnit_64bit.md) CUnit 64-bit | [HOME](../README.md) | LibSEPol 64-bit [>>](./LibSEPol_64bit.md) |
 
 ## CUnit 32-bit
 
@@ -51,4 +51,4 @@ See the contents section of the 64-bit build of the CUnit for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./cunit_64bit.md) CUnit 64-bit | [HOME](../README.md) | LibSEPol 64-bit [>>](./libsepol_64bit.md) |
+| [<<](./CUnit_64bit.md) CUnit 64-bit | [HOME](../README.md) | LibSEPol 64-bit [>>](./LibSEPol_64bit.md) |

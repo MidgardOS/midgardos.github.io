@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libsepol_32bit.md) LibSEPol 32-bit | [HOME](../README.md) | LibSELinux 32-bit [>>](./libselinux_32bit.md) |
+| [<<](./LibSEPol_32bit.md) LibSEPol 32-bit | [HOME](../README.md) | LibSELinux 32-bit [>>](./LibSELinux_32bit.md) |
 
 ## LibSELinux 64-bit
 
@@ -51,4 +51,4 @@ As before with LibSEPol, the static library from LibSELinux will be linked into 
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libsepol_32bit.md) LibSEPol 32-bit | [HOME](../README.md) | LibSELinux 32-bit [>>](./libselinux_32bit.md) |
+| [<<](./LibSEPol_32bit.md) LibSEPol 32-bit | [HOME](../README.md) | LibSELinux 32-bit [>>](./LibSELinux_32bit.md) |

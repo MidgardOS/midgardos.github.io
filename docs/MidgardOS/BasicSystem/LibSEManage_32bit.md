@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libsemanage_64bit.md) LibSEManage 64-bit | [HOME](../README.md) | CheckPolicy [>>](./CheckPolicy.md) |
+| [<<](./LibSEManage_64bit.md) LibSEManage 64-bit | [HOME](../README.md) | CheckPolicy [>>](./CheckPolicy.md) |
 
 ## LibSEManage 32-bit
 
@@ -45,4 +45,4 @@ See the contents section of the 64-bit build of LibSEManage for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libsemanage_64bit.md) LibSEManage 64-bit | [HOME](../README.md) | CheckPolicy [>>](./CheckPolicy.md) |
+| [<<](./LibSEManage_64bit.md) LibSEManage 64-bit | [HOME](../README.md) | CheckPolicy [>>](./CheckPolicy.md) |

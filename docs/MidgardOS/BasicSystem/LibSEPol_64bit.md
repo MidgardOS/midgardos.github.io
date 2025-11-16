@@ -2,11 +2,11 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libcunit_32bit.md) LibCunit 32-bit | [HOME](../README.md) | LibSEPol 32-bit [>>](./libsepol_32bit.md) |
+| [<<](./CUnit_32bit.md) CUnit 32-bit | [HOME](../README.md) | LibSEPol 32-bit [>>](./LibSEPol_32bit.md) |
 
-## libsepol 64-bit
+## LibSEPol 64-bit
 
-Name: libsepol 64-bit<br />
+Name: LibSEPol 64-bit<br />
 Summary: A library for manipulating SELinux binary policies<br />
 License: LGPL v2.1<br />
 Version: 3.9<br />
@@ -21,7 +21,7 @@ This package has no traditional configuration script.
 
 ## Compilation and Installation
 
-To compile libsepol 64-bit, run the following commands:
+To compile LibSEPol 64-bit, run the following commands:
 
 ```bash
 make
@@ -29,7 +29,7 @@ make
 
 The test suite cannot be run at this time due to a circular dependency with `checkpolicy`.
 
-Finally, to install libsepol 64-bit into the build tree, run the following commands:
+Finally, to install LibSEPol 64-bit into the build tree, run the following commands:
 
 ```bash
 PREFIX=/usr LIBDIR=/usr/lib64 SHLIBDIR=/usr/lib64 make install
@@ -48,4 +48,4 @@ Other libraries and programs of the suite of tools for SELinux require linking a
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libcunit_32bit.md) LibCunit 32-bit | [HOME](../README.md) | LibSEPol 32-bit [>>](./libsepol_32bit.md) |
+| [<<](./CUnit_32bit.md) CUnit 32-bit | [HOME](../README.md) | LibSEPol 32-bit [>>](./LibSEPol_32bit.md) |

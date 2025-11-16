@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./python313-setuptools.md) Python module Setuptools | [HOME](../README.md) | Meson [>>](./meson.md) |
+| [<<](./Python313-Setuptools.md) Python module Setuptools | [HOME](../README.md) | Meson [>>](./Meson.md) |
 
 ## Ninja
 
@@ -57,4 +57,4 @@ install -vDm644 misc/zsh-completion  /usr/share/zsh/site-functions/_ninja
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./python313-setuptools.md) Python module Setuptools | [HOME](../README.md) | Meson [>>](./meson.md) |
+| [<<](./Python313-Setuptools.md) Python module Setuptools | [HOME](../README.md) | Meson [>>](./Meson.md) |

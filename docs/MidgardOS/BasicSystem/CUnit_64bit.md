@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./iputils.md) IP Utils | [HOME](../README.md) | CUnit 32-bit [>>](./cunit_32bit.md) |
+| [<<](./IPUtils.md) IP Utils | [HOME](../README.md) | CUnit 32-bit [>>](./CUnit_32bit.md) |
 
 ## CUnit 64-bit
 
@@ -59,4 +59,4 @@ rm -fv /usr/lib64/libcunit.la
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./iputils.md) IP Utils | [HOME](../README.md) | CUnit 32-bit [>>](./cunit_32bit.md) |
+| [<<](./IPUtils.md) IP Utils | [HOME](../README.md) | CUnit 32-bit [>>](./CUnit_32bit.md) |

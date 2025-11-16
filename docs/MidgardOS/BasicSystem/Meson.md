@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ninja.md) Ninja | [HOME](../README.md) | IP Utils [>>](./iputils.md) |
+| [<<](./Ninja.md) Ninja | [HOME](../README.md) | IP Utils [>>](./IPUtils.md) |
 
 ## Meson
 
@@ -40,4 +40,4 @@ install -vDm644 data/shell-completions/zsh/_meson /usr/share/zsh/site-functions/
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ninja.md) Ninja | [HOME](../README.md) | IP Utils [>>](./iputils.md) |
+| [<<](./Ninja.md) Ninja | [HOME](../README.md) | IP Utils [>>](./IPUtils.md) |

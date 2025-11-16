@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libselinux_64bit.md) LibSELinux 64-bit | [HOME](../README.md) | LibSEManage 64-bit [>>](./libsemanage_64bit.md) |
+| [<<](./LibSELinux_64bit.md) LibSELinux 64-bit | [HOME](../README.md) | LibSEManage 64-bit [>>](./LibSEManage_64bit.md) |
 
 ## LibSELinux 32-bit
 
@@ -42,4 +42,4 @@ See the contents section of the 64-bit build of LibSELinux for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libselinux_64bit.md) LibSELinux 64-bit | [HOME](../README.md) | LibSEManage 64-bit [>>](./libsemanage_64bit.md) |
+| [<<](./LibSELinux_64bit.md) LibSELinux 64-bit | [HOME](../README.md) | LibSEManage 64-bit [>>](./LibSEManage_64bit.md) |

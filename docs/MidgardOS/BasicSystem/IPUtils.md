@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./meson.md) Meson | [HOME](../README.md) | CUnit 64-bit [>>](./cunit_64bit.md) |
+| [<<](./Meson.md) Meson | [HOME](../README.md) | CUnit 64-bit [>>](./CUnit_64bit.md) |
 
 ## IP Utils
 
@@ -61,4 +61,4 @@ mv -v /usr/share/iputils /usr/share/doc/
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./meson.md) Meson | [HOME](../README.md) | CUnit 64-bit [>>](./cunit_64bit.md) |
+| [<<](./Meson.md) Meson | [HOME](../README.md) | CUnit 64-bit [>>](./CUnit_64bit.md) |

@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libselinux_32bit.md) LibSELinux 32-bit | [HOME](../README.md) | LibSEManage 32-bit [>>](./libsemanage_32bit.md) |
+| [<<](./LibSELinux_32bit.md) LibSELinux 32-bit | [HOME](../README.md) | LibSEManage 32-bit [>>](./LibSEManage_32bit.md) |
 
 ## LibSEManage 64-bit
 
@@ -47,4 +47,4 @@ PREFIX=/usr LIBDIR=/usr/lib64 LIBEXECDIR=/usr/lib64 SHLIBDIR=/usr/lib64 make ins
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libselinux_32bit.md) LibSELinux 32-bit | [HOME](../README.md) | LibSEManage 32-bit [>>](./libsemanage_32bit.md) |
+| [<<](./LibSELinux_32bit.md) LibSELinux 32-bit | [HOME](../README.md) | LibSEManage 32-bit [>>](./LibSEManage_32bit.md) |

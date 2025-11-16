@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libsepol_64bit.md) LibSEPol 64-bit | [HOME](../README.md) | LibSELinux 64-bit [>>](./libselinux_64bit.md) |
+| [<<](./LibSEPol_64bit.md) LibSEPol 64-bit | [HOME](../README.md) | LibSELinux 64-bit [>>](./LibSELinux_64bit.md) |
 
 ## LibSEPol 32-bit
 
@@ -43,4 +43,4 @@ See the contents section of the 64-bit build of LibSEPol for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libsepol_64bit.md) LibSEPol 64-bit | [HOME](../README.md) | LibSELinux 64-bit [>>](./libselinux_64bit.md) |
+| [<<](./LibSEPol_64bit.md) LibSEPol 64-bit | [HOME](../README.md) | LibSELinux 64-bit [>>](./LibSELinux_64bit.md) |
