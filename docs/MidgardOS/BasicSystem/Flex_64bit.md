@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUBc.md) GNU Bc | [HOME](../README.md) | Flex 32-bit [>>](./Flex32bit.md) |
+| [<<](./GNUBc.md) GNU Bc | [HOME](../README.md) | Flex 32-bit [>>](./Flex_32bit.md) |
 
 ## Flex 64-bit
 
@@ -62,4 +62,4 @@ ln -sv flex.1 /usr/share/man/man1/lex.1
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUBc.md) GNU Bc | [HOME](../README.md) | Flex 32-bit [>>](./Flex32bit.md) |
+| [<<](./GNUBc.md) GNU Bc | [HOME](../README.md) | Flex 32-bit [>>](./Flex_32bit.md) |

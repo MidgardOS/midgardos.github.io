@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Flex64bit.md) Flex 64-bit | [HOME](../README.md) | TCL [>>](./TCL.md) |
+| [<<](./Flex_64bit.md) Flex 64-bit | [HOME](../README.md) | TCL [>>](./TCL.md) |
 
 ## Flex 32-bit
 
@@ -46,12 +46,10 @@ cp -Rv DESTDIR/usr/lib/* /usr/lib/
 rm -fv /usr/lib/libfl.la
 ```
 
-**NOTE: Do not delete the unpacked sources**
-
 ## Contents
 
 See the contents section of the 64-bit build of Flex for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Flex64bit.md) Flex 64-bit | [HOME](../README.md) | TCL [>>](./TCL.md) |
+| [<<](./Flex_64bit.md) Flex 64-bit | [HOME](../README.md) | TCL [>>](./TCL.md) |

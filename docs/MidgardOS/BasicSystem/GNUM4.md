@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./PCRE232bit.md) PCRE2 32-bit | [HOME](../README.md) | GNU Bc [>>](./GNUBc.md) |
+| [<<](./PCRE2_32bit.md) PCRE2 32-bit | [HOME](../README.md) | GNU Bc [>>](./GNUBc.md) |
 
 ## GNU M4
 
@@ -51,4 +51,4 @@ make install
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./PCRE232bit.md) PCRE2 32-bit | [HOME](../README.md) | GNU Bc [>>](./GNUBc.md) |
+| [<<](./PCRE2_32bit.md) PCRE2 32-bit | [HOME](../README.md) | GNU Bc [>>](./GNUBc.md) |
