@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GLibC64bit.md) GNU GLibC 64-bit | [HOME](../README.md) | ZLib 64-bit [>>](./ZLib64bit.md) |
+| [<<](./GNUGLibC_64bit.md) GNU GLibC 64-bit | [HOME](../README.md) | ZLib 64-bit [>>](./ZLib_64bit.md) |
 
 ## GNU GLibC 32-bit
 
@@ -73,4 +73,4 @@ See the previous 64-bit build of GLibC to read about which libraries have been i
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GLibC64bit.md) GNU GLibC 64-bit | [HOME](../README.md) | ZLib 64-bit [>>](./ZLib64bit.md) |
+| [<<](./GNUGLibC_64bit.md) GNU GLibC 64-bit | [HOME](../README.md) | ZLib 64-bit [>>](./ZLib_64bit.md) |

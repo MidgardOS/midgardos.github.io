@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./IanaEtcFiles.md) IANA Etc Files | [HOME](../README.md) | GNU GLibC 32-bit [>>](./GLibC32bit.md) |
+| [<<](./IanaEtcFiles.md) IANA Etc Files | [HOME](../README.md) | GNU GLibC 32-bit [>>](./GNUGLibC_32bit.md) |
 
 ## GNU GLibC 64-bit
 
@@ -167,4 +167,4 @@ EOF
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./IanaEtcFiles.md) IANA Etc Files | [HOME](../README.md) | GNU GLibC 32-bit [>>](./GLibC32bit.md) |
+| [<<](./IanaEtcFiles.md) IANA Etc Files | [HOME](../README.md) | GNU GLibC 32-bit [>>](./GNUGLibC_32bit.md) |

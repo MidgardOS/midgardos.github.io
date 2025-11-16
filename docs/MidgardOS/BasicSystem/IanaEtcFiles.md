@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ManPages.md) Man Pages | [HOME](../README.md) | GLibC 64-bit [>>](./GLibC64bit.md) |
+| [<<](./ManPages.md) Man Pages | [HOME](../README.md) | GNU GLibC 64-bit [>>](./GNUGLibC_64bit.md) |
 
 ## IANA Etc Files
 
@@ -33,4 +33,4 @@ cp services protocols /etc/
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ManPages.md) Man Pages | [HOME](../README.md) | GLibC 64-bit [>>](./GLibC64bit.md) |
+| [<<](./ManPages.md) Man Pages | [HOME](../README.md) | GNU GLibC 64-bit [>>](./GNUGLibC_64bit.md) |
