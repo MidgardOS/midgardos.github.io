@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./NCurses64bit.md) NCurses 64-bit | [HOME](../README.md) | GNU Bash [>>](./GNUBash.md) |
+| [<<](./NCurses_64bit.md) NCurses 64-bit | [HOME](../README.md) | GNU Bash [>>](./GNUBash.md) |
 
 ## NCurses 32-bit
 
@@ -53,4 +53,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./NCurses64bit.md) NCurses 64-bit | [HOME](../README.md) | GNU Bash [>>](./GNUBash.md) |
+| [<<](./NCurses_64bit.md) NCurses 64-bit | [HOME](../README.md) | GNU Bash [>>](./GNUBash.md) |

@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUM4.md) GNU M4 | [HOME](../README.md) | NCurses 64-bit [>>](./NCurses64bit.md) |
+| [<<](./GNUM4.md) GNU M4 | [HOME](../README.md) | NCurses 64-bit [>>](./NCurses_64bit.md) |
 
 ## NCurses TIC
 
@@ -43,4 +43,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUM4.md) GNU M4 | [HOME](../README.md) | NCurses 64-bit [>>](./NCurses64bit.md) |
+| [<<](./GNUM4.md) GNU M4 | [HOME](../README.md) | NCurses 64-bit [>>](./NCurses_64bit.md) |
