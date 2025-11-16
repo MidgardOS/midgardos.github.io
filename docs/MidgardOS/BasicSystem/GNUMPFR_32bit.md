@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUMPFR64bit.md) GNU MPFR 64-bit | [HOME](../README.md) | GNU MPC 64-bit [>>](./GNUMPC64bit.md) |
+| [<<](./GNUMPFR_64bit.md) GNU MPFR 64-bit | [HOME](../README.md) | GNU MPC 64-bit [>>](./GNUMPC_64bit.md) |
 
 # GNU Multi-Precision Floating-Point with Rounding Library
 
@@ -56,4 +56,4 @@ See the contents section of the 64-bit build of GNU MPFR for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUMPFR64bit.md) GNU MPFR 64-bit | [HOME](../README.md) | GNU MPC 64-bit [>>](./GNUMPC64bit.md) |
+| [<<](./GNUMPFR_64bit.md) GNU MPFR 64-bit | [HOME](../README.md) | GNU MPC 64-bit [>>](./GNUMPC_64bit.md) |

@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Flex32bit.md) Flex 32-bit | [HOME](../README.md) | Expect [>>](./Expect.md) |
+| [<<](./Flex_32bit.md) Flex 32-bit | [HOME](../README.md) | Expect [>>](./Expect.md) |
 
 ## TCL
 
@@ -110,4 +110,4 @@ cp -v -r  ./html/* /usr/share/doc/tcl-8.6
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Flex32bit.md) Flex 32-bit | [HOME](../README.md) | Expect [>>](./Expect.md) |
+| [<<](./Flex_32bit.md) Flex 32-bit | [HOME](../README.md) | Expect [>>](./Expect.md) |

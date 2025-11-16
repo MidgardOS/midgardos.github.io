@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUBinutils.md) GNU Binutils | [HOME](../README.md) | GNU GMP 32-bit [>>](./GNUGMP32bit.md) |
+| [<<](./GNUBinutils.md) GNU Binutils | [HOME](../README.md) | GNU GMP 32-bit [>>](./GNUGMP_32bit.md) |
 
 # GNU Math Precision Library
 
@@ -64,4 +64,4 @@ rm -fv /usr/lib64/lib{gmp,gmpxx}.la
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUBinutils.md) GNU Binutils | [HOME](../README.md) | GNU GMP 32-bit [>>](./GNUGMP32bit.md) |
+| [<<](./GNUBinutils.md) GNU Binutils | [HOME](../README.md) | GNU GMP 32-bit [>>](./GNUGMP_32bit.md) |

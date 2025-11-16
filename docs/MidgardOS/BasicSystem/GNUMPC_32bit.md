@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUMPC64bit.md) GNU MPC 64-bit | [HOME](../README.md) | ISL 64-bit [>>](./ISL64bit.md) |
+| [<<](./GNUMPC_64bit.md) GNU MPC 64-bit | [HOME](../README.md) | ISL 64-bit [>>](./ISL_64bit.md) |
 
 # GNU Multi-Precision Calculation Library
 
@@ -52,4 +52,4 @@ See the contents section of the 64-bit build of GNU MPC for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUMPC64bit.md) GNU MPC 64-bit | [HOME](../README.md) | ISL 64-bit [>>](./ISL64bit.md) |
+| [<<](./GNUMPC_64bit.md) GNU MPC 64-bit | [HOME](../README.md) | ISL 64-bit [>>](./ISL_64bit.md) |

@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUMPFR32bit.md) GNU MPFR 32-bit | [HOME](../README.md) | GNU MPC 32-bit [>>](./GNUMPC32bit.md) |
+| [<<](./GNUMPFR_32bit.md) GNU MPFR 32-bit | [HOME](../README.md) | GNU MPC 32-bit [>>](./GNUMPC_32bit.md) |
 
 # GNU Multi-Precision Calculation Library
 
@@ -61,4 +61,4 @@ rm -fv /usr/lib64/libmpc.la
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUMPFR32bit.md) GNU MPFR 32-bit | [HOME](../README.md) | GNU MPC 32-bit [>>](./GNUMPC32bit.md) |
+| [<<](./GNUMPFR_32bit.md) GNU MPFR 32-bit | [HOME](../README.md) | GNU MPC 32-bit [>>](./GNUMPC_32bit.md) |

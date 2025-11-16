@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGMP64bit.md) GNU GMP 64-bit | [HOME](../README.md) | GNU MPFR 64-bit [>>](./GNUMPFR64bit.md) |
+| [<<](./GNUGMP_64bit.md) GNU GMP 64-bit | [HOME](../README.md) | GNU MPFR 64-bit [>>](./GNUMPFR_64bit.md) |
 
 # GNU Math Precision Library
 
@@ -68,4 +68,4 @@ See the contents section of the 64-bit build of GNU GMP for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGMP64bit.md) GNU GMP 64-bit | [HOME](../README.md) | GNU MPFR 64-bit [>>](./GNUMPFR64bit.md) |
+| [<<](./GNUGMP_64bit.md) GNU GMP 64-bit | [HOME](../README.md) | GNU MPFR 64-bit [>>](./GNUMPFR_64bit.md) |

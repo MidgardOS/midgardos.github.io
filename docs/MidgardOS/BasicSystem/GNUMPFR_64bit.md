@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGMP32bit.md) GNU GMP 32-bit | [HOME](../README.md) | GNU MPFR 32-bit [>>](./GNUMPFR32bit.md) |
+| [<<](./GNUGMP_32bit.md) GNU GMP 32-bit | [HOME](../README.md) | GNU MPFR 32-bit [>>](./GNUMPFR_32bit.md) |
 
 # GNU Multi-Precision Floating-Point with Rounding Library
 
@@ -63,4 +63,4 @@ rm -fv /usr/lib64/libmpfr.la
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGMP32bit.md) GNU GMP 32-bit | [HOME](../README.md) | GNU MPFR 32-bit [>>](./GNUMPFR32bit.md) |
+| [<<](./GNUGMP_32bit.md) GNU GMP 32-bit | [HOME](../README.md) | GNU MPFR 32-bit [>>](./GNUMPFR_32bit.md) |

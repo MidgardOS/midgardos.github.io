@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./PkgConf.md) PkgConf | [HOME](../README.md) | GNU GMP 64-bit [>>](./GNUGMP64bit.md) |
+| [<<](./PkgConf.md) PkgConf | [HOME](../README.md) | GNU GMP 64-bit [>>](./GNUGMP_64bit.md) |
 
 ## GNU Binutils
 
@@ -70,4 +70,4 @@ rm -rfv /usr/lib64/lib{bfd,ctf,ctf-nobfd,gprofng,opcodes,sframe}.la
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./PkgConf.md) PkgConf | [HOME](../README.md) | GNU GMP 64-bit [>>](./GNUGMP64bit.md) |
+| [<<](./PkgConf.md) PkgConf | [HOME](../README.md) | GNU GMP 64-bit [>>](./GNUGMP_64bit.md) |
