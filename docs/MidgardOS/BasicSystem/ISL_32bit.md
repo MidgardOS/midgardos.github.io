@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ISL64bit.md) ISL 64-bit | [HOME](../README.md) | GNU LibIDN2 64-bit [>>](./libidn2-64bit.md) |
+| [<<](./ISL_64bit.md) ISL 64-bit | [HOME](../README.md) | GNU LibIDN2 64-bit [>>](./GNULibIDN2_64bit.md) |
 
 # Integer Set Library
 
@@ -53,4 +53,4 @@ See the contents section of the 64-bit build of GNU MPC for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ISL64bit.md) ISL 64-bit | [HOME](../README.md) | GNU LibIDN2 64-bit [>>](./libidn2-64bit.md) |
+| [<<](./ISL_64bit.md) ISL 64-bit | [HOME](../README.md) | GNU LibIDN2 64-bit [>>](./GNULibIDN2_64bit.md) |

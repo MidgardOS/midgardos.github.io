@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUMPC32bit.md) GNU MPC 32-bit | [HOME](../README.md) | ISL 32-bit [>>](./ISL32bit.md) |
+| [<<](./GNUMPC_32bit.md) GNU MPC 32-bit | [HOME](../README.md) | ISL 32-bit [>>](./ISL_32bit.md) |
 
 # Integer Set Library
 
@@ -67,4 +67,4 @@ mv -v /usr/lib64/libisl*gdb.py /usr/share/gdb/auto-load/usr/lib64
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUMPC32bit.md) GNU MPC 32-bit | [HOME](../README.md) | ISL 32-bit [>>](./ISL32bit.md) |
+| [<<](./GNUMPC_32bit.md) GNU MPC 32-bit | [HOME](../README.md) | ISL 32-bit [>>](./ISL_32bit.md) |

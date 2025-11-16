@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ISL32bit.md) ISL 32-bit | [HOME](../README.md) | GNU LibIDN2 32-bit [>>](./libidn2-32bit.md) |
+| [<<](./ISL_32bit.md) ISL 32-bit | [HOME](../README.md) | GNU LibIDN2 32-bit [>>](./libidn2_32bit.md) |
 
 ## GNU LibIDN2 64-bit
 
@@ -61,4 +61,4 @@ rm -fv /usr/lib64/libidn2.la
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ISL32bit.md) ISL 32-bit | [HOME](../README.md) | GNU LibIDN2 32-bit [>>](./libidn2-32bit.md) |
+| [<<](./ISL_32bit.md) ISL 32-bit | [HOME](../README.md) | GNU LibIDN2 32-bit [>>](./libidn2_32bit.md) |

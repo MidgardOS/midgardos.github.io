@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libidn2-32bit.md) GNU LibIDN2 32-bit | [HOME](../README.md) | Attr 32-bit [>>](./Attr32bit.md) |
+| [<<](./GNULibIDN2_32bit.md) GNU LibIDN2 32-bit | [HOME](../README.md) | Attr 32-bit [>>](./Attr_32bit.md) |
 
 ## Attr 64-bit
 
@@ -63,4 +63,4 @@ rm -fv /usr/lib64/libattr.la
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libidn2-32bit.md) GNU LibIDN2 32-bit | [HOME](../README.md) | Attr 32-bit [>>](./Attr32bit.md) |
+| [<<](./GNULibIDN2_32bit.md) GNU LibIDN2 32-bit | [HOME](../README.md) | Attr 32-bit [>>](./Attr_32bit.md) |

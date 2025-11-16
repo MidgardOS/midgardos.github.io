@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Attr32bit.md) Attr 32-bit | [HOME](../README.md) | ACL 32-bit [>>](./ACL32bit.md) |
+| [<<](./Attr_32bit.md) Attr 32-bit | [HOME](../README.md) | ACL 32-bit [>>](./ACL_32bit.md) |
 
 ## ACL 64-bit
 
@@ -63,4 +63,4 @@ rm -fv /usr/lib64/libacl.la
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Attr32bit.md) Attr 32-bit | [HOME](../README.md) | ACL 32-bit [>>](./ACL32bit.md) |
+| [<<](./Attr_32bit.md) Attr 32-bit | [HOME](../README.md) | ACL 32-bit [>>](./ACL_32bit.md) |

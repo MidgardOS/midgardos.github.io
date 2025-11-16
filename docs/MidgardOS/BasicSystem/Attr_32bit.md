@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Attr64bit.md) Attr 64-bit | [HOME](../README.md) | ACL 64-bit [>>](./ACL64bit.md) |
+| [<<](./Attr_64bit.md) Attr 64-bit | [HOME](../README.md) | ACL 64-bit [>>](./ACL_64bit.md) |
 
 ## Attr 32-bit
 
@@ -52,4 +52,4 @@ See the contents section of the 64-bit build of Attr for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Attr64bit.md) Attr 64-bit | [HOME](../README.md) | ACL 64-bit [>>](./ACL64bit.md) |
+| [<<](./Attr_64bit.md) Attr 64-bit | [HOME](../README.md) | ACL 64-bit [>>](./ACL_64bit.md) |

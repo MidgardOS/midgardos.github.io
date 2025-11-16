@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ISL64bit.md) ISL 64-bit | [HOME](../README.md) | Attr 64-bit [>>](./Attr64bit.md) |
+| [<<](./GNULibIDN2_64bit.md) GNU LibIDN2 64-bit | [HOME](../README.md) | Attr 64-bit [>>](./Attr_64bit.md) |
 
 ## GNU LibIDN2 64-bit
 
@@ -51,4 +51,4 @@ See the contents section of the 64-bit build of GNU LibIDN2 for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ISL64bit.md) ISL 64-bit | [HOME](../README.md) | Attr 64-bit [>>](./Attr64bit.md) |
+| [<<](./GNULibIDN2_64bit.md) GNU LibIDN2 64-bit | [HOME](../README.md) | Attr 64-bit [>>](./Attr_64bit.md) |
