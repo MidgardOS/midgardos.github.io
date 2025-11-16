@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libffi64bit.md) LibFFI 64-bit | [HOME](../README.md) | 7zip CLI [>>](./7zip.md) |
+| [<<](./LibFFI_64bit.md) LibFFI 64-bit | [HOME](../README.md) | 7zip CLI [>>](./7zip.md) |
 
 ## LibFFI 32-bit
 
@@ -52,4 +52,4 @@ See the contents section of the 64-bit build of the LibFFI 32-bit for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libffi64bit.md) LibFFI 64-bit | [HOME](../README.md) | 7zip CLI [>>](./7zip.md) |
+| [<<](./LibFFI_64bit.md) LibFFI 64-bit | [HOME](../README.md) | 7zip CLI [>>](./7zip.md) |

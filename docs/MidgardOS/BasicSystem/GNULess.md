@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUInetUtils.md) GNU InetUtils | [HOME](../README.md) | Perl [>>](./perl.md) |
+| [<<](./GNUInetUtils.md) GNU InetUtils | [HOME](../README.md) | Perl [>>](./Perl.md) |
 
 ## GNU Less
 
@@ -53,4 +53,4 @@ make install
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUInetUtils.md) GNU InetUtils | [HOME](../README.md) | Perl [>>](./perl.md) |
+| [<<](./GNUInetUtils.md) GNU InetUtils | [HOME](../README.md) | Perl [>>](./Perl.md) |

@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./OpenSSLv3_64bit.md) OpenSSL v3 64-bit | [HOME](../README.md) | ElfUtils 64-bit [>>](./ElfUtils64bit.md) |
+| [<<](./OpenSSLv3_64bit.md) OpenSSL v3 64-bit | [HOME](../README.md) | ElfUtils 64-bit [>>](./ElfUtils_64bit.md) |
 
 ## OpenSSL v3 32-bit
 
@@ -62,4 +62,4 @@ See the contents section of the 64-bit build of OpenSSL v3 for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./OpenSSLv3_64bit.md) OpenSSL v3 64-bit | [HOME](../README.md) | ElfUtils 64-bit [>>](./ElfUtils64bit.md) |
+| [<<](./OpenSSLv3_64bit.md) OpenSSL v3 64-bit | [HOME](../README.md) | ElfUtils 64-bit [>>](./ElfUtils_64bit.md) |

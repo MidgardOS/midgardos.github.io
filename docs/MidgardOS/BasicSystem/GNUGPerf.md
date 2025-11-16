@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGDBM32bit.md) GNU GDBM 32-bit | [HOME](../README.md) | Expat [>>](./expat64bit.md) |
+| [<<](./GNUGDBM_32bit.md) GNU GDBM 32-bit | [HOME](../README.md) | Expat [>>](./Expat_64bit.md) |
 
 ## GNU GPerf
 
@@ -52,4 +52,4 @@ make install
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGDBM32bit.md) GNU GDBM 32-bit | [HOME](../README.md) | Expat [>>](./expat64bit.md) |
+| [<<](./GNUGDBM_32bit.md) GNU GDBM 32-bit | [HOME](../README.md) | Expat [>>](./Expat_64bit.md) |

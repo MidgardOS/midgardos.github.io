@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./nettools.md) Net Tools | [HOME](../README.md) | Hostname [>>](./hostname.md) |
+| [<<](./NetTools.md) Net Tools | [HOME](../README.md) | Hostname [>>](./Hostname.md) |
 
 ## Traceroute
 
@@ -57,4 +57,4 @@ make install
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./nettools.md) Net Tools | [HOME](../README.md) | Hostname [>>](./hostname.md) |
+| [<<](./NetTools.md) Net Tools | [HOME](../README.md) | Hostname [>>](./Hostname.md) |

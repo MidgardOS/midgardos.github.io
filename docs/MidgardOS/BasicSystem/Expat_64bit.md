@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGPerf.md) GNU GPerf | [HOME](../README.md) | Expat 32-bit [>>](./expat32bit.md) |
+| [<<](./GNUGPerf.md) GNU GPerf | [HOME](../README.md) | Expat 32-bit [>>](./Expat_32bit.md) |
 
 ## Expat 64-bit
 
@@ -60,4 +60,4 @@ install -v -m644 doc/*.{html,css} /usr/share/doc/expat-2.7.3
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGPerf.md) GNU GPerf | [HOME](../README.md) | Expat 32-bit [>>](./expat32bit.md) |
+| [<<](./GNUGPerf.md) GNU GPerf | [HOME](../README.md) | Expat 32-bit [>>](./Expat_32bit.md) |

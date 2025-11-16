@@ -2,11 +2,11 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./perl.md) Perl | [HOME](../README.md) | IntlTool [>>](./intltool.md) |
+| [<<](./Perl.md) Perl | [HOME](../README.md) | IntlTool [>>](./IntlTool.md) |
 
-## perl-XML-Parser
+## Perl-XML-Parser
 
-Name: perl-XML-Parser<br />
+Name: Perl-XML-Parser<br />
 Summary: An XML parser for Perl based on the Expat library<br />
 License: Artistic<br />
 Version: 2.47<br />
@@ -17,7 +17,7 @@ Used Install Space: 512 KiB<br />
 
 ## Configuration
 
-To configure perl-XML-Parser for install into the build root, run the following command:
+To configure the Perl XML-Parser for install into the build root, run the following command:
 
 ```bash
 perl Makefile.PL
@@ -25,7 +25,7 @@ perl Makefile.PL
 
 ## Compilation and Installation
 
-To compile perl-XML-Parser, run the following command:
+To compile the Perl XML-Parser, run the following command:
 
 ```bash
 make
@@ -37,7 +37,7 @@ Next, run the test suite:
 make test
 ```
 
-Finally, to install perl-XML-Parser into the build tree, run the following command:
+Finally, to install the Perl XML-Parser into the build tree, run the following command:
 
 ```bash
 make install
@@ -51,4 +51,4 @@ make install
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./perl.md) Perl | [HOME](../README.md) | IntlTool [>>](./intltool.md) |
+| [<<](./Perl.md) Perl | [HOME](../README.md) | IntlTool [>>](./IntlTool.md) |

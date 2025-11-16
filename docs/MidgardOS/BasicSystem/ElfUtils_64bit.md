@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./OpenSSLv3_32bit.md) OpenSSL v3 32-bit | [HOME](../README.md) | ElfUtils 32-bit [>>](./ElfUtils32bit.md) |
+| [<<](./OpenSSLv3_32bit.md) OpenSSL v3 32-bit | [HOME](../README.md) | ElfUtils 32-bit [>>](./ElfUtils_32bit.md) |
 
 ## ElfUtils 64-bit
 
@@ -62,4 +62,4 @@ rm -rf DESTDIR
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./OpenSSLv3_32bit.md) OpenSSL v3 32-bit | [HOME](../README.md) | ElfUtils 32-bit [>>](./ElfUtils32bit.md) |
+| [<<](./OpenSSLv3_32bit.md) OpenSSL v3 32-bit | [HOME](../README.md) | ElfUtils 32-bit [>>](./ElfUtils_32bit.md) |

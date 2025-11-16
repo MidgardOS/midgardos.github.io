@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./traceroute.md) Traceroute | [HOME](../README.md) | GNU InetUtils [>>](./GNUInetUtils.md) |
+| [<<](./Traceroute.md) Traceroute | [HOME](../README.md) | GNU InetUtils [>>](./GNUInetUtils.md) |
 
 ## Hostname
 
@@ -41,4 +41,4 @@ make install
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./traceroute.md) Traceroute | [HOME](../README.md) | GNU InetUtils [>>](./GNUInetUtils.md) |
+| [<<](./Traceroute.md) Traceroute | [HOME](../README.md) | GNU InetUtils [>>](./GNUInetUtils.md) |

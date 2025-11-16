@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ElfUtils64bit.md) ElfUtils 64-bit | [HOME](../README.md) | LibFFI 64-bit [>>](./libffi64bit.md) |
+| [<<](./ElfUtils_64bit.md) ElfUtils 64-bit | [HOME](../README.md) | LibFFI 64-bit [>>](./LibFFI_64bit.md) |
 
 ## ElfUtils 32-bit
 
@@ -54,4 +54,4 @@ See the contents section of the 64-bit build of ElfUtils for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ElfUtils64bit.md) ElfUtils 64-bit | [HOME](../README.md) | LibFFI 64-bit [>>](./libffi64bit.md) |
+| [<<](./ElfUtils_64bit.md) ElfUtils 64-bit | [HOME](../README.md) | LibFFI 64-bit [>>](./LibFFI_64bit.md) |

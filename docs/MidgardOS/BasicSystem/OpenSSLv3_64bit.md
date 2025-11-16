@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./intltool.md) IntlTool | [HOME](../README.md) | OpenSSL v3 32-bit [>>](./OpenSSLv3_32bit.md) |
+| [<<](./IntlTool.md) IntlTool | [HOME](../README.md) | OpenSSL v3 32-bit [>>](./OpenSSLv3_32bit.md) |
 
 ## OpenSSL v3 64-bit
 
@@ -73,4 +73,4 @@ cp -vfr doc/* /usr/share/doc/openssl-3.6.0
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./intltool.md) IntlTool | [HOME](../README.md) | OpenSSL v3 32-bit [>>](./OpenSSLv3_32bit.md) |
+| [<<](./IntlTool.md) IntlTool | [HOME](../README.md) | OpenSSL v3 32-bit [>>](./OpenSSLv3_32bit.md) |

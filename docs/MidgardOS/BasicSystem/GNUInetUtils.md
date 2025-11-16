@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./hostname.md) Hostname | [HOME](../README.md) | GNU Less [>>](./GNULess.md) |
+| [<<](./Hostname.md) Hostname | [HOME](../README.md) | GNU Less [>>](./GNULess.md) |
 
 ## GNU InetUtils
 
@@ -81,4 +81,4 @@ Note: the systemd unit files are not installed for the services that have been i
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./hostname.md) Hostname | [HOME](../README.md) | GNU Less [>>](./GNULess.md) |
+| [<<](./Hostname.md) Hostname | [HOME](../README.md) | GNU Less [>>](./GNULess.md) |

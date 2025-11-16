@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./expat32bit.md) Expat 32-bit | [HOME](../README.md) | Traceroute [>>](./traceroute.md) |
+| [<<](./Expat_32bit.md) Expat 32-bit | [HOME](../README.md) | Traceroute [>>](./Traceroute.md) |
 
 ## Net Tools
 
@@ -78,4 +78,4 @@ cp -Rv DESTDIR/usr/share/* /usr/share/
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./expat32bit.md) Expat 32-bit | [HOME](../README.md) | Traceroute [>>](./traceroute.md) |
+| [<<](./Expat_32bit.md) Expat 32-bit | [HOME](../README.md) | Traceroute [>>](./Traceroute.md) |

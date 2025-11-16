@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./perl-xml-parser.md) perl-XML-Parser | [HOME](../README.md) | OpenSSL v3 64-bit [>>](./OpenSSLv3_64bit.md) |
+| [<<](./Perl-XML-Parser.md) Perl-XML-Parser | [HOME](../README.md) | OpenSSL v3 64-bit [>>](./OpenSSLv3_64bit.md) |
 
 ## IntlTool
 
@@ -53,4 +53,4 @@ install -v -Dm 644 doc/I18N-HOWTO /usr/share/doc/intltool-0.51.0/I18N-HOWTO
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./perl-xml-parser.md) perl-XML-Parser | [HOME](../README.md) | OpenSSL v3 64-bit [>>](./OpenSSLv3_64bit.md) |
+| [<<](./Perl-XML-Parser.md) Perl-XML-Parser | [HOME](../README.md) | OpenSSL v3 64-bit [>>](./OpenSSLv3_64bit.md) |

@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNULess.md) GNU Less | [HOME](../README.md) | perl-XML-Parser [>>](./perl-xml-parser.md) |
+| [<<](./GNULess.md) GNU Less | [HOME](../README.md) | Perl XML-Parser [>>](./Perl-XML-Parser.md) |
 
 ## Perl
 
@@ -72,4 +72,4 @@ unset BUILD_ZLIB BUILD_BZIP2
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNULess.md) GNU Less | [HOME](../README.md) | perl-XML-Parser [>>](./perl-xml-parser.md) |
+| [<<](./GNULess.md) GNU Less | [HOME](../README.md) | Perl XML-Parser [>>](./Perl-XML-Parser.md) |

@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ElfUtils32bit.md) ElfUtils 32-bit | [HOME](../README.md) | LibFFI 32-bit [>>](./libffi32bit.md) |
+| [<<](./ElfUtils_32bit.md) ElfUtils 32-bit | [HOME](../README.md) | LibFFI 32-bit [>>](./LibFFI_32bit.md) |
 
 ## LibFFI 64-bit
 
@@ -58,4 +58,4 @@ rm -fv /usr/lib64/libffi.la
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ElfUtils32bit.md) ElfUtils 32-bit | [HOME](../README.md) | LibFFI 32-bit [>>](./libffi32bit.md) |
+| [<<](./ElfUtils_32bit.md) ElfUtils 32-bit | [HOME](../README.md) | LibFFI 32-bit [>>](./LibFFI_32bit.md) |
