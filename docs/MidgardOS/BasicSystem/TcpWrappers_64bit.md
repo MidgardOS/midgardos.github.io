@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libnsl232bit.md) libnsl2 32-bit | [HOME](../README.md) | TCP Wrappers 32-bit [>>](./tcp_wrappers32bit.md) |
+| [<<](./LibNSL2_32bit.md) LibNSL2 32-bit | [HOME](../README.md) | TCP Wrappers 32-bit [>>](./TcpWrappers_32bit.md) |
 
 ## TCP Wrappers 64-bit
 
@@ -184,4 +184,4 @@ EOF
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libnsl232bit.md) libnsl2 32-bit | [HOME](../README.md) | TCP Wrappers 32-bit [>>](./tcp_wrappers32bit.md) |
+| [<<](./LibNSL2_32bit.md) LibNSL2 32-bit | [HOME](../README.md) | TCP Wrappers 32-bit [>>](./TcpWrappers_32bit.md) |

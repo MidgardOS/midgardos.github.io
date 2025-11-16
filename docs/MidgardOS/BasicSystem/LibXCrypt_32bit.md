@@ -2,11 +2,11 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libxcrypt64bit.md) libxcrypt 64-bit | [HOME](../README.md) | libcap-ng 64-bit [>>](./libcap-ng64bit.md) |
+| [<<](./LibXCrypt_64bit.md) LibXCrypt 64-bit | [HOME](../README.md) | LibCap-NG 64-bit [>>](./LibCap-NG_64bit.md) |
 
-## libxcrypt 32-bit
+## LibXCrypt 32-bit
 
-Name: libxcrypt 32-bit<br />
+Name: LibXCrypt 32-bit<br />
 Summary: An enhanced encryption library for a number of cryptographic hashing algorithms<br />
 License: LGPL v2.1<br />
 Version: 4.4.38<br />
@@ -17,7 +17,7 @@ Used Install Space: 12 MiB<br />
 
 ## Configuration
 
-To configure libxcrypt 32-bit for install into the build root, run the following commands:
+To configure LibXCrypt 32-bit for install into the build root, run the following commands:
 
 ```bash
 make distclean
@@ -35,13 +35,13 @@ CC="gcc -m32" \
 
 ## Compilation and Installation
 
-To compile libxcrypt 32-bit, run the following command:
+To compile LibXCrypt 32-bit, run the following command:
 
 ```bash
 make
 ```
 
-Finally, to install libxcrypt 32-bit into the build tree, run the following commands:
+Finally, to install LibXCrypt 32-bit into the build tree, run the following commands:
 
 ```bash
 make DESTDIR=$PWD/DESTDIR install
@@ -51,8 +51,8 @@ cp -Rv DESTDIR/usr/lib/* /usr/lib/
 
 ## Contents
 
-See the contents section of the 64-bit build of libxcrypt for details.
+See the contents section of the 64-bit build of LibXCrypt for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libxcrypt64bit.md) libxcrypt 64-bit | [HOME](../README.md) | libcap-ng 64-bit [>>](./libcap-ng64bit.md) |
+| [<<](./LibXCrypt_64bit.md) LibXCrypt 64-bit | [HOME](../README.md) | LibCap-NG 64-bit [>>](./LibCap-NG_64bit.md) |

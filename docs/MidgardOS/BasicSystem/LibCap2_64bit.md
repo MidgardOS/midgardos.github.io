@@ -2,11 +2,11 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ACL32bit.md) ACL 32-bit | [HOME](../README.md) | libcap2 32-bit [>>](./libcap32bit.md) |
+| [<<](./ACL_32bit.md) ACL 32-bit | [HOME](../README.md) | LibCap2 32-bit [>>](./LibCap2_32bit.md) |
 
-## libcap2 64-bit
+## LibCap2 64-bit
 
-Name: libcap2 64-bit<br />
+Name: LibCap2 64-bit<br />
 Summary: Userspace tools for POSIX 1003.1e privilege capabilities<br />
 License: BSD-3-Clause or GPL v2.0<br />
 Version: 2.76<br />
@@ -21,7 +21,7 @@ The package does not have a traditional configuration script.
 
 ## Compilation and Installation
 
-To compile libcap2 64-bit, run the following commands:
+To compile LibCap2 64-bit, run the following commands:
 
 ```bash
 sed -i '/install -m.*STA/d' libcap/Makefile
@@ -34,7 +34,7 @@ Next, run the test suite:
 make test
 ```
 
-Finally, to install libcap2 64-bit into the build tree, run the following command:
+Finally, to install LibCap2 64-bit into the build tree, run the following command:
 
 ```bash
 make prefix=/usr lib=lib64 install
@@ -51,4 +51,4 @@ make prefix=/usr lib=lib64 install
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ACL32bit.md) ACL 32-bit | [HOME](../README.md) | libcap2 32-bit [>>](./libcap32bit.md) |
+| [<<](./ACL_32bit.md) ACL 32-bit | [HOME](../README.md) | LibCap2 32-bit [>>](./LibCap2_32bit.md) |

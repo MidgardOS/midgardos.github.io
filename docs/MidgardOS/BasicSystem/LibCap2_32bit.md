@@ -2,11 +2,11 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libcap64bit.md) libcap2 64-bit | [HOME](../README.md) | libxcrypt 64-bit [>>](./libxcrypt64bit.md) |
+| [<<](./LibCap2_64bit.md) LibCap2 64-bit | [HOME](../README.md) | LibXCrypt 64-bit [>>](./LibXCrypt_64bit.md) |
 
-## libcap2 32-bit
+## LibCap2 32-bit
 
-Name: libcap2 32-bit<br />
+Name: LibCap2 32-bit<br />
 Summary: Userspace tools for POSIX 1003.1e privilege capabilities<br />
 License: BSD-3-Clause or GPL v2.0<br />
 Version: 2.76<br />
@@ -21,14 +21,14 @@ The package does not have a traditional configuration script.
 
 ## Compilation and Installation
 
-To compile libcap2 32-bit, run the following commands:
+To compile LibCap2 32-bit, run the following commands:
 
 ```bash
 make distclean
 make CC="gcc -m32 -march=i686"
 ```
 
-Finally, to install libcap2 32-bit into the build tree, run the following commands:
+Finally, to install LibCap2 32-bit into the build tree, run the following commands:
 
 ```bash
 make CC="gcc -m32 -march=i686" lib=lib prefix=$PWD/DESTDIR/usr -C libcap install
@@ -39,8 +39,8 @@ chmod -v 755 /usr/lib/libcap.so.2.76
 
 ## Contents
 
-See the contents section of the 64-bit build of libcap2 for details.
+See the contents section of the 64-bit build of LibCap2 for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libcap64bit.md) libcap2 64-bit | [HOME](../README.md) | libxcrypt 64-bit [>>](./libxcrypt64bit.md) |
+| [<<](./LibCap2_64bit.md) LibCap2 64-bit | [HOME](../README.md) | LibXCrypt 64-bit [>>](./LibXCrypt_64bit.md) |

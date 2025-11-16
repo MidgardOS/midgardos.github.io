@@ -2,11 +2,11 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libtirpc64bit.md) libtirpc 64-bit | [HOME](../README.md) | libnsl2 64-bit [>>](./libnsl264bit.md) |
+| [<<](./LibTIRPC_64bit.md) LibTIRPC 64-bit | [HOME](../README.md) | LibNSL2 64-bit [>>](./LibNSL2_64bit.md) |
 
-## libtirpc 32-bit
+## LibTIRPC 32-bit
 
-Name: libtirpc 32-bit<br />
+Name: LibTIRPC 32-bit<br />
 Summary: The library for the RPC API that used to be part of GLibC<br />
 License: BSD<br />
 Version: 1.3.7<br />
@@ -17,7 +17,7 @@ Used Install Space: 1.2 MiB<br />
 
 ## Configuration
 
-To configure the libtirpc 32-bit package for compilation, run the following commands:
+To configure the LibTIRPC 32-bit package for compilation, run the following commands:
 
 ```bash
 make distclean
@@ -35,13 +35,13 @@ CC="gcc -m32" \
 
 ## Compilation and Installation
 
-To compile libtirpc 32-bit, run the following command:
+To compile LibTIRPC 32-bit, run the following command:
 
 ```bash
 make
 ```
 
-Finally, to install libtirpc 32-bit into the build tree, run the following commands:
+Finally, to install LibTIRPC 32-bit into the build tree, run the following commands:
 
 ```bash
 make DESTDIR=$PWD/DESTDIR install
@@ -51,8 +51,8 @@ cp -Rv DESTDIR/usr/lib/* /usr/lib
 
 ## Contents
 
-See the contents section of the 64-bit build of libtirpc for details.
+See the contents section of the 64-bit build of LibTIRPC for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libtirpc64bit.md) libtirpc 64-bit | [HOME](../README.md) | libnsl2 64-bit [>>](./libnsl264bit.md) |
+| [<<](./LibTIRPC_64bit.md) LibTIRPC 64-bit | [HOME](../README.md) | LibNSL2 64-bit [>>](./LibNSL2_64bit.md) |

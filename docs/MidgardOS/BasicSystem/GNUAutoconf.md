@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./tcp_wrappers32bit.md) TCP Wrappers 32-bit | [HOME](../README.md) | GNU Libtool 64-bit [>>](./GNULibtool64bit.md) |
+| [<<](./TcpWrappers_32bit.md) TCP Wrappers 32-bit | [HOME](../README.md) | GNU Libtool 64-bit [>>](./GNULibtool_64bit.md) |
 
 # GNU Autoconf
 
@@ -55,4 +55,4 @@ make install
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./tcp_wrappers32bit.md) TCP Wrappers 32-bit | [HOME](../README.md) | GNU Libtool 64-bit [>>](./GNULibtool64bit.md) |
+| [<<](./TcpWrappers_32bit.md) TCP Wrappers 32-bit | [HOME](../README.md) | GNU Libtool 64-bit [>>](./GNULibtool_64bit.md) |

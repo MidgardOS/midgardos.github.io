@@ -2,11 +2,11 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libcap32bit.md) libcap2 32-bit | [HOME](../README.md) | libxcrypt 32-bit [>>](./libxcrypt32bit.md) |
+| [<<](./LibCap_32bit.md) LibCap2 32-bit | [HOME](../README.md) | LibXCrypt 32-bit [>>](./LibXCrypt_32bit.md) |
 
-## libxcrypt 64-bit
+## LibXCrypt 64-bit
 
-Name: libxcrypt 64-bit<br />
+Name: LibXCrypt 64-bit<br />
 Summary: An enhanced encryption library for a number of cryptographic hashing algorithms<br />
 License: LGPL v2.1<br />
 Version: 4.4.38<br />
@@ -17,7 +17,7 @@ Used Install Space: 12 MiB<br />
 
 ## Configuration
 
-To configure libxcrypt 64-bit for install into the build root, run the following command:
+To configure LibXCrypt 64-bit for install into the build root, run the following command:
 
 ```bash
 ./configure --prefix=/usr               \
@@ -31,7 +31,7 @@ To configure libxcrypt 64-bit for install into the build root, run the following
 
 ## Compilation and Installation
 
-To compile libxcrypt 64-bit, run the following command:
+To compile LibXCrypt 64-bit, run the following command:
 
 ```bash
 make
@@ -43,7 +43,7 @@ Next, run the test suite:
 make check
 ```
 
-Finally, to install libxcrypt 64-bit into the build tree, run the following commands:
+Finally, to install LibXCrypt 64-bit into the build tree, run the following commands:
 
 ```bash
 make install
@@ -60,4 +60,4 @@ rm -fv /usr/lib64/libcrypt.la
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libcap32bit.md) libcap2 32-bit | [HOME](../README.md) | libxcrypt 32-bit [>>](./libxcrypt32bit.md) |
+| [<<](./LibCap_32bit.md) LibCap2 32-bit | [HOME](../README.md) | LibXCrypt 32-bit [>>](./LibXCrypt_32bit.md) |

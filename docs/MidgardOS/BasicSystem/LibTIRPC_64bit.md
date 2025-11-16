@@ -2,11 +2,11 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libcap-ng32bit.md) libcap-ng 32-bit | [HOME](../README.md) | libtirpc 32-bit [>>](./libtirpc32bit.md) |
+| [<<](./LibCap-NG_32bit.md) LibCap-NG 32-bit | [HOME](../README.md) | LibTIRPC 32-bit [>>](./LibTIRPC_32bit.md) |
 
-## libtirpc 64-bit
+## LibTIRPC 64-bit
 
-Name: libtirpc 64-bit<br />
+Name: LibTIRPC 64-bit<br />
 Summary: The library for the RPC API that used to be part of GLibC<br />
 License: BSD<br />
 Version: 1.3.7<br />
@@ -17,7 +17,7 @@ Used Install Space: 1.2 MiB<br />
 
 ## Configuration
 
-To configure the libtirpc 64-bit package for compilation, run the following command:
+To configure the LibTIRPC 64-bit package for compilation, run the following command:
 
 ```bash
 ./configure --prefix=/usr           \
@@ -32,7 +32,7 @@ To configure the libtirpc 64-bit package for compilation, run the following comm
 
 ## Compilation and Installation
 
-To compile libtirpc 64-bit, run the following command:
+To compile LibTIRPC 64-bit, run the following command:
 
 ```bash
 make
@@ -44,7 +44,7 @@ Next, run the test suite:
 make check
 ```
 
-Finally, to install libtirpc 64-bit into the build tree, run the following commands:
+Finally, to install LibTIRPC 64-bit into the build tree, run the following commands:
 
 ```bash
 make install
@@ -61,4 +61,4 @@ rm -fv /usr/lib64/libtirpc.la
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libcap-ng32bit.md) libcap-ng 32-bit | [HOME](../README.md) | libtirpc 32-bit [>>](./libtirpc32bit.md) |
+| [<<](./LibCap-NG_32bit.md) LibCap-NG 32-bit | [HOME](../README.md) | LibTIRPC 32-bit [>>](./LibTIRPC_32bit.md) |

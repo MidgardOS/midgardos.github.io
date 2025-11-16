@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libxcrypt32bit.md) libxcrypt 32-bit | [HOME](../README.md) | libcap-ng 32-bit [>>](./libcap-ng32bit.md) |
+| [<<](./LibXCrypt_32bit.md) LibXCrypt 32-bit | [HOME](../README.md) | LibCap-NG 32-bit [>>](./LibCap-NG_32bit.md) |
 
 ## libcap-ng 64-bit
 
@@ -59,4 +59,4 @@ rm -fv /usr/lib64/libdrop_ambient.la
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libxcrypt32bit.md) libxcrypt 32-bit | [HOME](../README.md) | libcap-ng 32-bit [>>](./libcap-ng32bit.md) |
+| [<<](./LibXCrypt_32bit.md) LibXCrypt 32-bit | [HOME](../README.md) | LibCap-NG 32-bit [>>](./LibCap-NG_32bit.md) |

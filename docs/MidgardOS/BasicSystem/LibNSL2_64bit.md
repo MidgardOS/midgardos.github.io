@@ -2,11 +2,11 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libtirpc32bit.md) libtirpc 32-bit | [HOME](../README.md) | libnsl2 32-bit [>>](./libnsl232bit.md) |
+| [<<](./LibTIRPC_32bit.md) LibTIRPC 32-bit | [HOME](../README.md) | libNSL2 32-bit [>>](./LibNSL2_32bit.md) |
 
-## libnsl2 64-bit
+## LibNSL2 64-bit
 
-Name: libnsl2 64-bit<br />
+Name: LibNSL2 64-bit<br />
 Summary: The NIS/YP API library<br />
 License: LGPL v2.1<br />
 Version: 2.0.1<br />
@@ -17,7 +17,7 @@ Used Install Space: 168 KiB<br />
 
 ## Configuration
 
-To configure the libnsl2 64-bit package for compilation, run the following command:
+To configure the LibNSL2 64-bit package for compilation, run the following command:
 
 ```bash
 ./configure --prefix=/usr           \
@@ -29,7 +29,7 @@ To configure the libnsl2 64-bit package for compilation, run the following comma
 
 ## Compilation and Installation
 
-To compile libnsl2 64-bit, run the following command:
+To compile LibNSL2 64-bit, run the following command:
 
 ```bash
 make
@@ -41,7 +41,7 @@ Next, run the test suite:
 make check
 ```
 
-Finally, to install libnsl2 64-bit into the build tree, run the following commands:
+Finally, to install LibNSL2 64-bit into the build tree, run the following commands:
 
 ```bash
 make install
@@ -58,4 +58,4 @@ rm -fv /usr/lib64/libnsl.la
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libtirpc32bit.md) libtirpc 32-bit | [HOME](../README.md) | libnsl2 32-bit [>>](./libnsl232bit.md) |
+| [<<](./LibTIRPC_32bit.md) LibTIRPC 32-bit | [HOME](../README.md) | LibNSL2 32-bit [>>](./LibNSL2_32bit.md) |

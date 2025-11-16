@@ -2,11 +2,11 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./tcp_wrappers64bit.md) TCP Wrappers 64-bit | [HOME](../README.md) | GNU Autoconf [>>](./Autoconf.md) |
+| [<<](./TcpWrappers_64bit.md) TCP Wrappers 64-bit | [HOME](../README.md) | GNU Autoconf [>>](./GNUAutoconf.md) |
 
-## tcp_wrappers 32-bit
+## TCP Wrappers 32-bit
 
-Name: tcp_wrappers 32-bit<br />
+Name: TCP Wrappers 32-bit<br />
 Summary: Access and authorization wrapper for TCP daemons<br />
 License: BSD<br />
 Version: 7.6<br />
@@ -21,7 +21,7 @@ The TCP Wrappers sources do not have a traditional configuration script.
 
 ## Compilation and Installation
 
-To compile tcp_wrappers 32-bit, run the following commands:
+To compile TCP Wrappers 32-bit, run the following commands:
 
 ```bash
 make clean
@@ -29,7 +29,7 @@ rm -fv libwrap.so libwrap.so.0
 CC="gcc -m32 -march=i686" make REAL_DAEMON_DIR=/usr/sbin MAJOR=0 MINOR=7 REL=6 linux
 ```
 
-Finally, to install tcp_wrappers 32-bit into the build tree, run the following commands:
+Finally, to install TCP Wrappers 32-bit into the build tree, run the following commands:
 
 ```bash
 BUILD_ROOT=DESTDIR
@@ -41,8 +41,8 @@ cp -Rv ${BUILD_ROOT}/usr/lib/* /usr/lib/
 
 ## Contents
 
-See the contents section of the 64-bit build of tcp_wrappers for details.
+See the contents section of the 64-bit build of TCP Wrappers for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./tcp_wrappers64bit.md) TCP Wrappers 64-bit | [HOME](../README.md) | GNU Autoconf [>>](./Autoconf.md) |
+| [<<](./TcpWrappers_64bit.md) TCP Wrappers 64-bit | [HOME](../README.md) | GNU Autoconf [>>](./GNUAutoconf.md) |

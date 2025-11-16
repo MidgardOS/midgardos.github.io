@@ -2,11 +2,11 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libnsl264bit.md) libnsl2 64-bit | [HOME](../README.md) | tcp_wrappers 64-bit [>>](./tcp_wrappers64bit.md) |
+| [<<](./LibNSL2_64bit.md) LibNSL2 64-bit | [HOME](../README.md) | TCP Wrappers 64-bit [>>](./TcpWrappers_64bit.md) |
 
-## libnsl2 32-bit
+## LibNSL2 32-bit
 
-Name: libnsl2 32-bit<br />
+Name: LibNSL2 32-bit<br />
 Summary: The NIS/YP API library<br />
 License: LGPL v2.1<br />
 Version: 2.0.1<br />
@@ -17,7 +17,7 @@ Used Install Space: 168 KiB<br />
 
 ## Configuration
 
-To configure the libnsl2 32-bit package for compilation, run the following commands:
+To configure the LibNSL2 32-bit package for compilation, run the following commands:
 
 ```bash
 make distclean
@@ -32,13 +32,13 @@ CC="gcc -m32" \
 
 ## Compilation and Installation
 
-To compile libnsl2 32-bit, run the following command:
+To compile LibNSL2 32-bit, run the following command:
 
 ```bash
 make
 ```
 
-Finally, to install libnsl2 32-bit into the build tree, run the following commands:
+Finally, to install LibNSL2 32-bit into the build tree, run the following commands:
 
 ```bash
 make DESTDIR=$PWD/DESTDIR install
@@ -48,8 +48,8 @@ cp -Rv DESTDIR/usr/lib/* /usr/lib
 
 ## Contents
 
-See the contents section of the 64-bit build of libnsl2 for details.
+See the contents section of the 64-bit build of LibNSL2 for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./libnsl264bit.md) libnsl2 64-bit | [HOME](../README.md) | tcp_wrappers 64-bit [>>](./tcp_wrappers64bit.md) |
+| [<<](./LibNSL2_64bit.md) LibNSL2 64-bit | [HOME](../README.md) | TCP Wrappers 64-bit [>>](./TcpWrappers_64bit.md) |
