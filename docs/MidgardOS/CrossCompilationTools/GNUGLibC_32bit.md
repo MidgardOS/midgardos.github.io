@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGLibC64bit.md) GNU GLibC - 64-bit | [HOME](../README.md) | GNU C++ Runtime [>>](./LibStdC++.md) |
+| [<<](./GNUGLibC_64bit.md) GNU GLibC - 64-bit | [HOME](../README.md) | GNU C++ Runtime [>>](./LibStdC++.md) |
 
 ## GNU C Library - 32-bit
 
@@ -77,4 +77,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGLibC64bit.md) GNU GLibC - 64-bit | [HOME](../README.md) | GNU C++ Runtime [>>](./LibStdC++.md) |
+| [<<](./GNUGLibC_64bit.md) GNU GLibC - 64-bit | [HOME](../README.md) | GNU C++ Runtime [>>](./LibStdC++.md) |

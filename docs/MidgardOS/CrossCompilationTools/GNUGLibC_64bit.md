@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGCC.md) GNU Compiler Collection | [HOME](../README.md) | GNU GLibC - 32-bit [>>](./GNUGLibC32bit.md) |
+| [<<](./GNUGCC.md) GNU Compiler Collection | [HOME](../README.md) | GNU GLibC - 32-bit [>>](./GNUGLibC_32bit.md) |
 
 ## GNU C Library - 64-bit
 
@@ -137,4 +137,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGCC.md) GNU Compiler Collection | [HOME](../README.md) | GNU GLibC - 32-bit [>>](./GNUGLibC32bit.md) |
+| [<<](./GNUGCC.md) GNU Compiler Collection | [HOME](../README.md) | GNU GLibC - 32-bit [>>](./GNUGLibC_32bit.md) |

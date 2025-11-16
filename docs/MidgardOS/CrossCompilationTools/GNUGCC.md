@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUBinutils.md) GNU Binutils | [HOME](../README.md) | GNU GLibC - 64-bit [>>](./GNUGLibC64bit.md) |
+| [<<](./GNUBinutils.md) GNU Binutils | [HOME](../README.md) | GNU GLibC - 64-bit [>>](./GNUGLibC_64bit.md) |
 
 ## GNU Compiler Collection - Pass 1 - Static, No Threads
 
@@ -102,4 +102,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUBinutils.md) GNU Binutils | [HOME](../README.md) | GNU GLibC - 64-bit [>>](./GNUGLibC64bit.md) |
+| [<<](./GNUBinutils.md) GNU Binutils | [HOME](../README.md) | GNU GLibC - 64-bit [>>](./GNUGLibC_64bit.md) |
