@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGettext64bit.md) GNU Gettext 64-bit | [HOME](../README.md) | GNU Bison [>>](./GNUBison.md) |
+| [<<](./GNUGettext_64bit.md) GNU Gettext 64-bit | [HOME](../README.md) | GNU Bison [>>](./GNUBison.md) |
 
 ## GNU Gettext 32-bit
 
@@ -55,4 +55,4 @@ See the contents section of the 64-bit build of GNU Gettext for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGettext64bit.md) GNU Gettext 64-bit | [HOME](../README.md) | GNU Bison [>>](./GNUBison.md) |
+| [<<](./GNUGettext_64bit.md) GNU Gettext 64-bit | [HOME](../README.md) | GNU Bison [>>](./GNUBison.md) |

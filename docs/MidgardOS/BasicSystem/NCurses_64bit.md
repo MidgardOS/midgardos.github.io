@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGCC.md) GNU Compiler Collection | [HOME](../README.md) | NCurses 32-bit [>>](./ncurses32bit.md) |
+| [<<](./GNUGCC.md) GNU Compiler Collection | [HOME](../README.md) | NCurses 32-bit [>>](./NCurses_32bit.md) |
 
 ## NCurses 64-bit
 
@@ -67,4 +67,4 @@ cp -v -R doc -T /usr/share/doc/ncurses-6.5-20250809
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGCC.md) GNU Compiler Collection | [HOME](../README.md) | NCurses 32-bit [>>](./ncurses32bit.md) |
+| [<<](./GNUGCC.md) GNU Compiler Collection | [HOME](../README.md) | NCurses 32-bit [>>](./NCurses_32bit.md) |

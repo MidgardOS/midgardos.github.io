@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./psmisc.md) PSMisc | [HOME](../README.md) | GNU Gettext 32-bit [>>](./GNUGettext32bit.md) |
+| [<<](./PSMisc.md) PSMisc | [HOME](../README.md) | GNU Gettext 32-bit [>>](./GNUGettext_32bit.md) |
 
 ## GNU Gettext 64-bit
 
@@ -62,4 +62,4 @@ rm -fv /usr/lib64/libtextstyle.la
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./psmisc.md) PSMisc | [HOME](../README.md) | GNU Gettext 32-bit [>>](./GNUGettext32bit.md) |
+| [<<](./PSMisc.md) PSMisc | [HOME](../README.md) | GNU Gettext 32-bit [>>](./GNUGettext_32bit.md) |

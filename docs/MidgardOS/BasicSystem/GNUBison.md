@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGettext32bit.md) GNU Gettext 32-bit | [HOME](../README.md) | GNU Grep [>>](./GNUGrep.md) |
+| [<<](./GNUGettext_32bit.md) GNU Gettext 32-bit | [HOME](../README.md) | GNU Grep [>>](./GNUGrep.md) |
 
 ## GNU Bison
 
@@ -55,4 +55,4 @@ make install
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGettext32bit.md) GNU Gettext 32-bit | [HOME](../README.md) | GNU Grep [>>](./GNUGrep.md) |
+| [<<](./GNUGettext_32bit.md) GNU Gettext 32-bit | [HOME](../README.md) | GNU Grep [>>](./GNUGrep.md) |

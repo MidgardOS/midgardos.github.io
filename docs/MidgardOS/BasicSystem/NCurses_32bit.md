@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ncurses64bit.md) NCurses 64-bit | [HOME](../README.md) | GNU Sed [>>](./GNUSed.md) |
+| [<<](./NCurses_64bit.md) NCurses 64-bit | [HOME](../README.md) | GNU Sed [>>](./GNUSed.md) |
 
 ## NCurses 32-bit
 
@@ -66,4 +66,4 @@ See the contents section of the 64-bit build of NCurses for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./ncurses64bit.md) NCurses 64-bit | [HOME](../README.md) | GNU Sed [>>](./GNUSed.md) |
+| [<<](./NCurses_64bit.md) NCurses 64-bit | [HOME](../README.md) | GNU Sed [>>](./GNUSed.md) |

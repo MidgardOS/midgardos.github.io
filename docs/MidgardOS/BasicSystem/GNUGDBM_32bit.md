@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGDBM64bit.md) GNU GDBM 64-bit | [HOME](../README.md) | GNU GPerf [>>](./GNUGPerf.md) |
+| [<<](./GNUGDBM_64bit.md) GNU GDBM 64-bit | [HOME](../README.md) | GNU GPerf [>>](./GNUGPerf.md) |
 
 ## GNU GDBM 32-bit
 
@@ -52,4 +52,4 @@ See the contents section of the 64-bit build of GNU GDBM for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGDBM64bit.md) GNU GDBM 64-bit | [HOME](../README.md) | GNU GPerf [>>](./GNUGPerf.md) |
+| [<<](./GNUGDBM_64bit.md) GNU GDBM 64-bit | [HOME](../README.md) | GNU GPerf [>>](./GNUGPerf.md) |

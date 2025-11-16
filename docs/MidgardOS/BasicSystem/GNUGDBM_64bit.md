@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUBash.md) GNU Bash | [HOME](../README.md) | GNU GDBM 32-bit [>>](./GNUGDBM32bit.md) |
+| [<<](./GNUBash.md) GNU Bash | [HOME](../README.md) | GNU GDBM 32-bit [>>](./GNUGDBM_32bit.md) |
 
 ## GNU GDBM 64-bit
 
@@ -60,4 +60,4 @@ rm -fv /usr/lib64/libgdbm_compat.la
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUBash.md) GNU Bash | [HOME](../README.md) | GNU GDBM 32-bit [>>](./GNUGDBM32bit.md) |
+| [<<](./GNUBash.md) GNU Bash | [HOME](../README.md) | GNU GDBM 32-bit [>>](./GNUGDBM_32bit.md) |
