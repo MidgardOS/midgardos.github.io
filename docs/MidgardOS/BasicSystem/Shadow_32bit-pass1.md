@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./shadow64bit-pass1.md) Shadow Utils 64-bit | [HOME](../README.md) | GNU Compiler Collection [>>](./GNUGCC.md) |
+| [<<](./Shadow_64bit-pass1.md) Shadow Utils 64-bit | [HOME](../README.md) | GNU Compiler Collection [>>](./GNUGCC.md) |
 
 ## Shadow Utils 32-bit
 
@@ -61,4 +61,4 @@ See the contents section of the 64-bit build of Shadow Utils for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./shadow64bit-pass1.md) Shadow Utils 64-bit | [HOME](../README.md) | GNU Compiler Collection [>>](./GNUGCC.md) |
+| [<<](./Shadow_64bit-pass1.md) Shadow Utils 64-bit | [HOME](../README.md) | GNU Compiler Collection [>>](./GNUGCC.md) |

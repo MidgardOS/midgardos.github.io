@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./audit64bit.md) Linux Audit Framework 64-bit | [HOME](../README.md) | rpcsvc-proto [>>](./rpcsvc-proto.md) |
+| [<<](./Audit_64bit.md) Linux Audit Framework 64-bit | [HOME](../README.md) | RPCSvc-Proto [>>](./RPCSvc-Proto.md) |
 
 ## Linux Audit Framework 32-bit
 
@@ -63,4 +63,4 @@ See the contents section of the 64-bit build of the Linux Audit Framework for de
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./audit64bit.md) Linux Audit Framework 64-bit | [HOME](../README.md) | rpcsvc-proto [>>](./rpcsvc-proto.md) |
+| [<<](./Audit_64bit.md) Linux Audit Framework 64-bit | [HOME](../README.md) | RPCSvc-Proto [>>](./RPCSvc-Proto.md) |

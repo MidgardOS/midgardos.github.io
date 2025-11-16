@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Automake.md) GNU Automake | [HOME](../README.md) | Linux Audit Framework 32-bit [>>](./audit32bit.md) |
+| [<<](./GNUAutomake.md) GNU Automake | [HOME](../README.md) | Linux Audit Framework 32-bit [>>](./Audit_32bit.md) |
 
 ## Linux Audit Framework 64-bit
 
@@ -80,4 +80,4 @@ unset LDFLAGS
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Automake.md) GNU Automake | [HOME](../README.md) | Linux Audit Framework 32-bit [>>](./audit32bit.md) |
+| [<<](./GNUAutomake.md) GNU Automake | [HOME](../README.md) | Linux Audit Framework 32-bit [>>](./Audit_32bit.md) |

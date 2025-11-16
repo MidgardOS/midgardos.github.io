@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./rpcsvc-proto.md) RPCSVC Proto | [HOME](../README.md) | Shadow Utils 32-bit [>>](./shadow32bit-pass1.md) |
+| [<<](./RPCSvc-Proto.md) RPCSVC Proto | [HOME](../README.md) | Shadow Utils 32-bit [>>](./Shadow_32bit-pass1.md) |
 
 ## Shadow Utils 64-bit
 
@@ -103,4 +103,4 @@ unset LDFLAGS
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./rpcsvc-proto.md) RPCSVC Proto | [HOME](../README.md) | Shadow Utils 32-bit [>>](./shadow32bit-pass1.md) |
+| [<<](./RPCSvc-Proto.md) RPCSVC Proto | [HOME](../README.md) | Shadow Utils 32-bit [>>](./Shadow_32bit-pass1.md) |

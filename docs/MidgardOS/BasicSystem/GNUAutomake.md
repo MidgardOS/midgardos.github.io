@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNULibtool32bit.md) GNU Libtool 32-bit | [HOME](../README.md) | Audit 64-bit [>>](./audit64bit.md) |
+| [<<](./GNULibtool_32bit.md) GNU Libtool 32-bit | [HOME](../README.md) | Audit 64-bit [>>](./Audit_64bit.md) |
 
 # GNU Automake
 
@@ -57,4 +57,4 @@ make install
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNULibtool32bit.md) GNU Libtool 32-bit | [HOME](../README.md) | Audit 64-bit [>>](./audit64bit.md) |
+| [<<](./GNULibtool_32bit.md) GNU Libtool 32-bit | [HOME](../README.md) | Audit 64-bit [>>](./Audit_64bit.md) |

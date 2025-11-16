@@ -2,11 +2,11 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./audit32bit.md) Linux Audit Framework 32-bit | [HOME](../README.md) | Shadow Utils 64-bit - pass 1 [>>](./shadow64bit-pass1.md) |
+| [<<](./Audit_32bit.md) Linux Audit Framework 32-bit | [HOME](../README.md) | Shadow Utils 64-bit - pass 1 [>>](./Shadow_64bit-pass1.md) |
 
-## rpcsvc-proto
+## RPCSvc-Proto
 
-Name: rpcsvc-proto<br />
+Name: RPCSvc-Proto<br />
 Summary: The RPCSVC headers and generation tool<br />
 License: GPL v2.0 or later<br />
 Version: 1.4.4<br />
@@ -17,7 +17,7 @@ Used Install Space: 520 KiB <br />
 
 ## Configuration
 
-To configure rpcsvc-proto for install into the build root, run the following command:
+To configure RPCSvc-Proto for install into the build root, run the following command:
 
 ```bash
 ./configure --prefix=/usr
@@ -25,7 +25,7 @@ To configure rpcsvc-proto for install into the build root, run the following com
 
 ## Compilation and Installation
 
-To compile rpcsvc-proto, run the following command:
+To compile RPCSvc-Proto, run the following command:
 
 ```bash
 make
@@ -37,7 +37,7 @@ Now, run the test suite:
 make check
 ```
 
-Finally, to install rpcsvc-proto into the build tree, run the following command:
+Finally, to install RPCSvc-Proto into the build tree, run the following command:
 
 ```bash
 make install
@@ -52,4 +52,4 @@ make install
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./audit32bit.md) Linux Audit Framework 32-bit | [HOME](../README.md) | Shadow Utils 64-bit pass-1 [>>](./shadow64bit-pass1.md) |
+| [<<](./Audit_32bit.md) Linux Audit Framework 32-bit | [HOME](../README.md) | Shadow Utils 64-bit - pass 1 [>>](./Shadow_64bit-pass1.md) |

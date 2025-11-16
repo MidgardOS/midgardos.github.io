@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Autoconf.md) GNU Autoconf | [HOME](../README.md) | GNU Libtool 32-bit [>>](./GNULibtool32bit.md) |
+| [<<](./GNUAutoconf.md) GNU Autoconf | [HOME](../README.md) | GNU Libtool 32-bit [>>](./GNULibtool_32bit.md) |
 
 # GNU Libtool 64-bit
 
@@ -62,4 +62,4 @@ rm -fv /usr/lib64/libltdl.la
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Autoconf.md) GNU Autoconf | [HOME](../README.md) | GNU Libtool 32-bit [>>](./GNULibtool32bit.md) |
+| [<<](./GNUAutoconf.md) GNU Autoconf | [HOME](../README.md) | GNU Libtool 32-bit [>>](./GNULibtool_32bit.md) |

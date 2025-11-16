@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNULibtool64bit.md) GNU Libtool 64-bit | [HOME](../README.md) | GNU Automake [>>](./Automake.md) |
+| [<<](./GNULibtool_64bit.md) GNU Libtool 64-bit | [HOME](../README.md) | GNU Automake [>>](./GNUAutomake.md) |
 
 # GNU Libtool 32-bit
 
@@ -52,4 +52,4 @@ See the contents section of the 64-bit build of GNU Libtool for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNULibtool64bit.md) GNU Libtool 64-bit | [HOME](../README.md) | GNU Automake [>>](./Automake.md) |
+| [<<](./GNULibtool_64bit.md) GNU Libtool 64-bit | [HOME](../README.md) | GNU Automake [>>](./GNUAutomake.md) |
