@@ -2,11 +2,11 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CheckPolicy.md) CheckPolicy | [HOME](../README.md) | GNU LibGCrypt 32-bit [>>](./GNULibGCrypt_32bit.md) |
+| [<<](./GNULibGCrypt_64bit.md) GNU LibGCrypt 64-bit | [HOME](../README.md) | GNU LibKSBA 64-bit [>>](./GNULibKSBA_64bit.md) |
 
-## GNU LibGCrypt 64-bit
+## GNU LibGCrypt 32-bit
 
-Name: GNU LibGCrypt 64-bit<br />
+Name: GNU LibGCrypt 32-bit<br />
 Summary: A library implementing many cryptographic hash types<br />
 License: GPL v2/LGPL v2.1<br />
 Version: 1.11.2<br />
@@ -17,16 +17,19 @@ Used Install Space: 6.5 MiB<br />
 
 ## Configuration
 
-To configure GNU LibGCrypt 64-bit for install into the build root, run the following commands:
+To configure GNU LibGCrypt 32-bit for install into the build root, run the following commands:
 
 ```bash
+make distclean
 export PUBKEYS="dsa elgamal rsa ecc"
 export CIPHERS="arcfour blowfish cast5 des aes twofish serpent rfc2268 seed camellia idea salsa20 gost28147 chacha20 sm4 aria"
 export DIGESTS="crc gostr3411-94 md4 md5 rmd160 sha1 sha256 sha512 sha3 tiger whirlpool stribog blake2 sm3"
 export KDFS="s2k pkdf2 scrypt"
-./configure --prefix=/usr                               \
-            --libdir=/usr/lib64                         \
-            --libexecdir=/usr/lib64                     \
+CC="gcc -m32" \
+./configure --host=i686-pc-linux-gnu                    \
+            --prefix=/usr                               \
+            --libdir=/usr/lib                           \
+            --libexecdir=/usr/lib                       \
             --docdir=/usr/share/doc/libgcrypt-1.11.2    \
             --enable-ciphers="$CIPHERS"                 \
             --enable-pubkey-ciphers="$PUBKEYS"          \
@@ -44,37 +47,24 @@ unset KDFS
 
 ## Compilation and Installation
 
-To compile GNU LibGCrypt 64-bit, run the following command:
+To compile GNU LibGCrypt 32-bit, run the following command:
 
 ```bash
 make
 ```
 
-Next, run the test suite:
+Finally, to install GNU LibGCrypt 32-bit into the build tree, run the following commands:
 
 ```bash
-make check
+make DESTDIR=$PWD/DESTDIR install
+rm -fv DESTDIR/usr/lib/libgcrypt.la
+cp -Rv DESTDIR/usr/lib/* /usr/lib/
 ```
-
-Finally, to install GNU LibGCrypt 64-bit into the build tree, run the following commands:
-
-```bash
-make install
-rm -fv /usr/lib64/libgcrypt.la
-mkdir -pv -m 0755 /etc/gcrypt
-install -v -m 644 -o root -g root ../system_files/etc/gcrypt/random.conf /etc/gcrypt/random.conf
-install -v -m 644 -o root -g root ../system_files/etc/gcrypt/hwf.deny /etc/gcrypt/hwf.deny
-```
-
-**NOTE: Do not delete the unpacked sources after build.**
 
 ## Contents
 
-| Contents | |
-| --- | --- |
-| Installed Programs | dumpsexp, hmac256, libgcrypt-config, and mpicalc |
-| Installed Libraries | libgcrypt.so |
+See the contents section of the 64-bit build of GNU LibGCrypt for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./CheckPolicy.md) CheckPolicy | [HOME](../README.md) | GNU LibGCrypt 32-bit [>>](./GNULibGCrypt_32bit.md) |
+| [<<](./GNULibGCrypt_64bit.md) GNU LibGCrypt 64-bit | [HOME](../README.md) | GNU LibKSBA 64-bit [>>](./GNULibKSBA_64bit.md) |
