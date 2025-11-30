@@ -43,6 +43,7 @@ Finally, to install GNU Less into the build tree, run the following command:
 
 ```bash
 make install
+install -v -m755 -o root -g root ../system_files/usr/bin/lessopen.sh /usr/bin/lessopen.sh
 ```
 
 ## Contents
