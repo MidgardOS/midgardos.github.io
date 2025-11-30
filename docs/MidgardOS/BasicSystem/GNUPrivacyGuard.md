@@ -13,7 +13,7 @@ Version: 2.5.14<br />
 URL: [https://gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.14.tar.bz2](https://gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.14.tar.bz2)<br />
 
 Average Build Time: 1 SBU<br />
-Used Install Space: iB<br />
+Used Install Space: 36 MiB<br />
 
 ## Configuration
 
