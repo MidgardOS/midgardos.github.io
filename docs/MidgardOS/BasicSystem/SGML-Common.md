@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./LibXSLT_32bit.md) LibXSLT 32-bit | [HOME](../README.md) | Docbook 3.1 DTD [>>](./Docbook31-DTD.md) |
+| [<<](./LibXSLT_32bit.md) LibXSLT 32-bit | [HOME](../README.md) | LZO 64-bit [>>](./LZO_64bit.md) |
 
 ## SGML Common
 
@@ -61,4 +61,4 @@ install-catalog --add /etc/sgml/sgml-docbook.cat \
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./LibXSLT_32bit.md) LibXSLT 32-bit | [HOME](../README.md) | Docbook 3.1 DTD [>>](./Docbook31-DTD.md) |
+| [<<](./LibXSLT_32bit.md) LibXSLT 32-bit | [HOME](../README.md) | LZO 64-bit [>>](./LZO_64bit.md) |
