@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./UtilLinux32bit.md) Util-Linux 32-bit | [HOME](../README.md) | Building the Core OS [>>](../BasicSystem/Overview.md) |
+| [<<](./UtilLinux32bit.md) Util-Linux 32-bit | [HOME](../README.md) | Building the Base System Tools [>>](../BasicSystem/Overview.md) |
 
 ## Clean-up
 
@@ -26,7 +26,7 @@ rm -rf /tools
 
 ## Archiving the Build Root
 
-At this point, all of the core and essential libraries and applications have been installed, and the build root is in a good state for building the basic system and beyond. It is a good idea to back up and archive the build root at this point to allow restoring from backup if any future package causes failures.
+At this point, all of the core and essential libraries and applications have been installed, and the build root is in a good state for building the Base System and beyond. It is a good idea to back up and archive the build root at this point to allow restoring from backup if any future package causes failures.
 
 The backup must be done outside the chroot environment. To leave the chroot environment, run the following command:
 
@@ -54,4 +54,4 @@ cd $BRFS && tar -cJpf $HOME/MidgardOS-temp-tools-2025.0.tar.xz .
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./UtilLinux32bit.md) Util-Linux 32-bit | [HOME](../README.md) | Building the Core OS [>>](../BasicSystem/Overview.md) |
+| [<<](./UtilLinux32bit.md) Util-Linux 32-bit | [HOME](../README.md) | Building the Base System Tools [>>](../BasicSystem/Overview.md) |

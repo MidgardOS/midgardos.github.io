@@ -22,7 +22,7 @@ This section covers building essential temporary tools to further isolate the ne
 
 This section covers entering the build root via an isolated chroot, and finishing build of some additional temporary tools.
 
-## Section 5 - Building the Basic System Tools
+## Section 5 - Building the Base System Tools
 
 This section covers building the native tools for allowing the core MidgardOS system to be built.
 
