@@ -1,14 +1,7 @@
-Submitted By: Thomas Pegg <lnxfreak123 at insightbb dot com>
-Date: 2003-11-18
-Initial Package Version: 0.6.3
-Origin: Thomas Pegg
-Description: Fixes syntax of Makefile.am for installation of man pages,
-for use with current automake versions 1.7.8 and higher.
-
-diff -Naur sgml-common-0.6.3.orig/doc/man/Makefile.am sgml-common-0.6.3/doc/man/Makefile.am
---- sgml-common-0.6.3.orig/doc/man/Makefile.am	2001-01-30 14:42:22.000000000 +0000
-+++ sgml-common-0.6.3/doc/man/Makefile.am	2003-11-18 16:48:47.000000000 +0000
+diff -urN sgml-common-0.6.3/doc/man/Makefile.am.orig sgml-common-0.6.3/doc/man/Makefile.am
+--- sgml-common-0.6.3/doc/man/Makefile.am.orig       2025-12-20 11:49:33.769921871 -0500
++++ sgml-common-0.6.3/doc/man/Makefile.am    2025-12-20 11:51:02.430968180 -0500
 @@ -1,2 +1 @@
--man8dir	  = $(mandir)/man8
+-man8dir          = $(mandir)/man8
 -man8_DATA = *.8
 +man_MANS = install-catalog.8
