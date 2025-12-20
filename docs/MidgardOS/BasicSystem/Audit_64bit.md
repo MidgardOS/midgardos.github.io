@@ -1,4 +1,4 @@
-# Section 5 - Building the Basic System Tools
+# Section 5 - Building the Base System Tools
 
 | Navigation |||
 | --- | --- | ---: |
@@ -46,7 +46,7 @@ Note that this does not disable the static libraries. This is required during bu
 To compile the Linux Audit Framework 64-bit, run the following command:
 
 ```bash
-CFLAGS=$CFLAGS make -O -j1 V=1 VERBOSE=1 
+CFLAGS=$CFLAGS make -O -j1 V=1 VERBOSE=1
 ```
 
 Next, run the test suite:

@@ -1,4 +1,4 @@
-# Section 5 - Building the Basic System Tools
+# Section 5 - Building the Base System Tools
 
 | Navigation |||
 | --- | --- | ---: |
@@ -105,7 +105,7 @@ cat <<EOF > /etc/hosts.allow
 #
 # short overview about daemons and servers that are built with
 # tcp_wrappers support:
-# 
+#
 # package name  | daemon path           |       token
 # ----------------------------------------------------------------------------
 # ssh, openssh  | /usr/sbin/sshd        |  sshd, sshd-fwd-x11, sshd-fwd-<port>
@@ -114,7 +114,7 @@ cat <<EOF > /etc/hosts.allow
 # portmap       | /sbin/portmap         |  portmap
 #                       The portmapper does not verify against hostnames
 #                       to prevent hangs. It only checks non-local addresses.
-# 
+#
 # (kernel nfs server)
 # nfs-utils     | /usr/sbin/rpc.mountd  |  mountd
 # nfs-utils     | /sbin/rpc.statd       |  statd
@@ -132,11 +132,11 @@ cat <<EOF > /etc/hosts.allow
 # (Uniterrupted Power Supply Software)
 # apcupsd       | /sbin/apcupsd         |  apcupsd
 # apcupsd       | /sbin/apcnisd         |  apcnisd
-# 
+#
 # All of the other network servers such as samba, apache or X, have their own
 # access control scheme that should be used instead.
 #
-# In addition to the services above, the services that are started on request 
+# In addition to the services above, the services that are started on request
 # by inetd or xinetd use tcpd to "wrap" the network connection. tcpd uses
 # the last component of the server pathname as a token to match a service in
 # /etc/hosts.{allow,deny}. See the file /etc/inetd.conf for the token names.
@@ -145,12 +145,12 @@ cat <<EOF > /etc/hosts.allow
 # Example 1: Fire up a mail to the admin if a connection to the printer daemon
 # has been made from host foo.bar.com, but simply deny all others:
 # lpd : foo.bar.com : spawn /bin/echo "%h printer access" | #                               mail -s "tcp_wrappers on %H" root
-# 
+#
 # Example 2: grant access from local net, reject with message from elsewhere.
 # in.telnetd : ALL EXCEPT LOCAL : ALLOW
 # in.telnetd : ALL : #    twist /bin/echo -e "\n\raccess from %h declined.\n\rGo away.";sleep 2
 #
-# Example 3: run a different instance of rsyncd if the connection comes 
+# Example 3: run a different instance of rsyncd if the connection comes
 #            from network 172.20.0.0/24, but regular for others:
 # rsyncd : 172.20.0.0/255.255.255.0 : twist /usr/local/sbin/my_rsyncd-script
 # rsyncd : ALL : ALLOW

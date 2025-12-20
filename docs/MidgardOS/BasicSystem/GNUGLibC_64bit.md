@@ -1,4 +1,4 @@
-# Section 5 - Building the Basic System Tools
+# Section 5 - Building the Base System Tools
 
 | Navigation |||
 | --- | --- | ---: |
@@ -24,7 +24,7 @@ patch -Np1 -i ../glibc-2.42-fhs-1.patch
 # a small fix to avoid causing Valgrind to crash
 sed -e '/unistd.h/i #include <string.h>'           \
     -e '/libc_rwlock_init/c\ __libc_rwlock_define_initialized (, reset_lock); memcpy (&lock, &reset_lock, sizeof (lock));' \
-    -i stdlib/abort.c 
+    -i stdlib/abort.c
 mkdir -v build && cd build
 echo "rootsbindir=/usr/sbin" > configparms
 ../configure --prefix=/usr                                                  \
