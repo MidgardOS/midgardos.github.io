@@ -1,7 +1,7 @@
-diff -urN sgml-common-0.6.3/doc/man/Makefile.am.orig sgml-common-0.6.3/doc/man/Makefile.am
---- sgml-common-0.6.3/doc/man/Makefile.am.orig       2025-12-20 11:49:33.769921871 -0500
-+++ sgml-common-0.6.3/doc/man/Makefile.am    2025-12-20 11:51:02.430968180 -0500
+diff -Naur sgml-common-0.6.3/doc/man/Makefile.am sgml-common-0.6.3/doc/man/Makefile.am
+--- sgml-common-0.6.3/doc/man/Makefile.am	2001-01-30 09:42:22.000000000 -0500
++++ sgml-common-0.6.3/doc/man/Makefile.am	2025-12-20 12:04:35.569084646 -0500
 @@ -1,2 +1 @@
--man8dir          = $(mandir)/man8
+-man8dir	  = $(mandir)/man8
 -man8_DATA = *.8
 +man_MANS = install-catalog.8
