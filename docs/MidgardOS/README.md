@@ -227,6 +227,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [LibArchive 64-bit](./BasicSystem/LibArchive_64bit.md)
 1. [LibArchive 32-bit](./BasicSystem/LibArchive_32bit.md)
 1. [Docbook 3.1 SGML DTD](./BasicSystem/Docbook31-SGML-DTD.md)
+1. [Docbook 4.5 SGML DTD](./BasicSystem/Docbook45-SGML-DTD.md)
 1. [SECILC](./BasicSystem/SECilC.md)
 
 | Navigation |||
