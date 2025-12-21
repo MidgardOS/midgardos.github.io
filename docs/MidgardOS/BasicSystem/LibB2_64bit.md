@@ -47,6 +47,7 @@ Finally, to install LibB2 64-bit into the build tree, run the following command:
 
 ```bash
 make install
+install -v -m 644 -o root -g root src/blake2.h /usr/include/
 rm -fv /usr/lib64/libb2.la
 ```
 
