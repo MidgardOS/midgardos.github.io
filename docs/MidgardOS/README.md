@@ -229,6 +229,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Docbook 3.1 SGML DTD](./BasicSystem/Docbook31-SGML-DTD.md)
 1. [Docbook 4.5 SGML DTD](./BasicSystem/Docbook45-SGML-DTD.md)
 1. [Docbook 4.5 XML DTD](./BasicSystem/Docbook45-XML-DTD.md)
+1. [Docbook 5.0 XML DTD](./BasicSystem/Docbook50-XML-DTD.md)
 1. [SECILC](./BasicSystem/SECilC.md)
 
 | Navigation |||
