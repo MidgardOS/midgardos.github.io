@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./LZO_64bit.md) LZO 64-bit | [HOME](../README.md) | LibArchive 64-bit [>>](./LibArchive_64bit.md) |
+| [<<](./LZO_64bit.md) LZO 64-bit | [HOME](../README.md) | LibB2 64-bit [>>](./LibB2_64bit.md) |
 
 ## LZO 32-bit
 
@@ -53,4 +53,4 @@ See the contents section of the 64-bit build of LZO for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./LZO_64bit.md) LZO 64-bit | [HOME](../README.md) | LibArchive 64-bit [>>](./LibArchive_64bit.md) |
+| [<<](./LZO_64bit.md) LZO 64-bit | [HOME](../README.md) | LibB2 64-bit [>>](./LibB2_64bit.md) |
