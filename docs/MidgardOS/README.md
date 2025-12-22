@@ -231,6 +231,10 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Docbook 4.5 XML DTD](./BasicSystem/Docbook45-XML-DTD.md)
 1. [Docbook 5.0 XML DTD](./BasicSystem/Docbook50-XML-DTD.md)
 1. [Docbook XSL Stylesheets](./BasicSystem/Docbook-XSL-Stylesheets.md)
+1. [GC 64-bit](./BasicSystem/GC_64bit.md)
+1. [GC 32-bit](./BasicSystem/GC_32bit.md)
+1. [W3M](./BasicSystem/W3m.md)
+1. [XmlTo](./BasicSystem/XmlTo.md)
 1. [SECILC](./BasicSystem/SECilC.md)
 
 | Navigation |||

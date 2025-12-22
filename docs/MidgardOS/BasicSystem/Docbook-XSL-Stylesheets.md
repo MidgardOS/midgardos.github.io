@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Docbook50-XML-DTD.md) Docbook 5.0 XML DTDs | [HOME](../README.md) |  [>>](./) |
+| [<<](./Docbook50-XML-DTD.md) Docbook 5.0 XML DTDs | [HOME](../README.md) | GC 64-bit [>>](./GC_64bit.md) |
 
 ## Docbook XSL Stylesheets
 
@@ -127,4 +127,4 @@ xmlcatalog --noout --add "rewriteURI" "http://docbook.sourceforge.net/release/xs
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Docbook50-XML-DTD.md) Docbook 5.0 XML DTDs | [HOME](../README.md) |  [>>](./) |
+| [<<](./Docbook50-XML-DTD.md) Docbook 5.0 XML DTDs | [HOME](../README.md) | GC 64-bit [>>](./GC_64bit.md) |
