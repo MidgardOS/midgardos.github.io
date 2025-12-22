@@ -53,7 +53,7 @@ cp -Rv DESTDIR/usr/lib/* /usr/lib/
 
 ## Contents
 
-See the contents section of the 64-bit build of the LibXSLT 32-bit for details.
+See the contents section of the 64-bit build of LibXSLT for details.
 
 | Navigation |||
 | --- | --- | ---: |
