@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./XmlTo.md) XmlTo | [HOME](../README.md) | LibEConf 64-bit [>>](./kmod.md) |
+| [<<](./XmlTo.md) XmlTo | [HOME](../README.md) | LibEConf 64-bit [>>](./LibEConf_64bit.md) |
 
 ## SECilC
 
@@ -51,4 +51,4 @@ unset XML_CATALOG_FILES
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./XmlTo.md) XmlTo | [HOME](../README.md) | LibEConf 64-bit [>>](./kmod.md) |
+| [<<](./XmlTo.md) XmlTo | [HOME](../README.md) | LibEConf 64-bit [>>](./LibEConf_64bit.md) |

@@ -236,6 +236,8 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [W3M](./BasicSystem/W3m.md)
 1. [XmlTo](./BasicSystem/XmlTo.md)
 1. [SECILC](./BasicSystem/SECilC.md)
+1. [LibEConf 64-bit](./BasicSystem/LibEConf_64bit.md)
+1. [LibEConf 32-bit](./BasicSystem/LibEConf_32bit.md)
 
 | Navigation |||
 | --- | --- | ---: |
