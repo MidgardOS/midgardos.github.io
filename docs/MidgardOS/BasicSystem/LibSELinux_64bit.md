@@ -36,6 +36,7 @@ PREFIX=/usr LIBDIR=/usr/lib64 SHLIBDIR=/usr/lib64 make install
 install -v -d -m 755 -o root -g root /etc/selinux
 install -v -m 644 -o root -g root ../system_files/etc/selinux/config /etc/selinux/
 install -v -m 755 -o root -g root ../system_files/usr/sbin/selinux-ready /usr/sbin/
+sed -i 's/libdir=\/usr\/lib/libdir=\/usr/lib64/' /usr/lib64/pkgconfig/libselinux.pc
 ```
 
 As before with LibSEPol, the static library from LibSELinux will be linked into other libraries and programs in the SELinux suite of tools and libraries. As such it should not be removed.

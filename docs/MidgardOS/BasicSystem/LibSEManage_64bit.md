@@ -34,6 +34,7 @@ Finally, to install LibSEManage 64-bit into the build tree, run the following co
 
 ```bash
 PREFIX=/usr LIBDIR=/usr/lib64 LIBEXECDIR=/usr/lib64 SHLIBDIR=/usr/lib64 make install
+sed -i 's/libdir=\/usr\/lib/libdir=\/usr/lib64/' /usr/lib64/pkgconfig/libselinux.pc
 ```
 
 **NOTE: Do not delete the unpacked sources after build.**
