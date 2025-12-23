@@ -13,7 +13,7 @@ Version: 4.10.0<br />
 URL: [https://ftp.gnu.org/gnu/findutils/findutils-4.10.0.tar.xz](https://ftp.gnu.org/gnu/findutils/findutils-4.10.0.tar.xz)<br />
 
 Average Build Time: 0.7 SBU<br />
-Used Install Space: iB<br />
+Used Install Space: 3.7 MiB<br />
 
 ## Configuration
 
@@ -69,17 +69,15 @@ userdel -rf tester
 Finally, to install GNU Findutils into the build tree, run the following command:
 
 ```bash
+make install
 ```
 
 ## Contents
 
 | Contents | |
 | --- | --- |
-| Installed Programs |  |
-| Installed Libraries |  |
-| Installed Plugins |  |
-| Installed Services |  |
-| Installed Files |  |
+| Installed Programs | find, locate, updatedb, and xargs |
+| Installed Plugins | frcode |
 
 | Navigation |||
 | --- | --- | ---: |
