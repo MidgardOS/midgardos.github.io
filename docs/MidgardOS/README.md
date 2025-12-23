@@ -250,6 +250,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [GNU AWK](./BasicSystem/GAWK.md)
 1. [GNU Findutils](./BasicSystem/GNUFindutils.md)
 1. [GNU Roff](./BasicSystem/Groff.md)
+1. [GZip](./BasicSystem/GZip.md)
 
 | Navigation |||
 | --- | --- | ---: |
