@@ -240,6 +240,9 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [LibEConf 32-bit](./BasicSystem/LibEConf_32bit.md)
 1. [Linux PAM 64-bit](./BasicSystem/Linux-PAM_64bit.md)
 1. [Linux PAM 32-bit](./BasicSystem/Linux-PAM_32bit.md)
+1. [SCDoc](./BasicSystem/SCDoc.md)
+1. [Kmod 64-bit](./BasicSystem/Kmod_64bit.md)
+1. [Kmod 32-bit](./BasicSystem/Kmod_32bit.md)
 
 | Navigation |||
 | --- | --- | ---: |
