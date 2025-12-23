@@ -13,7 +13,7 @@ Version: 9.9<br />
 URL: [https://ftp.gnu.org/gnu/coreutils/coreutils-9.9.tar.xz](https://ftp.gnu.org/gnu/coreutils/coreutils-9.9.tar.xz)<br />
 
 Average Build Time: 1.2 SBU<br />
-Used Install Space: iB<br />
+Used Install Space: 39 MiB<br />
 
 ## Preparation
 
@@ -49,7 +49,8 @@ Next, run the test suite:
 
 ```bash
 make NON_ROOT_USERNAME=tester check-root
-cat > /etc/pam.d/su << "EOF"
+if [[ ! -f /etc/pam.d/su ]]; then
+    cat > /etc/pam.d/su << "EOF"
 #%PAM-1.0
 auth            sufficient      pam_rootok.so
 auth            substack        common-auth
@@ -61,6 +62,7 @@ session         include         common-session
 session         include         postlogin-session
 session         optional        pam_xauth.so
 EOF
+fi
 useradd -c "Test User" -u 1000 -U -m tester
 groupadd -g 102 dummy -U tester
 unalias cp
