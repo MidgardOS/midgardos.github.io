@@ -243,6 +243,9 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [SCDoc](./BasicSystem/SCDoc.md)
 1. [Kmod 64-bit](./BasicSystem/Kmod_64bit.md)
 1. [Kmod 32-bit](./BasicSystem/Kmod_32bit.md)
+1. [Shadow 64-bit - pass 2: With PAM](./BasicSystem/Shadow_64bit-pass2.md)
+1. [Shadow 32-bit - pass 2: With PAM](./BasicSystem/Shadow_32bit-pass2.md)
+1. [GNU Coreutils](./BasicSystem/GNUCoreutils.md)
 
 | Navigation |||
 | --- | --- | ---: |
