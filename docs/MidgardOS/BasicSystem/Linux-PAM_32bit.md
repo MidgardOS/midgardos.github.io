@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Linux-PAM_64bit.md) Linux PAM 64-bit | [HOME](../README.md) | KMod [>>](./KMod.md) |
+| [<<](./Linux-PAM_64bit.md) Linux PAM 64-bit | [HOME](../README.md) | SCDoc [>>](./SCDoc.md) |
 
 ## Linux PAM 32-bit
 
@@ -85,4 +85,4 @@ See the contents section of the 64-bit build of Linux PAM for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Linux-PAM_64bit.md) Linux PAM 64-bit | [HOME](../README.md) | KMod [>>](./KMod.md) |
+| [<<](./Linux-PAM_64bit.md) Linux PAM 64-bit | [HOME](../README.md) | SCDoc [>>](./SCDoc.md) |
