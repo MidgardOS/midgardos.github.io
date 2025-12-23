@@ -246,6 +246,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Shadow 64-bit - pass 2: With PAM](./BasicSystem/Shadow_64bit-pass2.md)
 1. [Shadow 32-bit - pass 2: With PAM](./BasicSystem/Shadow_32bit-pass2.md)
 1. [GNU Coreutils](./BasicSystem/GNUCoreutils.md)
+1. [GNU Diffutils](./BasicSystem/GNUDiffutils.md)
 
 | Navigation |||
 | --- | --- | ---: |
