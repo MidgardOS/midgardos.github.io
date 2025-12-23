@@ -238,6 +238,8 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [SECILC](./BasicSystem/SECilC.md)
 1. [LibEConf 64-bit](./BasicSystem/LibEConf_64bit.md)
 1. [LibEConf 32-bit](./BasicSystem/LibEConf_32bit.md)
+1. [Linux PAM 64-bit](./BasicSystem/Linux-PAM_64bit.md)
+1. [Linux PAM 32-bit](./BasicSystem/Linux-PAM_32bit.md)
 
 | Navigation |||
 | --- | --- | ---: |
