@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# language: shell
+
 # Script to check whether the system is selinux-ready or not
 #
 # Originally from the openSUSE libselinux package and modified for
