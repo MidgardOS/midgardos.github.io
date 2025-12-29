@@ -255,6 +255,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Kbd](./BasicSystem/Kbd.md)
 1. [LibPipeline 64-bit](./BasicSystem/LibPipeline_64bit.md)
 1. [LibPipeline 32-bit](./BasicSystem/LibPipeline_32bit.md)
+1. [GNU Make](./BasicSystem/GNUMake.md)
 
 | Navigation |||
 | --- | --- | ---: |
