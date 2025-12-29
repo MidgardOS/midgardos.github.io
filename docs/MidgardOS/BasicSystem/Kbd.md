@@ -66,6 +66,9 @@ make install
 cd -
 install -v -d -m 755 -o root -g root /etc/pam.d
 install -v -m 644 -o root -g root ../system_files/etc/pam.d/vlock /etc/pam.d/
+install -v -d -m 755 -o root -g root /etc/sysconfig
+install -v -m 644 -o root -g root ../system_files/etc/sysconfig/console /etc/sysconfig/
+install -v -m 644 -o root -g root ../system_files/etc/sysconfig/keyboard /etc/sysconfig/
 install -v -d -m 755 -o root -g root /usr/sbin
 install -v -m 755 -o root -g root ../system_files/usr/sbin/kbdsettings /usr/sbin/
 install -v -d -m 755 -o root -g root /usr/lib/systemd/system
