@@ -67,7 +67,7 @@ cd -
 install -v -d -m 755 -o root -g root /etc/pam.d
 install -v -m 644 -o root -g root ../system_files/etc/pam.d/vlock /etc/pam.d/
 install -v -d -m 755 -o root -g root /usr/sbin
-install -v -m 755 -o root -g root ../system_files/usr/sbin/kdbsettings /usr/sbin/
+install -v -m 755 -o root -g root ../system_files/usr/sbin/kbdsettings /usr/sbin/
 install -v -d -m 755 -o root -g root /usr/lib/systemd/system
 install -v -m 644 -o root -g root ../system_files/usr/lib/systemd/system/kbdsettings.service /usr/lib/systemd/system/
 rm -fv /usr/lib64/libkbdfile.la
