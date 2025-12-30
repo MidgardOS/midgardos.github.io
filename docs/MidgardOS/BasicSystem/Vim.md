@@ -83,26 +83,10 @@ ln -sv ../vim/vim91/doc /usr/share/doc/vim-9.1
 
 ## Configuration
 
-Run the following commands to initially configure Vi Improved for use:
+Run the following command to install the initial configure Vi Improved for use:
 
 ```bash
-cat > /etc/vimrc << "EOF"
-" Begin /etc/vimrc
-
-" Ensure defaults are set before customizing settings, not after
-source $VIMRUNTIME/defaults.vim
-let skip_defaults_vim=1
-
-set nocompatible
-set backspace=2
-set mouse=
-syntax on
-if (&term == "xterm") || (&term == "putty")
-  set background=dark
-endif
-
-" End /etc/vimrc
-EOF
+install -v -m644 -o root -g root ../system_files/etc/vimrc /etc/
 ```
 
 ## Contents
