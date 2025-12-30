@@ -97,25 +97,7 @@ localedef -i is_IS -f UTF-8 is_IS.UTF-8
 Now that GLibC and the locales are installed, there are a few extra steps needed to configure its functionality for use on the system. First, configure the Name Service Switch so that the host resolver and account management functions can be configured to look up data correctly:
 
 ```bash
-cat > /etc/nsswitch.conf << "EOF"
-# In order of likelihood of use to accelerate lookup.
-passwd:     files systemd
-shadow:     files systemd
-group:      files systemd
-hosts:      files mymachines resolve [!UNAVAIL=return] files myhostname dns
-services:   files
-netgroup:   files
-sudoers:    files
-automount:  files
-subid:      files
-aliases:    files
-ethers:     files
-gshadow:    files systemd
-networks:   files
-protocols:  files
-publickey:  files
-rpc:        files
-EOF
+install -v -m644 -o root -g root ../system_files/etc/nsswitch.conf /etc/
 ```
 
 Once the `/etc/nsswitch.conf` is installed, timezone data needs setup. To do so, run the following commands:
@@ -148,11 +130,8 @@ ln -sfv /usr/share/zoneinfo/$TZ /etc/localtime
 Now, configure the dynamic library loader by telling it to read configurations in `/etc/ld.so.conf.d`:
 
 ```bash
-cat >> /etc/ld.so.conf << "EOF"
-# Add an include directory
-include /etc/ld.so.conf.d/*.conf
-
-EOF
+install -v -d -m755 -o root -g root /etc/ld.so.conf.d
+install -v -m644 -o root -g root ../system_files/etc/ld.so.conf /etc/
 ```
 
 **NOTE: Do not delete the unpacked sources after build.**
