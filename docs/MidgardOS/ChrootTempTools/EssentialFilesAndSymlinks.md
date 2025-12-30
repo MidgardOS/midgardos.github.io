@@ -30,74 +30,16 @@ ln -sv /proc/self/mounts /etc/mtab
 
 Next, create a basic `/etc/hosts` file that will be referenced in some application test suites. and in Perl's configuration files:
 ```bash
-cat > /etc/hosts << EOF
-127.0.0.1  localhost
-::1        localhost
-fe00::0    ipv6-localnet
-ff00::0    ipv6-mcastprefix
-ff02::1    ipv6-allnodes
-ff02::2    ipv6-allrouters
-ff02::3    ipv6-allhosts
-EOF
+install -v -m644 -o root -g root ../system_files/etc/hosts /etc
 ```
 
 When MidgardOS is normally installed via RPMs, the system users and groups are delivered via RPM packages that populate `/etc/passwd` and `/etc/group`. As those are not available at this time, these will be populated via the following commands:
 
 ```bash
-cat > /etc/passwd << "EOF"
-root:x:0:0:root:/root:/bin/bash
-bin:x:1:1:bin:/dev/null:/usr/bin/false
-daemon:x:2:2:Daemon User:/dev/null:/usr/bin/false
-adm:x:3:4:adm:/var/adm:/usr/bin/false
-sync:x:5:0:sync:/sbin:/bin/sync
-messagebus:x:18:18:D-Bus Message Daemon User:/run/dbus:/usr/bin/false
-systemd-journal-gateway:x:73:73:systemd Journal Gateway:/:/usr/bin/false
-systemd-journal-remote:x:74:74:systemd Journal Remote:/:/usr/bin/false
-systemd-journal-upload:x:75:75:systemd Journal Upload:/:/usr/bin/false
-systemd-network:x:76:76:systemd Network Management:/:/usr/bin/false
-systemd-resolve:x:77:77:systemd Resolver:/:/usr/bin/false
-systemd-timesync:x:78:78:systemd Time Synchronization:/:/usr/bin/false
-systemd-coredump:x:79:79:systemd Core Dumper:/:/usr/bin/false
-uuidd:x:80:80:UUID Generation Daemon User:/dev/null:/usr/bin/false
-systemd-oom:x:81:81:systemd Out Of Memory Daemon:/:/usr/bin/false
-nobody:x:65534:65534:Unprivileged User:/dev/null:/usr/bin/false
-EOF
-
-cat > /etc/group << "EOF"
-root:x:0:
-bin:x:1:daemon
-sys:x:2:
-kmem:x:3:
-tape:x:4:
-tty:x:5:
-daemon:x:6:
-floppy:x:7:
-disk:x:8:
-lp:x:9:
-dialout:x:10:
-audio:x:11:
-video:x:12:
-utmp:x:13:
-cdrom:x:15:
-adm:x:16:
-messagebus:x:18:
-systemd-journal:x:23:
-input:x:24:
-mail:x:34:
-kvm:x:61:
-systemd-journal-gateway:x:73:
-systemd-journal-remote:x:74:
-systemd-journal-upload:x:75:
-systemd-network:x:76:
-systemd-resolve:x:77:
-systemd-timesync:x:78:
-systemd-coredump:x:79:
-uuidd:x:80:
-systemd-oom:x:81:
-wheel:x:20:
-users:x:100:
-nogroup:x:65534:
-EOF
+install -v -m644 -o root -g root ../system_files/etc/passwd /etc/
+install -v -m644 -o root -g root ../system_files/etc/group /etc/
+install -v -m644 -o root -g root ../system_files/etc/netgroup /etc/
+install -v -m644 -o root -g root ../system_files/etc/ethers /etc/
 ```
 
 Note that the `root` account password will be set later.

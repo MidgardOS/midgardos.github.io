@@ -1,0 +1,22 @@
+#
+# ethers         This file maps Ethernet addresses to IP addresses.
+#                It is used by the ARP (Address Resolution Protocol)
+#                to resolve IP addresses to Ethernet addresses.
+# 
+# Format:
+# Ethernet_address  IP_address
+#
+# Each entry consists of an Ethernet (MAC) address followed by
+# the corresponding IP address, separated by whitespace.
+# Comments start with a '#' character and continue to the end of the line.
+# Blank lines are ignored.
+#
+# See the ethers(5) manual page for details.
+# Example entries:
+# 00:1A:2B:3C:4D:5E   192.168.1.1
+# 00:1A:2B:3C:4D:5F   192.168.1.2
+# FF:FF:FF:FF:FF:FF   192.168.1.255
+#
+# Note: Ensure that the Ethernet addresses are in the correct format
+#       (six pairs of hexadecimal digits separated by colons) in uppercase
+#       hexadecimal.

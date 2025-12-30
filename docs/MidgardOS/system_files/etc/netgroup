@@ -1,0 +1,20 @@
+#
+# netgroup          This file describes the netgroups available on the system
+#                   and is used by the NIS (Network Information Service).
+#                   It can also be used locally by applications that
+#                   support netgroups.
+# Format:
+#
+# netgroup_name (host1,domain1,user1) (host2,domain2,user2) ...
+# Each entry consists of a netgroup name followed by one or more
+# tuples enclosed in parentheses. Each tuple contains three fields:
+# host, domain, and user. A field can be left empty to indicate a wildcard
+# that matches any value.
+# Comments start with a '#' character and continue to the end of the line.
+# Blank lines are ignored.
+#
+# See the netgroup(5) manual page for details.
+#
+# Example entries:
+# mynetgroup (host1,,user1) (host2,,user2) (,,user3)
+# anothergroup (host3,,) (,,user4)
