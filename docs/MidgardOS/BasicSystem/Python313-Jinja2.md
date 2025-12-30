@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Python313-MarkupSafe.md) Python module MarkupSafe | [HOME](../README.md) | Cython [>>](./Python313-Cython.md) |
+| [<<](./Python313-MarkupSafe.md) Python module MarkupSafe | [HOME](../README.md) | Python module Cython [>>](./Python313-Cython.md) |
 
 ## Python module Jinja2
 
@@ -38,4 +38,4 @@ pip3 install --no-index --find-links dist Jinja2
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Python313-MarkupSafe.md) Python module MarkupSafe | [HOME](../README.md) | Cython [>>](./Python313-Cython.md) |
+| [<<](./Python313-MarkupSafe.md) Python module MarkupSafe | [HOME](../README.md) | Python module Cython [>>](./Python313-Cython.md) |
