@@ -261,6 +261,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [GNU Texinfo](./BasicSystem/GNUTexinfo.md)
 1. [Vi Improved](./BasicSystem/Vim.md)
 1. [GNU Nano](./BasicSystem/GNUNano.md)
+1. [Python module MarkupSafe](./BasicSystem/Python313-MarkupSafe.md)
 
 | Navigation |||
 | --- | --- | ---: |
