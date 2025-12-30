@@ -48,7 +48,7 @@ To compile GNU GLibC 64-bit, run the following command:
 ```bash
 make
 touch /etc/ld.so.conf
-install -d -m 755 -o root -g root /etc/ld.so.conf.d
+install -v -d -m 755 -o root -g root /etc/ld.so.conf.d
 ```
 
 Next, run the code tests:
@@ -130,7 +130,6 @@ ln -sfv /usr/share/zoneinfo/$TZ /etc/localtime
 Now, configure the dynamic library loader by telling it to read configurations in `/etc/ld.so.conf.d`:
 
 ```bash
-install -v -d -m755 -o root -g root /etc/ld.so.conf.d
 install -v -m644 -o root -g root ../system_files/etc/ld.so.conf /etc/
 ```
 
