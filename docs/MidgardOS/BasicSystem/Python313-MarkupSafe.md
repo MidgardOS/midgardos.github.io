@@ -7,7 +7,7 @@
 ## Python module MarkupSafe
 
 Name: Python module MarkupSafe<br />
-Summary: A Python module for implements an XML/HTML/XHTML Markup safe string<br />
+Summary: A Python module to implement an XML/HTML/XHTML Markup safe string<br />
 License: BSD 3-clause<br />
 Version: 3.0.3<br />
 URL: [https://pypi.org/packages/source/M/MarkupSafe/markupsafe-3.0.3.tar.gz](https://pypi.org/packages/source/M/MarkupSafe/markupsafe-3.0.3.tar.gz)<br />
