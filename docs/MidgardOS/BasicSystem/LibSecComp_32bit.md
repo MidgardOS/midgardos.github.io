@@ -38,11 +38,15 @@ make distclean
 To compile LibSecComp 32-bit, run the following command:
 
 ```bash
+make
 ```
 
 Finally, to install LibSecComp 32-bit into the build tree, run the following command:
 
 ```bash
+make DESTDIR=$PWD/DESTDIR install
+rm -fv DESTDIR/usr/lib/*.a
+cp -Rv DESTDIR/usr/lib/* /usr/lib/
 ```
 
 ## Contents
