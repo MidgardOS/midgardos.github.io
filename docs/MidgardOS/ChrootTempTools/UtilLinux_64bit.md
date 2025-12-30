@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUTexinfo.md) GNU Texinfo | [HOME](../README.md) | Util-Linux 32-bit [>>](./UtilLinux32bit.md) |
+| [<<](./GNUTexinfo.md) GNU Texinfo | [HOME](../README.md) | Util-Linux 32-bit [>>](./UtilLinux_32bit.md) |
 
 ## Util-Linux 64-bit
 
@@ -55,4 +55,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUTexinfo.md) GNU Texinfo | [HOME](../README.md) | Util-Linux 32-bit [>>](./UtilLinux32bit.md) |
+| [<<](./GNUTexinfo.md) GNU Texinfo | [HOME](../README.md) | Util-Linux 32-bit [>>](./UtilLinux_32bit.md) |
