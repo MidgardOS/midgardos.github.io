@@ -264,6 +264,8 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Python module MarkupSafe](./BasicSystem/Python313-MarkupSafe.md)
 1. [Python module Jinja2](./BasicSystem/Python313-Jinja2.md)
 1. [Python module Cython](./BasicSystem/Python313-Cython.md)
+1. [LibSecComp 64-bit](./BasicSystem/LibSecComp_64bit.md)
+1. [LibSecComp 32-bit](./BasicSystem/LibSecComp_32bit.md)
 
 | Navigation |||
 | --- | --- | ---: |
