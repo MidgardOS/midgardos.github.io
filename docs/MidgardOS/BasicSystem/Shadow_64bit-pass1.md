@@ -2,9 +2,9 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./RPCSvc-Proto.md) RPCSVC Proto | [HOME](../README.md) | Shadow Utils 32-bit [>>](./Shadow_32bit-pass1.md) |
+| [<<](./RPCSvc-Proto.md) RPCSVC Proto | [HOME](../README.md) | Shadow Utils 32-bit - pass 1: Without PAM [>>](./Shadow_32bit-pass1.md) |
 
-## Shadow Utils 64-bit
+## Shadow Utils 64-bit - pass 1: Without PAM
 
 Name: Shadow Utils 64-bit<br />
 Summary: Managing user and group passwords securely<br />
@@ -103,4 +103,4 @@ unset LDFLAGS
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./RPCSvc-Proto.md) RPCSVC Proto | [HOME](../README.md) | Shadow Utils 32-bit [>>](./Shadow_32bit-pass1.md) |
+| [<<](./RPCSvc-Proto.md) RPCSVC Proto | [HOME](../README.md) | Shadow Utils 32-bit - pass 1: Without PAM [>>](./Shadow_32bit-pass1.md) |

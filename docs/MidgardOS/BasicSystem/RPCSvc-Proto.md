@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Audit_32bit.md) Linux Audit Framework 32-bit | [HOME](../README.md) | Shadow Utils 64-bit - pass 1 [>>](./Shadow_64bit-pass1.md) |
+| [<<](./Audit_32bit.md) Linux Audit Framework 32-bit | [HOME](../README.md) | Shadow Utils 64-bit - pass 1: Without PAM [>>](./Shadow_64bit-pass1.md) |
 
 ## RPCSvc-Proto
 
@@ -52,4 +52,4 @@ make install
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Audit_32bit.md) Linux Audit Framework 32-bit | [HOME](../README.md) | Shadow Utils 64-bit - pass 1 [>>](./Shadow_64bit-pass1.md) |
+| [<<](./Audit_32bit.md) Linux Audit Framework 32-bit | [HOME](../README.md) | Shadow Utils 64-bit - pass 1: Without PAM [>>](./Shadow_64bit-pass1.md) |

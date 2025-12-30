@@ -2,9 +2,9 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Shadow_64bit-pass1.md) Shadow Utils 64-bit | [HOME](../README.md) | GNU Compiler Collection [>>](./GNUGCC.md) |
+| [<<](./Shadow_64bit-pass1.md) Shadow Utils 64-bit - pass 1: Without PAM | [HOME](../README.md) | GNU Compiler Collection [>>](./GNUGCC.md) |
 
-## Shadow Utils 32-bit
+## Shadow Utils 32-bit - pass 1: Without PAM
 
 Name: Shadow Utils 32-bit<br />
 Summary: Managing user and group passwords securely<br />
@@ -61,4 +61,4 @@ See the contents section of the 64-bit build of Shadow Utils for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Shadow_64bit-pass1.md) Shadow Utils 64-bit | [HOME](../README.md) | GNU Compiler Collection [>>](./GNUGCC.md) |
+| [<<](./Shadow_64bit-pass1.md) Shadow Utils 64-bit - pass 1: Without PAM | [HOME](../README.md) | GNU Compiler Collection [>>](./GNUGCC.md) |
