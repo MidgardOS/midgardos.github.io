@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./LibSecComp_64bit.md) LibSecComp 64-bit | [HOME](../README.md) | JSON-C 64-bit [>>](./JSONC_64bit.md) |
+| [<<](./LibSecComp_64bit.md) LibSecComp 64-bit | [HOME](../README.md) | Mozilla NSPR 64-bit [>>](./MozillaNSPR_64bit.md) |
 
 ## LibSecComp 32-bit
 
@@ -55,4 +55,4 @@ See the contents section of the 64-bit build of the LibSecComp 32-bit for detail
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./LibSecComp_64bit.md) LibSecComp 64-bit | [HOME](../README.md) | JSON-C 64-bit [>>](./JSONC_64bit.md) |
+| [<<](./LibSecComp_64bit.md) LibSecComp 64-bit | [HOME](../README.md) | Mozilla NSPR 64-bit [>>](./MozillaNSPR_64bit.md) |

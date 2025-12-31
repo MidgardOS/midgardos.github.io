@@ -266,6 +266,8 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Python module Cython](./BasicSystem/Python313-Cython.md)
 1. [LibSecComp 64-bit](./BasicSystem/LibSecComp_64bit.md)
 1. [LibSecComp 32-bit](./BasicSystem/LibSecComp_32bit.md)
+1. [Mozilla NSPR 64-bit](./BasicSystem/MozillaNSPR_64bit.md)
+1. [Mozilla NSPR 32-bit](./BasicSystem/MozillaNSPR_32bit.md)
 
 | Navigation |||
 | --- | --- | ---: |
