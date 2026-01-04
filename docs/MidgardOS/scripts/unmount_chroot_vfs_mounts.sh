@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 BRFS=/MidgardOS
 echo "Unmounting virtual filesystems from $BRFS"

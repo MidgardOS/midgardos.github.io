@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 for DIR in "etc" "dev" "home" "mnt" "media" "opt" \
            "proc" "root" "run" "selinux" "srv" "sys"; do
@@ -26,18 +26,18 @@ for DIR in "tmp" "var/tmp" "var/spool/mail"; do
 done
 
 # now build thhe symbolic links
-pushd /MidgardOS
+cd /MidgardOS
     for LINKED_DIR in "bin" "lib" "lib64" "sbin"; do
         ln -fsv "usr/$LINKED_DIR" "$LINKED_DIR"
     done
-popd
+cd -
 
 # compat links
-pushd /MidgardOS/var
+cd /MidgardOS/var
     ln -fsv ../run run
     ln -fsv ../run/lock lock
     ln -fsv spool/mail mail
-popd
+cd -
 
 # Tools and sources
 install -v -d -m 755 -o root -g root /MidgardOS/sources

@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/bin/sh
 
 BRFS=/MidgardOS
-pushd $BRFS
+cd $BRFS
 sudo setfacl -bPR ./
 sudo chown --from builder -hRv root:root ./
-popd
+cd -

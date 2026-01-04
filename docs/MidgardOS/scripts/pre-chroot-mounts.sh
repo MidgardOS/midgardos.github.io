@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 BRFS=/MidgardOS
 for DIR in "dev" "proc" "sys" "run"; do
