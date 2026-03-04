@@ -16,9 +16,9 @@ useradd -u 1001 -s /bin/bash -g build -d /home/builder -c "MidgardOS build user"
 install -v -d -m 755 -o builder -g build /home/builder
 ```
 
-## Grant Full Permission Rights to the `tools` and `cross-tools` Trees
+## Grant Full Permission Rights to the `sources`, `tools`, and Build Tree
 
-To allow the `builder` user to have full rights to the `sources`, `tools`, and `cross-tools` directory trees, run the following commands:
+To allow the `builder` user to have full rights to the `sources`, `tools`, and build directory trees, run the following commands:
 
 ```bash
 setfacl -m u:builder:rwx /MidgardOS/sources
