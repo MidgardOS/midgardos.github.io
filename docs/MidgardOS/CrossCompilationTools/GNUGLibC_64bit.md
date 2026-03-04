@@ -9,15 +9,15 @@
 Name: glibc-64bit<br />
 Summary: The GNU C language runtime library - 64-bit<br />
 License: GPL v2.0+/LGPL 2.1+<br />
-Version: 2.42<br />
-URL: [https://ftp.gnu.org/gnu/glibc/glibc-2.42.tar.xz](https://ftp.gnu.org/gnu/glibc/glibc-2.42.tar.xz)<br />
+Version: 2.43<br />
+URL: [https://ftp.gnu.org/gnu/glibc/glibc-2.43.tar.xz](https://ftp.gnu.org/gnu/glibc/glibc-2.43.tar.xz)<br />
 
 ## Configuration
 
 To configure GNU C Library 32-bit build for install into our cross-compilation root, run the following command:
 
 ```bash
-patch -Np1 -i ../glibc-2.42-fhs-1.patch
+patch -Np1 -i ../patches/glibc/glibc-fhs-1.patch
 mkdir -v build && cd build
 echo "rootsbindir=/usr/sbin" > configparms
 ../configure \
@@ -58,7 +58,7 @@ sed '/RTLDLIST=/s@/usr@@g' -i $BRFS/usr/bin/ldd
 To ensure that the basic cross-compilation tool chain is installed correctly, run the following commands:
 
 ```bash
-echo 'int main(){}' | $BRFS_TARGET-gcc -x c - -v -Wl,--verbose &> dummy.log
+echo 'int main(){}' | $BRFS/tools/bin/$BRFS_TARGET-gcc -x c - -v -Wl,--verbose &> dummy.log
 readelf -l a.out | grep ': /lib'
 ```
 
@@ -86,9 +86,9 @@ grep -B3 "^ $BRFS/usr/include" dummy.log
 
 This should output something like the following:
 ```
- /MidgardOS/tools/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/include
+ /MidgardOS/tools/lib/gcc/x86_64-midgardos-linux-gnu/15.2.0/include
  /MidgardOS/usr/local/include
- /MidgardOS/tools/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/include-fixed
+ /MidgardOS/tools/lib/gcc/x86_64-midgardos-linux-gnu/15.2.0/include-fixed
  /MidgardOS/usr/include
 ```
 
@@ -99,11 +99,11 @@ grep 'SEARCH.*/usr/lib' dummy.log |sed 's|; |\n|g'
 
 This should output something like the following:
 ```
-SEARCH_DIR("=/tools/x86_64-unknown-linux-gnu/lib64")
+SEARCH_DIR("=/tools/x86_64-midgardos-linux-gnu/lib64")
 SEARCH_DIR("=/usr/local/lib64")
 SEARCH_DIR("=/lib64")
 SEARCH_DIR("=/usr/lib64")
-SEARCH_DIR("=/tools/x86_64-unknown-linux-gnu/lib")
+SEARCH_DIR("=/tools/x86_64-midgardos-linux-gnu/lib")
 SEARCH_DIR("=/usr/local/lib")
 SEARCH_DIR("=/lib")
 SEARCH_DIR("=/usr/lib");
