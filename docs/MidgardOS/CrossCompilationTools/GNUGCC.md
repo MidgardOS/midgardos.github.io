@@ -50,7 +50,7 @@ mkdir -v build && cd build
 ../configure                                       \
     --target=$BRFS_TARGET                          \
     --prefix=$BRFS/tools                           \
-    --with-glibc-version=2.42                      \
+    --with-glibc-version=2.43                      \
     --with-sysroot=$BRFS                           \
     --with-newlib                                  \
     --without-headers                              \
@@ -92,15 +92,12 @@ Next, to install GNU Compiler Collection into the cross-tools tree, run the foll
 make install
 ```
 
-Finally, to allow other builds to be successful, we need to create a dummy system header for `limits.h`, as the one that
-GCC installs for itself is a partial header that references the system `limits.h`. At this point, that header is not yet
-installed. While this works for building GLibC (the next package in the list), this will break with other tools later in
-the stack.
+Finally, to allow other builds to be successful, we need to create a dummy system header for `limits.h`, as the one that GCC installs for itself is a partial header that references the system `limits.h`. At this point, that header is not yet installed. While this works for building GLibC (the next package in the list), this will break with other tools later in the stack.
 
 ```bash
 cd ..
 cat gcc/limitx.h gcc/glimits.h gcc/limity.h > \
-  `dirname $($BRFS/tools/bin/${BRFS_TARGET}-gcc -print-libgcc-file-name)`/include/limits.h
+  `dirname $(${BRFS_TARGET}-gcc -print-libgcc-file-name)`/include/limits.h
 ```
 
 More details about this package is covered later in the core system build.
