@@ -16,7 +16,7 @@
 
 * Open a [feature request](https://github.com/MidgardOS/midgardos.github.io/issues/new?template=feature_request.md)
 
-MidgardOS and its associated software components are a volunteer effort.
+MidgardOS and its associated software components are a volunteer effort. This also means that as a community of volunteers, we welcome contributions on techinical merit.
 
 Thanks!
 
