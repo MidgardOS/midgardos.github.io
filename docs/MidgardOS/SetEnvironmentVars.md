@@ -32,7 +32,7 @@ set +h
 umask 022
 BRFS=/MidgardOS
 LC_ALL=POSIX
-PATH=/cross-tools/bin:/bin:/usr/bin
+PATH=/tools/bin:/bin:/usr/bin
 export BRFS LC_ALL PATH
 unset CFLAGS CXXFLAGS PKG_CONFIG_PATH
 EOF
