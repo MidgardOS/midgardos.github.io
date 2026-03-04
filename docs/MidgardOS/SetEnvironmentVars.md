@@ -35,6 +35,11 @@ LC_ALL=POSIX
 PATH=/tools/bin:/bin:/usr/bin
 export BRFS LC_ALL PATH
 unset CFLAGS CXXFLAGS PKG_CONFIG_PATH
+
+alias ls="ls -F --color=auto"
+alias ll="ls -lF --color=auto"
+alias lla="ls -laF --color=auto"
+alias la="ls -aF --color=auto"
 EOF
 ```
 
