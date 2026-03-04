@@ -10,13 +10,18 @@ Name: gcc<br />
 Summary: A suite of compiler tools<br />
 License: GPL v3.0+<br />
 Version: 15.2.0<br />
-URL: [https://ftp.gnu.org/gnu/gcc/gcc-15.2.0.tar.xz](https://ftp.gnu.org/gnu/gcc/gcc-15.2.0.tar.xz)<br />
+URL: [https://ftp.gnu.org/gnu/gcc/gcc-15.2.0/gcc-15.2.0.tar.xz](https://ftp.gnu.org/gnu/gcc/gcc-15.2.0/gcc-15.2.0.tar.xz)<br />
+
+## Additional Sources
+
+GMP URL: [https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz](https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz)<br />
+ISL URL: [https://libisl.sourceforge.io/isl-0.27.tar.xz](https://libisl.sourceforge.io/isl-0.27.tar.xz)<br />
+MPC URL: [https://ftp.gnu.org/gnu/mpc/mpc-1.3.1.tar.gz](https://ftp.gnu.org/gnu/mpc/mpc-1.3.1.tar.gz)<br />
+MPFR URL: [https://ftp.gnu.org/gnu/mpfr/mpfr-4.2.2.tar.xz](https://ftp.gnu.org/gnu/mpfr/mpfr-4.2.2.tar.xz)<br />
 
 ## Pre-Configuration
 
-Unlike earlier cross-compilation tools, GCC requires some extra steps to allow the binaries generated
-to utilize the earlier packages, such as binutils, etc. Much of the change requires MPC, MPFR, and GMP sources
-installed into the source tree to build correctly. To do so, run the following commands:
+Unlike earlier cross-compilation tools, GCC requires some extra steps to allow the binaries generated to utilize the earlier packages, such as binutils, etc. Much of the change requires MPC, MPFR, and GMP sources installed into the source tree to build correctly. To do so, run the following commands:
 
 ```bash
 tar xvf ../isl-0.27.tar.xz
@@ -95,7 +100,7 @@ the stack.
 ```bash
 cd ..
 cat gcc/limitx.h gcc/glimits.h gcc/limity.h > \
-  `dirname $(${BRFS_TARGET}-gcc -print-libgcc-file-name)`/include/limits.h
+  `dirname $($BRFS/tools/bin/${BRFS_TARGET}-gcc -print-libgcc-file-name)`/include/limits.h
 ```
 
 More details about this package is covered later in the core system build.
