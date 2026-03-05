@@ -9,8 +9,8 @@
 Name: NCurses - Tic<br />
 Summary: A terminal console control library - Terminal Interface Compiler<br />
 License: MIT<br />
-Version: 6.5-20250823<br />
-URL: [https://invisible-mirror.net/archives/ncurses/current/ncurses-6.5-20250823.tgz](https://invisible-mirror.net/archives/ncurses/current/ncurses-6.5-20250823.tgz)<br />
+Version: 6.6-20260301<br />
+URL: [https://invisible-mirror.net/archives/ncurses/current/ncurses-6.6-20260301.tgz](https://invisible-mirror.net/archives/ncurses/current/ncurses-6.6-20260301.tgz)<br />
 
 ## Notes
 
