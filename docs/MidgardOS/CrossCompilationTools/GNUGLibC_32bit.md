@@ -9,8 +9,8 @@
 Name: glibc-32bit<br />
 Summary: The GNU C language runtime library - 32-bit<br />
 License: GPL v2.0+/LGPL 2.1+<br />
-Version: 2.42<br />
-URL: [https://ftp.gnu.org/gnu/glibc/glibc-2.42.tar.xz](https://ftp.gnu.org/gnu/glibc/glibc-2.42.tar.xz)<br />
+Version: 2.43<br />
+URL: [https://ftp.gnu.org/gnu/glibc/glibc-2.43.tar.xz](https://ftp.gnu.org/gnu/glibc/glibc-2.43.tar.xz)<br />
 
 ## Configuration
 
