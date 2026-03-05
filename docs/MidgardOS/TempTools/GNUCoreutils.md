@@ -9,8 +9,8 @@
 Name: GNU Coreutils<br />
 Summary: Basic file, shell, and text utilities needed for working with any Linux system<br />
 License: GPL v3 or later<br />
-Version: 9.7<br />
-URL: [https://ftp.gnu.org/gnu/coreutils/coreutils-9.7.tar.xz](https://ftp.gnu.org/gnu/coreutils/coreutils-9.7.tar.xz)<br />
+Version: 9.10<br />
+URL: [https://ftp.gnu.org/gnu/coreutils/coreutils-9.10.tar.xz](https://ftp.gnu.org/gnu/coreutils/coreutils-9.10.tar.xz)<br />
 
 ## Configuration
 
