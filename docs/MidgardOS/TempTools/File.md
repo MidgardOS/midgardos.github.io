@@ -17,15 +17,14 @@ URL: [https://github.com/file/file/archive/refs/tags/FILE5_47.tar.gz](https://gi
 Unfortunately, File requires being built twice to ensure the "magic" signatures files are generated correctly. To do the first-pass build, run the following commands inside the unpacked source tree:
 
 ```bash
-mkdir build
-pushd build
-    ../configure --libdir=/usr/lib64  \
-                 --disable-bzlib      \
-                 --disable-libseccomp \
-                 --disable-xzlib      \
-                 --disable-zlib
-    make
-popd
+autoreconf -fvi
+mkdir build && cd build
+../configure --libdir=/usr/lib64  \
+             --disable-bzlib      \
+             --disable-libseccomp \
+             --disable-xzlib      \
+             --disable-zlib
+make
 ```
 
 ## Configuration
