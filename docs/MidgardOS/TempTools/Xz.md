@@ -9,8 +9,8 @@
 Name: Xz<br />
 Summary: A Better Compression Tool<br />
 License: Multiple FOSS licenses (0BSD/GPLv2+/GPLv3+)<br />
-Version: 5.8.1<br />
-URL: [https://github.com/tukaani-project/xz/releases/download/v5.8.1/xz-5.8.1.tar.xz](https://github.com/tukaani-project/xz/releases/download/v5.8.1/xz-5.8.1.tar.xz)<br />
+Version: 5.8.2<br />
+URL: [https://github.com/tukaani-project/xz/releases/download/v5.8.1/xz-5.8.2.tar.xz](https://github.com/tukaani-project/xz/releases/download/v5.8.1/xz-5.8.2.tar.xz)<br />
 
 ## Configuration
 
@@ -23,7 +23,7 @@ To configure Xz for install into the build root, run the following command:
             --host=$BRFS_TARGET              \
             --build=$BRFS_HOST               \
             --disable-static                 \
-            --docdir=/usr/share/doc/xz-5.8.1
+            --docdir=/usr/share/doc/xz-5.8.2
 ```
 
 ## Compilation and Installation
