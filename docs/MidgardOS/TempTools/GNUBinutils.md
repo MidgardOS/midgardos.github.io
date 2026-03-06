@@ -9,8 +9,8 @@
 Name: binutils<br />
 Summary: A suite of tools for working with executable files<br />
 License: LGPL v3.0+<br />
-Version: 2.45<br />
-URL: [https://ftp.gnu.org/gnu/binutils/binutils-2.45.tar.xz](https://ftp.gnu.org/gnu/binutils/binutils-2.45.tar.xz)<br />
+Version: 2.46<br />
+URL: [https://ftp.gnu.org/gnu/binutils/binutils-2.46.tar.xz](https://ftp.gnu.org/gnu/binutils/binutils-2.46.tar.xz)<br />
 
 ## Configuration
 
@@ -19,10 +19,11 @@ To configure GNU Binutils for install into our cross-compilation root, run the f
 ```bash
 sed '6031s/$add_dir//' -i ltmain.sh
 mkdir -pv build && cd build
+CFLAGS="-g -O2 -Wno-discarded-qualifiers " \
 ../configure --prefix=/usr                   \
              --libdir=/usr/lib64             \
              --libexecdir=/usr/lib64         \
-             --build=${BRFS_HOST}            \
+             --build=$(../config.guess)      \
              --host=${BRFS_TARGET}           \
              --disable-nls                   \
              --enable-shared                 \
