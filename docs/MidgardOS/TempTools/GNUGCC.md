@@ -46,6 +46,8 @@ To configure the GNU Compiler Collection for install into our cross-compilation 
 
 ```bash
 mkdir -v build && cd build
+CC="x86_64-midgardos-linux-gnu-gcc" \
+CXX="x86_64-midgardos-linux-gnu-g++" \
 ../configure                                       \
     --build=$BRFS_TARGET                           \
     --host=$BRFS_TARGET                            \
@@ -55,7 +57,7 @@ mkdir -v build && cd build
     --with-build-sysroot=$BRFS                     \
     --enable-default-pie                           \
     --enable-default-ssp                           \
-    --with-glibc-version=2.42                      \
+    --with-glibc-version=2.43                      \
     --disable-nls                                  \
     --with-bugurl="https://github.com/MidgardOS/MidgardOS/issues" \
     --with-pkgversion="MidgardOS"                  \
@@ -89,10 +91,7 @@ Next, to install GNU Compiler Collection into the cross-tools tree, run the foll
 make DESTDIR=$BRFS install
 ```
 
-Finally, to allow other builds to be successful, we need to create a dummy system header for `limits.h`, as the one that
-GCC installs for itself is a partial header that references the system `limits.h`. At this point, that header is not yet
-installed. While this works for building GLibC (the next package in the list), this will break with other tools later in
-the stack.
+Finally, to allow other builds to be successful, we need to create a dummy system header for `limits.h`, as the one that GCC installs for itself is a partial header that references the system `limits.h`. At this point, that header is not yet installed. While this works for building GLibC (the next package in the list), this will break with other tools later in the stack.
 
 ```bash
 cd $BRFS/usr/bin
