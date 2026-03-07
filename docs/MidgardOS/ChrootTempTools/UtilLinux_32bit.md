@@ -9,8 +9,8 @@
 Name: Util-Linux 32-bit<br />
 Summary: Miscellaneous command-line utilities - 32-bit build<br />
 License: GPL v2 or later<br />
-Version: 2.41.1<br />
-URL: [https://www.kernel.org/pub/linux/utils/util-linux/v2.41/util-linux-2.41.1.tar.xz](https://www.kernel.org/pub/linux/utils/util-linux/v2.41/util-linux-2.41.1.tar.xz)<br />
+Version: 2.41.3<br />
+URL: [https://www.kernel.org/pub/linux/utils/util-linux/v2.41/util-linux-2.41.3.tar.xz](https://www.kernel.org/pub/linux/utils/util-linux/v2.41/util-linux-2.41.3.tar.xz)<br />
 
 ## Configuration
 
@@ -22,7 +22,7 @@ CC="gcc -m32" \
             --libdir=/usr/lib                         \
             --libexecdir=/usr/lib                     \
             --runstatedir=/run                        \
-            --docdir=/usr/share/doc/util-linux-2.41.1 \
+            --docdir=/usr/share/doc/util-linux-2.41.3 \
             --disable-chfn-chsh                       \
             --disable-login                           \
             --disable-nologin                         \

@@ -9,8 +9,8 @@
 Name: Util-Linux 64-bit<br />
 Summary: Miscellaneous command-line utilities - 64-bit build<br />
 License: GPL v2 or later<br />
-Version: 2.41.1<br />
-URL: [https://www.kernel.org/pub/linux/utils/util-linux/v2.41/util-linux-2.41.1.tar.xz](https://www.kernel.org/pub/linux/utils/util-linux/v2.41/util-linux-2.41.1.tar.xz)<br />
+Version: 2.41.3<br />
+URL: [https://www.kernel.org/pub/linux/utils/util-linux/v2.41/util-linux-2.41.3.tar.xz](https://www.kernel.org/pub/linux/utils/util-linux/v2.41/util-linux-2.41.3.tar.xz)<br />
 
 ## Configuration
 
@@ -34,7 +34,7 @@ mkdir -pv /var/lib/hwclock
             --disable-liblastlog2   \
             --without-python        \
             ADJTIME_PATH=/var/lib/hwclock/adjtime \
-            --docdir=/usr/share/doc/util-linux-2.41.1
+            --docdir=/usr/share/doc/util-linux-2.41.3
 ```
 
 ## Compilation and Installation
