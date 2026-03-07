@@ -9,8 +9,8 @@
 Name: Python 3.13<br />
 Summary: The Python scripting language<br />
 License: Python-2.0<br />
-Version: 3.13.7<br />
-URL: [https://www.python.org/ftp/python/3.13.7/Python-3.13.7.tar.xz](https://www.python.org/ftp/python/3.13.7/Python-3.13.7.tar.xz)<br />
+Version: 3.13.9<br />
+URL: [https://www.python.org/ftp/python/3.13.9/Python-3.13.9.tar.xz](https://www.python.org/ftp/python/3.13.9/Python-3.13.9.tar.xz)<br />
 
 ## Configuration
 
