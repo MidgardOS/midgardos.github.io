@@ -20,7 +20,8 @@ Used Install Space: 4.8 MiB<br />
 To install IANA Etc Files into place, run the following command:
 
 ```bash
-cp services protocols /etc/
+install -v -m 644 -o root -g root services /etc/
+install -v -m 644 -o root -g root protocols /etc/
 ```
 
 ## Contents
