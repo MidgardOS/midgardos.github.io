@@ -30,16 +30,25 @@ ln -sv /proc/self/mounts /etc/mtab
 
 Next, create a basic `/etc/hosts` file that will be referenced in some application test suites. and in Perl's configuration files:
 ```bash
-install -v -m644 -o root -g root ../system_files/etc/hosts /etc
+install -v -m644 -o 0 -g 0 /sources/midgardos.github.io/docs/MidgardOS/system_files/etc/hosts /etc
 ```
+
+Note, the owner and group must be numeric right now since the normal `/etc/passwd`, `/etc/group`, and `/etc/shadow` files do not exist yet.
 
 When MidgardOS is normally installed via RPMs, the system users and groups are delivered via RPM packages that populate `/etc/passwd` and `/etc/group`. As those are not available at this time, these will be populated via the following commands:
 
 ```bash
-install -v -m644 -o root -g root ../system_files/etc/passwd /etc/
-install -v -m644 -o root -g root ../system_files/etc/group /etc/
-install -v -m644 -o root -g root ../system_files/etc/netgroup /etc/
-install -v -m644 -o root -g root ../system_files/etc/ethers /etc/
+install -d -v -m755 -o 0 -g 0 /etc/profile.d
+install -v -m755 -o 0 -g 0 /sources/midgardos.github.io/docs/MidgardOS/system_files/etc/profile.d/*.sh /etc/profile.d/
+install -v -m644 -o 0 -g 0 /sources/midgardos.github.io/docs/MidgardOS/system_files/etc/bashrc /etc/
+install -v -m644 -o 0 -g 0 /sources/midgardos.github.io/docs/MidgardOS/system_files/etc/profile /etc/
+install -v -m644 -o 0 -g 0 /sources/midgardos.github.io/docs/MidgardOS/system_files/etc/DIR_COLORS /etc/
+install -v -m644 -o 0 -g 0 /sources/midgardos.github.io/docs/MidgardOS/system_files/etc/GREP_COLORS /etc/
+install -v -m644 -o 0 -g 0 /sources/midgardos.github.io/docs/MidgardOS/system_files/etc/environment /etc/
+install -v -m644 -o 0 -g 0 /sources/midgardos.github.io/docs/MidgardOS/system_files/etc/passwd /etc/
+install -v -m644 -o 0 -g 0 /sources/midgardos.github.io/docs/MidgardOS/system_files/etc/group /etc/
+install -v -m644 -o 0 -g 0 /sources/midgardos.github.io/docs/MidgardOS/system_files/etc/netgroup /etc/
+install -v -m644 -o 0 -g 0 /sources/midgardos.github.io/docs/MidgardOS/system_files/etc/ethers /etc/
 ```
 
 Note that the `root` account password will be set later.
