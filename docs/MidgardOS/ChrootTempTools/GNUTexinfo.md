@@ -9,8 +9,8 @@
 Name: GNU Texinfo<br />
 Summary: Tools for reading, writing, and converting info documents<br />
 License: GPL v3 or later<br />
-Version: 7.2<br />
-URL: [https://ftp.gnu.org/gnu/texinfo/texinfo-7.2.tar.xz](https://ftp.gnu.org/gnu/texinfo/texinfo-7.2.tar.xz)<br />
+Version: 7.3<br />
+URL: [https://ftp.gnu.org/gnu/texinfo/texinfo-7.3.tar.xz](https://ftp.gnu.org/gnu/texinfo/texinfo-7.3.tar.xz)<br />
 
 ## Configuration
 
