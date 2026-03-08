@@ -9,8 +9,8 @@
 Name: LibXCrypt 32-bit<br />
 Summary: An enhanced encryption library for a number of cryptographic hashing algorithms<br />
 License: LGPL v2.1<br />
-Version: 4.4.38<br />
-URL: [https://github.com/besser82/libxcrypt/releases/download/v4.4.38/libxcrypt-4.4.38.tar.xz](https://github.com/besser82/libxcrypt/releases/download/v4.4.38/libxcrypt-4.4.38.tar.xz)<br />
+Version: 4.5.2<br />
+URL: [https://github.com/besser82/libxcrypt/releases/download/v4.5.2/libxcrypt-4.5.2.tar.xz](https://github.com/besser82/libxcrypt/releases/download/v4.5.2/libxcrypt-4.5.2.tar.xz)<br />
 
 Average Build Time: 0.1 SBU<br />
 Used Install Space: 12 MiB<br />
@@ -21,14 +21,14 @@ To configure LibXCrypt 32-bit for install into the build root, run the following
 
 ```bash
 make distclean
-CC="gcc -m32" \
-./configure --host=i686-pc-linux-gnu    \
-            --prefix=/usr               \
-            --libdir=/usr/lib           \
-            --libexecdir=/usr/lib       \
-            --enable-hashes=all         \
-            --enable-obsolete-api=suse  \
-            --disable-static            \
+CC="gcc -m32" CFLAGS="-g -O2 -Wno-discarded-qualifiers "    \
+./configure --host=i686-pc-linux-gnu                        \
+            --prefix=/usr                                   \
+            --libdir=/usr/lib                               \
+            --libexecdir=/usr/lib                           \
+            --enable-hashes=all                             \
+            --enable-obsolete-api=suse                      \
+            --disable-static                                \
             --disable-failure-tokens
 ```
 
