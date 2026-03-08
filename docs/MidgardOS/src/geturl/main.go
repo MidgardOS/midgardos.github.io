@@ -58,13 +58,13 @@ func (pw *ProgressWriter) printProgress() {
 
 	if pw.total > 0 {
 		percent := float64(pw.written) / float64(pw.total) * 100
-		fmt.Fprintf(os.Stderr, "\rDownloading: %.2f%% (%s / %s) - %s/s",
+		fmt.Fprintf(os.Stderr, "\033[2K\rDownloading: %.2f%% (%s / %s) - %s/s",
 			percent,
 			formatBytes(pw.written),
 			formatBytes(pw.total),
 			formatBytes(int64(speed)))
 	} else {
-		fmt.Fprintf(os.Stderr, "\rDownloading: %s - %s/s",
+		fmt.Fprintf(os.Stderr, "\033[2K\rDownloading: %s - %s/s",
 			formatBytes(pw.written),
 			formatBytes(int64(speed)))
 	}

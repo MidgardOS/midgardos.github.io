@@ -1,2 +1,2 @@
 # don't commit build artifacts
-**/geturl
+**/src/geturl/geturl
