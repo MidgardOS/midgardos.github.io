@@ -9,8 +9,8 @@
 Name: ZLib 32-bit<br />
 Summary: A fast compression library<br />
 License: Zlib<br />
-Version: 1.3.1<br />
-URL: [https://www.zlib.net/zlib-1.3.1.tar.xz](https://www.zlib.net/zlib-1.3.1.tar.xz)<br />
+Version: 1.3.2<br />
+URL: [https://www.zlib.net/zlib-1.3.2.tar.xz](https://www.zlib.net/zlib-1.3.2.tar.xz)<br />
 
 Average Build Time: 0.1 SBU<br />
 Used Install Space: 6.4 MiB<br />
