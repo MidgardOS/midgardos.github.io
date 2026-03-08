@@ -10,7 +10,7 @@ Name: File<br />
 Summary: A tool to determine the type of a file from heuristics<br />
 License: BSD 2-Clause<br />
 Version: 5.47<br />
-URL: [https://github.com/file/file/archive/refs/tags/FILE5_47.tar.gz](https://github.com/file/file/archive/refs/tags/FILE5_47.tar.gz)<br />
+URL: [ftp://ftp.astron.com/pub/file/file-5.47.tar.gz](ftp://ftp.astron.com/pub/file/file-5.47.tar.gz)<br />
 
 ## Pre-Build
 
