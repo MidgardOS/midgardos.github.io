@@ -72,14 +72,13 @@ make
 
 Unfortunately, the test suite must **not** be run under the root account, and since `su` and `login` are not installed, it is not possible to run the tests until Util-Linux and PAM are installed.
 
-**NOTE: The `su` binary is still present for certain tests. It will be replaced later with the version from Util-Linux is installed**
+**NOTE: The `su` and `login` binaries are still present for certain tests. They will be replaced later with the version from Util-Linux is installed**
 
 Finally, to install Shadow Utils 64-bit into the build tree, run the following commands:
 
 ```bash
 make DESTDIR=$PWD/DESTDIR exec_prefix=/usr install
 make DESTDIR=$PWD/DESTDIR -C man install-man
-rm -fv DESTDIR/usr/bin/login
 rm -fv DESTDIR/usr/sbin/nologin
 rm -fv DESTDIR/usr/share/man/man1/login.1
 rm -fv DESTDIR/usr/share/man/man1/su.1
