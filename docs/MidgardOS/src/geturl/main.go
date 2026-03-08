@@ -58,6 +58,7 @@ func (pw *ProgressWriter) printProgress() {
 
 	if pw.total > 0 {
 		percent := float64(pw.written) / float64(pw.total) * 100
+		// ANSI terminal codes: \033[2K clears the current line, and \r moves the cursor back to the start of the line
 		fmt.Fprintf(os.Stderr, "\033[2K\rDownloading: %.2f%% (%s / %s) - %s/s",
 			percent,
 			formatBytes(pw.written),
@@ -94,37 +95,46 @@ func formatBytes(bytes int64) string {
 
 // showVersion prints the version information of the geturl tool.
 func showVersion() {
-	println("geturl version 1.0.0")
+	println("Version: 1.0.0")
+	println("Copyright (c) 2026 YggdrasilSoft, LLC.")
+	println("License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>")
+	println("This is free software: you are free to change and redistribute it. There is NO ")
+	println("WARRANTY, to the extent permitted by law.\n")
+	println("Author: Gary L. Greene Jr.")
 }
 
 // showHelp prints the usage information and command-line options for the geturl tool.
 // It displays supported protocols (HTTP, HTTPS, FTP) and example usage.
 func showHelp() {
 	println("geturl - a simple file download tool")
-	println("Usage: geturl [options] <url>")
+	println("Usage: geturl [options] <url>\n")
 	println("Options:")
 	println("  -v|--version        Show version information")
 	println("  -h|--help           Show this help message")
 	println("  -u|--url <url>      Specify the URL to download (supports HTTP, HTTPS, FTP)")
 	println("  -o|--output <file>  Specify the output file name")
+	println("  -s|--secure         Do TLS/SSL validation")
+	println("  -O|--remote-name    Use the remote file name. Must be in the last position")
+	println("                      after the URL")
 	println("\nExamples:")
 	println("  geturl -u https://example.com/file.txt -o file.txt")
 	println("  geturl -u ftp://ftp.example.com/path/file.tar.gz -o file.tar.gz")
+	println("  geturl -u https://example.com/file.txt -O\n")
+	showVersion()
 }
 
-// main is the entry point for the geturl application.
-// It parses command-line arguments, validates the provided URL and output file,
-// and initiates the download process.
-func main() {
+// processArgs parses command-line arguments and returns the URL, output file name, and TLS validation flag.
+func processArgs(args []string) (string, string, bool) {
 	var urlStr string
 	var fileName string
+	var useTLSValidation bool = false
 
 	// needed to ensure we have the required arguments. Otherwise, print our help message and exit
 	hasURL := false
 	hasOutput := false
 
 	// read in our arguments ARGV
-	for position, arg := range os.Args {
+	for position, arg := range args {
 		if arg == "--help" || arg == "-h" {
 			showHelp()
 			os.Exit(0)
@@ -162,6 +172,26 @@ func main() {
 			}
 			hasOutput = true
 		}
+		if arg == "--remote-name" || arg == "-O" {
+			// if we have a url, we can use the path component of the url as the file name
+			if hasURL {
+				parsedURL, err := url.Parse(urlStr)
+				if err != nil {
+					println("Error: Invalid URL")
+					os.Exit(1)
+				}
+				// get the last part of the path as the file name
+				pathParts := strings.Split(parsedURL.Path, "/")
+				fileName = pathParts[len(pathParts)-1]
+				hasOutput = true
+			} else {
+				println("Error: --remote-name option requires a URL to be specified first")
+				os.Exit(1)
+			}
+		}
+		if arg == "--secure" || arg == "-s" {
+			useTLSValidation = true
+		}
 	}
 
 	// if we don't have a url, print an error message and exit
@@ -178,11 +208,24 @@ func main() {
 		os.Exit(1)
 	}
 
+	return urlStr, fileName, useTLSValidation
+}
+
+// main is the entry point for the geturl application.
+// It parses command-line arguments, validates the provided URL and output file,
+// and initiates the download process.
+func main() {
+	var urlStr string
+	var fileName string
+	var useTLSValidation bool
+
+	urlStr, fileName, useTLSValidation = processArgs(os.Args)
+
 	println("Downloading file from URL: ", urlStr)
 	println("Saving file to:            ", fileName)
 
 	// Download the file with SSL validation disabled
-	if err := downloadFile(urlStr, fileName); err != nil {
+	if err := downloadFile(urlStr, fileName, useTLSValidation); err != nil {
 		fmt.Fprintf(os.Stderr, "Error: Failed to download file: %v\n", err)
 		os.Exit(1)
 	}
@@ -195,7 +238,7 @@ func main() {
 // is disabled for HTTPS to work on systems without root CA bundles.
 // The function automatically detects the protocol from the URL scheme and
 // routes to the appropriate handler.
-func downloadFile(urlStr, filepath string) error {
+func downloadFile(urlStr, filepath string, useTLSValidation bool) error {
 	// Parse URL to determine protocol
 	parsedURL, err := url.Parse(urlStr)
 	if err != nil {
@@ -206,7 +249,7 @@ func downloadFile(urlStr, filepath string) error {
 	scheme := strings.ToLower(parsedURL.Scheme)
 	switch scheme {
 	case "http", "https":
-		return downloadHTTP(urlStr, filepath)
+		return downloadHTTP(urlStr, filepath, useTLSValidation)
 	case "ftp":
 		return downloadFTP(parsedURL, filepath)
 	default:
@@ -218,13 +261,23 @@ func downloadFile(urlStr, filepath string) error {
 // TLS certificate verification is disabled to support systems without
 // root CA certificate bundles. The function sets appropriate timeouts
 // and handles the complete request/response cycle including file creation.
-func downloadHTTP(urlStr, filepath string) error {
+func downloadHTTP(urlStr, filepath string, useTLSValidation bool) error {
 	// Create HTTP client with TLS verification disabled
-	tr := &http.Transport{
-		TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
-		// Set reasonable timeouts
-		IdleConnTimeout:       30 * time.Second,
-		ResponseHeaderTimeout: 30 * time.Second,
+	// first, create a transport
+	tr := &http.Transport{}
+	if !useTLSValidation {
+		tr = &http.Transport{
+			TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+			// Set reasonable timeouts
+			IdleConnTimeout:       30 * time.Second,
+			ResponseHeaderTimeout: 30 * time.Second,
+		}
+	} else {
+		tr = &http.Transport{
+			// Set reasonable timeouts
+			IdleConnTimeout:       30 * time.Second,
+			ResponseHeaderTimeout: 30 * time.Second,
+		}
 	}
 	client := &http.Client{
 		Transport: tr,
