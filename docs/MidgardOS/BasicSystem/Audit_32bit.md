@@ -52,6 +52,9 @@ Finally, to install the Linux Audit Framework 32-bit into the build tree, run th
 make DESTDIR=$PWD/DESTDIR install
 rm -fv DESTDIR/usr/lib/*.la
 cp -Rv DESTDIR/usr/lib/* /usr/lib/
+unset CFLAGS
+unset CXXFLAGS
+unset LDFLAGS
 ```
 
 ## Contents
