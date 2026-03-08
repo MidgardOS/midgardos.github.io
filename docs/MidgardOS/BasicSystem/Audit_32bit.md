@@ -9,8 +9,8 @@
 Name: Linux Audit Framework 32-bit<br />
 Summary: The Linux auditing framework<br />
 License: GPL v2.0 and LGPL v2.1<br />
-Version: 4.1.2<br />
-URL: [https://github.com/linux-audit/audit-userspace/archive/refs/tags/v4.1.2.tar.gz](https://github.com/linux-audit/audit-userspace/archive/refs/tags/v4.1.2.tar.gz)<br />
+Version: 4.1.3<br />
+URL: [https://github.com/linux-audit/audit-userspace/archive/refs/tags/v4.1.3.tar.gz](https://github.com/linux-audit/audit-userspace/archive/refs/tags/v4.1.3.tar.gz)<br />
 
 Average Build Time: approximately 1 SBU<br />
 Used Install Space: 5.3 MiB <br />
@@ -51,9 +51,6 @@ Finally, to install the Linux Audit Framework 32-bit into the build tree, run th
 ```bash
 make DESTDIR=$PWD/DESTDIR install
 rm -fv DESTDIR/usr/lib/*.la
-rm -rfv DESTDIR/usr/lib/initscripts
-rm -rfv DESTDIR/usr/lib/systemd
-rm -rfv DESTDIR/usr/lib/tmpfiles.d
 cp -Rv DESTDIR/usr/lib/* /usr/lib/
 ```
 
