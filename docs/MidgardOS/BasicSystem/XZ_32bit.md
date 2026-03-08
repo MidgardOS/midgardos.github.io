@@ -9,8 +9,8 @@
 Name: XZ 32-bit<br />
 Summary: A Better Compression Tool<br />
 License: Multiple FOSS licenses (0BSD/GPLv2+/GPLv3+)<br />
-Version: 5.8.1<br />
-URL: [https://github.com/tukaani-project/xz/releases/download/v5.8.1/xz-5.8.1.tar.xz](https://github.com/tukaani-project/xz/releases/download/v5.8.1/xz-5.8.1.tar.xz)<br />
+Version: 5.8.2<br />
+URL: [https://github.com/tukaani-project/xz/releases/download/v5.8.2/xz-5.8.2.tar.xz](https://github.com/tukaani-project/xz/releases/download/v5.8.2/xz-5.8.2.tar.xz)<br />
 
 Average Build Time: 0.1 SBU<br />
 Used Install Space: 24 MiB<br />
@@ -42,6 +42,7 @@ Finally, to install XZ 32-bit into the build tree, run the following command:
 ```bash
 make DESTDIR=$PWD/DESTDIR install
 cp -Rv DESTDIR/usr/lib/* /usr/lib
+rm -fv /usr/lib/liblzma.la
 rm -rf DESTDIR
 ```
 

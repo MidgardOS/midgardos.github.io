@@ -9,8 +9,8 @@
 Name: XZ 64-bit<br />
 Summary: A Better Compression Tool<br />
 License: Multiple FOSS licenses (0BSD/GPLv2+/GPLv3+)<br />
-Version: 5.8.1<br />
-URL: [https://github.com/tukaani-project/xz/releases/download/v5.8.1/xz-5.8.1.tar.xz](https://github.com/tukaani-project/xz/releases/download/v5.8.1/xz-5.8.1.tar.xz)<br />
+Version: 5.8.2<br />
+URL: [https://github.com/tukaani-project/xz/releases/download/v5.8.2/xz-5.8.2.tar.xz](https://github.com/tukaani-project/xz/releases/download/v5.8.2/xz-5.8.2.tar.xz)<br />
 
 Average Build Time: 0.1 SBU<br />
 Used Install Space: 24 MiB<br />
@@ -24,7 +24,7 @@ To configure XZ 64-bit for install into the build root, run the following comman
             --libdir=/usr/lib64     \
             --libexecdir=/usr/lib64 \
             --disable-static        \
-            --docdir=/usr/share/doc/xz-5.8.1
+            --docdir=/usr/share/doc/xz-5.8.2
 ```
 
 ## Compilation and Installation
@@ -45,6 +45,7 @@ Finally, to install XZ 64-bit into the build tree, run the following command:
 
 ```bash
 make install
+rm -fv /usr/lib64/liblzma.la
 ```
 
 **NOTE: Do not delete the unpacked sources**
