@@ -10,8 +10,8 @@ Name: TCL<br />
 Summary: The Tool Command Language interpreter<br />
 License: TCL License<br />
 Version: 8.6.17<br />
-URL: [https://downloads.sourceforge.net/tcl/tcl8.6.17-src.tar.gz](https://downloads.sourceforge.net/tcl/tcl8.6.17-src.tar.gz)<br />
-Documentation URL: [https://downloads.sourceforge.net/tcl/tcl8.6.17-html.tar.gz](https://downloads.sourceforge.net/tcl/tcl8.6.17-html.tar.gz)<br />
+URL: [https://sourceforge.net/projects/tcl/files/Tcl/8.6.17/tcl8.6.17-src.tar.gz/download](https://sourceforge.net/projects/tcl/files/Tcl/8.6.17/tcl8.6.17-src.tar.gz/download)<br />
+Documentation URL: [https://sourceforge.net/projects/tcl/files/Tcl/8.6.17/tcl8.6.17-html.tar.gz/download](https://sourceforge.net/projects/tcl/files/Tcl/8.6.17/tcl8.6.17-html.tar.gz/download)<br />
 
 Average Build Time: 3.0 SBU<br />
 Used Install Space: 91 MiB<br />
@@ -76,6 +76,7 @@ Finally, to install TCL into the build tree, run the following commands:
 ```bash
 make DESTDIR=$PWD/DESTDIR install install-private-headers
 pushd DESTDIR
+    install -v -d -m755 -o root -g root /usr/share/man/{man1,man3,mann}
     mv usr/lib64/tclConfig.sh usr/lib64/tclooConfig.sh usr/lib64/tcl/
     mv usr/lib64/tcl8/8.6/* usr/lib64/tcl/tcl8/8.6/
     mv usr/lib64/itcl* usr/lib64/tcl/
