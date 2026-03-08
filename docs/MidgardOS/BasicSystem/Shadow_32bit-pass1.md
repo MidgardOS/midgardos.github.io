@@ -9,8 +9,8 @@
 Name: Shadow Utils 32-bit<br />
 Summary: Managing user and group passwords securely<br />
 License: BSD 3-Clause<br />
-Version: 4.18.0<br />
-URL: [https://github.com/shadow-maint/shadow/releases/download/4.18.0/shadow-4.18.0.tar.xz](https://github.com/shadow-maint/shadow/releases/download/4.18.0/shadow-4.18.0.tar.xz)<br />
+Version: 4.19.4<br />
+URL: [https://github.com/shadow-maint/shadow/releases/download/4.19.4/shadow-4.19.4.tar.xz](https://github.com/shadow-maint/shadow/releases/download/4.19.4/shadow-4.19.4.tar.xz)<br />
 
 Average Build Time: 0.1 SBU<br />
 Used Install Space: 12 MiB<br />
@@ -33,6 +33,7 @@ export LDFLAGS="-pie"
             --without-btrfs                 \
             --with-audit                    \
             --without-sssd                  \
+            --disable-logind                \
             --with-group-name-max-length=32
 ```
 
