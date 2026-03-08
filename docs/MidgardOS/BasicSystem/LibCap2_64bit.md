@@ -9,8 +9,8 @@
 Name: LibCap2 64-bit<br />
 Summary: Userspace tools for POSIX 1003.1e privilege capabilities<br />
 License: BSD-3-Clause or GPL v2.0<br />
-Version: 2.76<br />
-URL: [https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.76.tar.xz](https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.76.tar.xz)<br />
+Version: 2.77<br />
+URL: [https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.77.tar.xz](https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.77.tar.xz)<br />
 
 Average Build Time: less than 0.1 SBU<br />
 Used Install Space: 3.1 MiB<br />
