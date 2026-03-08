@@ -20,7 +20,7 @@ Used Install Space: 7.3 MiB<br />
 To allow the documentation for BZip2 to be installed, apply the following patch:
 
 ```bash
-patch -Np1 -i ../bzip2-1.0.8-install_docs-1.patch
+patch -Np1 -i ../patches/bzip2/bzip2-1.0.8-install_docs-1.patch
 ```
 
 Next, run the following command to ensure that symlinks installed are relative:
