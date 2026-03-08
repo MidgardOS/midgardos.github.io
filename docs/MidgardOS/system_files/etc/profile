@@ -128,7 +128,7 @@ unset TERMCAP
 if test -z "$PROFILEREAD" ; then
     # GZIP=-9
     # export GZIP
-    CSHEDIT=emacs
+    CSHEDIT=nano
     export CSHEDIT
 fi
 
@@ -153,7 +153,7 @@ test -z "$LOGNAME"  && LOGNAME=$USER
 : ${HOSTNAME:=${HOST}}
 : ${HOSTTYPE:=${CPU}}
 : ${OSTYPE:=linux}
-: ${VENDOR:=suse}
+: ${VENDOR:=yggdrasilsoft}
 : ${MACHTYPE:=${HOSTTYPE}-${VENDOR}-${OSTYPE}}
 # Do NOT export UID, EUID, USER, and LOGNAME
 export MAIL HOST CPU HOSTNAME HOSTTYPE OSTYPE VENDOR MACHTYPE
