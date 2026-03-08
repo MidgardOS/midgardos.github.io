@@ -22,7 +22,7 @@ Used Install Space: 3.9 MiB<br />
 Expect requires a patch to build correctly with GCC 15 and above:
 
 ```bash
-patch -Np1 -i ../expect-5.45.4-gcc15-1.patch
+patch -Np1 -i ../patches/expect/expect-5.45.4-gcc15-1.patch
 ```
 
 ## Configuration
@@ -59,7 +59,7 @@ Finally, to install Expect into the build tree, run the following commands:
 ```bash
 make DESTDIR=$PWD/DESTDIR install
 pushd DESTDIR
-    mkdir -pv usr/lib64/tcl
+    install -d -v -m 755 -o root -g root usr/lib64/tcl
     mv usr/lib64/expect* usr/lib64/tcl/
     cp -Rv usr/bin/* /usr/bin/
     cp -Rv usr/include/* /usr/include/
