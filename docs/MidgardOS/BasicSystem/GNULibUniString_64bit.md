@@ -9,8 +9,8 @@
 Name: libunistring 64-bit<br />
 Summary: Unicode string handling in C<br />
 License: GPL v3 or later<br />
-Version: 1.3<br />
-URL: [https://ftp.gnu.org/gnu/libunistring/libunistring-1.3.tar.xz](https://ftp.gnu.org/gnu/libunistring/libunistring-1.3.tar.xz)<br />
+Version: 1.4.2<br />
+URL: [https://ftp.gnu.org/gnu/libunistring/libunistring-1.4.2.tar.xz](https://ftp.gnu.org/gnu/libunistring/libunistring-1.4.2.tar.xz)<br />
 
 Average Build Time: 0.4 SBU<br />
 Used Install Space: 58 MiB<br />
@@ -24,7 +24,7 @@ To configure libunistring 64-bit for install into the build root, run the follow
             --libdir=/usr/lib64     \
             --libexecdir=/usr/lib64 \
             --disable-static        \
-            --docdir=/usr/share/doc/libunistring-1.3
+            --docdir=/usr/share/doc/libunistring-1.4.2
 ```
 
 ## Compilation and Installation

@@ -9,8 +9,8 @@
 Name: libunistring 32-bit<br />
 Summary: Unicode string handling in C<br />
 License: GPL v3 or later<br />
-Version: 1.3<br />
-URL: [https://ftp.gnu.org/gnu/libunistring/libunistring-1.3.tar.xz](https://ftp.gnu.org/gnu/libunistring/libunistring-1.3.tar.xz)<br />
+Version: 1.4.2<br />
+URL: [https://ftp.gnu.org/gnu/libunistring/libunistring-1.4.2.tar.xz](https://ftp.gnu.org/gnu/libunistring/libunistring-1.4.2.tar.xz)<br />
 
 Average Build Time: 0.4 SBU<br />
 Used Install Space: 58 MiB<br />
@@ -26,7 +26,7 @@ CC="gcc -m32" \
             --libdir=/usr/lib     \
             --libexecdir=/usr/lib \
             --disable-static      \
-            --docdir=/usr/share/doc/libunistring-1.3
+            --docdir=/usr/share/doc/libunistring-1.4.2
 ```
 
 ## Compilation and Installation
