@@ -9,18 +9,22 @@
 Name: GNU GLibC 64-bit<br />
 Summary: The GNU C language runtime library - 64-bit<br />
 License: GPL v2.0+/LGPL 2.1+<br />
-Version: 2.42<br />
-URL: [https://ftp.gnu.org/gnu/glibc/glibc-2.42.tar.xz](https://ftp.gnu.org/gnu/glibc/glibc-2.42.tar.xz)<br />
+Version: 2.43<br />
+URL: [https://ftp.gnu.org/gnu/glibc/glibc-2.43.tar.xz](https://ftp.gnu.org/gnu/glibc/glibc-2.43.tar.xz)<br />
 
 Average Build Time: 6 SBU<br />
 Used Install Space: 2.2 GiB<br />
+
+## Additional Downloads
+
+Time-zone data: [https://data.iana.org/time-zones/releases/tzdata2026a.tar.gz](https://data.iana.org/time-zones/releases/tzdata2026a.tar.gz)<br />
 
 ## Configuration
 
 To configure GNU GLibC 64-bit for install into the build root, run the following command:
 
 ```bash
-patch -Np1 -i ../glibc-2.42-fhs-1.patch
+patch -Np1 -i ../patches/glibc/glibc-fhs-1.patch
 # a small fix to avoid causing Valgrind to crash
 sed -e '/unistd.h/i #include <string.h>'           \
     -e '/libc_rwlock_init/c\ __libc_rwlock_define_initialized (, reset_lock); memcpy (&lock, &reset_lock, sizeof (lock));' \
@@ -38,7 +42,7 @@ echo "rootsbindir=/usr/sbin" > configparms
              --with-bugurl="https://github.com/MidgardOS/MidgardOS/Issues"  \
              --disable-werror                                               \
              libc_cv_slibdir=/usr/lib64                                     \
-             --enable-kernel=5.4
+             --enable-kernel=6.18
 ```
 
 ## Compilation and Installation
@@ -72,6 +76,7 @@ Finally, to install GNU GLibC 64-bit into the build tree, run the following comm
 sed '/test-installation/s@$(PERL)@echo not running@' -i ../Makefile
 make install
 sed '/RTLDLIST=/s@/usr@@g' -i /usr/bin/ldd
+install -v -d -m 755 /usr/lib64/locale
 localedef -i C -f UTF-8 C.UTF-8
 localedef -i cs_CZ -f UTF-8 cs_CZ.UTF-8
 localedef -i de_DE -f ISO-8859-1 de_DE
@@ -97,7 +102,7 @@ localedef -i is_IS -f UTF-8 is_IS.UTF-8
 Now that GLibC and the locales are installed, there are a few extra steps needed to configure its functionality for use on the system. First, configure the Name Service Switch so that the host resolver and account management functions can be configured to look up data correctly:
 
 ```bash
-install -v -m644 -o root -g root ../system_files/etc/nsswitch.conf /etc/
+install -v -m644 -o root -g root ../../midgardos.github.io/docs/MidgardOS/system_files/etc/nsswitch.conf /etc/
 ```
 
 Once the `/etc/nsswitch.conf` is installed, timezone data needs setup. To do so, run the following commands:
@@ -130,7 +135,7 @@ ln -sfv /usr/share/zoneinfo/$TZ /etc/localtime
 Now, configure the dynamic library loader by telling it to read configurations in `/etc/ld.so.conf.d`:
 
 ```bash
-install -v -m644 -o root -g root ../system_files/etc/ld.so.conf /etc/
+install -v -m644 -o root -g root ../../midgardos.github.io/docs/MidgardOS/system_files/etc/ld.so.conf /etc/
 ```
 
 **NOTE: Do not delete the unpacked sources after build.**

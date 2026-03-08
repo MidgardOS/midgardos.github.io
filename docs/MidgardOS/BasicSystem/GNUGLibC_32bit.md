@@ -9,8 +9,8 @@
 Name: GNU GLibC 32-bit<br />
 Summary: The GNU C language runtime library - 64-bit<br />
 License: GPL v3 or later<br />
-Version: 2.42<br />
-URL: [https://ftp.gnu.org/gnu/glibc/glibc-2.42.tar.xz](https://ftp.gnu.org/gnu/glibc/glibc-2.42.tar.xz)<br />
+Version: 2.43<br />
+URL: [https://ftp.gnu.org/gnu/glibc/glibc-2.43.tar.xz](https://ftp.gnu.org/gnu/glibc/glibc-2.43.tar.xz)<br />
 
 Average Build Time: 6 SBU<br />
 Used Install Space: 1.2 GiB<br />
@@ -34,7 +34,7 @@ CC="gcc -m32" CXX="g++ -m32" \
       --enable-stackguard-randomization                              \
       --enable-tunables                                              \
       --with-bugurl="https://github.com/MidgardOS/MidgardOS/Issues"  \
-      --enable-kernel=5.4
+      --enable-kernel=6.18
 ```
 
 ## Compilation and Installation

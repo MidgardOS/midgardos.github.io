@@ -24,7 +24,7 @@ CC="$BRFS_TARGET-gcc -m32" CXX="$BRFS_TARGET-g++ -m32" \
     --prefix=/tools                   \
     --host=${BRFS_TARGET32}           \
     --build=${BRFS_HOST}              \
-    --enable-kernel=5.4               \
+    --enable-kernel=6.18              \
     --with-headers=$BRFS/usr/include  \
     --enable-bind-now                 \
     --enable-stackguard-randomization \
