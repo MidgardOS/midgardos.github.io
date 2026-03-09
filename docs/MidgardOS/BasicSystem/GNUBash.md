@@ -70,13 +70,12 @@ Finally, to install GNU Bash into the build tree, run the following command:
 ```bash
 make DESTDIR=$PWD/DESTDIR install
 pushd DESTDIR
-    ln -sv usr/bin/bash usr/bin/rbash
-    ln -sv usr/bin/bash usr/bin/sh
     install -v -d -m755 -o root -g root etc
     install -v -d -m755 -o root -g root etc/skel
     install -v -d -m755 -o root -g root etc/skel/.bashrc.d
     install -v -d -m755 -o root -g root etc/profile.d
 popd
+install -v -d -m 755 -o root -g root /etc/skel/.bashrc.d
 cat <<EOF > DESTDIR/etc/skel/.bashrc
 # .bashrc
 # Source global definitions
@@ -104,7 +103,7 @@ fi
 unset rc
 
 # check for other alias or environment files
-if [[ -f $HOME/.aliases ]]; then
+if [[ -f $HOME/.bash.aliases ]]; then
     . $HOME/.bash.aliases
 elif [[ -f $HOME/.bash.environ ]]; then
     . $HOME/.bash.environ
@@ -128,10 +127,14 @@ fi
 
 # User specific environment and startup programs
 EOF
-install -v -m 644 -o root -g root /sources/system_files/etc/bashrc DESTDIR/etc/bashrc
-install -v -m 644 -o root -g root /sources/system_files/etc/profile DESTDIR/etc/profile
+install -v -m 644 -o root -g root ../midgardos.github.io/docs/MidgardOS/system_files/etc/bashrc DESTDIR/etc/bashrc
+install -v -m 644 -o root -g root ../midgardos.github.io/docs/MidgardOS/system_files/etc/profile DESTDIR/etc/profile
 cp -Rv DESTDIR/etc/* /etc/
 cp -Rv DESTDIR/usr/* /usr/
+cd /usr/bin
+ln -sfv bash sh
+ln -sfv bash rbash
+cd -
 ```
 
 ## Contents
