@@ -174,6 +174,18 @@ install -v -d -m 755 -o root -g root /usr/share/gdb/auto-load/usr/lib
 mv -v /usr/lib/*gdb.py /usr/share/gdb/auto-load/usr/lib
 ```
 
+## Clean Up
+
+At this time, the older vendored GCC and Binutils components can be removed. To do so, run the following commands:
+
+```bash
+rm -fv /usr/bin/x86_64-midgardos-linux-gnu*
+rm -rfv /usr/x86_64-midgardos-linux-gnu
+cd /usr/bin
+ln -sfv x86_64-pc-linux-gnu-gcc-15.2.0 gcc-15.2.0
+cd -
+```
+
 ## Contents
 
 | Contents | |
