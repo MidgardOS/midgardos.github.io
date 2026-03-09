@@ -32,6 +32,8 @@ make
 make html
 ```
 
+Currently, the panic test is failing. It is safe to ignore.
+
 Now, run the test suite:
 
 ```bash
