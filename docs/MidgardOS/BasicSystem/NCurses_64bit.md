@@ -9,8 +9,8 @@
 Name: NCurses 64-bit<br />
 Summary: Terminal-independent library for console interfaces<br />
 License: MIT<br />
-Version: 6.5-20250823<br />
-URL: [https://invisible-mirror.net/archives/ncurses/current/ncurses-6.5-20250823.tgz](https://invisible-mirror.net/archives/ncurses/current/ncurses-6.5-20250823.tgz)<br />
+Version: 6.6-20260301<br />
+URL: [https://invisible-mirror.net/archives/ncurses/current/ncurses-6.6-20260301.tgz](https://invisible-mirror.net/archives/ncurses/current/ncurses-6.6-20260301.tgz)<br />
 
 Average Build Time: 0.2 SBU<br />
 Used Install Space: 46 MiB<br />
@@ -53,7 +53,7 @@ for lib in ncurses form panel menu ; do
     ln -sfv ${lib}w.pc    /usr/lib64/pkgconfig/${lib}.pc
 done
 ln -sfv libncursesw.so /usr/lib64/libcurses.so
-cp -v -R doc -T /usr/share/doc/ncurses-6.5-20250809
+cp -v -R doc -T /usr/share/doc/ncurses-6.6-20260301
 ```
 
 **NOTE: Do not delete the unpacked sources after build.**
