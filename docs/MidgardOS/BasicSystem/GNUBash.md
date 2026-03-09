@@ -26,31 +26,31 @@ To configure GNU Bash for install into the build root, run the following command
             --with-curses                                           \
             --with-gnu-ld                                           \
             --without-gnu-malloc                                    \
-	        --without-bash-malloc                                   \
-	        --enable-mem-scramble                                   \
+            --without-bash-malloc                                   \
+            --enable-mem-scramble                                   \
             --enable-threads=posix		                            \
-	        --enable-job-control		                            \
-	        --enable-net-redirections	                            \
-        	--enable-alias			                                \
-	        --enable-readline		                                \
-	        --enable-history		                                \
-	        --enable-bang-history		                            \
-	        --enable-directory-stack	                            \
-	        --enable-process-substitution	                        \
-	        --enable-prompt-string-decoding	                        \
-	        --enable-select			                                \
-	        --enable-help-builtin		                            \
-	        --enable-separate-helpfiles	                            \
-	        --enable-array-variables	                            \
+            --enable-job-control		                            \
+            --enable-net-redirections	                            \
+            --enable-alias			                                \
+            --enable-readline		                                \
+            --enable-history		                                \
+            --enable-bang-history		                            \
+            --enable-directory-stack	                            \
+            --enable-process-substitution	                        \
+            --enable-prompt-string-decoding	                        \
+            --enable-select			                                \
+            --enable-help-builtin		                            \
+            --enable-separate-helpfiles	                            \
+            --enable-array-variables	                            \
             --enable-alt-array-implementation                       \
             --enable-brace-expansion	                            \
-    	    --enable-command-timing		                            \
-	        --enable-disabled-builtins	                            \
-    	    --enable-glob-asciiranges-default                       \
-        	--enable-translatable-strings	                        \
-	        --disable-strict-posix-default	                        \
-    	    --enable-multibyte		                                \
-    	    --enable-separate-helpfiles=/usr/share/bash/helpfiles   \
+            --enable-command-timing		                            \
+            --enable-disabled-builtins	                            \
+            --enable-glob-asciiranges-default                       \
+            --enable-translatable-strings	                        \
+            --disable-strict-posix-default	                        \
+            --enable-multibyte		                                \
+            --enable-separate-helpfiles=/usr/share/bash/helpfiles   \
             --with-installed-readline                               \
             --docdir=/usr/share/doc/bash-5.3
 ```
@@ -63,7 +63,7 @@ To compile GNU Bash, run the following command:
 make
 ```
 
-The tests are not designed to work correctly running uner the root user. The tests will be run later when it is rebuilt as an RPM.
+The tests are not designed to work correctly running under the root user. The tests will be run later when it is rebuilt as an RPM.
 
 Finally, to install GNU Bash into the build tree, run the following command:
 
@@ -123,7 +123,7 @@ cat <<EOF > DESTDIR/etc/skel/.bash_profile
 # .bash_profile
 # Get the aliases and functions
 if [ -f ~/.bashrc ]; then
-        . ~/.bashrc
+    . ~/.bashrc
 fi
 
 # User specific environment and startup programs
