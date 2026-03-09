@@ -30,6 +30,7 @@ To configure the GNU Compiler Collection for install into the build root, run th
 
 ```bash
 mkdir -v build && cd build
+export CFLAGS="-g -O2 -fmessage-length=0 -D_FORTIFY_SOURCE=2 -fstack-protector -funwind-tables -fasynchronous-unwind-tables -Wno-discarded-qualifiers"
 ../configure                                                        \
     --prefix=/usr                                                   \
     --libdir=/usr/lib64                                             \
@@ -37,7 +38,7 @@ mkdir -v build && cd build
     --enable-languages=c,c++                                        \
     --enable-default-pie                                            \
     --enable-default-ssp                                            \
-    --with-glibc-version=2.42                                       \
+    --with-glibc-version=2.43                                       \
     --with-bugurl="https://github.com/MidgardOS/MidgardOS/issues"   \
     --with-pkgversion="MidgardOS"                                   \
     --enable-multilib                                               \
@@ -67,7 +68,7 @@ su tester -c "PATH=$PATH make -k check"
 chown -R root:root .
 ```
 
-Note, it is not expected that all tests will pass. GCC has some "future" looking tests for features under development in the tree. It is know that tests related to `pr90579.c` will fail.
+Note, it is not expected that all tests will pass. GCC has some "future" looking tests for features under development in the tree. It is know that tests related to `pr90579.c` will fail. At present, 21 tests are known failing with the 15.2.0 release.
 
 Finally, to install the GNU Compiler Collection into the build tree, run the following commands:
 
@@ -77,6 +78,7 @@ chown -v -R root:root /usr/lib64/gcc/$(gcc -dumpmachine)/15.2.0/include{,-fixed}
 ln -svr /usr/bin/cpp /usr/lib64
 ln -sv gcc.1 /usr/share/man/man1/cc.1
 ln -sfv ../../lib64/gcc/$(gcc -dumpmachine)/15.2.0/liblto_plugin.so /usr/lib64/bfd-plugins/
+unset CFLAGS
 ```
 
 Now that the last rebuild of GCC is complete before it is rebuilt for packaging as an RPM, we need to ensure that compiling and linking work as expected. To perform the first sanity check, run the following commands:
