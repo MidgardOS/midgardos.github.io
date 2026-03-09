@@ -9,8 +9,8 @@
 Name: GNU Gettext 32-bit<br />
 Summary: Utilities for i18n and l10n tasks<br />
 License: GPL v3<br />
-Version: 0.26<br />
-URL: [https://ftp.gnu.org/gnu/gettext/gettext-0.26.tar.xz](https://ftp.gnu.org/gnu/gettext/gettext-0.26.tar.xz)<br />
+Version: 1.0<br />
+URL: [https://ftp.gnu.org/gnu/gettext/gettext-1.0.tar.xz](https://ftp.gnu.org/gnu/gettext/gettext-1.0.tar.xz)<br />
 
 Average Build Time: 2.6 SBU<br />
 Used Install Space: 395 MiB<br />
@@ -27,7 +27,7 @@ CC="gcc -m32 -march=i686" CXX="g++ -m32 -march=i686" \
             --libdir=/usr/lib                        \
             --libexecdir=/usr/lib                    \
             --disable-static                         \
-            --docdir=/usr/share/doc/gettext-0.26
+            --docdir=/usr/share/doc/gettext-1.0
 ```
 
 ## Compilation and Installation
