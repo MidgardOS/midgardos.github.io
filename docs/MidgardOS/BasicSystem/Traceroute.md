@@ -10,7 +10,7 @@ Name: Traceroute<br />
 Summary: TCP/IP Packet route reporting utility<br />
 License: GPL v2 or later<br />
 Version: 2.1.6<br />
-URL: [https://sourceforge.net/projects/traceroute/files/traceroute/traceroute-2.1.6/traceroute-2.1.6.tar.gz](https://sourceforge.net/projects/traceroute/files/traceroute/traceroute-2.1.6/traceroute-2.1.6.tar.gz)<br />
+URL: [https://sourceforge.net/projects/traceroute/files/traceroute/traceroute-2.1.6/traceroute-2.1.6.tar.gz/download](https://sourceforge.net/projects/traceroute/files/traceroute/traceroute-2.1.6/traceroute-2.1.6.tar.gz/download)<br />
 
 Average Build Time: 0.1 SBU<br />
 Used Install Space: 264 KiB<br />
