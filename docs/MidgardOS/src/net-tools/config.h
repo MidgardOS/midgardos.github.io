@@ -38,7 +38,7 @@
 #define HAVE_AFECONET 0
 #define HAVE_AFDECnet 0
 #define HAVE_AFASH 1
-#define HAVE_AFBLUETOOTH 1
+#define HAVE_AFBLUETOOTH 0
 
 /* 
  * 
@@ -77,8 +77,7 @@
 #define HAVE_HOSTNAME_TOOLS 0
 #define HAVE_HOSTNAME_SYMLINKS 0
 #define HAVE_IP_TOOLS 1
-#define HAVE_MII 1
+#define HAVE_MII 0
 #define HAVE_PLIP_TOOLS 1
 #define HAVE_SERIAL_TOOLS 1
 #define HAVE_SELINUX 0
-
