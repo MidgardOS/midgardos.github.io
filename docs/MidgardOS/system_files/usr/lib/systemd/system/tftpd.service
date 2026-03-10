@@ -1,0 +1,14 @@
+[Unit]
+Description=A simple TFTP daemon
+After=syslog.target network.target network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/sysconf/inetutils-tftpd
+User=${RUN_AS_USER}
+Group=${RUN_AS_GROUP}
+ExecStart=/usr/sbin/tftpd "${LOGGING}" "${SUPPRESS_NACK}" -s "${CHROOT_DIR}"
+
+[Install]
+WantedBy=multi-user.target

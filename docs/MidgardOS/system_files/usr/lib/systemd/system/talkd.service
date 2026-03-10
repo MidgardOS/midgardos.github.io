@@ -1,0 +1,12 @@
+[Unit]
+Description=A simple Internet Talk daemon
+After=syslog.target network.target network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/sysconf/inetutils-talkd
+ExecStart=/usr/sbin/talkd -a "${ACL_FILE}" "${LOGGING}" "${STRICT_POLICY}"
+
+[Install]
+WantedBy=multi-user.target

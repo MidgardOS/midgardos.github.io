@@ -1,0 +1,50 @@
+#
+# Configuration file for GNU InetUtils-tftpd
+#
+
+#
+# Enable logging
+#
+# OPTIONS = "" or "-l"
+#
+# DEFAULT = "-l"
+#
+LOGGING="-l"
+
+#
+# Suppress the negative acknowledgement of non-existent files. 
+#
+# OPTIONS = "" or "-n"
+#
+# DEFAULT = ""
+#
+SUPPRESS_NACK=""
+
+#
+# Set explicit process group of the daemon.
+#
+# OPTIONS = "" or "-g <groupname>"
+#
+# DEFAULT = "-g nobody"
+#
+RUN_AS_GROUP="-g nobody"
+
+#
+# CHRoot directory. The daemon switches to this directory before starting
+# to serve files. The default is "/srv/tftp", which is a common location for
+# tftp files.
+#
+# OPTIONS = any valid directory path
+#
+# DEFAULT = "/srv/tftp"
+#
+CHROOT_DIR="/srv/tftp"
+
+#
+# The username to run the daemon as. The default is "nobody"
+#
+# OPTIONS = "" or "-u <username>"
+#
+# DEFAULT = "-u nobody"
+#
+RUN_AS_USER="-u nobody"

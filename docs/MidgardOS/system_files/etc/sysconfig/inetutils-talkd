@@ -1,0 +1,33 @@
+#
+# Configuration for GNU InetUtils talkd
+#
+
+#
+# Read the ACLs to apply for incoming talk requests based on the data in the
+# specified file. The default is "/etc/inetutils/talkd.acl".
+#
+# OPTIONS = any valid file path
+#
+# DEFAULT = "/etc/inetutils/talkd.acl"
+#
+ACL_FILE="/etc/inetutils/talkd.acl"
+
+#
+# Enable more verbose syslog logging.
+#
+# OPTIONS = "" or "-l"
+#
+# DEFAULT = ""
+#
+LOGGING=""
+
+#
+# Enable strict policy for incoming talk requests.  The default is "", which
+# means that the talkd requires explicit allow entries in the ACL file for
+# incoming talk requests.
+#
+# OPTIONS = "" or "-S"
+#
+# DEFAULT = ""
+#
+STRICT_POLICY=""

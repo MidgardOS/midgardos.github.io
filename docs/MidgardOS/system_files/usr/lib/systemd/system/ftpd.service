@@ -1,0 +1,12 @@
+[Unit]
+Description=A simple FTP daemon
+After=syslog.target network.target network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/sysconf/inetutils-ftpd
+ExecStart=/usr/sbin/ftpd "${TCP_PROTOCOL}" "${LOGGING_LEVEL}" "${ANONYMOUS_FTP}" "${SILENT_MODE}" -a "${AUTH_METHOD}" -u "${FTP_UMASK}" -D
+
+[Install]
+WantedBy=multi-user.target

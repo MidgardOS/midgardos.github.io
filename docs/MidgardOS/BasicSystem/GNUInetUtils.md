@@ -9,8 +9,8 @@
 Name: GNU InetUtils<br />
 Summary: Various network utilities<br />
 License: GPL v3 or later<br />
-Version: 2.6<br />
-URL: [https://ftp.gnu.org/gnu/inetutils/inetutils-2.6.tar.xz](https://ftp.gnu.org/gnu/inetutils/inetutils-2.6.tar.xz)<br />
+Version: 2.7<br />
+URL: [https://ftp.gnu.org/gnu/inetutils/inetutils-2.7.tar.gz](https://ftp.gnu.org/gnu/inetutils/inetutils-2.7.tar.gz)<br />
 
 Average Build Time: 0.3 SBU<br />
 Used Install Space: <br />
@@ -26,6 +26,7 @@ sed -i 's/def HAVE_TERMCAP_TGETENT/ 1/' telnet/telnet.c
             --libdir=/usr/lib64                     \
             --libexecdir=/usr/lib64                 \
             --docdir=/usr/share/doc/inetutils-2.6   \
+            --disable-inetd                         \
             --disable-rexecd                        \
             --disable-rlogind                       \
             --disable-rshd                          \
@@ -64,7 +65,17 @@ Finally, to install GNU InetUtils into the build tree, run the following command
 make DESTDIR=$PWD/DESTDIR install
 install -dvm 755 -o root -g root DESTDIR/usr/sbin
 mv -v DESTDIR/usr/lib64/* DESTDIR/usr/sbin/
+install -dvm 755 -o root -g root /etc/inetutils
+touch /etc/inetutils/talkd.acl
+install -dvm 755 -o root -g root /etc/sysconfig
+install -v -m 644 -o root -g root ../midgardos.github.io/docs/MidgardOS/system_files/etc/sysconfig/inetutils-ftpd  /etc/sysconfig/
+install -v -m 644 -o root -g root ../midgardos.github.io/docs/MidgardOS/system_files/etc/sysconfig/inetutils-talkd /etc/sysconfig/
+install -v -m 644 -o root -g root ../midgardos.github.io/docs/MidgardOS/system_files/etc/sysconfig/inetutils-talkd /etc/sysconfig/
 install -dvm 755 -o root -g root /usr/lib/systemd/system
+install -v -m 644 -o root -g root ../midgardos.github.io/docs/MidgardOS/system_files/usr/lib/systemd/system/ftpd.service /usr/lib/systemd/system/
+install -v -m 644 -o root -g root ../midgardos.github.io/docs/MidgardOS/system_files/usr/lib/systemd/system/talkd.service /usr/lib/systemd/system/
+install -v -m 644 -o root -g root ../midgardos.github.io/docs/MidgardOS/system_files/usr/lib/systemd/system/tftpd.service /usr/lib/systemd/system/
+install -dvm 755 -o root -g root /srv/tftp
 cp -Rv DESTDIR/usr/bin/* /usr/bin/
 cp -Rv DESTDIR/usr/sbin/* /usr/sbin/
 cp -Rv DESTDIR/usr/share/* /usr/share/

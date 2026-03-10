@@ -1,0 +1,63 @@
+#
+# Configuration for the GNU INetUtils ftpd
+#
+
+#
+# Which TCP protocol to use for the control connection.  The default is "4",
+# which means to use IPv4.  You can set this to "6" to use IPv6.
+#
+# OPTIONS = -4 or -6
+#
+# DEFAULT = -4
+#
+TCP_PROTOCOL=-4
+
+#
+# Logging level. The default is 'l', which restricts logging to login and
+# logout events, whether successful or not. If the logging level is set to
+# 'll', all events will be logged.
+#
+# OPTIONS = -l or -ll
+#
+# DEFAULT = -l
+#
+LOGGING_LEVEL=-l
+
+#
+# Enable the use of anonymous FTP.  The default is "", which disables anonymous FTP.
+# To enable anonymous FTP, set this to "yes".
+#
+# OPTIONS = "" or '-A'
+#
+# DEFAULT = ""
+#
+ANONYMOUS_FTP=""
+
+#
+# Enable silent mode or not. The default is 'q', which disables the disclosure of the
+#server's version information.
+#
+# OPTIONS = "" or '-q'
+#
+# DEFAULT = '-q'
+#
+SILENT_MODE='-q'
+
+#
+# The authentication method to use.
+#
+# OPTIONS = "pam" or "default"
+# 
+# DEFAULT = "default"
+#
+AUTH_METHOD="default"
+
+#
+# UMASK for anonymous FTP. The default is 077, which means that files created by
+# anonymous users will have permissions of 700 (rwx------).
+#
+# OPTIONS = any valid UMASK value
+#
+# DEFAULT = 077
+#
+FTP_UMASK=077
