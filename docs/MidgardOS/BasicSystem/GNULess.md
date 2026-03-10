@@ -9,8 +9,8 @@
 Name: GNU Less<br />
 Summary: A text viewer and pager<br />
 License: GPL v3 or later<br />
-Version: 685<br />
-URL: [https://ftp.gnu.org/gnu/less/less-685.tar.gz](https://ftp.gnu.org/gnu/less/less-685.tar.gz)<br />
+Version: 692<br />
+URL: [https://ftp.gnu.org/gnu/less/less-692.tar.gz](https://ftp.gnu.org/gnu/less/less-692.tar.gz)<br />
 
 Average Build Time: less than 0.1 SBU<br />
 Used Install Space: 1.1 MiB<br />
@@ -43,7 +43,7 @@ Finally, to install GNU Less into the build tree, run the following command:
 
 ```bash
 make install
-install -v -m755 -o root -g root ../system_files/usr/bin/lessopen.sh /usr/bin/lessopen.sh
+install -v -m755 -o root -g root ../midgardos.github.io/docs/MidgardOS/system_files/usr/bin/lessopen.sh /usr/bin/lessopen.sh
 ```
 
 ## Contents
