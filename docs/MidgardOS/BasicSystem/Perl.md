@@ -54,7 +54,7 @@ Next, run the test suite:
 TEST_JOBS=$(nproc) make test_harness
 ```
 
-There are four tests that fail currently.
+There is one test that fails currently, and appears to be a broken test. This can be ignored.
 
 Finally, to install Perl into the build tree, run the following commands:
 
