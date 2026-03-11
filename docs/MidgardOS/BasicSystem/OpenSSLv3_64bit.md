@@ -9,8 +9,8 @@
 Name: OpenSSL v3 64-bit<br />
 Summary: The standard open source cryptography library and tools<br />
 License: Apache v2.0<br />
-Version: 3.6.0<br />
-URL: [https://github.com/openssl/openssl/releases/download/openssl-3.6.0/openssl-3.6.0.tar.gz](https://github.com/openssl/openssl/releases/download/openssl-3.6.0/openssl-3.6.0.tar.gz)<br />
+Version: 3.6.1<br />
+URL: [https://github.com/openssl/openssl/releases/download/openssl-3.6.1/openssl-3.6.1.tar.gz](https://github.com/openssl/openssl/releases/download/openssl-3.6.1/openssl-3.6.1.tar.gz)<br />
 
 Average Build Time: 1.9 SBU<br />
 Used Install Space: 35 MiB<br />
@@ -58,8 +58,8 @@ Finally, to install OpenSSL v3 64-bit into the build tree, run the following com
 ```bash
 sed -i '/INSTALL_LIBS/s/libcrypto.a libssl.a//' Makefile
 make MANSUFFIX=ssl install
-mv -v /usr/share/doc/openssl /usr/share/doc/openssl-3.6.0
-cp -vfr doc/* /usr/share/doc/openssl-3.6.0
+mv -v /usr/share/doc/openssl /usr/share/doc/openssl-3.6.1
+cp -vfr doc/* /usr/share/doc/openssl-3.6.1
 ```
 
 **NOTE: Do not delete the unpacked sources after build.**

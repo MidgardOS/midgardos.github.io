@@ -9,8 +9,8 @@
 Name: OpenSSL v3 32-bit<br />
 Summary: The standard open source cryptography library and tools<br />
 License: Apache v2.0<br />
-Version: 3.6.0<br />
-URL: [https://github.com/openssl/openssl/releases/download/openssl-3.6.0/openssl-3.6.0.tar.gz](https://github.com/openssl/openssl/releases/download/openssl-3.6.0/openssl-3.6.0.tar.gz)<br />
+Version: 3.6.1<br />
+URL: [https://github.com/openssl/openssl/releases/download/openssl-3.6.1/openssl-3.6.1.tar.gz](https://github.com/openssl/openssl/releases/download/openssl-3.6.1/openssl-3.6.1.tar.gz)<br />
 
 Average Build Time: 1.9 SBU<br />
 Used Install Space: 35 MiB<br />
@@ -21,6 +21,7 @@ To configure OpenSSL v3 32-bit for install into the build root, run the followin
 
 ```bash
 make distclean
+CC="gcc -m32" CXX="g++ -m32" \
 ./config --prefix=/usr               \
          --libdir=/usr/lib           \
          --openssldir=/etc/ssl       \
