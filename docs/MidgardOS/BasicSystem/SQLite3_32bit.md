@@ -9,8 +9,8 @@
 Name: SQLite3 32-bit<br />
 Summary: An embedded, serverless transactional database library<br />
 License: SQLite3 Public Domain License<br />
-Version: 3.51.0<br />
-URL: [https://sqlite.org/2025/sqlite-autoconf-3510000.tar.gz](https://sqlite.org/2025/sqlite-autoconf-3510000.tar.gz)<br />
+Version: 3.52.0<br />
+URL: [https://sqlite.org/2026/sqlite-autoconf-3520000.tar.gz](https://sqlite.org/2026/sqlite-autoconf-3520000.tar.gz)<br />
 
 Average Build Time: 0.4 SBU<br />
 Used Install Space: 1.8 MiB<br />

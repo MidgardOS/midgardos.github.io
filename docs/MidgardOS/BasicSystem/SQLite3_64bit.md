@@ -9,18 +9,22 @@
 Name: SQLite3 64-bit<br />
 Summary: An embedded, serverless transactional database library<br />
 License: SQLite3 Public Domain License<br />
-Version: 3.51.0<br />
-URL: [https://sqlite.org/2025/sqlite-autoconf-3510000.tar.gz](https://sqlite.org/2025/sqlite-autoconf-3510000.tar.gz)<br />
+Version: 3.52.0<br />
+URL: [https://sqlite.org/2026/sqlite-autoconf-3520000.tar.gz](https://sqlite.org/2026/sqlite-autoconf-3520000.tar.gz)<br />
 
 Average Build Time: 0.4 SBU<br />
 Used Install Space: 43 MiB<br />
+
+## Additional Sources
+
+Documentation URL: [https://sqlite.org/2026/sqlite-doc-3520000.zip](https://sqlite.org/2026/sqlite-doc-3520000.zip)
 
 ## Configuration
 
 To configure SQLite3 64-bit for install into the build root, run the following commands:
 
 ```bash
-7zz x ../sqlite-doc-3510000.zip
+7zz x ../sqlite-doc-3520000.zip
 export OPTFLAGS="-fmessage-length=0 -D_FORTIFY_SOURCE=2 -fstack-protector -funwind-tables -fasynchronous-unwind-tables"
 export CFLAGS="${OPTFLAGS} \
 	-DSQLITE_ENABLE_API_ARMOR \
@@ -65,8 +69,8 @@ Finally, to install SQLite3 64-bit into the build tree, run the following comman
 
 ```bash
 make install
-install -v -m755 -d /usr/share/doc/sqlite-3.51.0
-cp -Rv sqlite-doc-3510000/* /usr/share/doc/sqlite-3.51.0/
+install -v -m755 -d /usr/share/doc/sqlite-3.52.0
+cp -Rv sqlite-doc-3520000/* /usr/share/doc/sqlite-3.52.0/
 unset CFLAGS
 unset OPTFLAGS
 ```
