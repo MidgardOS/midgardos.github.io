@@ -21,6 +21,7 @@ To configure ElfUtils 32-bit for install into the build root, run the following 
 
 ```bash
 make distclean
+export CFLAGS="-Wno-iscarded-qualifiers"
 CC="gcc -m32" CXX="g++ -m32"         \
 ./configure --prefix=/usr            \
             --libdir=/usr/lib        \

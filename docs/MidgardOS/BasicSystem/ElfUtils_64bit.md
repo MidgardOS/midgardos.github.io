@@ -20,6 +20,7 @@ Used Install Space: 1 MiB<br />
 To configure ElfUtils 64-bit for install into the build root, run the following command:
 
 ```bash
+export CFLAGS="-Wno-discarded-qualifiers"
 ./configure --prefix=/usr           \
             --libdir=/usr/lib64     \
             --libexecdir=/usr/lib64 \
@@ -50,6 +51,7 @@ cp -Rv DESTDIR/usr/include/* /usr/include/
 cp -Rv DESTDIR/usr/lib64/* /usr/lib64/
 install -vm644 config/libelf.pc /usr/lib64/pkgconfig
 rm -rf DESTDIR
+unset CFLAGS
 ```
 
 **NOTE: Do not delete the unpacked sources after build.**
