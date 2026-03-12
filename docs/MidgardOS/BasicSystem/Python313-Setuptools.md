@@ -9,7 +9,7 @@
 Name: Python313-Setuptools<br />
 Summary: A tool for downloading, building, installing, upgrading, and uninstalling Python packages<br />
 License: MIT<br />
-Version: 80.9.0<br />
+Version: 82.0.1<br />
 
 Average Build Time: less than 0.1 SBU<br />
 Used Install Space: 25 MiB<br />
@@ -19,7 +19,7 @@ Used Install Space: 25 MiB<br />
 To install Python313-Setuptools into the build tree, run the following command:
 
 ```bash
-python3 -m pip install setuptools==80.9.0
+python3 -m pip install setuptools==82.0.1
 ```
 
 ## Contents
