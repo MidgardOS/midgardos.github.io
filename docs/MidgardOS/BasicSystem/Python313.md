@@ -9,11 +9,15 @@
 Name: Python 3.13<br />
 Summary: The Python scripting language<br />
 License: Python-2.0<br />
-Version: 3.13.7<br />
-URL: [https://www.python.org/ftp/python/3.13.7/Python-3.13.7.tar.xz](https://www.python.org/ftp/python/3.13.7/Python-3.13.7.tar.xz)<br />
+Version: 3.13.9<br />
+URL: [https://www.python.org/ftp/python/3.13.9/Python-3.13.9.tar.xz](https://www.python.org/ftp/python/3.13.7/Python-3.13.9.tar.xz)<br />
 
 Average Build Time: 2.0 SBU<br />
 Used Install Space: 337 MiB<br />
+
+## Additional Downloads
+
+Documentation Bundle URL: [https://www.python.org/ftp/python/doc/3.13.9/python-3.13.9-docs-html.tar.bz2](https://www.python.org/ftp/python/doc/3.13.9/python-3.13.9-docs-html.tar.bz2)
 
 ## Configuration
 
@@ -54,12 +58,12 @@ Finally, to install Python 3.13 into the build tree, run the following commands:
 
 ```bash
 make install
-install -v -dm755 /usr/share/doc/python-3.13.7/html
+install -v -dm755 /usr/share/doc/python-3.13.9/html
 tar --strip-components=1  \
     --no-same-owner       \
     --no-same-permissions \
-    -C /usr/share/doc/python-3.13.7/html \
-    -xvf ../python-3.13.7-docs-html.tar.bz2
+    -C /usr/share/doc/python-3.13.9/html \
+    -xvf ../python-3.13.9-docs-html.tar.bz2
 ```
 
 To allow further Python modules to be installed during the pre-RPM builds and avoid unnecessary warnings and avoid future warnings around newer versions of `pip3`, run the following command to suppress these warnings:
