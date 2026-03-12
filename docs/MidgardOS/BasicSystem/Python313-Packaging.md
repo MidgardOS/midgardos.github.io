@@ -9,7 +9,7 @@
 Name: Python313-Packaging<br />
 Summary: Reusable utilities for Python module packaging<br />
 License: Apache v2/BSD<br />
-Version: 25.0<br />
+Version: 26.0<br />
 
 Average Build Time: less than 0.1 SBU<br />
 Used Install Space: 3.3 MiB<br />
@@ -19,7 +19,7 @@ Used Install Space: 3.3 MiB<br />
 To install Python313-Packaging into the build tree, run the following command:
 
 ```bash
-python3 -m pip install packaging==25.0
+python3 -m pip install packaging==26.0
 ```
 
 ## Contents
