@@ -9,7 +9,7 @@
 Name: Python313-Wheel<br />
 Summary: An implementation of the Python standard wheel package format<br />
 License: MIT<br />
-Version: 0.45.1<br />
+Version: 0.46.3<br />
 
 Average Build Time: less than 0.1 SBU<br />
 Used Install Space: 608 KiB<br />
@@ -19,7 +19,7 @@ Used Install Space: 608 KiB<br />
 To install Python313-Wheel into the build tree, run the following command:
 
 ```bash
-python3 -m pip install wheel==0.45.1
+python3 -m pip install wheel==0.46.3
 ```
 
 ## Contents
