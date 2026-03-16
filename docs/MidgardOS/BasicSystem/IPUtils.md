@@ -27,7 +27,6 @@ meson setup --prefix=/usr                               \
             -DINSTALL_SYSTEMD_UNITS=true                \
             -DSETCAP_OR_SUID_ARPING=true                \
             -DSETCAP_OR_SUID_CLOCKDIFF=true build .
-
 ```
 
 ## Compilation and Installation
