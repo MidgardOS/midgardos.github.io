@@ -10,7 +10,7 @@ Name: CUnit 32-bit<br />
 Summary: A library for writing unit tests in C<br />
 License: LGPL v2.1<br />
 Version: 2.1-3<br />
-URL: [https://sourceforge.net/projects/cunit/files/CUnit/2.1-3/CUnit-2.1-3.tar.bz2](https://sourceforge.net/projects/cunit/files/CUnit/2.1-3/CUnit-2.1-3.tar.bz2)<br />
+URL: [https://sourceforge.net/projects/cunit/files/CUnit/2.1-3/CUnit-2.1-3.tar.bz2/download](https://sourceforge.net/projects/cunit/files/CUnit/2.1-3/CUnit-2.1-3.tar.bz2/download)<br />
 
 Average Build Time: less than 0.1 SBU<br />
 Used Install Space: 544 KiB<br />
