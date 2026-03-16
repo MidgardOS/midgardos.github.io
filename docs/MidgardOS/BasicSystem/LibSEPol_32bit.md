@@ -9,8 +9,8 @@
 Name: LibSEPol 32-bit<br />
 Summary: A library for manipulating SELinux binary policies<br />
 License: LGPL v2.1<br />
-Version: 3.9<br />
-URL: [https://github.com/SELinuxProject/selinux/releases/download/3.9/libsepol-3.9.tar.gz](https://github.com/SELinuxProject/selinux/releases/download/3.9/libsepol-3.9.tar.gz)<br />
+Version: 3.10<br />
+URL: [https://github.com/SELinuxProject/selinux/releases/download/3.10/libsepol-3.10.tar.gz](https://github.com/SELinuxProject/selinux/releases/download/3.10/libsepol-3.10.tar.gz)<br />
 
 Average Build Time: less than 0.1 SBU<br />
 Used Install Space: 3.2 MiB<br />
