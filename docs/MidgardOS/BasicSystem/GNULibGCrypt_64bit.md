@@ -9,8 +9,8 @@
 Name: GNU LibGCrypt 64-bit<br />
 Summary: A library implementing many cryptographic hash types<br />
 License: GPL v2/LGPL v2.1<br />
-Version: 1.11.2<br />
-URL: [https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.11.2.tar.bz2](https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.11.2.tar.bz2)<br />
+Version: 1.12.1<br />
+URL: [https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.12.1.tar.bz2](https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.12.1.tar.bz2)<br />
 
 Average Build Time: 0.3 SBU<br />
 Used Install Space: 6.5 MiB<br />
@@ -27,7 +27,7 @@ export KDFS="s2k pkdf2 scrypt"
 ./configure --prefix=/usr                               \
             --libdir=/usr/lib64                         \
             --libexecdir=/usr/lib64                     \
-            --docdir=/usr/share/doc/libgcrypt-1.11.2    \
+            --docdir=/usr/share/doc/libgcrypt-1.12.1    \
             --enable-ciphers="$CIPHERS"                 \
             --enable-pubkey-ciphers="$PUBKEYS"          \
             --enable-digests="$DIGESTS"                 \
@@ -35,6 +35,7 @@ export KDFS="s2k pkdf2 scrypt"
             --enable-noexecstack                        \
             --enable-random=getentropy                  \
             --enable-jent-support                       \
+            --with-capabilities                         \
             --disable-static
 unset PUBKEYS
 unset CIPHERS
@@ -62,8 +63,8 @@ Finally, to install GNU LibGCrypt 64-bit into the build tree, run the following 
 make install
 rm -fv /usr/lib64/libgcrypt.la
 mkdir -pv -m 0755 /etc/gcrypt
-install -v -m 644 -o root -g root ../system_files/etc/gcrypt/random.conf /etc/gcrypt/random.conf
-install -v -m 644 -o root -g root ../system_files/etc/gcrypt/hwf.deny /etc/gcrypt/hwf.deny
+install -v -m 644 -o root -g root ../midgardos.github.io/docs/MidgardOS/system_files/etc/gcrypt/random.conf /etc/gcrypt/random.conf
+install -v -m 644 -o root -g root ../midgardos.github.io/docs/MidgardOS/system_files/etc/gcrypt/hwf.deny /etc/gcrypt/hwf.deny
 ```
 
 **NOTE: Do not delete the unpacked sources after build.**

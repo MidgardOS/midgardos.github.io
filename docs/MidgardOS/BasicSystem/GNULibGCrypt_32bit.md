@@ -9,8 +9,8 @@
 Name: GNU LibGCrypt 32-bit<br />
 Summary: A library implementing many cryptographic hash types<br />
 License: GPL v2/LGPL v2.1<br />
-Version: 1.11.2<br />
-URL: [https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.11.2.tar.bz2](https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.11.2.tar.bz2)<br />
+Version: 1.12.1<br />
+URL: [https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.12.1.tar.bz2](https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.12.1.tar.bz2)<br />
 
 Average Build Time: 0.3 SBU<br />
 Used Install Space: 6.5 MiB<br />
@@ -30,7 +30,7 @@ CC="gcc -m32" \
             --prefix=/usr                               \
             --libdir=/usr/lib                           \
             --libexecdir=/usr/lib                       \
-            --docdir=/usr/share/doc/libgcrypt-1.11.2    \
+            --docdir=/usr/share/doc/libgcrypt-1.12.1    \
             --enable-ciphers="$CIPHERS"                 \
             --enable-pubkey-ciphers="$PUBKEYS"          \
             --enable-digests="$DIGESTS"                 \
@@ -38,6 +38,7 @@ CC="gcc -m32" \
             --enable-noexecstack                        \
             --enable-random=getentropy                  \
             --enable-jent-support                       \
+            --with-capabilities                         \
             --disable-static
 unset PUBKEYS
 unset CIPHERS
