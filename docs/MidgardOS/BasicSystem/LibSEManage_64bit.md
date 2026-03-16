@@ -9,8 +9,8 @@
 Name: LibSEManage 64-bit<br />
 Summary: SELinux policy management library<br />
 License: LGPL v2.1<br />
-Version: 3.9<br />
-URL: [https://github.com/SELinuxProject/selinux/releases/download/3.9/libsemanage-3.9.tar.gz](https://github.com/SELinuxProject/selinux/releases/download/3.9/libsemanage-3.9.tar.gz)<br />
+Version: 3.10<br />
+URL: [https://github.com/SELinuxProject/selinux/releases/download/3.10/libsemanage-3.10.tar.gz](https://github.com/SELinuxProject/selinux/releases/download/3.10/libsemanage-3.10.tar.gz)<br />
 
 Average Build Time: less than 0.1 SBU<br />
 Used Install Space: 1.7 MiB<br />
@@ -25,7 +25,7 @@ To compile LibSEManage 64-bit, run the following commands:
 
 ```bash
 grep /usr/libexec . -rl | xargs sed -i "s|/usr/libexec|/usr/lib64|g"
-make
+CFLAGS="-g -O2 -Wno-discarded-qualifiers" make
 ```
 
 The tests for this package cannot be run at this time due to an unfulfilled dependency on `secilc`.
@@ -34,7 +34,7 @@ Finally, to install LibSEManage 64-bit into the build tree, run the following co
 
 ```bash
 PREFIX=/usr LIBDIR=/usr/lib64 LIBEXECDIR=/usr/lib64 SHLIBDIR=/usr/lib64 make install
-sed -i 's/libdir=\/usr\/lib/libdir=\/usr/lib64/' /usr/lib64/pkgconfig/libselinux.pc
+sed -i 's/libdir=\/usr\/lib/libdir=\/usr\/lib64/' /usr/lib64/pkgconfig/libselinux.pc
 ```
 
 **NOTE: Do not delete the unpacked sources after build.**

@@ -9,8 +9,8 @@
 Name: LibSEManage 32-bit<br />
 Summary: SELinux policy management library<br />
 License: LGPL v2.1<br />
-Version: 3.9<br />
-URL: [https://github.com/SELinuxProject/selinux/releases/download/3.9/libsemanage-3.9.tar.gz](https://github.com/SELinuxProject/selinux/releases/download/3.9/libsemanage-3.9.tar.gz)<br />
+Version: 3.10<br />
+URL: [https://github.com/SELinuxProject/selinux/releases/download/3.10/libsemanage-3.10.tar.gz](https://github.com/SELinuxProject/selinux/releases/download/3.10/libsemanage-3.10.tar.gz)<br />
 
 Average Build Time: less than 0.1 SBU<br />
 Used Install Space: 1.7 MiB<br />
@@ -26,7 +26,7 @@ To compile LibSEManage 32-bit, run the following commands:
 ```bash
 make clean
 grep /usr/libexec . -rl | xargs sed -i "s|/usr/libexec|/usr/lib64|g"
-make CC="gcc -m32 -march=i686"
+CFLAGS="-g -O2 -Wno-discarded-qualifiers" make CC="gcc -m32 -march=i686"
 ```
 
 Finally, to install LibSEManage 32-bit into the build tree, run the following commands:
