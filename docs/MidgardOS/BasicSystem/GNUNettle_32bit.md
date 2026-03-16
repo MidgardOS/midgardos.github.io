@@ -9,8 +9,8 @@
 Name: GNU Nettle 32-bit<br />
 Summary: A low-level cryptography library<br />
 License: LGPL v3 or later/GPL v2 or later<br />
-Version: 3.10.2<br />
-URL: [https://ftp.gnu.org/gnu/nettle/nettle-3.10.2.tar.gz](https://ftp.gnu.org/gnu/nettle/nettle-3.10.2.tar.gz)<br />
+Version: 4.0<br />
+URL: [https://ftp.gnu.org/gnu/nettle/nettle-4.0.tar.gz](https://ftp.gnu.org/gnu/nettle/nettle-4.0.tar.gz)<br />
 
 Average Build Time: 0.4 SBU<br />
 Used Install Space: 3.8 MiB<br />
@@ -26,7 +26,7 @@ CC="gcc -m32 -march=i686" CXX="g++ -m32 -march=i686"    \
             --prefix=/usr                               \
             --libdir=/usr/lib                           \
             --libexecdir=/usr/lib                       \
-            --docdir=/usr/share/doc/nettle-3.10.2       \
+            --docdir=/usr/share/doc/nettle-4.0          \
             --disable-static                            \
             --enable-shared                             \
             --enable-fat
@@ -44,7 +44,7 @@ Finally, to install GNU Nettle 32-bit into the build tree, run the following com
 
 ```bash
 make DESTDIR=$PWD/DESTDIR install
-for LIB in "libhogweed.so.6.11" "libnettle.so.8.11"; do
+for LIB in "libhogweed.so.7.0" "libnettle.so.9.0"; do
     chmod -v 755 DESTDIR/usr/lib/$LIB
 done
 cp -Rv DESTDIR/usr/lib/* /usr/lib/
