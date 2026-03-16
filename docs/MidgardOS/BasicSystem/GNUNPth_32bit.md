@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUNPth_64bit.md) GNU nPth 64-bit | [HOME](../README.md) | GNU Privacy Guard [>>](./GNUPrivacyGuard.md) |
+| [<<](./GNUNPth_64bit.md) GNU nPth 64-bit | [HOME](../README.md) | GNU Nettle 64-bit [>>](./GNUNettle_64bit.md) |
 
 ## GNU nPth 32-bit
 
@@ -52,4 +52,4 @@ See the contents section of the 64-bit build of GNU nPth for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUNPth_64bit.md) GNU nPth 64-bit | [HOME](../README.md) | GNU Privacy Guard [>>](./GNUPrivacyGuard.md) |
+| [<<](./GNUNPth_64bit.md) GNU nPth 64-bit | [HOME](../README.md) | GNU Nettle 64-bit [>>](./GNUNettle_64bit.md) |
