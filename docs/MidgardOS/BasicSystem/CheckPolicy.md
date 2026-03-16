@@ -9,8 +9,8 @@
 Name: CheckPolicy<br />
 Summary: SELinux policy compiler<br />
 License: GPL v2 or later<br />
-Version: 3.9<br />
-URL: [https://github.com/SELinuxProject/selinux/releases/download/3.9/checkpolicy-3.9.tar.gz](https://github.com/SELinuxProject/selinux/releases/download/3.9/checkpolicy-3.9.tar.gz)<br />
+Version: 3.10<br />
+URL: [https://github.com/SELinuxProject/selinux/releases/download/3.10/checkpolicy-3.10.tar.gz](https://github.com/SELinuxProject/selinux/releases/download/3.10/checkpolicy-3.10.tar.gz)<br />
 
 Average Build Time: less than 0.1 SBU<br />
 Used Install Space: 1.5 MiB<br />
