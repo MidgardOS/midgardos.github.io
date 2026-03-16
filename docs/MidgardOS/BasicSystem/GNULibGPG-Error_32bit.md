@@ -9,8 +9,8 @@
 Name: GNU LibGPG-Error 32-bit<br />
 Summary: A library that defines the various error states for GnuPG<br />
 License: GPL v2.0 or later/LGPL v2.1 or later<br />
-Version: 1.56<br />
-URL: [https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.56.tar.bz2](https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.56.tar.bz2)<br />
+Version: 1.59<br />
+URL: [https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.59.tar.bz2](https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.59.tar.bz2)<br />
 
 Average Build Time: 0.3 SBU<br />
 Used Install Space: 1.9 MiB<br />
