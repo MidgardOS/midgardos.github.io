@@ -9,8 +9,8 @@
 Name: GNU LibKSBA 32-bit<br />
 Summary: A library for manipulating X.509 certificates<br />
 License: GPL v2 and later/LGPL v3 and later<br />
-Version: 1.6.7<br />
-URL: [https://gnupg.org/ftp/gcrypt/libksba/libksba-1.6.7.tar.bz2](https://gnupg.org/ftp/gcrypt/libksba/libksba-1.6.7.tar.bz2)<br />
+Version: 1.6.8<br />
+URL: [https://gnupg.org/ftp/gcrypt/libksba/libksba-1.6.8.tar.bz2](https://gnupg.org/ftp/gcrypt/libksba/libksba-1.6.8.tar.bz2)<br />
 
 Average Build Time: less than 0,1 SBU<br />
 Used Install Space: 1.3 MiB<br />
@@ -26,7 +26,7 @@ CC="gcc -m32 -march=i686"                           \
             --prefix=/usr                           \
             --libdir=/usr/lib                       \
             --libexecdir=/usr/lib                   \
-            --docdir=/usr/share/doc/libksba-1.6.7   \
+            --docdir=/usr/share/doc/libksba-1.6.8   \
             --disable-static
 ```
 
