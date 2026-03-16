@@ -9,8 +9,8 @@
 Name: GNU Privacy Guard<br />
 Summary: An OpenPGP implementation<br />
 License: GPL v2 or later/LGPL v2.1 or later/LGPL v3 or later<br />
-Version: 2.5.14<br />
-URL: [https://gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.14.tar.bz2](https://gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.14.tar.bz2)<br />
+Version: 2.5.18<br />
+URL: [https://gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.18.tar.bz2](https://gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.18.tar.bz2)<br />
 
 Average Build Time: 1 SBU<br />
 Used Install Space: 36 MiB<br />
@@ -23,7 +23,7 @@ To configure GNU Privacy Guard for install into the build root, run the followin
 ./configure --prefix=/usr                                           \
             --libdir=/usr/lib64                                     \
             --libexecdir=/usr/lib64                                 \
-            --docdir=/usr/share/doc/gnupg-2.5.14                    \
+            --docdir=/usr/share/doc/gnupg-2.5.18                    \
             --disable-static                                        \
             --enable-g13                                            \
             --disable-rpath                                         \
@@ -31,12 +31,13 @@ To configure GNU Privacy Guard for install into the build root, run the followin
             --with-gnu-ld                                           \
             --with-default-trust-store-file=/etc/ssl/ca-bundle.pem  \
             --enable-build-timestamp
-
 ```
 
 **NOTE: The following features are disable for now due to missing dependencies:<br />**
 **- LDAP support<br />**
 **- TPM support<br />**
+**- SMART Card support<br />**
+**- DirMgr Support<br />**
 
 These features will be enabled later when this package is rebuilt as an RPM.
 
