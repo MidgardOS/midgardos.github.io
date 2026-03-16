@@ -9,8 +9,8 @@
 Name: GNU LibTasn1 32-bit<br />
 Summary: An ASN.1 implementation library<br />
 License: GPL v3 or later/LGPL v2.1 or later<br />
-Version: 4.20.0<br />
-URL: [https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.20.0.tar.gz](https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.20.0.tar.gz)<br />
+Version: 4.21.0<br />
+URL: [https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.21.0.tar.gz](https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.21.0.tar.gz)<br />
 
 Average Build Time: 0.2 SBU<br />
 Used Install Space: 708 KiB<br />
