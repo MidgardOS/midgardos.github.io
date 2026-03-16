@@ -9,8 +9,8 @@
 Name: LibSELinux 64-bit<br />
 Summary: SELinux runtime and utilities<br />
 License: Public Domain<br />
-Version: 3.9<br />
-URL: [https://github.com/SELinuxProject/selinux/releases/download/3.9/libselinux-3.9.tar.gz](https://github.com/SELinuxProject/selinux/releases/download/3.9/libselinux-3.9.tar.gz)<br />
+Version: 3.10<br />
+URL: [https://github.com/SELinuxProject/selinux/releases/download/3.10/libselinux-3.10.tar.gz](https://github.com/SELinuxProject/selinux/releases/download/3.10/libselinux-3.10.tar.gz)<br />
 
 Average Build Time: less than 0.1 SBU<br />
 Used Install Space: 2.7 MiB<br />
@@ -24,7 +24,7 @@ This package has no traditional configuration script.
 To compile LibSELinux 64-bit, run the following command:
 
 ```bash
-make
+CFLAGS="-g -O2 -Wno-discarded-qualifiers" make
 ```
 
 This package doesn't have a test suite.
@@ -36,7 +36,7 @@ PREFIX=/usr LIBDIR=/usr/lib64 SHLIBDIR=/usr/lib64 make install
 install -v -d -m 755 -o root -g root /etc/selinux
 install -v -m 644 -o root -g root ../system_files/etc/selinux/config /etc/selinux/
 install -v -m 755 -o root -g root ../system_files/usr/sbin/selinux-ready /usr/sbin/
-sed -i 's/libdir=\/usr\/lib/libdir=\/usr/lib64/' /usr/lib64/pkgconfig/libselinux.pc
+sed -i 's/libdir=\/usr\/lib/libdir=\/usr\/lib64/' /usr/lib64/pkgconfig/libselinux.pc
 ```
 
 As before with LibSEPol, the static library from LibSELinux will be linked into other libraries and programs in the SELinux suite of tools and libraries. As such it should not be removed.
