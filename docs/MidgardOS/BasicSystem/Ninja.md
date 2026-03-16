@@ -9,8 +9,8 @@
 Name: Ninja<br />
 Summary: A small build system focused on speed<br />
 License: Apache v2<br />
-Version: 1.13.1<br />
-URL: [https://github.com/ninja-build/ninja/archive/refs/tags/v1.13.1.tar.gz](https://github.com/ninja-build/ninja/archive/refs/tags/v1.13.1.tar.gz)<br />
+Version: 1.13.2<br />
+URL: [https://github.com/ninja-build/ninja/archive/refs/tags/v1.13.2.tar.gz](https://github.com/ninja-build/ninja/archive/refs/tags/v1.13.2.tar.gz)<br />
 
 Average Build Time: 0.2 SBU<br />
 Used Install Space: 9.1 MiB<br />
