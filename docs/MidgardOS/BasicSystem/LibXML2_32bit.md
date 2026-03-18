@@ -9,8 +9,8 @@
 Name: LibXML2 32-bit<br />
 Summary: An XML processing library<br />
 License: MIT<br />
-Version: 2.15.1<br />
-URL: [https://download.gnome.org/sources/libxml2/2.15/libxml2-2.15.1.tar.xz](https://download.gnome.org/sources/libxml2/2.15/libxml2-2.15.1.tar.xz)<br />
+Version: 2.15.2<br />
+URL: [https://download.gnome.org/sources/libxml2/2.15/libxml2-2.15.2.tar.xz](https://download.gnome.org/sources/libxml2/2.15/libxml2-2.15.2.tar.xz)<br />
 
 Average Build Time: 0.2 SBU<br />
 Used Install Space: 5.2 MiB<br />
@@ -26,7 +26,7 @@ CC="gcc -m32 -march=i686"                           \
             --prefix=/usr                           \
             --libdir=/usr/lib                       \
             --libexecdir=/usr/lib                   \
-            --docdir=/usr/share/doc/libxml2-2.15.1  \
+            --docdir=/usr/share/doc/libxml2-2.15.2  \
             --disable-static                        \
             --with-history
 ```
