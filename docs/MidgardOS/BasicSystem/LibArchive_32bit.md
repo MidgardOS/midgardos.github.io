@@ -9,8 +9,8 @@
 Name: LibArchive 32-bit<br />
 Summary: A library that provides a single interface for working with various compression formats<br />
 License: BSD 3-clause<br />
-Version: 3.8.4<br />
-URL: [https://github.com/libarchive/libarchive/releases/download/v3.8.4/libarchive-3.8.4.tar.xz](https://github.com/libarchive/libarchive/releases/download/v3.8.4/libarchive-3.8.4.tar.xz)<br />
+Version: 3.8.6<br />
+URL: [https://github.com/libarchive/libarchive/releases/download/v3.8.6/libarchive-3.8.6.tar.xz](https://github.com/libarchive/libarchive/releases/download/v3.8.6/libarchive-3.8.6.tar.xz)<br />
 
 Average Build Time: 0.3 SBU<br />
 Used Install Space: 4.5 MiB<br />
@@ -25,7 +25,7 @@ CC="gcc -m32 -march=i686" \
 ./configure --prefix=/usr                            \
             --libdir=/usr/lib                        \
             --libexecdir=/usr/lib                    \
-            --docdir=/usr/share/doc/libarchive-3.8.4 \
+            --docdir=/usr/share/doc/libarchive-3.8.6 \
             --disable-static
 ```
 
