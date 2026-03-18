@@ -9,11 +9,19 @@
 Name: GNU TLS 64-bit<br />
 Summary: The GNU TLS and SSL library<br />
 License: GPL v3 or later/LGPL v2.1 or later<br />
-Version: 3.8.11<br />
-URL: [https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.11.tar.xz](https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.11.tar.xz)<br />
+Version: 3.8.12<br />
+URL: [https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.12.tar.xz](https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.12.tar.xz)<br />
 
 Average Build Time: 0.3 SBU<br />
 Used Install Space: 20 MiB<br />
+
+## Preparation
+
+Due to changes in the Nettle 4.0 release, certain headers are no longer present or installed. To fix the compilation of GnuTLS, the following patch should be applied using the command that follows:
+
+```bash
+patch -Np1 -i ../patches/gnutls/gnutls-3.8.12-nettle4_fixes-1.patch
+```
 
 ## Configuration
 
@@ -29,7 +37,7 @@ To configure GNU TLS 64-bit for install into the build root, run the following c
             --disable-gcc-warnings                      \
             --enable-fips140-mode                       \
             --with-fips140-module-name="GnuTLS version" \
-            --with-fips140-module-version="3.8.11"      \
+            --with-fips140-module-version="3.8.12"      \
             --enable-year2038                           \
             --without-p11-kit                           \
             --without-tpm                               \

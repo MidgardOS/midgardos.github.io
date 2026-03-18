@@ -9,8 +9,8 @@
 Name: GNU TLS 32-bit<br />
 Summary: The GNU TLS and SSL library<br />
 License: GPL v3 or later/LGPL v2.1 or later<br />
-Version: 3.8.11<br />
-URL: [https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.11.tar.xz](https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.11.tar.xz)<br />
+Version: 3.8.12<br />
+URL: [https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.12.tar.xz](https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.12.tar.xz)<br />
 
 Average Build Time: 0.3 SBU<br />
 Used Install Space: 20 MiB<br />
@@ -32,7 +32,7 @@ CC="gcc -m32 -march=i686" CXX="g++ -m32 -march=i686"    \
             --disable-gcc-warnings                      \
             --enable-fips140-mode                       \
             --with-fips140-module-name="GnuTLS version" \
-            --with-fips140-module-version="3.8.11"      \
+            --with-fips140-module-version="3.8.12"      \
             --enable-year2038                           \
             --without-p11-kit                           \
             --without-tpm                               \
