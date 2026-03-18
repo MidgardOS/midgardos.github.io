@@ -35,7 +35,7 @@ To configure GNU PinEntry for install into the build root, run the following com
 	        --disable-pinentry-efl
 ```
 
-NOTE: This version of the GNU PinEntry tool is configured only for CLI dialogs via NCurses or the raw TTY interfaces. No other toolkits are configured for use at this time.
+NOTE: This version of the GNU PinEntry tool is configured only for CLI dialogs via NCurses or the raw TTY interfaces. No other toolkits are configured for use at this time. Additionally, the libsecret integration is missing. These will be added when the package is built via RPM.
 
 ## Compilation and Installation
 
