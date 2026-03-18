@@ -10,7 +10,7 @@ Name: Docbook 4.5 SGML DTDs<br />
 Summary: The document definitions of SGML data<br />
 License: BSD 3-clause and MIT<br />
 Version: 4.5<br />
-URL: [https://www.docbook.org/sgml/4.5/docbook-4.5.zip](https://www.docbook.org/sgml/4.5/docbook-4.5.zip)<br />
+URL: [https://www.oasis-open.org/docbook/sgml/4.5/docbook-4.5.zip](https://www.oasis-open.org/docbook/sgml/4.5/docbook-4.5.zip)<br />
 
 Average Build Time: less than 0.1 SBU<br />
 Used Install Space: 626 KiB<br />
