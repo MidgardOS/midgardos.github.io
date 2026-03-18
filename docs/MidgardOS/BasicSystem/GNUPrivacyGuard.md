@@ -36,8 +36,6 @@ To configure GNU Privacy Guard for install into the build root, run the followin
 **NOTE: The following features are disable for now due to missing dependencies:<br />**
 **- LDAP support<br />**
 **- TPM support<br />**
-**- SMART Card support<br />**
-**- DirMgr Support<br />**
 
 These features will be enabled later when this package is rebuilt as an RPM.
 
