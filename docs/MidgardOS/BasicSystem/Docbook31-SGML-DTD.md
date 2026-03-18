@@ -10,7 +10,7 @@ Name: Docbook 3.1 SGML DTDs<br />
 Summary: The document definitions of SGML data<br />
 License: BSD 3-clause and MIT<br />
 Version: 3.1<br />
-URL: [https://www.docbook.org/sgml/3.1/docbk31.zip](https://www.docbook.org/sgml/3.1/docbk31.zip)<br />
+URL: [https://www.oasis-open.org/docbook/sgml/3.1/docbk31.zip](https://www.oasis-open.org/docbook/sgml/3.1/docbk31.zip)<br />
 
 Average Build Time: less than 0.1 SBU<br />
 Used Install Space: 626 KiB<br />
