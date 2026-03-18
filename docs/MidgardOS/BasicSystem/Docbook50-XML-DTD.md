@@ -9,8 +9,8 @@
 Name: Docbook 5.0 XML DTDs<br />
 Summary: The document definitions for XML data<br />
 License: BSD 3-clause and MIT<br />
-Version: 5.0<br />
-URL: [https://www.docbook.org/xml/5.0/docbook-5.0.zip](https://www.docbook.org/xml/5.0/docbook-5.0.zip)<br />
+Version: 5.0.1<br />
+URL: [https://archive.docbook.org/xml/5.0.1/docbook-5.0.1.zip](https://archive.docbook.org/xml/5.0.1/docbook-5.0.1.zip)<br />
 
 Average Build Time: less than 0.1 SBU<br />
 Used Install Space: 626 KiB<br />
@@ -22,8 +22,8 @@ This package is distributed as a PkZip file. Unlike other packages in the system
 ```bash
 mkdir docbook-5.0
 cd docbook-5.0
-cp ../docbook-5.0.zip ./
-unzip docbook-5.0.zip
+cp ../docbook-5.0.1.zip ./
+unzip docbook-5.0.1.zip
 ```
 
 Once extracted, remain in this directory until this package is installed.
