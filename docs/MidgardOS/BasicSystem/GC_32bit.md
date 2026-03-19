@@ -9,8 +9,8 @@
 Name: GC 32-bit<br />
 Summary: A library implementing memory garbage collection for C and C++<br />
 License: MIT<br />
-Version: 8.2.10<br />
-URL: [https://github.com/bdwgc/bdwgc/releases/download/v8.2.10/gc-8.2.10.tar.gz](https://github.com/bdwgc/bdwgc/releases/download/v8.2.10/gc-8.2.10.tar.gz)<br />
+Version: 8.2.12<br />
+URL: [https://github.com/bdwgc/bdwgc/releases/download/v8.2.12/gc-8.2.12.tar.gz](https://github.com/bdwgc/bdwgc/releases/download/v8.2.12/gc-8.2.12.tar.gz)<br />
 
 Average Build Time: less than 0.1 SBU<br />
 Used Install Space: 1.5 MiB<br />
@@ -26,7 +26,7 @@ CC="gcc -m32 -march=i686" CXX="g++ -m32 -march=i686"    \
             --prefix=/usr                               \
             --libdir=/usr/lib                           \
             --libexecdir=/usr/lib                       \
-            --docdir=/usr/share/doc/gc-8.2.10           \
+            --docdir=/usr/share/doc/gc-8.2.12           \
             --enable-cplusplus                          \
             --disable-gcj                               \
             --enable-shared                             \
