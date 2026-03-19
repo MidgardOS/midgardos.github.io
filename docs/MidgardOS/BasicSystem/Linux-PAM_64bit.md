@@ -9,20 +9,11 @@
 Name: Linux PAM 64-bit<br />
 Summary: The Linux implementation of Pluggable Authentication Modules<br />
 License: GPL v2.0 or later or BSD 3-Clause<br />
-Version: 1.7.1<br />
-URL: [https://github.com/linux-pam/linux-pam/releases/download/v1.7.1/Linux-PAM-1.7.1.tar.xz](https://github.com/linux-pam/linux-pam/releases/download/v1.7.1/Linux-PAM-1.7.1.tar.xz)<br />
+Version: 1.7.2<br />
+URL: [https://github.com/linux-pam/linux-pam/releases/download/v1.7.2/Linux-PAM-1.7.2.tar.xz](https://github.com/linux-pam/linux-pam/releases/download/v1.7.2/Linux-PAM-1.7.2.tar.xz)<br />
 
 Average Build Time: 0.2 SBU<br />
 Used Install Space: 5.9 MiB<br />
-
-## Preparation
-
-There are a couple patches available to fix some bugs and add new features to Linux PAM. To apply these changes, run the following commands:
-
-```bash
-patch -Np1 -i ../patches/linux-pam/pam-limit-nproc.patch
-patch -Np1 -i ../patches/linux-pam/post-v1.7.1.patch
-```
 
 ## Configuration
 
@@ -31,6 +22,7 @@ patch -Np1 -i ../patches/linux-pam/post-v1.7.1.patch
 To configure Linux PAM 64-bit for install into the build root, run the following command:s
 
 ```bash
+export XML_CATALOG_FILES="/etc/xml/catalog"
 CONFIG_SHELL="${CONFIG_SHELL:-/usr/bin/bash}"; export CONFIG_SHELL
 CFLAGS="${CFLAGS:--O2 -g -m64 -fmessage-length=0 -D_FORTIFY_SOURCE=2 -fstack-protector -funwind-tables -fasynchronous-unwind-tables}"; export CFLAGS
 CXXFLAGS="${CXXFLAGS:--O2 -g -m64 -fmessage-length=0 -D_FORTIFY_SOURCE=2 -fstack-protector -funwind-tables -fasynchronous-unwind-tables}"; export CXXFLAGS
@@ -38,11 +30,27 @@ FFLAGS="${FFLAGS:--O2 -g -m64 -fmessage-length=0 -D_FORTIFY_SOURCE=2 -fstack-pro
 FCFLAGS="${FCFLAGS:--O2 -g -m64 -fmessage-length=0 -D_FORTIFY_SOURCE=2 -fstack-protector -funwind-tables -fasynchronous-unwind-tables }"; export FCFLAGS
 LDFLAGS="${LDFLAGS:-}"; export LDFLAGS
 
-/usr/bin/meson setup --buildtype=plain --prefix=/usr --libdir=/usr/lib64 --libexecdir=/usr/lib64 --bindir=/usr/bin --sbindir=/usr/sbin --includedir=/usr/include --datadir=/usr/share --mandir=/usr/share/man --infodir=/usr/share/info --localedir=/usr/share/locale --sysconfdir=/etc --localstatedir=/var --sharedstatedir=/var/lib --wrap-mode=nodownload --auto-features=enabled \
+/usr/bin/meson setup \
+    --buildtype=plain \
+    --prefix=/usr \
+    --libdir=/usr/lib64 \
+    --libexecdir=/usr/lib64 \
+    --bindir=/usr/bin \
+    --sbindir=/usr/sbin \
+    --includedir=/usr/include \
+    --datadir=/usr/share \
+    --mandir=/usr/share/man \
+    --infodir=/usr/share/info \
+    --localedir=/usr/share/locale \
+    --sysconfdir=/etc \
+    --localstatedir=/var \
+    --sharedstatedir=/var/lib \
+    --wrap-mode=nodownload \
+    --auto-features=enabled \
     -Dvendordir=/etc \
-    -Ddocdir=/usr/share/doc/pam-1.7.1 \
-    -Dhtmldir=/usr/share/doc/pam-1.7.1/html \
-    -Dpdfdir=/usr/share/doc/pam-1.7.1/pdf \
+    -Ddocdir=/usr/share/doc/pam-1.7.2 \
+    -Dhtmldir=/usr/share/doc/pam-1.7.2/html \
+    -Dpdfdir=/usr/share/doc/pam-1.7.2/pdf \
     -Dsecuredir=/usr/lib64/security \
     -Dpam_unix-try-getspnam=true \
     -Dlogind=disabled \
@@ -80,8 +88,8 @@ Finally, to install Linux PAM 64-bit into the build tree, run the following comm
 ```bash
 /usr/bin/meson install -C x86_64-pc-linux-gnu --no-rebuild
 chmod -v 4755 /usr/sbin/unix_chkpwd
-install -d -v -m755 -o root -g root /usr/share/doc/pam-1.7.1/modules
-cp -fpv x86_64-pc-linux-gnu/modules/pam_*/pam_*.txt /usr/share/doc/pam-1.7.1/modules/
+install -d -v -m755 -o root -g root /usr/share/doc/pam-1.7.2/modules
+cp -fpv x86_64-pc-linux-gnu/modules/pam_*/pam_*.txt /usr/share/doc/pam-1.7.2/modules/
 install -d -v -m755 -o root -g root /usr/lib/tmpfiles.d
 install -d -v -m755 -o root -g root /etc/security/{limits.d,namespace.d,pam_env.conf.d}
 
@@ -91,6 +99,7 @@ unset CXXFLAGS
 unset FFLAGS
 unset FCFLAGS
 unset LDFLAGS
+unset XML_CATALOG_FILES
 ```
 
 ## Configuration
