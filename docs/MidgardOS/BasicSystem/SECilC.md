@@ -9,8 +9,8 @@
 Name: SECilC<br />
 Summary: SELinux Common Intermediate Language compiler<br />
 License: BSD 2-clause<br />
-Version: 3.9<br />
-URL: [https://github.com/SELinuxProject/selinux/releases/download/3.9/secilc-3.9.tar.gz](https://github.com/SELinuxProject/selinux/releases/download/3.9/secilc-3.9.tar.gz)<br />
+Version: 3.10<br />
+URL: [https://github.com/SELinuxProject/selinux/releases/download/3.10/secilc-3.10.tar.gz](https://github.com/SELinuxProject/selinux/releases/download/3.10/secilc-3.10.tar.gz)<br />
 
 Average Build Time: less than 0.1 SBU<br />
 Used Install Space: 96 KiB<br />
@@ -24,14 +24,13 @@ This package does not have a traditional configuration script.
 To compile SECilC, run the following command:
 
 ```bash
-export XML_CATALOG_FILES="/etc/xml/catalog"
-make
+XML_CATALOG_FILES="/etc/xml/catalog" make
 ```
 
 Next, run the test suite:
 
 ```bash
-make test && echo $?
+make test
 ```
 
 If `0` is output at the end, the test ran successfully.
