@@ -7,13 +7,13 @@
 ## LibEConf 32-bit
 
 Name: LibEConf 32-bit<br />
-Summary: Userspace tools for POSIX 1003.1e privilege capabilities<br />
-License: BSD-3-Clause or GPL v2.0<br />
-Version: 2.76<br />
-URL: [https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.76.tar.xz](https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.76.tar.xz)<br />
+Summary: Enhanced configuration file parser library<br />
+License: MIT<br />
+Version: 0.8.3<br />
+URL: [https://github.com/openSUSE/libeconf/archive/refs/tags/v0.8.3.tar.gz](https://github.com/openSUSE/libeconf/archive/refs/tags/v0.8.3.tar.gz)<br />
 
 Average Build Time: less than 0.1 SBU<br />
-Used Install Space: 3.1 MiB<br />
+Used Install Space: 1.2 MiB<br />
 
 ## Configuration
 
