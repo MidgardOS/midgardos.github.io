@@ -9,8 +9,8 @@
 Name: GNU AWK<br />
 Summary: GNU Awk is a CLI tool for processing text data<br />
 License: GPL v3 or later<br />
-Version: 5.3.2<br />
-URL: [https://ftp.gnu.org/gnu/gawk/gawk-5.3.2.tar.xz](https://ftp.gnu.org/gnu/gawk/gawk-5.3.2.tar.xz)<br />
+Version: 5.4.0<br />
+URL: [https://ftp.gnu.org/gnu/gawk/gawk-5.4.0.tar.xz](https://ftp.gnu.org/gnu/gawk/gawk-5.4.0.tar.xz)<br />
 
 Average Build Time: 0.2 SBU<br />
 Used Install Space: 8.3 MiB<br />
@@ -24,7 +24,7 @@ sed -i 's/extras//' Makefile.in
 ./configure --prefix=/usr           \
             --libdir=/usr/lib64     \
             --libexecdir=/usr/lib64 \
-            --docdir=/usr/share/doc/gawk-5.3.2
+            --docdir=/usr/share/doc/gawk-5.4.0
 ```
 
 ## Compilation and Installation
@@ -38,6 +38,8 @@ make
 Next, run the test suite:
 
 ```bash
+useradd -c "Test User" -u 1000 -U -m tester
+groupadd -g 102 dummy -U tester
 if [[ ! -f /etc/pam.d/su ]]; then
     cat > /etc/pam.d/su << "EOF"
 #%PAM-1.0
@@ -52,16 +54,14 @@ session         include         postlogin-session
 session         optional        pam_xauth.so
 EOF
 fi
-useradd -c "Test User" -u 1000 -U -m tester
-groupadd -g 102 dummy -U tester
 unalias cp
-cp -R ../gawk-5.3.2 /tmp/
+cp -Rv ../gawk-5.4.0 /tmp/
 alias cp="cp -i"
-chown -R tester /tmp/gawk-5.3.2/
-pushd /tmp/gawk-5.3.2
+chown -Rv tester /tmp/gawk-5.4.0/
+pushd /tmp/gawk-5.4.0
     su tester -c "PATH=$PATH && autoreconf -fiv && make check"
 popd
-rm -rf /tmp/gawk-5.3.2
+rm -rfv /tmp/gawk-5.4.0
 groupdel -f dummy
 userdel -rf tester
 ```
@@ -71,10 +71,10 @@ There are three failing tests due to multibyte parsing issues. These will be res
 Finally, to install GNU AWK into the build tree, run the following command:
 
 ```bash
-rm -f /usr/bin/gawk-5.3.2
+rm -f /usr/bin/gawk-5.4.0
 make install
 ln -sv gawk.1 /usr/share/man/man1/awk.1
-install -v -D -m644 -o root -g root doc/{awkforai.txt,*.{eps,pdf,jpg}} -t /usr/share/doc/gawk-5.3.2
+install -v -D -m644 -o root -g root doc/{awkforai.txt,*.{eps,pdf,jpg}} -t /usr/share/doc/gawk-5.4.0
 ```
 
 ## Contents
