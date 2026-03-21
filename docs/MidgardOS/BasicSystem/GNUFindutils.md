@@ -38,6 +38,8 @@ make
 Next, run the test suite:
 
 ```bash
+useradd -c "Test User" -u 1000 -U -m tester
+groupadd -g 102 dummy -U tester
 if [[ ! -f /etc/pam.d/su ]]; then
     cat > /etc/pam.d/su << "EOF"
 #%PAM-1.0
@@ -52,16 +54,14 @@ session         include         postlogin-session
 session         optional        pam_xauth.so
 EOF
 fi
-useradd -c "Test User" -u 1000 -U -m tester
-groupadd -g 102 dummy -U tester
 unalias cp
-cp -R ../findutils-4.10.0 /tmp/
+cp -Rv ../findutils-4.10.0 /tmp/
 alias cp="cp -i"
-chown -R tester /tmp/findutils-4.10.0/
+chown -Rv tester /tmp/findutils-4.10.0/
 pushd /tmp/findutils-4.10.0
     su tester -c "PATH=$PATH && autoreconf -fiv && make check"
 popd
-rm -rf /tmp/findutils-4.10.0
+rm -rfv /tmp/findutils-4.10.0
 groupdel -f dummy
 userdel -rf tester
 ```
