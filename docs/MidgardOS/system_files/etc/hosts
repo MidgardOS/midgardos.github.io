@@ -9,7 +9,7 @@
 # IP-Address  Full-Qualified-Hostname  Short-Hostname
 #
 
-127.0.0.1  localhost
+127.0.0.1  localhost.localdomain localhost
 
 # special IPv6 addresses
 ::1        localhost ip6-localhost ip6-loopback
