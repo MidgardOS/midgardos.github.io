@@ -22,6 +22,7 @@ To configure LibSecComp 32-bit for install into the build root, run the followin
 ```bash
 rm -rf DESTDIR
 make distclean
+CC="gcc -m32 -march=i686" \
 ./configure --prefix=/usr                               \
             --libdir=/usr/lib                           \
             --libexecdir=/usr/lib                       \
