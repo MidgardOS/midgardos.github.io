@@ -86,7 +86,7 @@ ln -sv ../vim/vim92/doc /usr/share/doc/vim-9.2
 Run the following command to install the initial configure Vi Improved for use:
 
 ```bash
-install -v -m644 -o root -g root ../system_files/etc/vimrc /etc/
+install -v -m644 -o root -g root ../midgardos.github.io/docs/MidgardOS/system_files/etc/vimrc /etc/
 ```
 
 ## Contents
