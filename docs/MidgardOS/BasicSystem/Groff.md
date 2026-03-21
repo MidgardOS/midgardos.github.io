@@ -9,8 +9,8 @@
 Name: GNU Roff<br />
 Summary: Programs for formatting text and images<br />
 License: GPL v3 or later<br />
-Version: 1.23.0<br />
-URL: [https://ftp.gnu.org/gnu/groff/groff-1.23.0.tar.gz](https://ftp.gnu.org/gnu/groff/groff-1.23.0.tar.gz)<br />
+Version: 1.24.1<br />
+URL: [https://ftp.gnu.org/gnu/groff/groff-1.24.1.tar.gz](https://ftp.gnu.org/gnu/groff/groff-1.24.1.tar.gz)<br />
 
 Average Build Time: 0.2 SBU<br />
 Used Install Space: 35 MiB<br />
@@ -23,6 +23,7 @@ GNU Roff can take advantage of a few other tools, and should be rebuilt once the
 - URW Fonts
 - The uchardat library
 - Ghostscript
+- CUPS
 
 ## Configuration
 
@@ -32,7 +33,7 @@ To configure GNU Roff for install into the build root, run the following command
 PAGE="letter" ./configure --prefix=/usr           \
                           --libdir=/usr/lib64     \
                           --libexecdir=/usr/lib64 \
-                          --docdir=/usr/share/doc/groff-1.23.0
+                          --docdir=/usr/share/doc/groff-1.24.1
 ```
 
 ## Compilation and Installation
