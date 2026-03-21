@@ -24,7 +24,7 @@ This package's tests need Valgrind. Once Valgrind is installed, rebuild this pac
 To correct handling of the keyboard's DELETE and BACKSPACE keys in keymaps, apply the following patch:
 
 ```bash
-patch -Np1 -i ../patches/kbd-2.9.0-backspace-1.patch
+patch -Np1 -i ../patches/kbd/kbd-2.9.0-backspace-1.patch
 ```
 
 ## Configuration
@@ -50,7 +50,7 @@ To compile Kbd, run the following commands:
 
 ```bash
 make
-cd ../src/kbd
+cd ../midgardos.github.io/docs/MidgardOS/src/kbd
 make
 cd -
 ```
@@ -61,18 +61,18 @@ Finally, to install Kbd into the build tree, run the following command:
 
 ```bash
 make install
-cd ../src/kbd
+cd ../midgardos.github.io/docs/MidgardOS/src/kbd
 make install
 cd -
 install -v -d -m 755 -o root -g root /etc/pam.d
-install -v -m 644 -o root -g root ../system_files/etc/pam.d/vlock /etc/pam.d/
+install -v -m 644 -o root -g root ../midgardos.github.io/docs/MidgardOS/system_files/etc/pam.d/vlock /etc/pam.d/
 install -v -d -m 755 -o root -g root /etc/sysconfig
-install -v -m 644 -o root -g root ../system_files/etc/sysconfig/console /etc/sysconfig/
-install -v -m 644 -o root -g root ../system_files/etc/sysconfig/keyboard /etc/sysconfig/
+install -v -m 644 -o root -g root ../midgardos.github.io/docs/MidgardOS/system_files/etc/sysconfig/console /etc/sysconfig/
+install -v -m 644 -o root -g root ../midgardos.github.io/docs/MidgardOS/system_files/etc/sysconfig/keyboard /etc/sysconfig/
 install -v -d -m 755 -o root -g root /usr/sbin
-install -v -m 755 -o root -g root ../system_files/usr/sbin/kbdsettings /usr/sbin/
+install -v -m 755 -o root -g root ../midgardos.github.io/docs/MidgardOS/system_files/usr/sbin/kbdsettings /usr/sbin/
 install -v -d -m 755 -o root -g root /usr/lib/systemd/system
-install -v -m 644 -o root -g root ../system_files/usr/lib/systemd/system/kbdsettings.service /usr/lib/systemd/system/
+install -v -m 644 -o root -g root ../midgardos.github.io/docs/MidgardOS/system_files/usr/lib/systemd/system/kbdsettings.service /usr/lib/systemd/system/
 rm -fv /usr/lib64/libkbdfile.la
 rm -fv /usr/lib64/libkeymap.la
 rm -fv /usr/lib64/libkfont.la
