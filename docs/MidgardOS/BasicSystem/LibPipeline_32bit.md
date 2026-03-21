@@ -10,7 +10,7 @@ Name: LibPipeline 32-bit<br />
 Summary: A C library for constructing command pipelines<br />
 License: GPL v3.0 or later<br />
 Version: 1.5.8<br />
-URL: [https://download.savannah.nongnu.org/releases/%{name}/%{name}-%{version}.tar.gz](https://download.savannah.nongnu.org/releases/%{name}/%{name}-%{version}.tar.gz)<br />
+URL: [https://download.savannah.nongnu.org/releases/libpipeline/libpipeline-1.5.8.tar.gz](https://download.savannah.nongnu.org/releases/libpipeline/libpipeline-1.5.8.tar.gz)<br />
 
 Average Build Time: 0.1 SBU<br />
 Used Install Space: 316 KiB<br />
