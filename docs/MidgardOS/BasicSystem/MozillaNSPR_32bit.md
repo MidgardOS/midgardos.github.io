@@ -21,16 +21,15 @@ To configure Mozilla NSPR 32-bit for install into the build root, run the follow
 
 ```bash
 make distclean
-CC="gcc -m32 -march=i686" \
-    CXX="g++ -m32 -march=i686" \
-    ./configure --host=i686-pc-linux-gnu        \
-            --prefix=/usr                       \
-            --libdir=/usr/lib                   \
-            --libexecdir=/usr/lib               \
-            --docdir=/usr/share/doc/nspr-4.38.2 \
-            --sysconfdir=/etc                   \
-            --enable-ipv6                       \
-            --with-mozilla                      \
+CC="gcc -m32 -march=i686" CXX="g++ -m32 -march=i686" \
+    ./configure --host=i686-pc-linux-gnu             \
+            --prefix=/usr                            \
+            --libdir=/usr/lib                        \
+            --libexecdir=/usr/lib                    \
+            --docdir=/usr/share/doc/nspr-4.38.2      \
+            --sysconfdir=/etc                        \
+            --enable-ipv6                            \
+            --with-mozilla                           \
             --with-pthreads
 ```
 
