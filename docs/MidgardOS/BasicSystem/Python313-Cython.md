@@ -9,8 +9,8 @@
 Name: Python module Cython<br />
 Summary: An optimised Python transpiler for creating C extensions for Python in Python itself<br />
 License: Apache v2.0<br />
-Version: 3.2.3<br />
-URL: [https://github.com/cython/cython/releases/download/3.2.3-1/cython-3.2.3.tar.gz](https://github.com/cython/cython/releases/download/3.2.3-1/cython-3.2.3.tar.gz)<br />
+Version: 3.2.4<br />
+URL: [https://github.com/cython/cython/releases/download/3.2.4/cython-3.2.4.tar.gz](https://github.com/cython/cython/releases/download/3.2.4/cython-3.2.4.tar.gz)<br />
 
 Average Build Time: less than 0.1 SBU<br />
 Used Install Space: iB<br />
@@ -34,7 +34,7 @@ pip3 install --no-index --find-links dist Cython
 | Contents | |
 | --- | --- |
 | Installed Plugins | Cython |
-| Installed Files | /usr/lib64/python3.13/site-packages/Cython and /usr/lib64/python3.13/site-packages/cython-3.2.3.dist-info |
+| Installed Files | /usr/lib64/python3.13/site-packages/Cython and /usr/lib64/python3.13/site-packages/cython-3.2.4.dist-info |
 
 | Navigation |||
 | --- | --- | ---: |
