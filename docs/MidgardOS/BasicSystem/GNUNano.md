@@ -9,8 +9,8 @@
 Name: GNU Nano<br />
 Summary: A simple terminal text editor<br />
 License: GPL v3.0 or later<br />
-Version: 8.7<br />
-URL: [https://ftp.gnu.org/gnu/nano/nano-8.7.tar.xz](https://ftp.gnu.org/gnu/nano/nano-8.7.tar.xz)<br />
+Version: 8.7.1<br />
+URL: [https://ftp.gnu.org/gnu/nano/nano-8.7.1.tar.xz](https://ftp.gnu.org/gnu/nano/nano-8.7.1.tar.xz)<br />
 
 Average Build Time: 0.2 SBU<br />
 Used Install Space: 3.7 MiB<br />
@@ -45,7 +45,7 @@ Finally, to install GNU Nano into the build tree, run the following command:
 
 ```bash
 make install
-install -v -m 644 -o root -g root ../system_files/etc/nanorc /etc/
+install -v -m 644 -o root -g root ../midgardos.github.io/docs/MidgardOS/system_files/etc/nanorc /etc/
 ```
 
 ## Contents
