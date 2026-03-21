@@ -9,8 +9,8 @@
 Name: GNU Texinfo<br />
 Summary: A tool for reading, writing, and converting info pages to various formats<br />
 License: <br />
-Version: 7.2<br />
-URL: [https://ftp.gnu.org/gnu/texinfo/texinfo-7.2.tar.xz](https://ftp.gnu.org/gnu/texinfo/texinfo-7.2.tar.xz)<br />
+Version: 7.3<br />
+URL: [https://ftp.gnu.org/gnu/texinfo/texinfo-7.3.tar.xz](https://ftp.gnu.org/gnu/texinfo/texinfo-7.3.tar.xz)<br />
 
 Average Build Time: 0.4 SBU<br />
 Used Install Space: 16 MiB<br />
@@ -20,11 +20,10 @@ Used Install Space: 16 MiB<br />
 To configure GNU Texinfo for install into the build root, run the following commands:
 
 ```bash
-sed 's/! $output_file eq/$output_file ne/' -i tp/Texinfo/Convert/*.pm
 ./configure --prefix=/usr                       \
             --libdir=/usr/lib64                 \
             --libexecdir=/usr/lib64             \
-            --docdir=/usr/share/doc/texinfo-7.2 \
+            --docdir=/usr/share/doc/texinfo-7.3 \
             --sysconfdir=/etc                   \
             --disable-rpath                     \
             --enable-year2038
@@ -48,7 +47,7 @@ Finally, to install GNU Texinfo into the build tree, run the following commands:
 
 ```bash
 make install
-install -v -m 755 -o root -g root ../system_files/usr/bin/geninfodir.sh /usr/bin/
+install -v -m 755 -o root -g root ../midgardos.github.io/docs/MidgardOS/system_files/usr/bin/geninfodir.sh /usr/bin/
 make TEXMF=/usr/share/texmf install-tex
 /usr/bin/geninfodir.sh
 ```
