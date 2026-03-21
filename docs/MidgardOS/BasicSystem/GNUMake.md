@@ -43,13 +43,13 @@ Next, run the test suite:
 useradd -c "Test User" -u 1000 -U -m tester
 groupadd -g 102 dummy -U tester
 unalias cp
-cp -R ../make-4.4.1 /tmp/
+cp -Rv ../make-4.4.1 /tmp/
 alias cp="cp -i"
-chown -R tester /tmp/make-4.4.1/
+chown -Rv tester /tmp/make-4.4.1/
 cd /tmp/make-4.4.1
 su tester -c "PATH=$PATH autoreconf -fiv && make check"
 cd -
-rm -rf /tmp/make-4.4.1
+rm -rfv /tmp/make-4.4.1
 groupdel -f dummy
 userdel -rf tester
 ```
