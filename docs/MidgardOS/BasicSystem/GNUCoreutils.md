@@ -20,7 +20,7 @@ Used Install Space: 39 MiB<br />
 To fix a bug in POSIX conformance with character boundaries with single and multi byte locales, apply the following patch:
 
 ```bash
-patch -Np0 -i ../patches/coreutils/coreutils-9.9-i18n-1.patch
+patch -Np1 -i ../patches/coreutils/coreutils-9.10-i18n-1.patch
 ```
 
 ## Configuration
@@ -37,6 +37,8 @@ FORCE_UNSAFE_CONFIGURE=1 \
             --enable-no-install-program=kill,uptime,hostname
 ```
 
+**NOTE: Coreutils needs rebuilt post install of SystemD**
+
 ## Compilation and Installation
 
 To compile GNU Coreutils, run the following command:
@@ -48,7 +50,8 @@ make
 Next, run the test suite:
 
 ```bash
-make NON_ROOT_USERNAME=tester check-root
+useradd -c "Test User" -u 1000 -U -m tester
+groupadd -g 102 dummy -U tester
 if [[ ! -f /etc/pam.d/su ]]; then
     cat > /etc/pam.d/su << "EOF"
 #%PAM-1.0
@@ -63,16 +66,15 @@ session         include         postlogin-session
 session         optional        pam_xauth.so
 EOF
 fi
-useradd -c "Test User" -u 1000 -U -m tester
-groupadd -g 102 dummy -U tester
+make NON_ROOT_USERNAME=tester check-root
 unalias cp
-cp -R ../coreutils-9.9 /tmp/
+cp -R ../coreutils-9.10 /tmp/
 alias cp="cp -i"
-chown -R tester /tmp/coreutils-9.9/
-pushd /tmp/coreutils-9.9
+chown -R tester /tmp/coreutils-9.10/
+pushd /tmp/coreutils-9.10
     su tester -c "PATH=$PATH make -k RUN_EXPENSIVE_TESTS=yes check" < /dev/null
 popd
-rm -rf /tmp/coreutils-9.9
+rm -rf /tmp/coreutils-9.10
 groupdel -f dummy
 userdel -rf tester
 ```
