@@ -271,6 +271,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Mozilla NSPR 32-bit](./BasicSystem/MozillaNSPR_32bit.md)
 1. [Mozilla NSS 64-bit - pass 1](./BasicSystem/MozillaNSS_64bit-pass1.md)
 1. [Mozilla NSS 32-bit - pass 1](./BasicSystem/MozillaNSS_32bit-pass1.md)
+1. [Python module lxml](./BasicSystem/Python313-LXML.md)
 
 | Navigation |||
 | --- | --- | ---: |
