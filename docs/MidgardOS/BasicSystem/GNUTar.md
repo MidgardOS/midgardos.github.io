@@ -8,7 +8,7 @@
 
 Name: GNU Tar<br />
 Summary: The GNU Tape Archive tool<br />
-License: GPL v<br />
+License: GPL v3.0 or later<br />
 Version: 1.35<br />
 URL: [https://ftp.gnu.org/gnu/tar/tar-1.35.tar.xz](https://ftp.gnu.org/gnu/tar/tar-1.35.tar.xz)<br />
 
