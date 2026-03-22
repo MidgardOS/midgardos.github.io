@@ -8,7 +8,7 @@
 
 Name: IPRoute2<br />
 Summary: Tools for basic and advanced networking<br />
-License: $PKG_LICENSE<br />
+License: GPL v2 or later<br />
 Version: 6.19.0<br />
 URL: [https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-6.19.0.tar.xz](https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-6.19.0.tar.xz)<br />
 
