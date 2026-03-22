@@ -114,8 +114,8 @@ The default configuration is delivered as part of the `system_files` tree to sim
 
 ```bash
 rm -fv /etc/pam.d/other
-cp -Rv ../system_files/etc/pam.d/* /etc/pam.d/
-cp -Rv ../system_files/usr/lib/tmpfiles.d/pam.conf /usr/lib/tmpfiles.d/
+cp -Rv ../midgardos.github.io/docs/MidgardOS/system_files/etc/pam.d/* /etc/pam.d/
+cp -Rv ../midgardos.github.io/docs/MidgardOS/system_files/usr/lib/tmpfiles.d/pam.conf /usr/lib/tmpfiles.d/
 ```
 
 **NOTE: Do not delete the unpacked sources after build.**
