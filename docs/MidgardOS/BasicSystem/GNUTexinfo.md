@@ -8,7 +8,7 @@
 
 Name: GNU Texinfo<br />
 Summary: A tool for reading, writing, and converting info pages to various formats<br />
-License: <br />
+License: GPL v3.0 or later<br />
 Version: 7.3<br />
 URL: [https://ftp.gnu.org/gnu/texinfo/texinfo-7.3.tar.xz](https://ftp.gnu.org/gnu/texinfo/texinfo-7.3.tar.xz)<br />
 
