@@ -4,9 +4,9 @@
 | --- | --- | ---: |
 | [<<](./LibXCrypt_32bit.md) LibXCrypt 32-bit | [HOME](../README.md) | LibCap-NG 32-bit [>>](./LibCap-NG_32bit.md) |
 
-## libcap-ng 64-bit
+## Libcap-NG 64-bit
 
-Name: libcap-ng 64-bit<br />
+Name: LibCap-NG 64-bit<br />
 Summary: An alternate POSIX capabilities library<br />
 License: GPL v2/LGPL v2.1<br />
 Version: 0.8.5<br />
@@ -17,7 +17,7 @@ Used Install Space: 384 KiB<br />
 
 ## Configuration
 
-To configure libxcrypt 64-bit for install into the build root, run the following command:
+To configure LibCap-NG 64-bit for install into the build root, run the following command:
 
 ```bash
 ./configure --prefix=/usr           \
@@ -28,7 +28,7 @@ To configure libxcrypt 64-bit for install into the build root, run the following
 
 ## Compilation and Installation
 
-To compile libxcrypt 64-bit, run the following command:
+To compile LibCap-NG 64-bit, run the following command:
 
 ```bash
 make
@@ -40,7 +40,7 @@ Next, run the test suite:
 make check
 ```
 
-Finally, to install libxcrypt 64-bit into the build tree, run the following commands:
+Finally, to install LibCap-NG 64-bit into the build tree, run the following commands:
 
 ```bash
 make install
