@@ -8,7 +8,7 @@
 
 Name: Kbd<br />
 Summary: Utilities, key tables, and console fonts<br />
-License: $PKG_LICENSE<br />
+License: GPL v2 or later<br />
 Version: 2.9.0<br />
 URL: [https://github.com/legionus/kbd/releases/download/v2.9.0/kbd-2.9.0.tar.xz](https://github.com/legionus/kbd/releases/download/v2.9.0/kbd-2.9.0.tar.xz)<br />
 
