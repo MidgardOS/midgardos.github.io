@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNULibAssuan_64bit.md) GNU LibAssuan 64-bit | [HOME](../README.md) | GNU NPth 64-bit [>>](./GNUNPth_64bit.md) |
+| [<<](./GNULibAssuan_64bit.md) GNU LibAssuan 64-bit | [HOME](../README.md) | GNU nPth 64-bit [>>](./GNUNPth_64bit.md) |
 
 ## GNU LibAssuan 32-bit
 
@@ -52,4 +52,4 @@ See the contents section of the 64-bit build of GNU LibAssuan for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNULibAssuan_64bit.md) GNU LibAssuan 64-bit | [HOME](../README.md) | GNU NPth 64-bit [>>](./GNUNPth_64bit.md) |
+| [<<](./GNULibAssuan_64bit.md) GNU LibAssuan 64-bit | [HOME](../README.md) | GNU nPth 64-bit [>>](./GNUNPth_64bit.md) |

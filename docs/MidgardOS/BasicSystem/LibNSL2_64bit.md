@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./LibTIRPC_32bit.md) LibTIRPC 32-bit | [HOME](../README.md) | libNSL2 32-bit [>>](./LibNSL2_32bit.md) |
+| [<<](./LibTIRPC_32bit.md) LibTIRPC 32-bit | [HOME](../README.md) | LibNSL2 32-bit [>>](./LibNSL2_32bit.md) |
 
 ## LibNSL2 64-bit
 
