@@ -4,7 +4,7 @@
 | --- | --- | ---: |
 | [<<](./LibXCrypt_32bit.md) LibXCrypt 32-bit | [HOME](../README.md) | LibCap-NG 32-bit [>>](./LibCap-NG_32bit.md) |
 
-## Libcap-NG 64-bit
+## LibCap-NG 64-bit
 
 Name: LibCap-NG 64-bit<br />
 Summary: An alternate POSIX capabilities library<br />
