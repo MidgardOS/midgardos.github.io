@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./MozillaNSPR_64bit.md) Mozilla NSPR 64-bit | [HOME](../README.md) | Mozilla NSS 64-bit [>>](./MozillaNSS_64bit.md) |
+| [<<](./MozillaNSPR_64bit.md) Mozilla NSPR 64-bit | [HOME](../README.md) | Mozilla NSS 64-bit - pass 1 [>>](./MozillaNSS_64bit-pass1.md) |
 
 ## Mozilla NSPR 32-bit
 
@@ -54,4 +54,4 @@ See the contents section of the 64-bit build of Mozilla NSPR for details.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./MozillaNSPR_64bit.md) Mozilla NSPR 64-bit | [HOME](../README.md) | Mozilla NSS 64-bit [>>](./MozillaNSS_64bit.md) |
+| [<<](./MozillaNSPR_64bit.md) Mozilla NSPR 64-bit | [HOME](../README.md) | Mozilla NSS 64-bit - pass 1 [>>](./MozillaNSS_64bit-pass1.md) |
