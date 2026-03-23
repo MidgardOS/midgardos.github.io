@@ -1,135 +1,15 @@
-Submitted by:            Xi Ruoyao <xry111@xry111.site>
-Date:                    2025-09-21
-Initial Package Version: 2.0.7
-Upstream Status:         Under review (the upstream seems almost inactive)
-Origin:                  https://github.com/itstool/itstool/pull/51
-                         (it was a sed in the book but I don't want to keep
-                         an explicit sed which is solely for conflict
-                         resolve),
-                         https://github.com/itstool/itstool/pull/57
-Description:             Use lxml for handling XML files instead of the
-                         deprecated libxml2 Python module.
+https://github.com/itstool/itstool/issues/10
+https://github.com/itstool/itstool/pull/57
+https://gitlab.gnome.org/GNOME/libxml2/-/issues/891
+https://bugzilla.opensuse.org/show_bug.cgi?id=1259023
 
-From 32c7d07664dc37765100285d1202d488cd6a27e8 Mon Sep 17 00:00:00 2001
-From: Nils Philippsen <nils@tiptoe.de>
-Date: Mon, 9 Oct 2023 14:26:43 +0200
-Subject: [PATCH] Fix insufficiently quoted regular expressions
+Ports itstool from libxml2 python bindings to lxml.
+Taken from upstream PR, with changes to tests dropped, squashed.
 
-These went under the radar until Python 3.12 started warning about them.
-
-Signed-off-by: Nils Philippsen <nils@tiptoe.de>
----
- itstool.in | 14 +++++++-------
- 1 file changed, 7 insertions(+), 7 deletions(-)
-
-diff --git a/itstool.in b/itstool.in
-index c21ad4b..4452616 100755
---- a/itstool.in
-+++ b/itstool.in
-@@ -220,7 +220,7 @@ class Message (object):
-         if not isinstance(text, ustr_type):
-             text = ustr(text, 'utf-8')
-         self._message[-1] += text.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
--        if re.sub('\s+', ' ', text).strip() != '':
-+        if re.sub(r'\s+', ' ', text).strip() != '':
-             self._empty = False
-
-     def add_entity_ref (self, name):
-@@ -318,7 +318,7 @@ class Message (object):
-                 message += '<_:%s-%i/>' % (msg.name, placeholder)
-                 placeholder += 1
-         if not self._preserve:
--            message = re.sub('\s+', ' ', message).strip()
-+            message = re.sub(r'\s+', ' ', message).strip()
-         return message
-
-     def get_preserve_space (self):
-@@ -456,9 +456,9 @@ class LocNote (object):
-             if self._preserve_space:
-                 return self.locnote
-             else:
--                return re.sub('\s+', ' ', self.locnote).strip()
-+                return re.sub(r'\s+', ' ', self.locnote).strip()
-         elif self.locnoteref is not None:
--            return '(itstool) link: ' + re.sub('\s+', ' ', self.locnoteref).strip()
-+            return '(itstool) link: ' + re.sub(r'\s+', ' ', self.locnoteref).strip()
-         return ''
-
-
-@@ -889,7 +889,7 @@ class Document (object):
-         trans = translations.ugettext('_\x04translator-credits')
-         if trans is None or trans == 'translator-credits':
-             return
--        regex = re.compile('(.*) \<(.*)\>, (.*)')
-+        regex = re.compile(r'(.*) \<(.*)\>, (.*)')
-         for credit in trans.split('\n'):
-             match = regex.match(credit)
-             if not match:
-@@ -924,7 +924,7 @@ class Document (object):
-             prevnode = None
-             if node.prev is not None and node.prev.type == 'text':
-                 prevtext = node.prev.content
--                if re.sub('\s+', '', prevtext) == '':
-+                if re.sub(r'\s+', '', prevtext) == '':
-                     prevnode = node.prev
-             for lang in sorted(list(translations.keys()), reverse=True):
-                 locale = self.get_its_locale_filter(node)
-@@ -1468,7 +1468,7 @@ def match_locale(extrange, locale):
-         localei += 1
-     return True
-
--_locale_pattern = re.compile('([a-zA-Z0-9-]+)(_[A-Za-z0-9]+)?(@[A-Za-z0-9]+)?(\.[A-Za-z0-9]+)?')
-+_locale_pattern = re.compile(r'([a-zA-Z0-9-]+)(_[A-Za-z0-9]+)?(@[A-Za-z0-9]+)?(\.[A-Za-z0-9]+)?')
- def convert_locale (locale):
-     # Automatically convert POSIX-style locales to BCP47
-     match = _locale_pattern.match(locale)
-
-From 15027b5391e3d2c45846524721abbe978ca73def Mon Sep 17 00:00:00 2001
-From: Nick Wellnhofer <wellnhofer@aevum.de>
-Date: Tue, 15 Apr 2025 02:51:25 +0200
-Subject: [PATCH 1/5] Switch from libxml2 to lxml
-
-Most of the transition is straight-forward, but some issues turned up.
-
-- lxml doesn't seem to expose the prefixes of attributes, requiring
-  an XPath evaluation as work-around.
-- Serializing the internal subset is a bit hacky.
-- lxml doesn't support attribute nodes, so we have to emulate them.
-- lxml doesn't support attributes as XPath context nodes, so some use
-  cases aren't supported. Using an `.` expression on an attribute
-  works, though.
-
-Changes to expected test results are mostly cosmetic.
-
-- Whitespace before and after the document element is processed more
-  faithfully.
-- lxml removes some superfluous namespace prefixes.
-- There's one superfluous namespace declaration which isn't removed
-  anymore.
-
-Fixes #10.
----
- configure.ac                            |    2 +-
- itstool.in                              | 1012 +++++++++++------------
- tests/IT-join-1.joined.xml              |    6 +-
- tests/IT-prefixes-1.ll.xml              |    2 +-
- tests/Translate/Translate1.ll.xml       |    5 +-
- tests/Translate/Translate2.ll.xml       |    3 +-
- tests/Translate/Translate3.ll.wrong.xml |    3 +-
- tests/Translate/Translate3.ll.xml       |    3 +-
- tests/Translate/Translate4.ll.xml       |    3 +-
- tests/Translate/Translate5.ll.xml       |    3 +-
- tests/Translate/Translate6.ll.xml       |    3 +-
- tests/Translate/TranslateGlobal.ll.xml  |    3 +-
- tests/WithinText1.ll.xml                |    3 +-
- tests/WithinText2.ll.xml                |    3 +-
- tests/run_tests.py                      |    2 -
- 15 files changed, 479 insertions(+), 577 deletions(-)
-
-diff --git a/configure.ac b/configure.ac
-index 9d04372..d94bead 100644
---- a/configure.ac
-+++ b/configure.ac
+Index: itstool-2.0.7/configure.ac
+===================================================================
+--- itstool-2.0.7.orig/configure.ac
++++ itstool-2.0.7/configure.ac
 @@ -12,7 +12,7 @@ AC_SUBST([DATADIR])
  
  AM_PATH_PYTHON([2.6])
@@ -139,10 +19,10 @@ index 9d04372..d94bead 100644
  AC_MSG_CHECKING(for python module $py_module)
  echo "import $py_module" | $PYTHON - &>/dev/null
  if test $? -ne 0; then
-diff --git a/itstool.in b/itstool.in
-index 4452616..052255e 100755
---- a/itstool.in
-+++ b/itstool.in
+Index: itstool-2.0.7/itstool.in
+===================================================================
+--- itstool-2.0.7.orig/itstool.in
++++ itstool-2.0.7/itstool.in
 @@ -24,7 +24,8 @@ DATADIR="@DATADIR@"
  
  import gettext
@@ -223,14 +103,13 @@ index 4452616..052255e 100755
 -    while attr is not None:
 -        yield attr
 -        attr = attr.next
--
++def xml_localname (node):
++    return etree.QName(node.tag).localname
+ 
 -def xml_is_ns_name (node, ns, name):
 -    if node.type != 'element':
 -        return False
 -    return node.name == name and node.ns() is not None and node.ns().content == ns
-+def xml_localname (node):
-+    return etree.QName(node.tag).localname
-+
 +def xml_qname (node):
 +    qname = etree.QName(node.tag).localname
 +    if node.prefix is not None:
@@ -671,7 +550,7 @@ index 4452616..052255e 100755
                          if isinstance(note, string_types):
                              if ref:
                                  nodenote = LocNote(locnoteref=note, locnotetype=notetype)
-@@ -695,55 +657,46 @@ class Document (object):
+@@ -695,55 +657,56 @@ class Document (object):
                              self._its_loc_notes.setdefault(node, []).append(nodenote)
                          else:
                              for note in note:
@@ -714,8 +593,18 @@ index 4452616..052255e 100755
 -        elif xml_is_ns_name(rule, NS_ITST, 'credits'):
 -            if rule.nsProp('appendTo', None) is not None:
 -                for node in self._try_xpath_eval(xpath, rule.nsProp('appendTo', None)):
++                    # TODO: This should probably be skipped if langPointer
++                    # equals '@xml:lang' which is the default.
 +                    if lp[0] == '@':
-+                        self._itst_lang_attr[node] = lp[1:]
++                        name = lp[1:]
++                        if ':' in name:
++                            prefix, lname = name.split(':', 2)
++                            nsuri = node.nsmap.get(prefix)
++                            if nsuri is None:
++                                name = lname
++                            else:
++                                name = '{' + nsuri + '}' + lname
++                        self._itst_lang_attr[node] = name
 +        elif rule.tag == '{' + NS_ITST + '}credits':
 +            sel = rule.get('appendTo')
 +            if sel is not None:
@@ -751,7 +640,7 @@ index 4452616..052255e 100755
  
      def apply_its_rules(self, builtins, userparams={}):
          self._clear_cache()
-@@ -773,94 +726,59 @@ class Document (object):
+@@ -773,94 +736,59 @@ class Document (object):
  
      def apply_its_file(self, filename, userparams={}):
          self._clear_cache()
@@ -875,9 +764,21 @@ index 4452616..052255e 100755
              val = None
              if select == 'name':
                  val = trdata[0]
-@@ -875,9 +793,9 @@ class Document (object):
+@@ -873,11 +801,20 @@ class Document (object):
+             if val is not None:
+                 if not PY3:
                      val = val.encode('utf-8')
-                 parent.addContent(val)
+-                parent.addContent(val)
++                if len(parent):
++                    if parent[-1].tail:
++                        parent[-1].tail += val
++                    else:
++                        parent[-1].tail = val
++                else:
++                    if parent.text:
++                        parent.text += val
++                    else:
++                        parent.text = val
          else:
 -            newnode = node.copyNode(2)
 -            parent.addChild(newnode)
@@ -888,7 +789,7 @@ index 4452616..052255e 100755
                  self._append_credits(newnode, child, trdata)
  
      def merge_credits(self, translations, language, node):
-@@ -895,7 +813,7 @@ class Document (object):
+@@ -895,7 +832,7 @@ class Document (object):
              if not match:
                  continue
              trdata = match.groups()
@@ -897,7 +798,7 @@ index 4452616..052255e 100755
                  self._append_credits(self._itst_credits[0], node, trdata)
  
      def join_translations(self, translations, node=None, strict=False):
-@@ -903,29 +821,30 @@ class Document (object):
+@@ -903,29 +840,30 @@ class Document (object):
          if node is None:
              is_root = True
              self.generate_messages(comments=False)
@@ -944,7 +845,7 @@ index 4452616..052255e 100755
              for lang in sorted(list(translations.keys()), reverse=True):
                  locale = self.get_its_locale_filter(node)
                  lmatch = match_locale_list(locale[0], lang)
-@@ -933,24 +852,26 @@ class Document (object):
+@@ -933,24 +871,25 @@ class Document (object):
                      continue
                  newnode = self.get_translated(node, translations[lang], strict=strict, lang=lang)
                  if newnode != node:
@@ -969,7 +870,6 @@ index 4452616..052255e 100755
 +                        if prevtext is not None:
 +                            newnode.tail = prevtext
 +                    i += 1
-+
  
      def merge_translations(self, translations, language, node=None, strict=False):
          is_root = False
@@ -983,7 +883,7 @@ index 4452616..052255e 100755
              return
          drop = False
          locale = self.get_its_locale_filter(node)
-@@ -962,26 +883,23 @@ class Document (object):
+@@ -962,26 +901,23 @@ class Document (object):
              if match_locale_list(locale[0], language):
                  drop = True
          if self.get_itst_drop(node) == 'yes' or drop:
@@ -1016,7 +916,7 @@ index 4452616..052255e 100755
          if is_root:
              # Apply language attributes to untranslated nodes. We don't do
              # this before processing, because then these attributes would
-@@ -998,31 +916,27 @@ class Document (object):
+@@ -998,31 +934,27 @@ class Document (object):
                      origlang = self._its_lang.get(lcpar)
                      if origlang is not None:
                          break
@@ -1056,7 +956,7 @@ index 4452616..052255e 100755
  
      def get_translated (self, node, translations, strict=False, lang=None):
          msg = self._msgs.get_message_by_node(node)
-@@ -1037,106 +951,84 @@ class Document (object):
+@@ -1037,106 +969,90 @@ class Document (object):
          trans = translations.ugettext(msgstr)
          if trans is None:
              return node
@@ -1143,7 +1043,12 @@ index 4452616..052255e 100755
 -                    if self.has_child_elements(ph_node):
 +                qname = etree.QName(child.tag)
 +                if qname.namespace == NS_BLANK:
-+                    ph_node = msg.get_placeholder(qname.localname).node
++                    ph = msg.get_placeholder(qname.localname)
++                    if ph is None:
++                        sys.stderr.write('Warning: Could not find placeholder %s\n' % (
++                            qname.localname))
++                        continue
++                    ph_node = ph.node
 +                    if len(ph_node):
                          self.merge_translations(translations, None, ph_node, strict=strict)
 -                        newnode = ph_node.copyNode(1)
@@ -1177,13 +1082,12 @@ index 4452616..052255e 100755
 -            newnode = child.copyNode(1)
 -            newnode.setTreeDoc(self._doc)
 -            retnode.addChild(newnode)
--
--        ctxt.doc().freeDoc()
 +        retnode = self._doc.getroot().makeelement(node.tag, node.attrib, node.nsmap)
 +        retnode.text = trnode.text
 +        for child in trnode.iterchildren():
 +            retnode.append(child)
-+
+ 
+-        ctxt.doc().freeDoc()
          return retnode
  
      def generate_messages(self, comments=True):
@@ -1205,14 +1109,15 @@ index 4452616..052255e 100755
 -        if node.type == 'entity_ref':
 -            msg.add_entity_ref(node.name);
 -        if node.type != 'element':
-+        if isinstance(node, XMLAttr):
++        # Only allow elements
++        if isinstance(node, XMLAttr) or not isinstance(node.tag, str):
              return
 -        if node.hasNsProp('drop', NS_ITST) and node.nsProp('drop', NS_ITST) == 'yes':
 +        if node.get('{' + NS_ITST + '}drop', 'no') == 'yes':
              return
          if self._itst_drop_nodes.get(node, 'no') == 'yes':
              return
-@@ -1158,9 +1050,7 @@ class Document (object):
+@@ -1158,9 +1074,7 @@ class Document (object):
                  if msg is not None:
                      msg.add_placeholder(node)
                  msg = Message()
@@ -1223,7 +1128,7 @@ index 4452616..052255e 100755
                  if ctxt is None:
                      ctxt = self._itst_contexts.get(node)
                  if ctxt is not None:
-@@ -1173,27 +1063,38 @@ class Document (object):
+@@ -1173,27 +1087,38 @@ class Document (object):
                      msg.set_preserve_space()
                  if self.get_its_locale_filter(node) != ('*', 'include'):
                      msg.set_locale_filter(self.get_its_locale_filter(node))
@@ -1269,7 +1174,7 @@ index 4452616..052255e 100755
                              attr_msg.add_comment(comment)
                      self._msgs.add_message(attr_msg, attr)
  
-@@ -1204,15 +1105,16 @@ class Document (object):
+@@ -1204,15 +1129,16 @@ class Document (object):
                  for locnote in self.get_its_loc_notes(cnode, inherit=(not withinText)):
                      comment = Comment(locnote)
                      if withinText:
@@ -1289,7 +1194,7 @@ index 4452616..052255e 100755
              self.generate_external_resource_message(attr)
              idvalue = self.get_its_id_value(attr)
              if idvalue is not None:
-@@ -1220,9 +1122,13 @@ class Document (object):
+@@ -1220,9 +1146,13 @@ class Document (object):
                  msg.add_id_value(basename + '#' + idvalue)
  
          if withinText:
@@ -1305,7 +1210,7 @@ index 4452616..052255e 100755
  
          if translate:
              if is_unit and not msg.is_empty():
-@@ -1234,12 +1140,17 @@ class Document (object):
+@@ -1234,12 +1164,17 @@ class Document (object):
          if node not in self._its_externals:
              return
          resref = self._its_externals[node]
@@ -1328,7 +1233,7 @@ index 4452616..052255e 100755
          if translate == 'no':
              return
          msg = Message()
-@@ -1253,7 +1164,7 @@ class Document (object):
+@@ -1253,7 +1188,7 @@ class Document (object):
          txt = "external ref='%s' md5='%s'" % (resref, filemd5)
          msg.set_context('_')
          msg.add_text(txt)
@@ -1337,7 +1242,7 @@ index 4452616..052255e 100755
          msg.add_marker(marker)
          msg.add_comment(Comment('This is a reference to an external file such as an image or'
                                  ' video. When the file changes, the md5 hash will change to'
-@@ -1265,44 +1176,41 @@ class Document (object):
+@@ -1265,44 +1200,41 @@ class Document (object):
      def is_translation_unit (self, node):
          return self.get_its_within_text(node) != 'yes'
  
@@ -1396,7 +1301,7 @@ index 4452616..052255e 100755
          else:
              return self._its_within_text_nodes.get(node, 'no')
          if val in ('yes', 'nested'):
-@@ -1312,73 +1220,63 @@ class Document (object):
+@@ -1312,73 +1244,63 @@ class Document (object):
      def get_its_locale_filter(self, node):
          if node in self._its_locale_filters_cache:
              return self._its_locale_filters_cache[node]
@@ -1503,7 +1408,7 @@ index 4452616..052255e 100755
              self._its_loc_notes_cache[node] = parval
              return parval
          self._its_loc_notes_cache[node] = ret
-@@ -1386,12 +1284,12 @@ class Document (object):
+@@ -1386,12 +1308,12 @@ class Document (object):
  
      def output_test_data(self, category, out, node=None):
          if node is None:
@@ -1518,7 +1423,7 @@ index 4452616..052255e 100755
                  compval = 'withinText="%s"' % self.get_its_within_text(node)
          elif category == 'localeFilter':
              compval = 'localeFilterList="%s"\tlocaleFilterType="%s"' % self.get_its_locale_filter(node)
-@@ -1422,16 +1320,32 @@ class Document (object):
+@@ -1422,16 +1344,32 @@ class Document (object):
              out.write('%s\t%s\r\n' % (xml_get_node_path(node), compval))
          else:
              out.write('%s\r\n' % (xml_get_node_path(node)))
@@ -1558,7 +1463,7 @@ index 4452616..052255e 100755
          except:
              sys.stderr.write('Warning: Invalid XPath: %s\n' % expr)
              return []
-@@ -1636,11 +1550,11 @@ if __name__ == '__main__':
+@@ -1636,11 +1574,11 @@ if __name__ == '__main__':
                  raise
                  sys.stderr.write('Error: Could not merge translations:\n%s\n' % ustr(e))
                  sys.exit(1)
@@ -1575,7 +1480,7 @@ index 4452616..052255e 100755
              fout = out
              fout_is_str = isinstance(fout, string_types)
              if fout_is_str:
-@@ -1675,11 +1589,11 @@ if __name__ == '__main__':
+@@ -1675,11 +1613,11 @@ if __name__ == '__main__':
              for itsfile in opts.itsfile:
                  doc.apply_its_file(itsfile, userparams=userparams)
          doc.join_translations(translations, strict=opts.strict)
@@ -1592,301 +1497,3 @@ index 4452616..052255e 100755
          out.write(serialized)
          out.flush()
  
-diff --git a/tests/IT-join-1.joined.xml b/tests/IT-join-1.joined.xml
-index f1cd11e..a2cdd15 100644
---- a/tests/IT-join-1.joined.xml
-+++ b/tests/IT-join-1.joined.xml
-@@ -8,9 +8,9 @@
-   <message xml:lang="de">Dies ist eine einfache Nachricht.</message>
-   <message xml:lang="fr">Ceci est un message clair.</message>
-   <cat:message>This message uses a prefix.</cat:message>
--  <cat:message xml:lang="cs">Tato zprÃ¡va ma pÅ™edpona.</cat:message>
--  <cat:message xml:lang="de">Diese Nachricht nutzt einen PrÃ¤fix.</cat:message>
--  <cat:message xml:lang="fr">Ce message utilise un prÃ©fixe.</cat:message>
-+  <message xml:lang="cs">Tato zprÃ¡va ma pÅ™edpona.</message>
-+  <message xml:lang="de">Diese Nachricht nutzt einen PrÃ¤fix.</message>
-+  <message xml:lang="fr">Ce message utilise un prÃ©fixe.</message>
-   <extra:alert>This message is in another namespace.</extra:alert>
-   <extra:alert xml:lang="cs">Tato zprÃ¡va ma jinÃ½ jmennÃ½ prostor.</extra:alert>
-   <extra:alert xml:lang="de">Diese Nachricht ist in einem anderen Namensraum.</extra:alert>
-diff --git a/tests/IT-prefixes-1.ll.xml b/tests/IT-prefixes-1.ll.xml
-index 6dd1f30..ec0292c 100644
---- a/tests/IT-prefixes-1.ll.xml
-+++ b/tests/IT-prefixes-1.ll.xml
-@@ -13,7 +13,7 @@
-           <tt:p>Faites glisser des <tt:span>piÃ¨ces</tt:span> de la gauche vers la droite.</tt:p>
-         </tt:div>
-         <tt:div begin="6s" end="14s">
--          <tt:p>Maintenez la touche <mal:key>Ctrl</mal:key>.</tt:p>
-+          <tt:p>Maintenez la touche <key>Ctrl</key>.</tt:p>
-         </tt:div>
-       </tt:body>
-     </tt:tt>
-diff --git a/tests/Translate/Translate1.ll.xml b/tests/Translate/Translate1.ll.xml
-index 72b30fe..8e94592 100644
---- a/tests/Translate/Translate1.ll.xml
-+++ b/tests/Translate/Translate1.ll.xml
-@@ -26,7 +26,7 @@
-      <z:æ®µè½è¯†åˆ« id="A34B"><z:å§“å>Pippin</z:å§“å> regarda depuis l'abri du manteau de <z:å§“å>Gandalf</z:å§“å>.</z:æ®µè½è¯†åˆ«>
-     </z:ç« èŠ‚>
-     <z:èº¯>
--     <i:rules version="1.0">
-+     <i:rules xmlns:cml="myChineseMakupLanguage" version="1.0">
-       <i:translateRule selector="//cml:ä½œè€…" translate="no"/>
-       <i:translateRule selector="//cml:å§“å" translate="no"/>
-       <i:withinTextRule selector="//cml:å§“å" withinText="yes"/>
-@@ -35,5 +35,4 @@
-    </z:ä¹¦ç±>
-   </insert>
-  </body>
--</myMetaDoc>
--<!-- timestamp $Id: Translate1.xml,v 1.8 2007/02/02 17:36:15 ysavoure Exp $ -->
-+</myMetaDoc><!-- timestamp $Id: Translate1.xml,v 1.8 2007/02/02 17:36:15 ysavoure Exp $ -->
-diff --git a/tests/Translate/Translate2.ll.xml b/tests/Translate/Translate2.ll.xml
-index 959c733..1aa060b 100644
---- a/tests/Translate/Translate2.ll.xml
-+++ b/tests/Translate/Translate2.ll.xml
-@@ -6,5 +6,4 @@
-  <body>
-   <par id="100" title="Texte">C'est le premier paragraphe. Il contient du texte <code>un-translatable code</code>.</par>
-  </body>
--</myDoc>
--<!-- timestamp $Id: Translate2.xml,v 1.4 2007/02/02 16:55:05 srahtz3 Exp $ -->
-+</myDoc><!-- timestamp $Id: Translate2.xml,v 1.4 2007/02/02 16:55:05 srahtz3 Exp $ -->
-diff --git a/tests/Translate/Translate3.ll.wrong.xml b/tests/Translate/Translate3.ll.wrong.xml
-index d111f2b..106f94d 100644
---- a/tests/Translate/Translate3.ll.wrong.xml
-+++ b/tests/Translate/Translate3.ll.wrong.xml
-@@ -8,5 +8,4 @@
-    a <its:span translate="no">doppelgÃ¤nger</its:span> who was a
-    serious baseball <its:span translate="no">aficionado</its:span>.</p>
-  </body>
--</book>
--<!-- timestamp $Id: Translate3.xml,v 1.2 2006/12/19 06:24:35 fsasaki Exp $ -->
-+</book><!-- timestamp $Id: Translate3.xml,v 1.2 2006/12/19 06:24:35 fsasaki Exp $ -->
-diff --git a/tests/Translate/Translate3.ll.xml b/tests/Translate/Translate3.ll.xml
-index 8dc1e7f..74584be 100644
---- a/tests/Translate/Translate3.ll.xml
-+++ b/tests/Translate/Translate3.ll.xml
-@@ -6,5 +6,4 @@
-  <body>
-   <p>Tout commenÃ§a alors que Zebulon dÃ©couvrit qu'il avait un <its:span translate="no">doppelgÃ¤nger</its:span> qui Ã©tait un <its:span translate="no">aficionado</its:span> sÃ©rieux de baseball.</p>
-  </body>
--</book>
--<!-- timestamp $Id: Translate3.xml,v 1.2 2006/12/19 06:24:35 fsasaki Exp $ -->
-+</book><!-- timestamp $Id: Translate3.xml,v 1.2 2006/12/19 06:24:35 fsasaki Exp $ -->
-diff --git a/tests/Translate/Translate4.ll.xml b/tests/Translate/Translate4.ll.xml
-index 873d1b5..33c607c 100644
---- a/tests/Translate/Translate4.ll.xml
-+++ b/tests/Translate/Translate4.ll.xml
-@@ -6,5 +6,4 @@
-  <body>
-   <p>Tout commenÃ§a alors que Zebulon dÃ©couvrit qu'il avait un <fexp its:translate="no">doppelgÃ¤nger</fexp> qui Ã©tait un <fexp its:translate="no">aficionado</fexp> sÃ©rieux de baseball.</p>
-  </body>
--</book>
--<!-- timestamp $Id: Translate4.xml,v 1.4 2007/02/02 19:29:30 ysavoure Exp $ -->
-+</book><!-- timestamp $Id: Translate4.xml,v 1.4 2007/02/02 19:29:30 ysavoure Exp $ -->
-diff --git a/tests/Translate/Translate5.ll.xml b/tests/Translate/Translate5.ll.xml
-index ccb9cbd..d0641a0 100644
---- a/tests/Translate/Translate5.ll.xml
-+++ b/tests/Translate/Translate5.ll.xml
-@@ -15,5 +15,4 @@
-  <content>
-   <p>Tout commenÃ§a alors que Zebulon dÃ©couvrit qu'il avait un <span>doppelgÃ¤nger</span> qui Ã©tait un <span>aficionado</span> sÃ©rieux de baseball.</p>
-  </content>
--</doc>
--<!-- timestamp $Id: Translate5.xml,v 1.4 2007/02/02 17:14:37 srahtz3 Exp $ -->
-+</doc><!-- timestamp $Id: Translate5.xml,v 1.4 2007/02/02 17:14:37 srahtz3 Exp $ -->
-diff --git a/tests/Translate/Translate6.ll.xml b/tests/Translate/Translate6.ll.xml
-index 7c30876..a00c67e 100644
---- a/tests/Translate/Translate6.ll.xml
-+++ b/tests/Translate/Translate6.ll.xml
-@@ -15,5 +15,4 @@
-  <content>
-   <p>Tout commenÃ§a alors que Zebulon dÃ©couvrit qu'il avait un <span>double</span> qui Ã©tait un <span>passionnÃ©</span> sÃ©rieux de baseball.</p>
-  </content>
--</doc>
--<!-- timestamp $Id: Translate6.xml,v 1.5 2007/02/02 17:59:34 srahtz3 Exp $ -->
-+</doc><!-- timestamp $Id: Translate6.xml,v 1.5 2007/02/02 17:59:34 srahtz3 Exp $ -->
-diff --git a/tests/Translate/TranslateGlobal.ll.xml b/tests/Translate/TranslateGlobal.ll.xml
-index eed9b8b..82ac798 100644
---- a/tests/Translate/TranslateGlobal.ll.xml
-+++ b/tests/Translate/TranslateGlobal.ll.xml
-@@ -9,5 +9,4 @@
-   <par id="100" title="Texte">Voici le premier paragraphe. Il contient du texte <code>un-translatable code</code>.</par>
-   <par id="101" title="Not extractable text">Du texte supplÃ©mentaire.</par>
-  </body>
--</myDoc>
--<!-- timestamp $Id: TranslateGlobal.xml,v 1.4 2007/02/02 16:55:05 srahtz3 Exp $ -->
-+</myDoc><!-- timestamp $Id: TranslateGlobal.xml,v 1.4 2007/02/02 16:55:05 srahtz3 Exp $ -->
-diff --git a/tests/WithinText1.ll.xml b/tests/WithinText1.ll.xml
-index d956a50..9f304e1 100644
---- a/tests/WithinText1.ll.xml
-+++ b/tests/WithinText1.ll.xml
-@@ -10,5 +10,4 @@
-    <p>Ceci est un paragraphe avec <b>gras</b>, <i>italique</i> et <u>soulignÃ©</u>.</p>
-    <p>Voici un paragraphe avec une note de pied de page<fn>Voici le texte d'une note de pied de page</fn> insÃ©rÃ©e au milieu.</p>
-   </body>
-- </doc>
--<!-- timestamp $Id: WithinText1.xml,v 1.3 2007/02/02 16:55:05 srahtz3 Exp $ -->
-+ </doc><!-- timestamp $Id: WithinText1.xml,v 1.3 2007/02/02 16:55:05 srahtz3 Exp $ -->
-diff --git a/tests/WithinText2.ll.xml b/tests/WithinText2.ll.xml
-index 7fd9e1e..0a2b136 100644
---- a/tests/WithinText2.ll.xml
-+++ b/tests/WithinText2.ll.xml
-@@ -17,5 +17,4 @@
-   </section>
-   <footer><p>CopyrightÂ : <em>Zebulon Inc.</em></p></footer>
-  </content>
--</myDocument>
--<!-- timestamp $Id: WithinText2.xml,v 1.8 2007/02/02 16:55:05 srahtz3 Exp $ -->
-+</myDocument><!-- timestamp $Id: WithinText2.xml,v 1.8 2007/02/02 16:55:05 srahtz3 Exp $ -->
-diff --git a/tests/run_tests.py b/tests/run_tests.py
-index 351f9af..067f1ca 100644
---- a/tests/run_tests.py
-+++ b/tests/run_tests.py
-@@ -336,7 +336,6 @@ def test_IT_prefixes_1(self):
-     def test_IT_malformed(self):
-         """ Test that a malformed XML generates a proper exception """
-         res = self._test_pot_generation('IT-malformed.xml', expected_status=1)
--        #self.assertTrue("libxml2.parserError" in res['errors'])
- 
-     def test_IT_translate_with_external_dtds_malformed(self):
-         """ Test that parsing XML requiring external DTD generates exception """
-@@ -363,7 +362,6 @@ def test_Translate3_wrong1(self):
-         self._test_translation_process('Translate/Translate3.xml', expected_status=1,
-                                        outputs=[('Translate/Translate3.ll.wrong.po', None, 'll')],
-                                        options='-s')
--        #self.assertTrue("libxml2.parserError" in res['errors'])
- 
-     def test_Translate3_wrong2(self):
-         """ Test that bad XML syntax in translation is handled gracefully """
-
-From 30289d5b532bb888f2e6099c04976e441141dd01 Mon Sep 17 00:00:00 2001
-From: Nick Wellnhofer <wellnhofer@aevum.de>
-Date: Mon, 12 May 2025 17:11:31 +0200
-Subject: [PATCH 2/5] Fix element check
-
----
- itstool.in | 4 ++--
- 1 file changed, 2 insertions(+), 2 deletions(-)
-
-diff --git a/itstool.in b/itstool.in
-index 052255e..4c39660 100755
---- a/itstool.in
-+++ b/itstool.in
-@@ -864,7 +864,6 @@ class Document (object):
-                             newnode.tail = prevtext
-                     i += 1
- 
--
-     def merge_translations(self, translations, language, node=None, strict=False):
-         is_root = False
-         if node is None:
-@@ -1026,7 +1025,8 @@ class Document (object):
-         if isinstance(node, etree._Entity):
-             msg.add_entity_ref(node.name)
-             return
--        if isinstance(node, XMLAttr):
-+        # Only allow elements
-+        if isinstance(node, XMLAttr) or not isinstance(node.tag, str):
-             return
-         if node.get('{' + NS_ITST + '}drop', 'no') == 'yes':
-             return
-
-From 0d79db8eacc6787b397caa34f0d849afec52c582 Mon Sep 17 00:00:00 2001
-From: Nick Wellnhofer <wellnhofer@aevum.de>
-Date: Tue, 27 May 2025 20:15:56 +0200
-Subject: [PATCH 3/5] Rewrite remaining call to `addContent`
-
----
- itstool.in | 11 ++++++++++-
- 1 file changed, 10 insertions(+), 1 deletion(-)
-
-diff --git a/itstool.in b/itstool.in
-index 4c39660..78887ca 100755
---- a/itstool.in
-+++ b/itstool.in
-@@ -791,7 +791,16 @@ class Document (object):
-             if val is not None:
-                 if not PY3:
-                     val = val.encode('utf-8')
--                parent.addContent(val)
-+                if len(parent):
-+                    if parent[-1].tail:
-+                        parent[-1].tail += val
-+                    else:
-+                        parent[-1].tail = val
-+                else:
-+                    if parent.text:
-+                        parent.text += val
-+                    else:
-+                        parent.text = val
-         else:
-             newnode = parent.makeelement(node.tag, node.attrib)
-             parent.append(newnode)
-
-From d8c9a667e6af706cc7729e3d90b8f80b12c4f80e Mon Sep 17 00:00:00 2001
-From: Nick Wellnhofer <wellnhofer@aevum.de>
-Date: Tue, 27 May 2025 21:45:06 +0200
-Subject: [PATCH 4/5] Fix extraction of namespaced attributes from langPointer
-
----
- itstool.in | 12 +++++++++++-
- 1 file changed, 11 insertions(+), 1 deletion(-)
-
-diff --git a/itstool.in b/itstool.in
-index 78887ca..c7729fd 100755
---- a/itstool.in
-+++ b/itstool.in
-@@ -677,8 +677,18 @@ class Document (object):
-                     # language information. Technically, langPointer could be
-                     # any XPath expression. But if it looks like an attribute
-                     # accessor, just use the attribute name.
-+                    # TODO: This should probably be skipped if langPointer
-+                    # equals '@xml:lang' which is the default.
-                     if lp[0] == '@':
--                        self._itst_lang_attr[node] = lp[1:]
-+                        name = lp[1:]
-+                        if ':' in name:
-+                            prefix, lname = name.split(':', 2)
-+                            nsuri = node.nsmap.get(prefix)
-+                            if nsuri is None:
-+                                name = lname
-+                            else:
-+                                name = '{' + nsuri + '}' + lname
-+                        self._itst_lang_attr[node] = name
-         elif rule.tag == '{' + NS_ITST + '}credits':
-             sel = rule.get('appendTo')
-             if sel is not None:
-
-From 0f6751a586422719442eb7e9ddfe635ec7ca06fb Mon Sep 17 00:00:00 2001
-From: Nick Wellnhofer <wellnhofer@aevum.de>
-Date: Wed, 28 May 2025 19:46:44 +0200
-Subject: [PATCH 5/5] Handle missing placeholders more gracefully
-
-Print a warning to stderr instead of crashing.
-
-This is not related to the lxml migration but to issue #1.
----
- itstool.in | 7 ++++++-
- 1 file changed, 6 insertions(+), 1 deletion(-)
-
-diff --git a/itstool.in b/itstool.in
-index c7729fd..eebd181 100755
---- a/itstool.in
-+++ b/itstool.in
-@@ -1008,7 +1008,12 @@ class Document (object):
-                     continue
-                 qname = etree.QName(child.tag)
-                 if qname.namespace == NS_BLANK:
--                    ph_node = msg.get_placeholder(qname.localname).node
-+                    ph = msg.get_placeholder(qname.localname)
-+                    if ph is None:
-+                        sys.stderr.write('Warning: Could not find placeholder %s\n' % (
-+                            qname.localname))
-+                        continue
-+                    ph_node = ph.node
-                     if len(ph_node):
-                         self.merge_translations(translations, None, ph_node, strict=strict)
-                         newnode = deepcopy(ph_node)
