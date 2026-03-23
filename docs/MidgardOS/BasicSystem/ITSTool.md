@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Python313-LXML.md) Python module LXML | [HOME](../README.md) | Python module Pygments [>>](./Python313-Pygments.md) |
+| [<<](./Python313-LXML.md) Python module LXML | [HOME](../README.md) | Python module Editables [>>](./Python313-Editables.md) |
 
 ## ITS Tool
 
@@ -40,4 +40,4 @@ make install
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Python313-LXML.md) Python module LXML | [HOME](../README.md) | Python module Pygments [>>](./Python313-Pygments.md) |
+| [<<](./Python313-LXML.md) Python module LXML | [HOME](../README.md) | Python module Editables [>>](./Python313-Editables.md) |
