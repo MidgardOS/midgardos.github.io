@@ -20,6 +20,7 @@ Used Install Space: <br />
 To compile $PKG_FULL_NAME, run the following command:
 
 ```bash
+patch -Np1 -i ../patches/itstool/itstool-2.0.7-regular-expressions-quoting-bug.patch
 patch -Np1 -i ../patches/itstool/itstool-2.0.7-lxml-1.patch
 PYTHON=/usr/bin/python3 ./autogen.sh --prefix=/usr
 make
