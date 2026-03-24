@@ -274,6 +274,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Python module lxml](./BasicSystem/Python313-LXML.md)
 1. [ITS Tool](./BasicSystem/ITSTool.md)
 1. [Python module Editables](./BasicSystem/Python313-Editables.md)
+1. [Python module Pathspec](./BasicSystem/Python313-Pathspec.md)
 
 | Navigation |||
 | --- | --- | ---: |
