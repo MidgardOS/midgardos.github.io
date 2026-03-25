@@ -277,6 +277,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Python module Pathspec](./BasicSystem/Python313-Pathspec.md)
 1. [Python module Setuptools_scm](./BasicSystem/Python313-Setuptools_scm.md)
 1. [Python module Pluggy](./BasicSystem/Python313-Pluggy.md)
+1. [Python module Trove-Classifiers](./BasicSystem/Python313-Trove-Classifiers.md)
 
 | Navigation |||
 | --- | --- | ---: |
