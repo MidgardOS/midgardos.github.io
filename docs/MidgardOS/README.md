@@ -279,6 +279,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Python module Pluggy](./BasicSystem/Python313-Pluggy.md)
 1. [Python module Trove-Classifiers](./BasicSystem/Python313-Trove-Classifiers.md)
 1. [Python module Hatchling](./BasicSystem/Python313-Hatchling.md)
+1. [Python module Hatch-vcs](./BasicSystem/Python313-Hatch-vcs.md)
 
 | Navigation |||
 | --- | --- | ---: |
