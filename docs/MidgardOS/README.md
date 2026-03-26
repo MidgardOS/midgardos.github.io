@@ -284,6 +284,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Python module Pygments](./BasicSystem/Python313-Pygments.md)
 1. [Python module Pytest](./BasicSystem/Python313-Pytest.md)
 1. [GNU Which](./BasicSystem/GNUWhich.md)
+1. [GTK-Doc](./BasicSystem/GTK-Doc.md)
 
 | Navigation |||
 | --- | --- | ---: |
