@@ -20,8 +20,7 @@ Used Install Space: 14 MiB<br />
 To configure GTK-Doc for install into the build root, run the following command:
 
 ```bash
-mkdir -p build && cd build &&
-
+mkdir -p build && cd build
 meson setup ..            \
       --prefix=/usr       \
       --buildtype=release \
