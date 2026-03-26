@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Python313-Hatch-vcs.md) Python module Hatch-vcs | [HOME](../README.md) | Python module Pytest [>>](./Python313-Pytest.md) |
+| [<<](./Python313-Hatch-vcs.md) Python module Hatch-vcs | [HOME](../README.md) | Python module Pygments [>>](./Python313-Pygments.md) |
 
 ## Python module Iniconfig
 
@@ -38,4 +38,4 @@ pip3 install --no-index --find-links dist --no-user iniconfig
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Python313-Hatch-vcs.md) Python module Hatch-vcs | [HOME](../README.md) | Python module Pytest [>>](./Python313-Pytest.md) |
+| [<<](./Python313-Hatch-vcs.md) Python module Hatch-vcs | [HOME](../README.md) | Python module Pygments [>>](./Python313-Pygments.md) |
