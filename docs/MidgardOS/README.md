@@ -281,6 +281,7 @@ Right now, MidgardOS is manually built. Eventually, automation will be put in pl
 1. [Python module Hatchling](./BasicSystem/Python313-Hatchling.md)
 1. [Python module Hatch-vcs](./BasicSystem/Python313-Hatch-vcs.md)
 1. [Python module Iniconfig](./BasicSystem/Python313-Iniconfig.md)
+1. [Python module Pygments](./BasicSystem/Python313-Pygments.md)
 
 | Navigation |||
 | --- | --- | ---: |
