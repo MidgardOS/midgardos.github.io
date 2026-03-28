@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUWhich.md) GNU Which | [HOME](../README.md) | Pk11-Kit [>>](./Pk11-Kit.md) |
+| [<<](./GNUWhich.md) GNU Which | [HOME](../README.md) | P11-Kit 64-bit [>>](./P11-Kit-64bit.md) |
 
 ## GTK-Doc
 
@@ -51,4 +51,4 @@ ninja install
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUWhich.md) GNU Which | [HOME](../README.md) | Pk11-Kit [>>](./Pk11-Kit.md) |
+| [<<](./GNUWhich.md) GNU Which | [HOME](../README.md) | P11-Kit 64-bit [>>](./P11-Kit-64bit.md) |
