@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUBinutils.md) GNU Binutils | [HOME](../README.md) | Entering the Build Root [>>](../ChrootTempTools/ChrootBuildingTempTools.md) |
+| [<<](./GNUBinutils.md) GNU Binutils | [HOME](../README.md) | Golang - Bootstrap Toolchain [>>](./Golang_BootstrapToolchain.md) |
 
 ## GNU Compiler Collection - Pass 2
 
@@ -104,4 +104,4 @@ More details about this package is covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUBinutils.md) GNU Binutils | [HOME](../README.md) | Entering the Build Root [>>](../ChrootTempTools/ChrootBuildingTempTools.md) |
+| [<<](./GNUBinutils.md) GNU Binutils | [HOME](../README.md) | Golang - Bootstrap Toolchain [>>](./Golang_BootstrapToolchain.md) |

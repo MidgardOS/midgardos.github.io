@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGCC.md) GNU Compiler Collection - Pass 2 | [HOME](../README.md) | Entering the Build Root [>>](../ChrootTempTools/ChrootBuildingTempTools.md) |
+| [<<](./Golang_BootstrapToolchain.md) Golang - Bootstrap Toolchain | [HOME](../README.md) | Entering the Build Root [>>](../ChrootTempTools/ChrootBuildingTempTools.md) |
 
 ## GetURL
 
@@ -11,7 +11,7 @@ Summary: A simple file download utility<br />
 License: GPL v3<br />
 Version: 1.0.0<br />
 
-Average Build Time: les than 0.1 SBU<br />
+Average Build Time: less than 0.1 SBU<br />
 Used Install Space: 8.0 MiB<br />
 
 ## Rationale
@@ -34,4 +34,4 @@ install -v -m 755 -o root -g root geturl /MidgardOS/usr/bin/
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUGCC.md) GNU Compiler Collection - Pass 2 | [HOME](../README.md) | Entering the Build Root [>>](../ChrootTempTools/ChrootBuildingTempTools.md) |
+| [<<](./Golang_BootstrapToolchain.md) Golang - Bootstrap Toolchain | [HOME](../README.md) | Entering the Build Root [>>](../ChrootTempTools/ChrootBuildingTempTools.md) |
