@@ -11,7 +11,7 @@ The MidgardOS development team would like to acknowledge the teams and projects 
   - Jonathan Norman - x86, x86_64, PowerPC & UltraSPARC builds, Release Manager 2.x Series
   - Chris Staub - x86 and x86_64 builds. Leader of Quality Control
 - The CLFS Team:
-  - Matt Darcy - x86, X86_64, and Sparc builds
+  - Matt Darcy - x86, x86_64, and Sparc builds
   - Manuel Canales Esparcia - Book XML
   - Justin Knierim - Website Architect
   - Ken Moffat - PowerPC and X86_64 builds. Developer of Pure 64 Hint
