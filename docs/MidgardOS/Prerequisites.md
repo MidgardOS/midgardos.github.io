@@ -4,13 +4,13 @@
 
 # Pre-requisites for Building the MidgardOS Core Build Root
 
-The build process for creating a new MidgardOS core operating system build root is not a simple task. It is assumed that the person building the build root is well versed in Linux systems administration and has a solid understanding of developing software for UNIX and unix-like systems.
+The build process for creating a new MidgardOS core operating system build root is not a simple task. It is assumed that the person building the build root is well versed in Linux systems administration and has a solid understanding of developing software for UNIX and UNIX-like systems.
 
 As such, it is recommended to only start building a MidgardOS build root if you are comfortable at a Linux Bash or Zsh shell and are willing to work through discovering and fixing issues as the build progresses.
 
 To avoid causing potential issues with your host computer, it is strongly recommended to build the OS inside a virtual machine, attaching extra disks, etc. as you go.
 
-The current environment that is tested with building a MidgardOS core operating system build root is built using a VirtualBox VM running openSUSE Leap 15.6 or Fedora Linux 42 with the following virtual hardware configuration:
+The current environment that is tested with building a MidgardOS core operating system build root is built using a VirtualBox VM running openSUSE Leap 15.6 or Fedora Linux 44 with the following virtual hardware configuration:
 
 - 4 cores
 - 8192 MiB RAM
@@ -39,7 +39,7 @@ The current environment that is tested with building a MidgardOS core operating 
 
 After creating the virtual machine, install the OS in 'Server only' text mode. After boot, set up the following configuration elements:
 
-1. MidgardOS will use the unified CGroup v2 heirarchy, the host OS' system needs to support this inetead of the legacy hybrid hierarchy. To support this, add the `systemd.unified_cgroup_hierarchy=1` flag on the host's kernel command line if required.
+1. MidgardOS will use the unified CGroup v2 hierarchy, so the host OS's system needs to support this instead of the legacy hybrid hierarchy. To support this, add the `systemd.unified_cgroup_hierarchy=1` flag on the host's kernel command line if required.
 
 | Navigation |||
 | --- | --- | ---: |
