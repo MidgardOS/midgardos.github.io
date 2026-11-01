@@ -8,7 +8,7 @@ This documentation is split into a few different sections:
 
 ## Section 1 - Preparation
 
-This section covers the prepartion of the disks, user creation, and configuration of various environment variables to build the components.
+This section covers the preparation of the disks, user creation, and configuration of various environment variables to build the components.
 
 ## Section 2 - Building the Cross-compiler Toolchain
 
@@ -20,15 +20,15 @@ This section covers building essential temporary tools to further isolate the ne
 
 ## Section 4 - Entering the Chroot and Building More Temporary Tools
 
-This section covers entering the build root via an isolated chroot, and finishing build of some additional temporary tools.
+This section covers entering the build root via an isolated chroot, and finishing the build of some additional temporary tools.
 
 ## Section 5 - Building the Base System Tools
 
 This section covers building the native tools for allowing the core MidgardOS system to be built.
 
-## Section 6 - Building the core MidgardOS System
+## Section 6 - Building the Core MidgardOS System
 
-This section covers building the actual core MidgardOS system inside it's isolated enviornment on the host computer including configuring the system to boot, installing the system's kernel and bootloader.
+This section covers building the actual core MidgardOS system inside its isolated environment on the host computer, including configuring the system to boot and installing the system's kernel and bootloader.
 
 If any issues come up, please post an issue in our GitHub repository for this documentation, [here](https://github.com/MidgardOS/midgardos.github.io/issues/new/choose).
 
