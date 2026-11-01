@@ -4,7 +4,7 @@
 | --- | --- | ---: |
 | [<<](./CreatePartition.md) Partition Creation | [HOME](./README.md) | Directories and Symlinks [>>](./DirectoriesAndSymlinks.md) |
 
-MidgardOS is a traditional Linux distribution, however it follows some modern aspects that collapse many directories in the `/` level of the filesystem tree into `/usr`. This step will add the mount point directories on the host system, Additionally, we'll format the new partitions we created in the last step with the requisite filesystems and add them to the host system's `/etc/fstab` file for mount at boot of the virtual machine.
+MidgardOS is a traditional Linux distribution; however, it follows some modern aspects that collapse many directories in the `/` level of the filesystem tree into `/usr`. This step will add the mount point directories on the host system. Additionally, we'll format the new partitions we created in the last step with the requisite filesystems and add them to the host system's `/etc/fstab` file for mount at boot of the virtual machine.
 
 ## Format the New EFI Partition
 
@@ -18,7 +18,7 @@ To create the EFI boot filesystem on the 512MiB EFI partition that was created i
 
 ## Format the MidgardOS Root Filesystem
 
-MidgardOS by default uses the SGI XFS filesystem for the root disk format. This filesystem has excellent performance for small and medium sized files, and has reasonably good journalling performance and capabilities to protect against data loss under powerloss occurances. To format the new root partition, run the following command in the virtual machine as a privileged user:
+MidgardOS by default uses the SGI XFS filesystem for the root disk format. This filesystem has excellent performance for small and medium sized files, and has reasonably good journalling performance and capabilities to protect against data loss under power loss occurrences. To format the new root partition, run the following command in the virtual machine as a privileged user:
 
 ```bash
 /sbin/mkfs.xfs -m bigtime=1,crc=1,finobt=1,inobtcount=1 -L MidgardOS /dev/nvme0n1p2
