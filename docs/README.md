@@ -13,7 +13,7 @@ MidgardOS is a Linux-based server operating system that adheres to the following
 
 1. Reliable
 1. Maintainable
-1. Observational
+1. Observable
 
 ### Reliability
 
@@ -27,7 +27,7 @@ The Maintainability principle requires that the operating system will have autom
 
 ### Observability
 
-The Observability principle means that after installation, the default install will be able to be easly monitored, both for performance and operational health.
+The Observability principle means that after installation, the default install will be able to be easily monitored, both for performance and operational health.
 
 ## Features
 
@@ -35,14 +35,14 @@ MidgardOS will have the following features at first release:
 
 - RPM-based
 - Multi-library x86_64/i686 architecture
-- Adhere to the merged `/` -> `/usr` configurration in most Linux distributions available now
+- Adhere to the merged `/` -> `/usr` configuration used in most Linux distributions available now
 - Be designed for modern server hardware
   - This means that we will target UEFI bootloading only
 - Adhere to the FHS and LSB standards
-- Ship with SSSd for LDAP/AD and other authentication features
+- Ship with SSSD for LDAP/AD and other authentication features
 - Purpose-created package repositories for specific server roles
 - SystemConfigD, a new API driven extensible daemon for managing Linux hosts
-- Utilitize modern system components
+- Utilise modern system components
   - use most components that ship with systemd
     - Instead of GRUB -> systemd-boot
     - Instead of NetConf/Wicked/NetworkManager -> systemd-networkd and iwd for wireless
@@ -50,9 +50,9 @@ MidgardOS will have the following features at first release:
     - Instead of chrony for system time sync -> systemd-timesyncd
     - Instead of using cron for system tasks, systemd timers will be used
     - Use `systemd-coredump` for managing application coredumps
-    - Use `systemd-oomd` to manage the Kernel's oom killer
+    - Use `systemd-oomd` to manage the kernel's OOM killer
   - To simplify the orchestration of firewall rules, use UFW instead of firewalld or raw iptables/nftables
-  - FluentD in the installation pre-configured to allow exporting systemd-journald logs
+  - FluentD included in the installation, pre-configured to allow exporting systemd-journald logs
 
 ## Development
 
