@@ -12,7 +12,7 @@ MidgardOS is designed to run on UEFI based hardware. This requires an EFI boot v
 
 To create the EFI boot filesystem on the 512MiB EFI partition that was created in the last step, run the following command:
 
-```sh
+```bash
 /sbin/mkfs.vfat -F 32 -n EFI -v /dev/nvme0n1p1
 ```
 
