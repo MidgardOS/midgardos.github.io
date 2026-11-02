@@ -6,7 +6,7 @@
 
 ## Setting Environment Variables and Workspace
 
-To allow builds to use the tools that are built using the steps in this guide and to ensure that errant host behaviours are mitigated as best as possible, there are a few things that need configured for the `builder` user. First, after logging in as root to the build VM, change to the `builder` user account, like so:
+To allow builds to use the tools that are built using the steps in this guide and to ensure that errant host behaviours are mitigated as best as possible, there are a few things that need to be configured for the `builder` user. First, after logging in as root to the build VM, change to the `builder` user account, like so:
 
 ```bash
 su - builder
@@ -24,7 +24,7 @@ EOF
 
 ## Create a New `.bashrc`
 
-The new `bash` instance that is exec'd in from the `.bash_profile` is a non-login shell, so an appropriate `.bashrc` needs put into place:
+The new `bash` instance that is exec'd in from the `.bash_profile` is a non-login shell, so an appropriate `.bashrc` needs to be put into place:
 
 ```bash
 cat > ~/.bashrc << "EOF"
@@ -49,13 +49,13 @@ EOF
 
 ## Build Environment Variables
 
-While building the cross compilation and basic tools, there are a few extra environment variables that will need set to ease running configuration and build commands. The first of these is the target build host triplet. This is used to tell the compiler to build the binaries for a specific architecture. As the target host and the initial build host have potentially the same value, which will block the compiler from building cross-compiled target tools, the target build triplet needs modifed by forcing it to be a "cross" target. To do so, set the `BRFS_HOST` environment variable:
+While building the cross compilation and basic tools, there are a few extra environment variables that will need to be set to ease running configuration and build commands. The first of these is the target build host triplet. This is used to tell the compiler to build the binaries for a specific architecture. As the target host and the initial build host have potentially the same value, which will block the compiler from building cross-compiled target tools, the target build triplet needs to be modified by forcing it to be a "cross" target. To do so, set the `BRFS_HOST` environment variable:
 
 ```bash
 export BRFS_HOST=$(echo ${MACHTYPE} | sed -e 's/-[^-]*/-cross/')
 ```
 
-Next, the triplet for the target architecture needs set, much like for the target host:
+Next, the triplet for the target architecture needs to be set, much like for the target host:
 
 ```bash
 export BRFS_TARGET="x86_64-midgardos-linux-gnu"
@@ -67,7 +67,7 @@ Now, to support building the 32-bit libraries, set the same for the 32-bit archi
 export BRFS_TARGET32="i686-midgardos-linux-gnu"
 ```
 
-Finally, the environment variables for the target-specific linker flags needs set:
+Finally, the environment variables for the target-specific linker flags need to be set:
 
 ```bash
 export BUILD32="-m32"
