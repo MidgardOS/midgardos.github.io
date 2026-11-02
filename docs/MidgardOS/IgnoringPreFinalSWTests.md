@@ -4,13 +4,9 @@
 | --- | --- | ---: |
 | [<<](./SetEnvironmentVars.md) Set Environment Variables | [HOME](./README.md) | Cross-Compilation Tools Overview [>>](./CrossCompilationTools/Overview.md) |
 
-# Ignoring Software Tests During the Cross-Complation Phase
+# Ignoring Software Tests During the Cross-Compilation Phase
 
-Many software packages these days contain test suites that are meant to be used to validate and verify that the built
-software is fit for purpose. Unfortunately, while building the cross-complation tools, these tests will in many cases
-not function correctly, as the temporary tools used will not be in "normal" FHS required locations. Because of this, it
-is strongly recommended to not run them during this stage of the build process. They will be used later, when the final
-builds are run.
+Many software packages these days contain test suites that are meant to be used to validate and verify that the built software is fit for purpose. Unfortunately, while building the cross-compilation tools, these tests will in many cases not function correctly, as the temporary tools used will not be in "normal" FHS required locations. Because of this, it is strongly recommended to not run them during this stage of the build process. They will be used later, when the final builds are run.
 
 | Navigation |||
 | --- | --- | ---: |
