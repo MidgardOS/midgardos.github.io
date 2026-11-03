@@ -22,10 +22,10 @@ The current environment that is tested with building a MidgardOS core operating 
 - UEFI configuration, without Secure Boot
 - 2 VMDK thin-provisioned disks on an NVMe controller
   - OS disk: 64GiB, two partitions
-    - Partition 1: 512MiB FAT32 (EFI partition): Mounted at `/boot/efi`
+    - Partition 1: 1024MiB FAT32 (EFI partition): Mounted at `/boot/efi`
     - Partition 2: Remaining disk, XFS (system root partition): Mounted at `/`
   - MidgardOS target disk: 64GiB, two partitions
-    - Partition 1: 512MiB FAT32 (EFI partition): Mounted at `/MidgardOS/boot`
+    - Partition 1: 1024MiB FAT32 (EFI partition): Mounted at `/MidgardOS/boot`
     - Partition 2: Remaining disk, XFS (target system root partition): Mounted at `/MidgardOS`
 - Disable Audio Device
 - USB 3.0 xHCI device

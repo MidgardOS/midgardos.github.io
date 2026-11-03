@@ -73,7 +73,7 @@ echo -e "LABEL=EFI\t/MidgardOS/boot\tvfat\t${EFI_MOUNT_PARAMS}\t1\t0" >> /etc/fs
 If, however, you want to use the mounting facilities in systemd, run the following commands to create the needed files in `/etc/systemd/system`:
 
 ```
-cat << EOF > /etc/systemd/system/MidgardOS.rootfs.mount
+cat << EOF > /etc/systemd/system/MidgardOS.mount
 [Unit]
 Description=MidgardOS root filesystem volume
 RequiresMountsFor=/
