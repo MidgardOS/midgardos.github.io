@@ -30,6 +30,10 @@ This section covers building the native tools for allowing the core MidgardOS sy
 
 This section covers building the actual core MidgardOS system inside its isolated environment on the host computer, including configuring the system to boot and installing the system's kernel and bootloader.
 
+## Section 7 - Rebuilding the Core Using RPM
+
+This section covers rebuilding the core MidgardOS system from within itself using RPM and a custom build daemon for managing dependencies. This will be performed inside a live MidgardOS install booted to the system's kernel.
+
 If any issues come up, please post an issue in our GitHub repository for this documentation, [here](https://github.com/MidgardOS/midgardos.github.io/issues/new/choose).
 
 | Navigation |||
