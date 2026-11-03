@@ -14,7 +14,7 @@ While some packages built will require some patching, this will not compare to w
 
 When building packages, the archive of the source code for the package should be unpacked and entered when issuing the commands that will be documented for the build of the various components.
 
-Also, after installation, the unpacked sources and build directories should be removed, unless explicitly instructed otherwise to avoid misconfiguration or errors during the build later when rebuilt using RPM.
+Also, after installation, the unpacked sources and build directories should be removed, unless explicitly instructed otherwise, to avoid misconfiguration or errors during the build later when rebuilt using RPM.
 
 | Navigation |||
 | --- | --- | ---: |
