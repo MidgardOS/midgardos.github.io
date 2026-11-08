@@ -14,7 +14,7 @@ URL: [https://ftp.gnu.org/gnu/bash/bash-5.3.tar.gz](https://ftp.gnu.org/gnu/bash
 
 ## Configuration
 
-To configure GNU Bash for install into our cross-compilation root, run the following command:
+To configure GNU Bash for installation into our cross-compilation root, run the following command:
 
 ```bash
 ./configure --prefix=/usr           \
@@ -45,7 +45,7 @@ Temporarily install a compatibility symbolic link for `/bin/sh` to point to `/bi
 ln -sv bash $BRFS/bin/sh
 ```
 
-More details about this package is covered later in the core system build.
+More details about this package are covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
