@@ -7,14 +7,14 @@
 ## Xz
 
 Name: Xz<br />
-Summary: A Better Compression Tool<br />
+Summary: A better compression tool<br />
 License: Multiple FOSS licenses (0BSD/GPLv2+/GPLv3+)<br />
-Version: 5.8.2<br />
-URL: [https://github.com/tukaani-project/xz/releases/download/v5.8.1/xz-5.8.2.tar.xz](https://github.com/tukaani-project/xz/releases/download/v5.8.1/xz-5.8.2.tar.xz)<br />
+Version: 5.8.4<br />
+URL: [https://github.com/tukaani-project/xz/releases/download/v5.8.4/xz-5.8.4.tar.xz](https://github.com/tukaani-project/xz/releases/download/v5.8.4/xz-5.8.4.tar.xz)<br />
 
 ## Configuration
 
-To configure Xz for install into the build root, run the following command:
+To configure Xz for installation into the build root, run the following command:
 
 ```bash
 ./configure --prefix=/usr                    \
@@ -23,7 +23,7 @@ To configure Xz for install into the build root, run the following command:
             --host=$BRFS_TARGET              \
             --build=$BRFS_HOST               \
             --disable-static                 \
-            --docdir=/usr/share/doc/xz-5.8.2
+            --docdir=/usr/share/doc/xz-5.8.4
 ```
 
 ## Compilation and Installation
@@ -41,7 +41,7 @@ make DESTDIR=$BRFS install
 rm -v $BRFS/usr/lib64/liblzma.la
 ```
 
-More details about this package is covered later in the core system build.
+More details about this package are covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
