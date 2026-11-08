@@ -9,12 +9,12 @@
 Name: glibc-32bit<br />
 Summary: The GNU C language runtime library - 32-bit<br />
 License: GPL v2.0+/LGPL 2.1+<br />
-Version: 2.43<br />
-URL: [https://ftp.gnu.org/gnu/glibc/glibc-2.43.tar.xz](https://ftp.gnu.org/gnu/glibc/glibc-2.43.tar.xz)<br />
+Version: 2.44<br />
+URL: [https://ftp.gnu.org/gnu/glibc/glibc-2.44.tar.xz](https://ftp.gnu.org/gnu/glibc/glibc-2.44.tar.xz)<br />
 
 ## Configuration
 
-To configure GNU C Library 32-bit build for install into our cross-compilation root, run the following command from inside the previously created `build` directory:
+To configure GNU C Library 32-bit build for installation into our cross-compilation root, run the following command from inside the previously created `build` directory:
 
 ```bash
 make clean
@@ -24,7 +24,7 @@ CC="$BRFS_TARGET-gcc -m32" CXX="$BRFS_TARGET-g++ -m32" \
     --prefix=/tools                   \
     --host=${BRFS_TARGET32}           \
     --build=${BRFS_HOST}              \
-    --enable-kernel=6.18              \
+    --enable-kernel=7.2               \
     --with-headers=$BRFS/usr/include  \
     --enable-bind-now                 \
     --enable-stackguard-randomization \
@@ -58,7 +58,7 @@ If an operation not permitted error comes up around preserving times for the `/M
 
 ## Validation
 
-It is critically important to validate that the new GLibC 32-bit build is working as expected in tandom with the temporary compiler instance in the system. To do so, run the following commands:
+It is critically important to validate that the new GLibC 32-bit build is working as expected in tandem with the temporary compiler instance in the system. To do so, run the following commands:
 
 ```bash
 echo 'int main(){}' > dummy.c
@@ -73,7 +73,7 @@ This should return the following output:
 
 If this is successful, you can move on to the next step in the guide.
 
-More details about this package is covered later in the core system build.
+More details about this package are covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
