@@ -20,7 +20,7 @@ To configure GNU Patch for installation into the build root, run the following c
 ./configure --prefix=/usr           \
             --libdir=/usr/lib64     \
             --libexecdir=/usr/lib64 \
-            --host=$BRFS_TARET      \
+            --host=$BRFS_TARGET     \
             --build=$BRFS_HOST
 ```
 
