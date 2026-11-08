@@ -9,12 +9,12 @@
 Name: NCurses 64-bit<br />
 Summary: The Ncurses package contains libraries for terminal-independent handling of character screens - 64-bit build<br />
 License: MIT<br />
-Version: 6.6-20260301<br />
-URL: [https://invisible-mirror.net/archives/ncurses/current/ncurses-6.6-20260301.tgz](https://invisible-mirror.net/archives/ncurses/current/ncurses-6.6-20260301.tgz)<br />
+Version: 6.6-20261107<br />
+URL: [https://invisible-mirror.net/archives/ncurses/current/ncurses-6.6-20261107.tgz](https://invisible-mirror.net/archives/ncurses/current/ncurses-6.6-20261107.tgz)<br />
 
 ## Configuration
 
-To configure NCurses 64-bit for install into our build root, run the following command:
+To configure NCurses 64-bit for installation into our build root, run the following command:
 
 ```bash
 ./configure --prefix=/usr                \
@@ -49,7 +49,7 @@ ln -sv libncursesw.so $BRFS/usr/lib64/libncurses.so
 sed -e 's/^#if.*XOPEN.*$/#if 1/' -i $BRFS/usr/include/curses.h
 ```
 
-More details about this package is covered later in the core system build.
+More details about this package are covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
