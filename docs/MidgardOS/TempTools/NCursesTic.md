@@ -9,8 +9,8 @@
 Name: NCurses - Tic<br />
 Summary: A terminal console control library - Terminal Interface Compiler<br />
 License: MIT<br />
-Version: 6.6-20260301<br />
-URL: [https://invisible-mirror.net/archives/ncurses/current/ncurses-6.6-20260301.tgz](https://invisible-mirror.net/archives/ncurses/current/ncurses-6.6-20260301.tgz)<br />
+Version: 6.6-20261107<br />
+URL: [https://invisible-mirror.net/archives/ncurses/current/ncurses-6.6-20261107.tgz](https://invisible-mirror.net/archives/ncurses/current/ncurses-6.6-20261107.tgz)<br />
 
 ## Notes
 
@@ -18,7 +18,7 @@ This step will only install the `tic` binary, as NCurses cannot be built and ran
 
 ## Configuration
 
-To configure NCurses' `tic` for install into our cross-compilation root, run the following command:
+To configure NCurses' `tic` for installation into our cross-compilation root, run the following command:
 
 ```bash
 AWK=gawk ./configure --prefix=/tools --without-debug
@@ -39,7 +39,7 @@ Finally, to install NCurses `tic` into the temporary tools tree, run the followi
 install -v -m755 progs/tic /tools/bin
 ```
 
-More details about this package is covered later in the core system build.
+More details about this package are covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
