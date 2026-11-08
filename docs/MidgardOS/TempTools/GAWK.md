@@ -12,6 +12,14 @@ License: GPL v3 or later<br />
 Version: 5.4.1<br />
 URL: [https://ftp.gnu.org/gnu/gawk/gawk-5.4.1.tar.xz](https://ftp.gnu.org/gnu/gawk/gawk-5.4.1.tar.xz)<br />
 
+## Pre-configuration
+
+To fix a bug in the behaviour of GNU Awk that breaks compilation of future tools, apply the following patch:
+
+```bash
+patch -Np1 -i ../patches/gawk/gawk-5.4.1-fix-alignment-bug.patch
+```
+
 ## Configuration
 
 To configure GNU Awk for installation into the build root, run the following command:
