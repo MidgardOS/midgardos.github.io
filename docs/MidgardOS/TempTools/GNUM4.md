@@ -14,7 +14,7 @@ URL: [https://ftp.gnu.org/gnu/m4/m4-1.4.21.tar.xz](https://ftp.gnu.org/gnu/m4/m4
 
 ## Configuration
 
-To configure GNU M4 for install into the build root, run the following command:
+To configure GNU M4 for installation into the build root, run the following command:
 
 ```bash
 sed 's/\[\[__nodiscard__]]//' -i lib/config.hin
@@ -42,7 +42,7 @@ Finally, to install GNU M4 into the build tree, run the following command:
 make DESTDIR=${BRFS} install
 ```
 
-More details about this package is covered later in the core system build.
+More details about this package are covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
