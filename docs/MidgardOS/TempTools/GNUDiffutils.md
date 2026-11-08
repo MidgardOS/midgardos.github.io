@@ -6,7 +6,7 @@
 
 ## GNU Diffutils
 
-Name: GNU Difftils<br />
+Name: GNU Diffutils<br />
 Summary: Tools for displaying differences between files and directories<br />
 License: GPL v3 or later<br />
 Version: 3.12<br />
@@ -14,7 +14,7 @@ URL: [https://ftp.gnu.org/gnu/diffutils/diffutils-3.12.tar.xz](https://ftp.gnu.o
 
 ## Configuration
 
-To configure GNU Diffutils for install into the build root, run the following command:
+To configure GNU Diffutils for installation into the build root, run the following command:
 
 ```bash
 ./configure --prefix=/usr                 \
@@ -39,7 +39,7 @@ Finally, to install GNU Diffutils into the build tree, run the following command
 make DESTDIR=${BRFS} install
 ```
 
-More details about this package is covered later in the core system build.
+More details about this package are covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
