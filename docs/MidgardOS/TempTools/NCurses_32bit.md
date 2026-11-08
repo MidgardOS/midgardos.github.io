@@ -9,12 +9,12 @@
 Name: NCurses 32-bit<br />
 Summary: The Ncurses package contains libraries for terminal-independent handling of character screens - 32-bit build<br />
 License: MIT<br />
-Version: 6.6-20260301<br />
-URL: [https://invisible-mirror.net/archives/ncurses/current/ncurses-6.6-20260301.tgz](https://invisible-mirror.net/archives/ncurses/current/ncurses-6.6-20260301.tgz)<br />
+Version: 6.6-20261107<br />
+URL: [https://invisible-mirror.net/archives/ncurses/current/ncurses-6.6-20261107.tgz](https://invisible-mirror.net/archives/ncurses/current/ncurses-6.6-20261107.tgz)<br />
 
 ## Configuration
 
-To configure NCurses 32-bit for install into our build root, run the following command:
+To configure NCurses 32-bit for installation into our build root, run the following command:
 
 ```bash
 CC="$BRFS_TARGET-gcc -m32" CXX="$BRFS_TARGET-g++ -m32" \
@@ -49,7 +49,7 @@ ln -sv libncursesw.so DESTDIR/usr/lib/libncurses.so
 cp -Rv DESTDIR/usr/lib/* $BRFS/usr/lib
 ```
 
-More details about this package is covered later in the core system build.
+More details about this package are covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
