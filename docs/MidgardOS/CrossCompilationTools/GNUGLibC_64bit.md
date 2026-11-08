@@ -9,12 +9,12 @@
 Name: glibc-64bit<br />
 Summary: The GNU C language runtime library - 64-bit<br />
 License: GPL v2.0+/LGPL 2.1+<br />
-Version: 2.43<br />
-URL: [https://ftp.gnu.org/gnu/glibc/glibc-2.43.tar.xz](https://ftp.gnu.org/gnu/glibc/glibc-2.43.tar.xz)<br />
+Version: 2.44<br />
+URL: [https://ftp.gnu.org/gnu/glibc/glibc-2.44.tar.xz](https://ftp.gnu.org/gnu/glibc/glibc-2.44.tar.xz)<br />
 
 ## Configuration
 
-To configure GNU C Library 32-bit build for install into our cross-compilation root, run the following command:
+To configure GNU C Library 64-bit build for installation into our cross-compilation root, run the following command:
 
 ```bash
 patch -Np1 -i ../patches/glibc/glibc-fhs-1.patch
@@ -33,20 +33,20 @@ echo "rootsbindir=/usr/sbin" > configparms
     --enable-tunables                  \
     --with-bugurl="https://github.com/MidgardOS/MidgardOS/Issues" \
     libc_cv_slibdir=/usr/lib64         \
-    --enable-kernel=6.18
+    --enable-kernel=7.2
 ```
 
 Stay in the build directory until this package is installed.
 
 ## Compilation and Installation
 
-To compile GNU C Library 32-bit build, run the following command:
+To compile GNU C Library 64-bit build, run the following command:
 
 ```bash
 make
 ```
 
-Finally, to install the GNU C Library 32-bit build into the cross-tools tree, run the following command:
+Finally, to install the GNU C Library 64-bit build into the cross-tools tree, run the following command:
 
 ```bash
 make DESTDIR=${BRFS} install
@@ -129,11 +129,11 @@ This should output the following string:
 found ld-linux-x86-64.so.2 at /MidgardOS/usr/lib64/ld-linux-x86-64.so.2
 ```
 
-If any of the above validation steps fail to return similar output, the build root is unusable and needs rebuilt after validating that all steps have been followed exactly as explained in this guide. It is imperative that all of the validation steps work as expected before going any farther.
+If any of the above validation steps fail to return similar output, the build root is unusable and needs to be rebuilt after validating that all steps have been followed exactly as explained in this guide. It is imperative that all of the validation steps work as expected before going any further.
 
 If everything works as expected, delete the current build directory, but do NOT remove the unpacked sources, as they will be used in the next step.
 
-More details about this package is covered later in the core system build.
+More details about this package are covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
