@@ -9,12 +9,12 @@
 Name: GNU Awk<br />
 Summary: GNU Awk is a CLI tool for processing text data<br />
 License: GPL v3 or later<br />
-Version: 5.4.0<br />
-URL: [https://ftp.gnu.org/gnu/gawk/gawk-5.4.0.tar.xz](https://ftp.gnu.org/gnu/gawk/gawk-5.4.0.tar.xz)<br />
+Version: 5.4.1<br />
+URL: [https://ftp.gnu.org/gnu/gawk/gawk-5.4.1.tar.xz](https://ftp.gnu.org/gnu/gawk/gawk-5.4.1.tar.xz)<br />
 
 ## Configuration
 
-To configure GNU Awk for install into the build root, run the following command:
+To configure GNU Awk for installation into the build root, run the following command:
 
 ```bash
 sed -i 's/extras//' Makefile.in
@@ -39,7 +39,7 @@ Finally, to install GNU Awk into the build tree, run the following command:
 make DESTDIR=$BRFS install
 ```
 
-More details about this package is covered later in the core system build.
+More details about this package are covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
