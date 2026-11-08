@@ -9,12 +9,12 @@
 Name: GNU Findutils<br />
 Summary: CLI tools for searching for files based on various criteria<br />
 License: GPL v3 or later<br />
-Version: 4.10.0<br />
-URL: [https://ftp.gnu.org/gnu/findutils/findutils-4.10.0.tar.xz](https://ftp.gnu.org/gnu/findutils/findutils-4.10.0.tar.xz)<br />
+Version: 4.11.0<br />
+URL: [https://ftp.gnu.org/gnu/findutils/findutils-4.11.0.tar.xz](https://ftp.gnu.org/gnu/findutils/findutils-4.11.0.tar.xz)<br />
 
 ## Configuration
 
-To configure GNU Findutils for install into the build root, run the following command:
+To configure GNU Findutils for installation into the build root, run the following command:
 
 ```bash
 ./configure --prefix=/usr                     \
@@ -39,7 +39,7 @@ Finally, to install GNU Findutils into the cross-tools tree, run the following c
 make DESTDIR=$BRFS install
 ```
 
-More details about this package is covered later in the core system build.
+More details about this package are covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
