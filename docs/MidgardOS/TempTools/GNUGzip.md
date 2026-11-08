@@ -9,12 +9,12 @@
 Name: GNU Gzip<br />
 Summary: The GNU compression and decompression tools<br />
 License: GPL v3 or later<br />
-Version: 1.14<br />
-URL: [https://ftp.gnu.org/gnu/gzip/gzip-1.14.tar.xz](https://ftp.gnu.org/gnu/gzip/gzip-1.14.tar.xz)<br />
+Version: 1.15<br />
+URL: [https://ftp.gnu.org/gnu/gzip/gzip-1.15.tar.xz](https://ftp.gnu.org/gnu/gzip/gzip-1.15.tar.xz)<br />
 
 ## Configuration
 
-To configure GNU Gzip for install into the build root, run the following command:
+To configure GNU Gzip for installation into the build root, run the following command:
 
 ```bash
 ./configure --prefix=/usr           \
@@ -37,7 +37,7 @@ Finally, to install GNU Gzip into the build tree, run the following command:
 make DESTDIR=$BRFS install
 ```
 
-More details about this package is covered later in the core system build.
+More details about this package are covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
