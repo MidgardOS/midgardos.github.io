@@ -9,17 +9,17 @@
 Name: binutils<br />
 Summary: A suite of tools for working with executable files<br />
 License: LGPL v3.0+<br />
-Version: 2.46<br />
-URL: [https://ftp.gnu.org/gnu/binutils/binutils-2.46.tar.xz](https://ftp.gnu.org/gnu/binutils/binutils-2.46.tar.xz)<br />
+Version: 2.47<br />
+URL: [https://ftp.gnu.org/gnu/binutils/binutils-2.47.tar.xz](https://ftp.gnu.org/gnu/binutils/binutils-2.47.tar.xz)<br />
 
 ## Configuration
 
-To configure GNU Binutils for install into our cross-compilation root, run the following command:
+To configure GNU Binutils for installation into our cross-compilation root, run the following command:
 
 ```bash
 sed '6031s/$add_dir//' -i ltmain.sh
 mkdir -pv build && cd build
-CFLAGS="-g -O2 -Wno-discarded-qualifiers " \
+CFLAGS="-g -O2 -Wno-discarded-qualifiers "   \
 ../configure --prefix=/usr                   \
              --libdir=/usr/lib64             \
              --libexecdir=/usr/lib64         \
@@ -50,7 +50,7 @@ make DESTDIR=$BRFS install
 rm -v $BRFS/usr/lib64/lib{bfd,ctf,ctf-nobfd,opcodes,sframe}.{a,la}
 ```
 
-More details about this package is covered later in the core system build.
+More details about this package are covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
