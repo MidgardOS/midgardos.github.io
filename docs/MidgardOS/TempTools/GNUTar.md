@@ -14,7 +14,7 @@ URL: [https://ftp.gnu.org/gnu/tar/tar-1.35.tar.xz](https://ftp.gnu.org/gnu/tar/t
 
 ## Configuration
 
-To configure GNU Tar for install into the build root, run the following command:
+To configure GNU Tar for installation into the build root, run the following command:
 
 ```bash
 ./configure --prefix=/usr           \
@@ -39,7 +39,7 @@ make DESTDIR=$BRFS install
 mv -v $BRFS/usr/lib64/rmt $BRFS/usr/bin/
 ```
 
-More details about this package is covered later in the core system build.
+More details about this package are covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
