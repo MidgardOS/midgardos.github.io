@@ -9,12 +9,12 @@
 Name: libstdc++<br />
 Summary: The C++ language runtime libraries<br />
 License: GPL v3.0+<br />
-Version: 15.2.0<br />
-URL: [https://ftp.gnu.org/gnu/gcc/gcc-15.2.0.tar.xz](https://ftp.gnu.org/gnu/gcc/gcc-15.2.0.tar.xz)<br />
+Version: 16.2.0<br />
+URL: [https://ftp.gnu.org/gnu/gcc/gcc-16.2.0.tar.xz](https://ftp.gnu.org/gnu/gcc/gcc-16.2.0.tar.xz)<br />
 
 ## Configuration
 
-To configure LibStdC++ from the the GNU Compiler Collection into our cross-compilation root, run the following command:
+To configure LibStdC++ from the GNU Compiler Collection into our cross-compilation root, run the following command:
 
 ```bash
 mkdir -v build && cd build
@@ -25,7 +25,7 @@ mkdir -v build && cd build
     --enable-multilib       \
     --disable-nls           \
     --disable-libstdcxx-pch \
-    --with-gxx-include-dir=/tools/$BRFS_TARGET/include/c++/15.2.0
+    --with-gxx-include-dir=/tools/$BRFS_TARGET/include/c++/16.2.0
 ```
 
 Stay in the build directory until this package is installed.
@@ -51,7 +51,7 @@ rm -v $BRFS/usr/lib/lib{stdc++{,exp,fs},supc++}.la
 rm -v $BRFS/usr/lib64/lib{stdc++{,exp,fs},supc++}.la
 ```
 
-More details about this package is covered later in the core system build.
+More details about this package are covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
