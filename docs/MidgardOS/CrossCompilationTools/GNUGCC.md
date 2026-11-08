@@ -10,31 +10,31 @@ Name: gcc<br />
 Summary: A suite of compiler tools<br />
 License: GPL v3.0+<br />
 Version: 15.2.0<br />
-URL: [https://ftp.gnu.org/gnu/gcc/gcc-15.2.0/gcc-15.2.0.tar.xz](https://ftp.gnu.org/gnu/gcc/gcc-15.2.0/gcc-15.2.0.tar.xz)<br />
+URL: [https://ftp.gnu.org/gnu/gcc/gcc-16.2.0/gcc-16.2.0.tar.xz](https://ftp.gnu.org/gnu/gcc/gcc-16.2.0/gcc-16.2.0.tar.xz)<br />
 
 ## Additional Sources
 
 GMP URL: [https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz](https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz)<br />
-ISL URL: [https://libisl.sourceforge.io/isl-0.27.tar.xz](https://libisl.sourceforge.io/isl-0.27.tar.xz)<br />
-MPC URL: [https://ftp.gnu.org/gnu/mpc/mpc-1.3.1.tar.gz](https://ftp.gnu.org/gnu/mpc/mpc-1.3.1.tar.gz)<br />
+ISL URL: [https://libisl.sourceforge.io/isl-0.28.tar.xz](https://libisl.sourceforge.io/isl-0.28.tar.xz)<br />
+MPC URL: [https://ftp.gnu.org/gnu/mpc/mpc-1.4.1.tar.xz](https://ftp.gnu.org/gnu/mpc/mpc-1.4.1.tar.xz)<br />
 MPFR URL: [https://ftp.gnu.org/gnu/mpfr/mpfr-4.2.2.tar.xz](https://ftp.gnu.org/gnu/mpfr/mpfr-4.2.2.tar.xz)<br />
 
 ## Pre-Configuration
 
-Unlike earlier cross-compilation tools, GCC requires some extra steps to allow the binaries generated to utilize the earlier packages, such as binutils, etc. Much of the change requires MPC, MPFR, and GMP sources installed into the source tree to build correctly. To do so, run the following commands:
+Unlike earlier cross-compilation tools, GCC requires some extra steps to allow the binaries generated to utilise the earlier packages, such as binutils, etc. Much of the change requires MPC, MPFR, and GMP sources to be installed into the source tree to build correctly. To do so, run the following commands:
 
 ```bash
-tar xvf ../isl-0.27.tar.xz
-mv -v isl-0.27 isl
+tar xvf ../isl-0.28.tar.xz
+mv -v isl-0.28 isl
 tar xvf ../mpfr-4.2.2.tar.xz
 mv -v mpfr-4.2.2 mpfr
 tar xvf ../gmp-6.3.0.tar.xz
 mv -v gmp-6.3.0 gmp
-tar xvf ../mpc-1.3.1.tar.gz
-mv -v mpc-1.3.1 mpc
+tar xvf ../mpc-1.4.1.tar.xz
+mv -v mpc-1.4.1 mpc
 ```
 
-Next, we need to apply a small fix to allow older 32bit pre-compiled Linux binaries and Windows PE 32bit binaries to run correctly on MidgardOS. To do so, run the following command:
+Next, we need to apply a small fix to allow older 32-bit pre-compiled Linux binaries and Windows PE 32-bit binaries to run correctly on MidgardOS. To do so, run the following command:
 
 ```bash
 sed '/STACK_REALIGN_DEFAULT/s/0/(!TARGET_64BIT \&\& TARGET_SSE)/' \
@@ -43,7 +43,7 @@ sed '/STACK_REALIGN_DEFAULT/s/0/(!TARGET_64BIT \&\& TARGET_SSE)/' \
 
 ## Configuration
 
-To configure the GNU Compiler Collection for install into our cross-compilation root, run the following command:
+To configure the GNU Compiler Collection for installation into our cross-compilation root, run the following command:
 
 ```bash
 mkdir -v build && cd build
@@ -100,7 +100,7 @@ cat gcc/limitx.h gcc/glimits.h gcc/limity.h > \
   `dirname $(${BRFS_TARGET}-gcc -print-libgcc-file-name)`/include/limits.h
 ```
 
-More details about this package is covered later in the core system build.
+More details about this package are covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
