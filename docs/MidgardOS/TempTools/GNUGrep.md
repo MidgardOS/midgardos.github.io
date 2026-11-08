@@ -14,7 +14,7 @@ URL: [https://ftp.gnu.org/gnu/grep/grep-3.12.tar.xz](https://ftp.gnu.org/gnu/gre
 
 ## Configuration
 
-To configure GNU Grep for install into the build root, run the following command:
+To configure GNU Grep for installation into the build root, run the following command:
 
 ```bash
 ./configure --prefix=/usr           \
@@ -38,7 +38,7 @@ Finally, to install GNU Grep into the build tree, run the following command:
 make DESTDIR=$BRFS install
 ```
 
-More details about this package is covered later in the core system build.
+More details about this package are covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
