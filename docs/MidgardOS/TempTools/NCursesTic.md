@@ -14,7 +14,7 @@ URL: [https://invisible-mirror.net/archives/ncurses/current/ncurses-6.6-20261107
 
 ## Notes
 
-This step will only install the `tic` binary, as NCurses cannot be built and ran safely without tic already installed during the cross-compilation process as the build of NCurses has a circular dependency.
+This step will only install the `tic` binary, as NCurses cannot be built and run safely without tic already installed during the cross-compilation process as the build of NCurses has a circular dependency.
 
 ## Configuration
 
