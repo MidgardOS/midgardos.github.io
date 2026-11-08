@@ -9,12 +9,12 @@
 Name: GNU Sed<br />
 Summary: The GNU Stream Editor<br />
 License: GPL v3 or later<br />
-Version: 4.9<br />
-URL: [https://ftp.gnu.org/gnu/sed/sed-4.9.tar.xz](https://ftp.gnu.org/gnu/sed/sed-4.9.tar.xz)<br />
+Version: 4.10<br />
+URL: [https://ftp.gnu.org/gnu/sed/sed-4.10.tar.xz](https://ftp.gnu.org/gnu/sed/sed-4.10.tar.xz)<br />
 
 ## Configuration
 
-To configure GNU Sed for install into the build root, run the following command:
+To configure GNU Sed for installation into the build root, run the following command:
 
 ```bash
 ./configure --prefix=/usr           \
@@ -38,7 +38,7 @@ Finally, to install GNU Sed into the build tree, run the following command:
 make DESTDIR=$BRFS install
 ```
 
-More details about this package is covered later in the core system build.
+More details about this package are covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
