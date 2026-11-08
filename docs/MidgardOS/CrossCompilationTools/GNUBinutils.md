@@ -9,8 +9,8 @@
 Name: binutils<br />
 Summary: A suite of tools for working with executable files<br />
 License: LGPL v3.0+<br />
-Version: 2.46<br />
-URL: [https://ftp.gnu.org/gnu/binutils/binutils-2.46.0.tar.xz](https://ftp.gnu.org/gnu/binutils/binutils-2.46.0.tar.xz)<br />
+Version: 2.47<br />
+URL: [https://ftp.gnu.org/gnu/binutils/binutils-2.47.tar.xz](https://ftp.gnu.org/gnu/binutils/binutils-2.47.tar.xz)<br />
 
 ## Configuration
 
@@ -40,7 +40,7 @@ Finally, to install GNU Binutils into the cross-tools tree, run the following co
 make install
 ```
 
-More details about this package is covered later in the core system build.
+More details about this package are covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
