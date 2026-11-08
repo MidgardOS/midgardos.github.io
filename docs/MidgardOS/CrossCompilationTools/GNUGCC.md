@@ -9,7 +9,7 @@
 Name: gcc<br />
 Summary: A suite of compiler tools<br />
 License: GPL v3.0+<br />
-Version: 15.2.0<br />
+Version: 16.2.0<br />
 URL: [https://ftp.gnu.org/gnu/gcc/gcc-16.2.0/gcc-16.2.0.tar.xz](https://ftp.gnu.org/gnu/gcc/gcc-16.2.0/gcc-16.2.0.tar.xz)<br />
 
 ## Additional Sources
