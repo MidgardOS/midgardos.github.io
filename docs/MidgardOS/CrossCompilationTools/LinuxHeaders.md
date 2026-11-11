@@ -9,8 +9,8 @@
 Name: linux-headers<br />
 Summary: System headers meant for interfacing with the Linux Kernel<br />
 License: GPL v2<br />
-Version: 7.2.15<br />
-URL: [https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.2.15.tar.xz](https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.2.15.tar.xz)
+Version: 7.3.4<br />
+URL: [https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.4.tar.xz](https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.4.tar.xz)
 
 ## Configuration
 
