@@ -33,7 +33,7 @@ echo "rootsbindir=/usr/sbin" > configparms
     --enable-tunables                  \
     --with-bugurl="https://github.com/MidgardOS/MidgardOS/Issues" \
     libc_cv_slibdir=/usr/lib64         \
-    --enable-kernel=7.2
+    --enable-kernel=7.3
 ```
 
 Stay in the build directory until this package is installed.
