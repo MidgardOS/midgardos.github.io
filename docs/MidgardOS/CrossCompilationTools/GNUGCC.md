@@ -15,7 +15,6 @@ URL: [https://ftp.gnu.org/gnu/gcc/gcc-16.2.0/gcc-16.2.0.tar.xz](https://ftp.gnu.
 ## Additional Sources
 
 GMP URL: [https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz](https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz)<br />
-ISL URL: [https://libisl.sourceforge.io/isl-0.28.tar.xz](https://libisl.sourceforge.io/isl-0.28.tar.xz)<br />
 MPC URL: [https://ftp.gnu.org/gnu/mpc/mpc-1.4.1.tar.xz](https://ftp.gnu.org/gnu/mpc/mpc-1.4.1.tar.xz)<br />
 MPFR URL: [https://ftp.gnu.org/gnu/mpfr/mpfr-4.2.2.tar.xz](https://ftp.gnu.org/gnu/mpfr/mpfr-4.2.2.tar.xz)<br />
 
@@ -24,8 +23,6 @@ MPFR URL: [https://ftp.gnu.org/gnu/mpfr/mpfr-4.2.2.tar.xz](https://ftp.gnu.org/g
 Unlike earlier cross-compilation tools, GCC requires some extra steps to allow the binaries generated to utilise the earlier packages, such as binutils, etc. Much of the change requires MPC, MPFR, and GMP sources to be installed into the source tree to build correctly. To do so, run the following commands:
 
 ```bash
-tar xvf ../isl-0.28.tar.xz
-mv -v isl-0.28 isl
 tar xvf ../mpfr-4.2.2.tar.xz
 mv -v mpfr-4.2.2 mpfr
 tar xvf ../gmp-6.3.0.tar.xz
@@ -58,7 +55,7 @@ mkdir -v build && cd build
     --enable-default-ssp                           \
     --enable-initfini-array                        \
     --with-bugurl="https://github.com/MidgardOS/MidgardOS/issues" \
-	--with-pkgversion="MidgardOS"                  \
+    --with-pkgversion="MidgardOS"                  \
     --disable-nls                                  \
     --disable-shared                               \
     --enable-multilib                              \
