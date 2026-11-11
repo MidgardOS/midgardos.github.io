@@ -18,10 +18,16 @@ To configure GNU Binutils for install into our cross-compilation root, run the f
 
 ```bash
 mkdir -pv build && cd build
-../configure \
-    --prefix=/tools --libdir=/tools/lib64 --target=${BRFS_TARGET} \
-    --with-sysroot=${BRFS} --disable-nls --enable-gprofng=no --disable-werror \
-    --enable-new-dtags --enable-default-hash-style=gnu
+../configure                \
+    --prefix=/tools         \
+    --libdir=/tools/lib64   \
+    --target=${BRFS_TARGET} \
+    --with-sysroot=${BRFS}  \
+    --disable-nls           \
+    --enable-gprofng=no     \
+    --disable-werror        \
+    --enable-new-dtags      \
+    --enable-default-hash-style=gnu
 ```
 
 Stay in the build directory until this package is installed.
