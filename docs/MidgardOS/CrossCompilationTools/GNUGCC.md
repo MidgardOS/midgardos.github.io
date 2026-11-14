@@ -47,21 +47,20 @@ mkdir -v build && cd build
 ../configure                                       \
     --target=$BRFS_TARGET                          \
     --prefix=$BRFS/tools                           \
-    --with-glibc-version=2.43                      \
+    --with-glibc-version=2.44                      \
     --with-sysroot=$BRFS                           \
     --with-newlib                                  \
     --without-headers                              \
     --enable-default-pie                           \
     --enable-default-ssp                           \
+    --disable-fixincludes                          \
     --enable-initfini-array                        \
     --with-bugurl="https://github.com/MidgardOS/MidgardOS/issues" \
     --with-pkgversion="MidgardOS"                  \
     --disable-nls                                  \
     --disable-shared                               \
     --enable-multilib                              \
-    --with-arch-32=x86-64-v2                       \
-    --with-arch=x86-64-v2                          \
-    --with-tune=generic                            \
+    --with-multilib-list=m64,m32                   \
     --disable-decimal-float                        \
     --disable-threads                              \
     --disable-libatomic                            \
