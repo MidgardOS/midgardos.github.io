@@ -18,14 +18,14 @@ To configure GNU M4 for installation into the build root, run the following comm
 
 ```bash
 sed 's/\[\[__nodiscard__]]//' -i lib/config.hin
-./configure --prefix=/usr   \
-            --host=$BRFS_TARGET \
-            --build=$BRFS_HOST  \
-            --without-included-regex \
-            --disable-dependency-tracking \
-        	gl_cv_func_isnanl_works=yes \
-	        gl_cv_func_printf_directive_n=yes \
-	        gl_cv_func_printf_infinite_long_double=yes
+./configure --prefix=/usr                       \
+            --host=$BRFS_TARGET                 \
+            --build=$BRFS_HOST                  \
+            --without-included-regex            \
+            --disable-dependency-tracking       \
+            gl_cv_func_isnanl_works=yes         \
+            gl_cv_func_printf_directive_n=yes   \
+            gl_cv_func_printf_infinite_long_double=yes
 ```
 
 ## Compilation and Installation
