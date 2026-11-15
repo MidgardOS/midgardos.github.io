@@ -2,19 +2,19 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./UtilLinux64bit.md) Util-Linux 64-bit | [HOME](../README.md) | Cleaning up and Archiving Temporary System [>>](./CleanupAndArchival.md) |
+| [<<](./UtilLinux_64bit.md) Util-Linux 64-bit | [HOME](../README.md) | Cleaning up and Archiving Temporary System [>>](./CleanupAndArchival.md) |
 
 ## Util-Linux 32-bit
 
 Name: Util-Linux 32-bit<br />
 Summary: Miscellaneous command-line utilities - 32-bit build<br />
 License: GPL v2 or later<br />
-Version: 2.41.3<br />
-URL: [https://www.kernel.org/pub/linux/utils/util-linux/v2.41/util-linux-2.41.3.tar.xz](https://www.kernel.org/pub/linux/utils/util-linux/v2.41/util-linux-2.41.3.tar.xz)<br />
+Version: 2.42.4<br />
+URL: [https://www.kernel.org/pub/linux/utils/util-linux/v2.42/util-linux-2.42.4.tar.xz](https://www.kernel.org/pub/linux/utils/util-linux/v2.42/util-linux-2.42.4.tar.xz)<br />
 
 ## Configuration
 
-To configure Util Linux 32-bir for install into the build root, run the following command:
+To configure Util-Linux 32-bit for installation into the build root, run the following command:
 
 ```bash
 CC="gcc -m32" \
@@ -22,7 +22,7 @@ CC="gcc -m32" \
             --libdir=/usr/lib                         \
             --libexecdir=/usr/lib                     \
             --runstatedir=/run                        \
-            --docdir=/usr/share/doc/util-linux-2.41.3 \
+            --docdir=/usr/share/doc/util-linux-2.42.4 \
             --disable-chfn-chsh                       \
             --disable-login                           \
             --disable-nologin                         \
@@ -51,8 +51,8 @@ make DESTDIR=$(pwd)/DESTDIR install
 cp -Rv DESTDIR/usr/lib/* /usr/lib/
 ```
 
-More details about this package is covered later in the core system build.
+More details about this package are covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./UtilLinux64bit.md) Util-Linux 64-bit | [HOME](../README.md) | Cleaning up and Archiving Temporary System [>>](./CleanupAndArchival.md) |
+| [<<](./UtilLinux_64bit.md) Util-Linux 64-bit | [HOME](../README.md) | Cleaning up and Archiving Temporary System [>>](./CleanupAndArchival.md) |
