@@ -9,19 +9,19 @@
 Name: GNU GLibC 64-bit<br />
 Summary: The GNU C language runtime library - 64-bit<br />
 License: GPL v2.0+/LGPL 2.1+<br />
-Version: 2.43<br />
-URL: [https://ftp.gnu.org/gnu/glibc/glibc-2.43.tar.xz](https://ftp.gnu.org/gnu/glibc/glibc-2.43.tar.xz)<br />
+Version: 2.44<br />
+URL: [https://ftp.gnu.org/gnu/glibc/glibc-2.44.tar.xz](https://ftp.gnu.org/gnu/glibc/glibc-2.44.tar.xz)<br />
 
 Average Build Time: 6 SBU<br />
 Used Install Space: 2.2 GiB<br />
 
 ## Additional Downloads
 
-Time-zone data: [https://data.iana.org/time-zones/releases/tzdata2026a.tar.gz](https://data.iana.org/time-zones/releases/tzdata2026a.tar.gz)<br />
+Time-zone data: [https://data.iana.org/time-zones/releases/tzdata2026e.tar.gz](https://data.iana.org/time-zones/releases/tzdata2026e.tar.gz)<br />
 
 ## Configuration
 
-To configure GNU GLibC 64-bit for install into the build root, run the following command:
+To configure GNU GLibC 64-bit for installation into the build root, run the following command:
 
 ```bash
 patch -Np1 -i ../patches/glibc/glibc-fhs-1.patch
@@ -42,7 +42,7 @@ echo "rootsbindir=/usr/sbin" > configparms
              --with-bugurl="https://github.com/MidgardOS/MidgardOS/Issues"  \
              --disable-werror                                               \
              libc_cv_slibdir=/usr/lib64                                     \
-             --enable-kernel=6.18
+             --enable-kernel=7.3
 ```
 
 ## Compilation and Installation
@@ -61,16 +61,18 @@ Next, run the code tests:
 make check
 ```
 
-There are a couple tests that may fail for various reasons. The ones listed below are safe to ignore:
+There are a couple of tests that may fail for various reasons. The ones listed below are safe to ignore:
 - io/tst-lchmod is known to fail in the chroot environment.
 - misc/tst-preadvwritev2 and misc/tst-preadvwritev64v2 are known to fail if the host kernel is Linux-6.14 or later.
 - Some tests, for example nss/tst-nss-files-hosts-multi and nptl/tst-thread-affinity* are known to fail due to a timeout (especially when the system is relatively slow and/or running the test suite with multiple parallel make jobs). These tests can be identified with:
-```
+
+```bash
 grep "Timed out" $(find -name \*.out)
 ```
+
 It's possible to re-run a single test with enlarged timeout with TIMEOUTFACTOR=<factor> make test t=<test name>. For example, TIMEOUTFACTOR=10 make test t=nss/tst-nss-files-hosts-multi will re-run nss/tst-nss-files-hosts-multi with ten times the original timeout.
 
-Finally, to install GNU GLibC 64-bit into the build tree, run the following command:
+Finally, to install GNU GLibC 64-bit into the build tree, run the following commands:
 
 ```bash
 sed '/test-installation/s@$(PERL)@echo not running@' -i ../Makefile
@@ -105,10 +107,10 @@ Now that GLibC and the locales are installed, there are a few extra steps needed
 install -v -m644 -o root -g root ../../midgardos.github.io/docs/MidgardOS/system_files/etc/nsswitch.conf /etc/
 ```
 
-Once the `/etc/nsswitch.conf` is installed, timezone data needs setup. To do so, run the following commands:
+Once the `/etc/nsswitch.conf` is installed, timezone data needs to be set up. To do so, run the following commands:
 
 ```bash
-tar -xf ../../tzdata2025b.tar.gz
+tar -xf ../../tzdata2026e.tar.gz
 
 ZONEINFO=/usr/share/zoneinfo
 mkdir -pv $ZONEINFO/{posix,right}
@@ -126,7 +128,7 @@ unset ZONEINFO tz
 tzselect
 ```
 
-After running `tzselect` and answering a couple questions, it will output the name of the time zone appropriate for your system. To enable this, run the following command subsituting the time zone for the `$TZ` variable:
+After running `tzselect` and answering a couple of questions, it will output the name of the time zone appropriate for your system. To enable this, run the following command substituting the time zone for the `$TZ` variable:
 
 ```bash
 ln -sfv /usr/share/zoneinfo/$TZ /etc/localtime
