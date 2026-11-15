@@ -30,7 +30,7 @@ Finally, to install Hostname into the build tree, run the following command:
 make install
 ```
 
-More details about this package is covered later in the core system build.
+More details about this package are covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
