@@ -4,7 +4,7 @@
 | --- | --- | ---: |
 | [<<](./ZLib_64bit.md) ZLib 64-bit | [HOME](../README.md) | BZip2 64-bit [>>](./BZip2_64bit.md) |
 
-# ZLib 32-bit
+## ZLib 32-bit
 
 Name: ZLib 32-bit<br />
 Summary: A fast compression library<br />
