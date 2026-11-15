@@ -6,33 +6,68 @@
 
 ## Preparing the Virtual Kernel Filesystems
 
-One of the ways applications use to communicate with the Linux kernel is through various Virtual File Systems exposed into user-space. These filesystems expose device access, process information, and system data, among many more. To ensure that they are able to do so from within the chroot environment is to mount them inside the environment.
-
-First, as the `root` user, ensure that the mountpoints required exist:
-```bash
-BRFS=/MidgardOS
-for DIR in "dev" "proc" "sys" "run"; do
-    install -d -v -m 755 -o root -g root $BRFS/$DIR
-done
-```
+One of the ways applications use to communicate with the Linux kernel is through various virtual filesystems exposed into user-space. These filesystems expose device access, process information, and system data, among many others. To ensure that they are able to do so from within the chroot environment, we must mount them inside it.
 
 ## Mounting the Virtual Kernel Filesystems
 
-Now that the mountpoints have been created, run the following commands to mount the Virtual Kernel Filesystems into the build root tree paths:
+The mountpoints were created earlier when the directories and various symbolic links were created. Now you can run the following commands as the `root` user to create a script and mount the Virtual Kernel Filesystems into the build root tree paths:
 
 ```bash
+cat <<'EOF' > /root/mountvfs.sh
+#!/bin/bash
+
+set -euo pipefail
+
+function check_mounted {
+    local mountpoint=$1
+
+    retval=0
+    mountpoint $mountpoint >/dev/null || retval=$?
+
+    echo $retval
+}
+
 BRFS=/MidgardOS
-mount -v -t devtmpfs devtmpfs $BRFS/dev/
-mount -v -t devpts devpts -o gid=5,mode=620 $BRFS/dev/pts/
-mount -v -t proc proc $BRFS/proc/
-mount -v -t sysfs sysfs $BRFS/sys/
-mount -v -t tmpfs tmpfs $BRFS/run/
-if [ -h $BRFS/dev/shm ]; then
-  install -v -d -m 1777 ${BRFS}$(realpath /dev/shm)
+if [[ "$(check_mounted $BRFS/dev)" != 32 ]] ; then
+    mount -v -t devtmpfs devtmpfs $BRFS/dev/
 else
-  mount -v -t tmpfs -o mode=1777,nosuid,nodev,inode64 tmpfs $BRFS/dev/shm/
+    echo "$BRFS/dev already mounted. Skipping"
 fi
+if [[ "$(check_mounted $BRFS/dev/pts)" != 32 ]] ; then
+    mount -v -t devpts devpts -o gid=5,mode=620 $BRFS/dev/pts/
+else
+    echo "$BRFS/dev/pts already mounted. Skipping"
+fi
+if [[ "$(check_mounted $BRFS/proc)" != 32 ]]; then
+    mount -v -t proc proc $BRFS/proc/
+else
+    echo "$BRFS/proc already mounted. Skipping"
+fi
+if [[ "$(check_mounted $BRFS/sys)" != 32 ]]; then
+    mount -v -t sysfs sysfs $BRFS/sys/
+else
+    echo "$BRFS/sys already mounted. Skipping"
+fi
+if [[ "$(check_mounted $BRFS/run)" != 32 ]]; then
+    mount -v -t tmpfs tmpfs $BRFS/run/
+else
+    echo "$BRFS/run already mounted. Skipping"
+fi
+if [[ "$(check_mounted $BRFS/dev/shm)" != 32 ]]; then
+    if [[ -h $BRFS/dev/shm ]]; then
+        install -v -d -m 1777 ${BRFS}$(realpath /dev/shm)
+    else
+        mount -v -t tmpfs -o mode=1777,nosuid,nodev,inode64 tmpfs $BRFS/dev/shm/
+    fi
+else
+    echo "$BRFS/dev/shm already mounted. Skipping"
+fi
+EOF
+chmod 755 /root/mountvfs.sh
+./mountvfs.sh
 ```
+
+This script is useful for preparing to re-enter the build root later.
 
 | Navigation |||
 | --- | --- | ---: |
