@@ -4,7 +4,7 @@
 | --- | --- | ---: |
 | [<<](./GNUGLibC_32bit.md) GNU GLibC 32-bit | [HOME](../README.md) | ZLib 32-bit [>>](./ZLib_32bit.md) |
 
-# ZLib 64-bit
+## ZLib 64-bit
 
 Name: zlib 64-bit<br />
 Summary: A fast compression library<br />
