@@ -14,7 +14,7 @@ URL: [https://ftp.gnu.org/gnu/bison/bison-3.8.2.tar.xz](https://ftp.gnu.org/gnu/
 
 ## Configuration
 
-To configure GNU Bison for install into the build root, run the following command:
+To configure GNU Bison for installation into the build root, run the following command:
 
 ```bash
 ./configure --prefix=/usr           \
@@ -37,7 +37,7 @@ Finally, to install GNU Bison into the build tree, run the following command:
 make install
 ```
 
-More details about this package is covered later in the core system build.
+More details about this package are covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
