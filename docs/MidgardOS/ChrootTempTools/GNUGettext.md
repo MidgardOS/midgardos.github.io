@@ -14,13 +14,16 @@ URL: [https://ftp.gnu.org/gnu/gettext/gettext-1.0.tar.xz](https://ftp.gnu.org/gn
 
 ## Configuration
 
-To configure GNU Gettext for install into the build root, run the following command:
+To configure GNU Gettext for installation into the build root, run the following command:
 
 ```bash
-./configure --prefix=/usr --libdir=/usr/lib64 --libexecdir=/usr/lib64 --disable-shared
+./configure --prefix=/usr           \
+            --libdir=/usr/lib64     \
+            --libexecdir=/usr/lib64 \
+            --disable-shared
 ```
 
-For now, we only need a couple applications from the utilities that are normally installed.
+For now, we only need a couple of applications from the utilities that are normally installed.
 
 ## Compilation and Installation
 
@@ -36,7 +39,7 @@ Finally, to install the minimal required tools from GNU Gettext into the build t
 cp -v gettext-tools/src/{msgfmt,msgmerge,xgettext} /usr/bin
 ```
 
-More details about this package is covered later in the core system build.
+More details about this package are covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
