@@ -33,13 +33,13 @@ make -f Makefile-libbz2_so
 make libbz2.a
 ```
 
-Finally, to install BZip2 64-bit into the build tree, run the following commands:
+Finally, to install BZip2 32-bit into the build tree, run the following commands:
 
 ```bash
-install -Dm755 libbz2.so.1.0.8 /usr/lib/libbz2.so.1.0.8
-ln -sf libbz2.so.1.0.8 /usr/lib/libbz2.so
-ln -sf libbz2.so.1.0.8 /usr/lib/libbz2.so.1
-ln -sf libbz2.so.1.0.8 /usr/lib/libbz2.so.1.0
+install -Dvm755 libbz2.so.1.0.8 /usr/lib/libbz2.so.1.0.8
+ln -sfv libbz2.so.1.0.8 /usr/lib/libbz2.so
+ln -sfv libbz2.so.1.0.8 /usr/lib/libbz2.so.1
+ln -sfv libbz2.so.1.0.8 /usr/lib/libbz2.so.1.0
 ```
 
 ## Contents
