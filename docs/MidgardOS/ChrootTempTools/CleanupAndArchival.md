@@ -48,7 +48,7 @@ done
 Now that the kernel virtual filesystems are unmounted, create the archive of the build root with the following commands:
 
 ```bash
-BRFS=/MidgardOS cd $BRFS && tar -cJpf $HOME/MidgardOS-temp-tools-2026.03.tar.xz .
+BRFS=/MidgardOS cd $BRFS && tar -cJpf $HOME/MidgardOS-temp-tools-2026.11.tar.xz .
 ```
 
 | Navigation |||
