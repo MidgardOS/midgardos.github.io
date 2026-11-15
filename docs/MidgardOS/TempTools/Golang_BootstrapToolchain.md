@@ -7,10 +7,10 @@
 ## Golang Bootstrap Toolchain
 
 Name: Golang Bootstrap Toolchain<br />
-Summary: A binary bootstrap for Golang, a compiled, GC enabled, high-concurrency language for systems and cloud tasks<br />
+Summary: A binary bootstrap for Golang, a compiled, GC-enabled, high-concurrency language for systems and cloud tasks<br />
 License: BSD 3-clause<br />
-Version: 1.26.1<br />
-URL: [https://go.dev/dl/go1.26.1.linux-amd64.tar.gz](https://go.dev/dl/go1.26.1.linux-amd64.tar.gz)<br />
+Version: 1.27.4<br />
+URL: [https://go.dev/dl/go1.27.4.linux-amd64.tar.gz](https://go.dev/dl/go1.27.4.linux-amd64.tar.gz)<br />
 
 Average Build Time: less than 0.1 SBU<br />
 Used Install Space: 264 MiB<br />
@@ -28,12 +28,14 @@ Unlike other packages, this temporary toolchain will be installed in /usr/local/
 To install the bootstrap toolchain, run the following commands:
 
 ```bash
-cd /sources
-tar xvf go1.26.1.tar.gz
-cp -Rv go /usr/local/
-chown -Rv root:root /usr/local/go
-ln -sv /usr/local/go/bin/go /usr/local/bin/
-ln -sv /usr/local/go/bin/gofmt /usr/local/bin/
+cd ~/sources
+tar xvf go1.27.4.linux-amd64.tar.gz
+cp -Rv go $BRFS/usr/local/
+su -c "chown -Rv root:root $BRFS/usr/local/go"
+pushd $BRFS/usr/bin
+ln -sv ../local/go/bin/go go
+ln -sv ../local/go/bin/gofmt gofmt
+popd
 ```
 
 ## Validating Installation
@@ -60,10 +62,10 @@ This should output the following:
 ```
 hello, world
 0
-go version 1.26.1 linux/amd64
+go version 1.27.4 linux/amd64
 ```
 
-More details about this package is covered later in the core system build.
+More details about this package are covered later in the core system build.
 
 
 | Navigation |||
