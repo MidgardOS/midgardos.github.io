@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUBison.md) GNU Bison | [HOME](../README.md) | Python 3.13 [>>](./Python313.md) |
+| [<<](./GNUBison.md) GNU Bison | [HOME](../README.md) | Python 3.15 [>>](./Python315.md) |
 
 ## Perl
 
@@ -53,4 +53,4 @@ More details about this package are covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUBison.md) GNU Bison | [HOME](../README.md) | Python 3.13 [>>](./Python313.md) |
+| [<<](./GNUBison.md) GNU Bison | [HOME](../README.md) | Python 3.15 [>>](./Python315.md) |
