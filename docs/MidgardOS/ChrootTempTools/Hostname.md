@@ -1,4 +1,4 @@
-# Section X - $SECTION_TITLE
+# Section 4 - Entering the Chroot and More Temporary Tools
 
 | Navigation |||
 | --- | --- | ---: |
