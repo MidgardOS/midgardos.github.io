@@ -9,8 +9,8 @@
 Name: IANA Etc Files<br />
 Summary: The `services` and `protocols` text databases<br />
 License: MIT<br />
-Version: 20260226<br />
-URL: [https://github.com/Mic92/iana-etc/releases/download/20260226/iana-etc-20260226.tar.gz](https://github.com/Mic92/iana-etc/releases/download/20260226/iana-etc-20260226.tar.gz)<br />
+Version: 20261110<br />
+URL: [https://github.com/Mic92/iana-etc/releases/download/20261110/iana-etc-20261110.tar.gz](https://github.com/Mic92/iana-etc/releases/download/20261110/iana-etc-20261110.tar.gz)<br />
 
 Average Build Time: less than 0.1 SBU<br />
 Used Install Space: 4.8 MiB<br />
