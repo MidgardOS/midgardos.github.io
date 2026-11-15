@@ -28,7 +28,7 @@ For the build root to work optimally, there are a few files that should be creat
 ln -sv /proc/self/mounts /etc/mtab
 ```
 
-Next, create a basic `/etc/hosts` file that will be referenced in some application test suites. and in Perl's configuration files:
+Next, create a basic `/etc/hosts` file that will be referenced in some application test suites, and in Perl's configuration files:
 ```bash
 install -v -m644 -o 0 -g 0 /sources/midgardos.github.io/docs/MidgardOS/system_files/etc/hosts /etc
 ```
@@ -59,13 +59,25 @@ To remove the "I have no name!" prompt, reload the shell by running the followin
 exec /usr/bin/bash --login
 ```
 
-Finally, to ensure that `login`, `agetty`, and `init` commands can properly use certain log files, they need initialized, and their proper permissions set:
+Now, we will need a temporary name resolver configuration to allow various tools to reach the Internet for content during the build process. To do so, run the following commands:
+
+```bash
+cat << EOF > /etc/resolv.conf
+domain yggdrasilsoft.com
+search yggdrasilsoft.com
+nameserver 1.1.1.1
+nameserver 1.1.2.2
+options edns0 trust-ad
+EOF
+```
+
+Finally, to ensure that `login`, `agetty`, and `init` commands can properly use certain log files, they need to be initialized, and their proper permissions set:
 
 ```bash
 touch /var/log/{btmp,lastlog,faillog,wtmp}
 chgrp -v utmp /var/log/lastlog
-chmod -v 664  /var/log/lastlog
-chmod -v 600  /var/log/btmp
+chmod -v 664 /var/log/lastlog
+chmod -v 600 /var/log/btmp
 ```
 
 | Navigation |||
