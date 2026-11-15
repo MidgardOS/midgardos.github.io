@@ -9,70 +9,62 @@
 Name: gcc<br />
 Summary: A suite of compiler tools<br />
 License: GPL v3.0+<br />
-Version: 15.2.0<br />
-URL: [https://ftp.gnu.org/gnu/gcc/gcc-15.2.0.tar.xz](https://ftp.gnu.org/gnu/gcc/gcc-15.2.0.tar.xz)<br />
+Version: 16.2.0<br />
+URL: [https://ftp.gnu.org/gnu/gcc/gcc-16.2.0.tar.xz](https://ftp.gnu.org/gnu/gcc/gcc-16.2.0.tar.xz)<br />
 
 ## Pre-Configuration
 
 Like before with the cross-compilation tools, GCC requires some extra steps to allow the binaries generated
-to utilize the earlier packages, such as the new binutils, etc.
+to utilise the earlier packages, such as the new binutils, etc.
 
 ```bash
 tar xvf ../mpfr-4.2.2.tar.xz
 mv -v mpfr-4.2.2 mpfr
 tar xvf ../gmp-6.3.0.tar.xz
 mv -v gmp-6.3.0 gmp
-tar xvf ../mpc-1.3.1.tar.gz
-mv -v mpc-1.3.1 mpc
+tar xvf ../mpc-1.4.1.tar.xz
+mv -v mpc-1.4.1 mpc
 ```
 
-Next, we need to apply a small fix to allow older 32-bit pre-compiled Linux binaries and Windows PE 32bit binaries to run correctly on MidgardOS. To do so, run the following command:
+Next, we need to apply a small fix to allow older 32-bit pre-compiled Linux binaries and Windows PE 32-bit binaries to run correctly on MidgardOS. To do so, run the following command:
 
 ```bash
 sed '/STACK_REALIGN_DEFAULT/s/0/(!TARGET_64BIT \&\& TARGET_SSE)/' \
       -i gcc/config/i386/i386.h
 ```
 
-Finally, we need to override the build rules to allow libgcc and libstdc++ so that they can be built with POSIX threads enabled:
-
-```bash
-sed '/thread_header =/s/@.*@/gthr-posix.h/' \
-    -i libgcc/Makefile.in libstdc++-v3/include/Makefile.in
-```
-
 ## Configuration
 
-To configure the GNU Compiler Collection for install into our cross-compilation root, run the following command:
+To configure the GNU Compiler Collection for installation into our cross-compilation root, run the following command:
 
 ```bash
 mkdir -v build && cd build
-CC="x86_64-midgardos-linux-gnu-gcc" \
-CXX="x86_64-midgardos-linux-gnu-g++" \
-../configure                                       \
-    --build=$BRFS_TARGET                           \
-    --host=$BRFS_TARGET                            \
-    --prefix=/usr                                  \
-    --libdir=/usr/lib64                            \
-    --libexecdir=/usr/lib64                        \
-    --with-build-sysroot=$BRFS                     \
-    --enable-default-pie                           \
-    --enable-default-ssp                           \
-    --with-glibc-version=2.43                      \
-    --disable-nls                                  \
+../configure                                        \
+    --build=$(../config.guess)                      \
+    --host=$BRFS_TARGET                             \
+    --target=$BRFS_TARGET                           \
+    --prefix=/usr                                   \
+    --libdir=/usr/lib64                             \
+    --libexecdir=/usr/lib64                         \
+    --with-build-sysroot=$BRFS                      \
+    --enable-default-pie                            \
+    --enable-default-ssp                            \
+    --disable-nls                                   \
+    --disable-fixincludes                           \
     --with-bugurl="https://github.com/MidgardOS/MidgardOS/issues" \
-    --with-pkgversion="MidgardOS"                  \
-    --enable-multilib                              \
-    --with-arch-32=x86-64-v2                       \
-    --with-arch=x86-64-v2                          \
-    --with-tune=generic                            \
-    --disable-libatomic                            \
-    --disable-libgomp                              \
-    --disable-libquadmath                          \
-    --disable-libsanitizer                         \
-    --disable-libssp                               \
-    --disable-libvtv                               \
-    --enable-languages=c,c++                       \
-    LDFLAGS_FOR_TARGET=-L$PWD/$BRFS_TARGET/libgcc
+    --with-pkgversion="MidgardOS"                   \
+    --enable-multilib                               \
+    --with-multilib-list=m64,m32                    \
+    --disable-libatomic                             \
+    --disable-libgomp                               \
+    --disable-libquadmath                           \
+    --disable-libsanitizer                          \
+    --disable-libssp                                \
+    --disable-libvtv                                \
+    --enable-languages=c,c++                        \
+    CXX_FOR_TARGET="$BRFS_TARGET-gcc -nostdinc++"   \
+    LDFLAGS_FOR_TARGET=-L$PWD/$BRFS_TARGET/libgcc   \
+    target_configargs=gcc_cv_target_thread_file=posix
 ```
 
 Stay in the build directory until this package is installed.
@@ -95,12 +87,12 @@ Finally, to allow other builds to be successful, we need to create a dummy syste
 
 ```bash
 cd $BRFS/usr/bin
-ln -sv x86_64-unknown-linux-gnu-gcc-15.2.0 gcc-15.2.0
+ln -sv x86_64-unknown-linux-gnu-gcc-16.2.0 gcc-16.2.0
 ln -sv gcc cc
 cd -
 ```
 
-More details about this package is covered later in the core system build.
+More details about this package are covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
