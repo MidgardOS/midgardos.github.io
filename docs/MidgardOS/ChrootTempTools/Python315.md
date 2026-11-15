@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Perl.md) Perl | [HOME](../README.md) | GNU Texinfo [>>](./GNUTexinfo.md) |
+| [<<](./MPDecimal.md) MPDecimal | [HOME](../README.md) | GNU Texinfo [>>](./GNUTexinfo.md) |
 
 ## Python 3.15
 
@@ -44,4 +44,4 @@ More details about this package are covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Perl.md) Perl | [HOME](../README.md) | GNU Texinfo [>>](./GNUTexinfo.md) |
+| [<<](./MPDecimal.md) MPDecimal | [HOME](../README.md) | GNU Texinfo [>>](./GNUTexinfo.md) |
