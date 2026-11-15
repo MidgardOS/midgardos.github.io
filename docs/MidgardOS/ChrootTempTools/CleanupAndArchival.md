@@ -34,7 +34,7 @@ The backup must be done outside the chroot environment. To leave the chroot envi
 exit
 ```
 
-Before creating the archive, unmount the kernel Virtual Filesystems:
+Before creating the archive, unmount the kernel virtual filesystems:
 
 ```bash
 BRFS=/MidgardOS
@@ -45,7 +45,7 @@ for mp in "dev/shm" "dev/pts" "sys" "proc" "run" "dev"; do
 done
 ```
 
-Now that the kernel Virtual Filesystems are unmounted, create the archive of the build root with the following commands:
+Now that the kernel virtual filesystems are unmounted, create the archive of the build root with the following commands:
 
 ```bash
 BRFS=/MidgardOS cd $BRFS && tar -cJpf $HOME/MidgardOS-temp-tools-2026.03.tar.xz .
