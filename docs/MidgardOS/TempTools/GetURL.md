@@ -18,9 +18,11 @@ Used Install Space: 8.0 MiB<br />
 
 The GetURL tool is a simple download utility to allow downloading files from the Internet from inside the build root while `curl` is not available. This tool does not validate SSL/TLS certificates, since the root certificate bundle is not present yet in the environment. This tool is provided to ease the download of packages during the development process for MidgardOS, and should not be relied on after the `curl` utility is available.
 
+Note, this does require the Golang tools to be installed in the host operating system for this to work.
+
 ## Compilation and Installation
 
-This tool is written in Golang, so there is no configuration needed for the build. To compile GetURL, change directory into the `docs/MidgardOS/src/geturl` inside the git checkout of the documentation. and then run the following command:
+This tool is written in Golang, so there is no configuration needed for the build. To compile GetURL, as the root user of the host OS, change directory into the `docs/MidgardOS/src/geturl` inside the git checkout of the documentation. and then run the following command:
 
 ```bash
 go build
