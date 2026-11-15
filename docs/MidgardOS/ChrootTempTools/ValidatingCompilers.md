@@ -44,7 +44,7 @@ EOF
 echo "Exit code: $?"
 ```
 
-If the exit codes for both tests come back as `0`, the compilers are working as expected and the remaining builds should work as they should. If, however, they do not, revert the VM and re-attempt building GCC, and verify that all the flags used are what is proscribed in this guide.
+If the exit codes for both tests come back as `0`, the compilers are working as expected and the remaining builds should work as they should. If, however, they do not, revert the VM and re-attempt building GCC, and verify that all the flags used are what is prescribed in this guide.
 
 | Navigation |||
 | --- | --- | ---: |
