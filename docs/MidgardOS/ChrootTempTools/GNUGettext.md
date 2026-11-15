@@ -36,7 +36,9 @@ make
 Finally, to install the minimal required tools from GNU Gettext into the build tree, run the following command:
 
 ```bash
-cp -v gettext-tools/src/{msgfmt,msgmerge,xgettext} /usr/bin
+for prgm in "msgfmt" "msgmerge" "xgettext"; do
+    install -v -m 755 -o root -g root gettext-tools/src/$prgm /usr/bin/
+done
 ```
 
 More details about this package are covered later in the core system build.
