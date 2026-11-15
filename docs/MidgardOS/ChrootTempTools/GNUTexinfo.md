@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Python313.md) Python 3.13 | [HOME](../README.md) | Util-Linux 64-bit [>>](./UtilLinux_64bit.md) |
+| [<<](./Python315.md) Python 3.15 | [HOME](../README.md) | Util-Linux 64-bit [>>](./UtilLinux_64bit.md) |
 
 ## GNU Texinfo
 
@@ -14,7 +14,7 @@ URL: [https://ftp.gnu.org/gnu/texinfo/texinfo-7.3.tar.xz](https://ftp.gnu.org/gn
 
 ## Configuration
 
-To configure GNU Texinfo for install into the build root, run the following command:
+To configure GNU Texinfo for installation into the build root, run the following command:
 
 ```bash
 ./configure --prefix=/usr           \
@@ -36,8 +36,8 @@ Finally, to install GNU Texinfo into the build tree, run the following command:
 make install
 ```
 
-More details about this package is covered later in the core system build.
+More details about this package are covered later in the core system build.
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./Python313.md) Python 3.13 | [HOME](../README.md) | Util-Linux 64-bit [>>](./UtilLinux_64bit.md) |
+| [<<](./Python315.md) Python 3.15 | [HOME](../README.md) | Util-Linux 64-bit [>>](./UtilLinux_64bit.md) |
