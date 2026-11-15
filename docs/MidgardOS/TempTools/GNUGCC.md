@@ -87,7 +87,7 @@ Finally, to allow other builds to be successful, we need to create a dummy syste
 
 ```bash
 cd $BRFS/usr/bin
-ln -sv x86_64-unknown-linux-gnu-gcc-16.2.0 gcc-16.2.0
+ln -sv gcc gcc-16.2.0
 ln -sv gcc cc
 cd -
 ```
