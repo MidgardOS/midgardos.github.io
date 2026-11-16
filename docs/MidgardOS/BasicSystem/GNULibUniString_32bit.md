@@ -17,7 +17,7 @@ Used Install Space: 58 MiB<br />
 
 ## Configuration
 
-To configure libunistring 32-bit for install into the build root, run the following command:
+To configure libunistring 32-bit for installation into the build root, run the following command:
 
 ```bash
 make clean
