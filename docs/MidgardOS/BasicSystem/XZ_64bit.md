@@ -7,24 +7,24 @@
 ## XZ 64-bit
 
 Name: XZ 64-bit<br />
-Summary: A Better Compression Tool<br />
+Summary: A better compression tool<br />
 License: Multiple FOSS licenses (0BSD/GPLv2+/GPLv3+)<br />
-Version: 5.8.2<br />
-URL: [https://github.com/tukaani-project/xz/releases/download/v5.8.2/xz-5.8.2.tar.xz](https://github.com/tukaani-project/xz/releases/download/v5.8.2/xz-5.8.2.tar.xz)<br />
+Version: 5.8.4<br />
+URL: [https://github.com/tukaani-project/xz/releases/download/v5.8.4/xz-5.8.4.tar.xz](https://github.com/tukaani-project/xz/releases/download/v5.8.4/xz-5.8.4.tar.xz)<br />
 
 Average Build Time: 0.1 SBU<br />
 Used Install Space: 24 MiB<br />
 
 ## Configuration
 
-To configure XZ 64-bit for install into the build root, run the following command:
+To configure XZ 64-bit for installation into the build root, run the following command:
 
 ```bash
 ./configure --prefix=/usr           \
             --libdir=/usr/lib64     \
             --libexecdir=/usr/lib64 \
             --disable-static        \
-            --docdir=/usr/share/doc/xz-5.8.2
+            --docdir=/usr/share/doc/xz-5.8.4
 ```
 
 ## Compilation and Installation
@@ -56,7 +56,7 @@ rm -fv /usr/lib64/liblzma.la
 | --- | --- |
 | Installed Programs | lzcat (link to xz), lzcmp (link to xzdiff), lzdiff (link to xzdiff), lzegrep (link to xzgrep), lzfgrep (link to xzgrep), lzgrep (link to xzgrep), lzless (link to xzless), lzma (link to xz), lzmadec, lzmainfo, lzmore (link to xzmore), unlzma (link to xz), unxz (link to xz), xz, xzcat (link to xz), xzcmp (link to xzdiff), xzdec, xzdiff, xzegrep (link to xzgrep), xzfgrep (link to xzgrep), xzgrep, xzless, and xzmore |
 | Installed Libraries | liblzma.so |
-| Installed Directories | /usr/include/lzma and /usr/share/doc/xz-5.8.1 |
+| Installed Directories | /usr/include/lzma and /usr/share/doc/xz-5.8.4 |
 
 | Navigation |||
 | --- | --- | ---: |
