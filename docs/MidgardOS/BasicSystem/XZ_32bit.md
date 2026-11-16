@@ -7,17 +7,17 @@
 ## XZ 32-bit
 
 Name: XZ 32-bit<br />
-Summary: A Better Compression Tool<br />
+Summary: A better compression tool<br />
 License: Multiple FOSS licenses (0BSD/GPLv2+/GPLv3+)<br />
-Version: 5.8.2<br />
-URL: [https://github.com/tukaani-project/xz/releases/download/v5.8.2/xz-5.8.2.tar.xz](https://github.com/tukaani-project/xz/releases/download/v5.8.2/xz-5.8.2.tar.xz)<br />
+Version: 5.8.4<br />
+URL: [https://github.com/tukaani-project/xz/releases/download/v5.8.4/xz-5.8.4.tar.xz](https://github.com/tukaani-project/xz/releases/download/v5.8.4/xz-5.8.4.tar.xz)<br />
 
 Average Build Time: 0.1 SBU<br />
 Used Install Space: 24 MiB<br />
 
 ## Configuration
 
-To configure XZ 32-bit for install into the build root, run the following commands:
+To configure XZ 32-bit for installation into the build root, run the following commands:
 
 ```bash
 make distclean
