@@ -9,15 +9,15 @@
 Name: File 64-bit<br />
 Summary: A tool to determine the type of a file from heuristics<br />
 License: BSD 2-Clause<br />
-Version: 5.47<br />
-URL: [ftp://ftp.astron.com/pub/file/file-5.47.tar.gz](ftp://ftp.astron.com/pub/file/file-5.47.tar.gz)<br />
+Version: 5.48<br />
+URL: [ftp://ftp.astron.com/pub/file/file-5.48.tar.gz](ftp://ftp.astron.com/pub/file/file-5.48.tar.gz)<br />
 
 Average Build Time: less than 0.1 SBU<br />
 Used Install Space: 19 MiB<br />
 
 ## Configuration
 
-To configure File 64-bit for install into the build root, run the following command:
+To configure File 64-bit for installation into the build root, run the following command:
 
 ```bash
 ./configure --prefix=/usr           \
