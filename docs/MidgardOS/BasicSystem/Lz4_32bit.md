@@ -9,8 +9,8 @@
 Name: Lz4 32-bit<br />
 Summary: A lossless compression library<br />
 License: BSD-2-Clause/GPLv2 or later<br />
-Version: 1.10.0<br />
-URL: [https://github.com/lz4/lz4/releases/download/v1.10.0/lz4-1.10.0.tar.gz](https://github.com/lz4/lz4/releases/download/v1.10.0/lz4-1.10.0.tar.gz)<br />
+Version: 1.11.1<br />
+URL: [https://github.com/lz4/lz4/releases/download/v1.11.1/lz4-1.11.1.tar.gz](https://github.com/lz4/lz4/releases/download/v1.11.1/lz4-1.11.1.tar.gz)<br />
 
 Average Build Time: 0.1 SBU<br />
 Used Install Space: 4.2 MiB<br />
