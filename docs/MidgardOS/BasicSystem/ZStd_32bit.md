@@ -17,7 +17,7 @@ Used Install Space: 86 MiB<br />
 
 ## Configuration
 
-The ZStd sources don't have a standard configuration script.
+The ZStd sources do not have a standard configuration script.
 
 ## Compilation and Installation
 
