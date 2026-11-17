@@ -27,7 +27,7 @@ sed -i 's/-Wl,-rpath,[^ ]*//' support/shobj-conf
 
 ## Configuration
 
-To configure GNU Readline 64-bit for install into the build root, run the following command:
+To configure GNU Readline 64-bit for installation into the build root, run the following command:
 
 ```bash
 ./configure --prefix=/usr           \
