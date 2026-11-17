@@ -9,15 +9,15 @@
 Name: PCRE2 32-bit<br />
 Summary: Perl-compatible regular expression library<br />
 License: BSD-3-Clause with PCRE2-exception<br />
-Version: 10.47<br />
-URL: [https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.47/pcre2-10.47.tar.gz](https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.47/pcre2-10.47.tar.gz)<br />
+Version: 10.49<br />
+URL: [https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.49/pcre2-10.49.tar.gz](https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.49/pcre2-10.49.tar.gz)<br />
 
 Average Build Time: 0.5 SBU<br />
 Used Install Space: 20 MiB<br />
 
 ## Configuration
 
-To configure PCRE2 32-bit for install into the build root, run the following command:
+To configure PCRE2 32-bit for installation into the build root, run the following command:
 
 ```bash
 make distclean
@@ -26,7 +26,7 @@ CC="gcc -m32" ./configure \
             --prefix=/usr                       \
             --libdir=/usr/lib                   \
             --libexecdir=/usr/lib               \
-            --docdir=/usr/share/doc/pcre2-10.47 \
+            --docdir=/usr/share/doc/pcre2-10.49 \
             --enable-unicode                    \
             --enable-jit                        \
             --enable-pcre2-16                   \
