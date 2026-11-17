@@ -2,7 +2,7 @@
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUM4.md.md) GNU M4 | [HOME](../README.md) | Flex 64-bit [>>](./Flex_64bit.md) |
+| [<<](./GNUM4.md) GNU M4 | [HOME](../README.md) | Flex 64-bit [>>](./Flex_64bit.md) |
 
 ## GNU Bc
 
@@ -17,7 +17,7 @@ Used Install Space: 7.8 MiB<br />
 
 ## Configuration
 
-To configure GNU Bc for install into the build root, run the following command:
+To configure GNU Bc for installation into the build root, run the following command:
 
 ```bash
 ./configure --prefix=/usr
@@ -43,10 +43,12 @@ Finally, to install GNU Bc into the build tree, run the following command:
 make install
 ```
 
+## Contents
+
 | Contents ||
 | --- | --- |
 | Installed Programs | bc and dc |
 
 | Navigation |||
 | --- | --- | ---: |
-| [<<](./GNUM4.md.md) GNU M4 | [HOME](../README.md) | Flex 64-bit [>>](./Flex_64bit.md) |
+| [<<](./GNUM4.md) GNU M4 | [HOME](../README.md) | Flex 64-bit [>>](./Flex_64bit.md) |
