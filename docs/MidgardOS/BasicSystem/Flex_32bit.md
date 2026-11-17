@@ -9,15 +9,15 @@
 Name: Flex 32-bit<br />
 Summary: The fast lexer<br />
 License: BSD-3-Clause<br />
-Version: 2.6.4<br />
-URL: [https://github.com/westes/flex/releases/download/v2.6.4/flex-2.6.4.tar.gz](https://github.com/westes/flex/releases/download/v2.6.4/flex-2.6.4.tar.gz)<br />
+Version: 2.6.15<br />
+URL: [https://github.com/westes/flex/releases/download/v2.6.15/flex-2.6.15.tar.gz](https://github.com/westes/flex/releases/download/v2.6.15/flex-2.6.15.tar.gz)<br />
 
 Average Build Time: 0.1 SBU<br />
 Used Install Space: 33 MiB<br />
 
 ## Configuration
 
-To configure Flex 32-bit for install into the build root, run the following command:
+To configure Flex 32-bit for installation into the build root, run the following command:
 
 ```bash
 make distclean
@@ -26,7 +26,7 @@ CC="gcc -m32" ./configure                       \
             --prefix=/usr                       \
             --libdir=/usr/lib                   \
             --libexecdir=/usr/lib               \
-            --docdir=/usr/share/doc/flex-2.6.4  \
+            --docdir=/usr/share/doc/flex-2.6.15 \
             --disable-static
 ```
 
