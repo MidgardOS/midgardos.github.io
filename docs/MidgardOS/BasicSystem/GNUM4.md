@@ -17,7 +17,7 @@ Used Install Space: 60 MiB<br />
 
 ## Configuration
 
-To configure GNU M4 for install into the build root, run the following commands:
+To configure GNU M4 for installation into the build root, run the following commands:
 
 ```bash
 sed 's/\[\[__nodiscard__]]//' -i lib/config.hin
@@ -39,11 +39,15 @@ Next, run the test suite:
 make check
 ```
 
+Note that the tests appear to have a broken test around testing file spawning actions that hit 100% CPU utilisation, at least inside the chroot.
+
 Finally, to install GNU M4 into the build tree, run the following command:
 
 ```bash
 make install
 ```
+
+## Contents
 
 | Contents ||
 | --- | --- |
