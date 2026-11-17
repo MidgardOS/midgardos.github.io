@@ -9,21 +9,21 @@
 Name: Flex 64-bit<br />
 Summary: The fast lexer<br />
 License: BSD-3-Clause<br />
-Version: 2.6.4<br />
-URL: [https://github.com/westes/flex/releases/download/v2.6.4/flex-2.6.4.tar.gz](https://github.com/westes/flex/releases/download/v2.6.4/flex-2.6.4.tar.gz)<br />
+Version: 2.6.15<br />
+URL: [https://github.com/westes/flex/releases/download/v2.6.15/flex-2.6.15.tar.gz](https://github.com/westes/flex/releases/download/v2.6.15/flex-2.6.15.tar.gz)<br />
 
 Average Build Time: 0.1 SBU<br />
 Used Install Space: 33 MiB<br />
 
 ## Configuration
 
-To configure Flex 64-bit for install into the build root, run the following command:
+To configure Flex 64-bit for installation into the build root, run the following command:
 
 ```bash
-./configure --prefix=/usr                      \
-            --libdir=/usr/lib64                \
-            --libexecdir=/usr/lib64            \
-            --docdir=/usr/share/doc/flex-2.6.4 \
+./configure --prefix=/usr                       \
+            --libdir=/usr/lib64                 \
+            --libexecdir=/usr/lib64             \
+            --docdir=/usr/share/doc/flex-2.6.15 \
             --disable-static
 ```
 
@@ -58,7 +58,7 @@ ln -sv flex.1 /usr/share/man/man1/lex.1
 | --- | --- |
 | Installed Programs | flex, flex++ (link to flex), and lex (link to flex) |
 | Installed Libraries | libfl.so |
-| Installed Directories | /usr/share/doc/flex-2.6.4 |
+| Installed Directories | /usr/share/doc/flex-2.6.15 |
 
 | Navigation |||
 | --- | --- | ---: |
